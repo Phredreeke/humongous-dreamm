@@ -342,7 +342,7 @@ end
 //
 // 1995 Demo version
 //
-game[pc-en-951031-demo]:
+demo[pc-en-951031-demo]:
     name = English Demo 1995-10-31
     anchorfile = FREDDEMO.EXE
     launch = "$(rootpath)\FREDDEMO.EXE"
@@ -362,7 +362,7 @@ end
 //
 // 1995 Dutch Demo version
 //
-game[pc-nl-950320-demo]:
+demo[pc-nl-950320-demo]:
     name = Dutch Demo 1995-03-20
     anchorfile = FREDDEMO.EXE
     launch = "$(rootpath)\FREDDEMO.EXE"
@@ -382,7 +382,7 @@ end
 //
 // 1996 French Demo version
 //
-game[pc-fr-960708-demo]:
+demo[pc-fr-960708-demo]:
     name = French Demo 1996-07-08
     anchorfile = FREDDEMO.EXE
     launch = "$(rootpath)\FREDDEMO.EXE"
@@ -405,7 +405,7 @@ end
 //
 // 1996 German Demo version
 //
-game[pc-de-960703-demo]:
+demo[pc-de-960703-demo]:
     name = German Demo 1996-07-03
     anchorfile = FREDDEMO.EXE
     launch = "$(rootpath)\FREDDEMO.EXE"

@@ -160,7 +160,7 @@ end
 //
 // 1999 English Demo
 //
-game[pc-en-990208-demo]:
+demo[pc-en-990208-demo]:
     name = English Demo 1999-02-08
     anchorfile = F4-demo.exe
     launch = "$(rootpath)\F4-demo.exe"
@@ -180,7 +180,7 @@ end
 //
 // 1999 UK English Demo
 //
-game[pc-en-990307-demo-uk]:
+demo[pc-en-990307-demo-uk]:
     name = English Demo 1999-03-07 (UK Dub)
     anchorfile = ff4demo.exe
     launch = "$(rootpath)\ff4demo.exe"
@@ -200,7 +200,7 @@ end
 //
 // 2001 English Demo
 //
-game[pc-en-010330-demo]:
+demo[pc-en-010330-demo]:
     name = English Demo 2001-03-30
     anchorfile = f4-demo.exe
     launch = "$(rootpath)\f4-demo.exe"
@@ -219,7 +219,7 @@ end
 //
 // 1999 Dutch Demo
 //
-game[pc-nl-990307-demo]:
+demo[pc-nl-990307-demo]:
     name = Dutch Demo 1999-03-07
     anchorfile = FF4DEMO.EXE
     launch = "$(rootpath)\FF4DEMO.EXE"
@@ -238,7 +238,7 @@ end
 //
 // 2000 French Demo
 //
-game[pc-fr-001127-demo]:
+demo[pc-fr-001127-demo]:
     name = French Demo 2000-11-27
     anchorfile = MM4DEMO.EXE
     launch = "$(rootpath)\MM4DEMO.EXE"
@@ -260,7 +260,7 @@ end
 //
 // 2000 German Demo
 //
-game[pc-de-001127-demo]:
+demo[pc-de-001127-demo]:
     name = German Demo 2000-11-27
     anchorfile = FF4DEMO.EXE
     launch = "$(rootpath)\FF4DEMO.EXE"
@@ -279,7 +279,7 @@ end
 //
 // 2001 Italian Demo
 //
-game[pc-it-010828-demo]:
+demo[pc-it-010828-demo]:
     name = Italian Demo 2001-08-28
     anchorfile = FF4DEMO.EXE
     launch = "$(rootpath)\FF4DEMO.EXE"

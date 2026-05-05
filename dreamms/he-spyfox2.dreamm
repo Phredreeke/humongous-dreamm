@@ -73,6 +73,9 @@ game[pc-en-010221-uk]:
 
 end
 
+//
+// 2000 Dutch version
+//
 game[pc-nl-000919]:
     name = Dutch 2000-09-19
     anchorfile = Spyfox2.exe
@@ -92,6 +95,9 @@ game[pc-nl-000919]:
 
 end
 
+//
+// 2000 German version
+//
 game[pc-de-000919]:
     name = German 2000-09-19
     anchorfile = SPYFoxOR.EXE
@@ -110,7 +116,10 @@ game[pc-de-000919]:
 
 end
 
-game[pc-en-000313-demo]:
+//
+// 2000 English demo version
+//
+demo[pc-en-000313-demo]:
     name = English Demo 2000-03-13
     anchorfile = SF2-DEMO.EXE
     launch = "$(rootpath)\SF2-DEMO.EXE"

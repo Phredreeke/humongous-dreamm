@@ -160,7 +160,7 @@ end
 //
 // English demo
 //
-game[pc-en-961029-demo]:
+demo[pc-en-961029-demo]:
     name = English Demo 1996-10-29
     anchorfile = FF2-DEMO.EXE
     launch = "$(rootpath)\FF2-DEMO.EXE"
@@ -181,7 +181,7 @@ end
 //
 // English demo, found on 2003 disc in Quiznos meal promo
 //
-game[pc-en-demo-03]:
+demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = FFHSDemo.exe
     launch = "$(rootpath)\FFHSDemo.exe"
@@ -200,7 +200,7 @@ end
 //
 // Dutch demo
 //
-game[pc-nl-981026-demo]:
+demo[pc-nl-981026-demo]:
     name = Dutch Demo 1998-10-26 
     anchorfile = ff2-demo.exe
     launch = "$(rootpath)\ff2-demo.exe"

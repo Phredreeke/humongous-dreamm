@@ -196,7 +196,7 @@ end
 //
 // English 1997 demo
 //
-game[pc-en-971214-demo]:
+demo[pc-en-971214-demo]:
     name = English Demo 1997-12-14
     anchorfile = FOXDEMO.EXE
     launch = "$(rootpath)\FOXDEMO.EXE"
@@ -216,7 +216,7 @@ end
 //
 // English 1999 demo
 //
-game[pc-en-990818-demo]:
+demo[pc-en-990818-demo]:
     name = English Demo 1999-08-18
     anchorfile = spydemo.exe
     launch = "$(rootpath)\spydemo.exe"
@@ -235,7 +235,7 @@ end
 //
 // English demo, found on 2003 disc in Quiznos meal promo
 //
-game[pc-en-demo-03]:
+demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = Spydemo.exe
     launch = "$(rootpath)\Spydemo.exe"
@@ -252,7 +252,7 @@ end
 //
 // Dutch 1999 demo
 //
-game[pc-nl-990405-demo]:
+demo[pc-nl-990405-demo]:
     name = Dutch Demo 1999-04-05
     anchorfile = Spydemo.EXE
     launch = "$(rootpath)\Spydemo.EXE"
@@ -271,7 +271,7 @@ end
 //
 // French 1997 demo
 //
-game[pc-fr-970809-demo]:
+demo[pc-fr-970809-demo]:
     name = French Demo 1997-08-09
     anchorfile = JAMESDEM.EXE
     launch = "$(rootpath)\JAMESDEM.EXE"
