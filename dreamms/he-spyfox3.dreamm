@@ -1,0 +1,65 @@
+desc[he-spyfox3]:
+
+name = SPY Fox 3: Operation Ozone
+icon = he-spyfox3.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\spyozon.exe"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Color depth
+//
+COLORDEPTH = true
+config[colordepth]:
+    condition = $(COLORDEPTH)
+    title = Color depth
+    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
+    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This version does not run correctly in tested DREAMM version (4.0x12)
+end
+
+//
+// 2001 version
+//
+game[pc-en-010326]:
+    name = English 2001-03-26
+    anchorfile = spyozon.exe
+    INCOMPATIBLE = true
+    file[]: crc = 7a7c3b65; size =     15056; name = heini.exe; optional = true
+    file[]: crc = 13df1872; size =      2791; name = HELP.TXT; optional = true
+    file[]: crc = 8d845bd1; size =      5752; name = LICENSE.TXT; optional = true
+    file[]: crc = 1594a0ca; size =     24021; name = ozonreg.pcx; optional = true
+    file[]: crc = ae439d4d; size =  97283003; name = SPYOZON.(A)
+    file[]: crc = 8c2168aa; size =     53248; name = SPYOZON.D32
+    file[]: crc = 741a7bb4; size =     98304; name = spyozon.exe
+    file[]: crc = 328c34ab; size =     47128; name = SPYOZON.HE0
+    file[]: crc = c5758d6b; size = 114231949; name = SPYOZON.HE2
+    file[]: crc = 1499f98f; size =    123431; name = SPYOZON.HE3
+    file[]: crc = 9245fc4c; size =  71656930; name = SPYOZON.HE4
+    file[]: crc = 4ae4806c; size =       766; name = SPYOZON.ICO; optional = true
+    file[]: crc = 47f88bbd; size =      2960; name = SPYOZON.INF; optional = true
+    file[]: crc = b53b8d65; size =    503867; name = spyozon.w32
+
+end
+
+
+
+
+end

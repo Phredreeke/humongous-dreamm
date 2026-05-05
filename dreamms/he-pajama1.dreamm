@@ -1,0 +1,214 @@
+desc[he-pajama1]:
+
+name = Pajama Sam 1: No Need to Hide When It's Dark Outside
+icon = he-pajama1.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PAJAMA.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// Color depth
+//
+COLORDEPTH = false
+config[colordepth]:
+    condition = $(COLORDEPTH)
+    title = Color depth
+    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
+    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This version does not run correctly in tested DREAMM version (4.0x12)
+end
+
+
+//
+// 1996 version
+//
+game[pc-en-960909]:
+    name = English 1996-09-09
+    anchorfile = PAJAMA.EXE
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 6edf6344; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 889a54ba; size =     76820; name = PAJAMA.BMP; optional = true
+    file[]: crc = a26710b2; size =      8896; name = PAJAMA.DLL
+    file[]: crc = 13befd98; size =     21616; name = PAJAMA.EXE
+    file[]: crc = ca56aed6; size =     66368; name = PAJAMA.HE0
+    file[]: crc = 506c6847; size = 124416431; name = PAJAMA.HE1
+    file[]: crc = 0a0f1589; size =  68233391; name = PAJAMA.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PAJAMA.HE3
+    file[]: crc = 7d7025d0; size =  32410705; name = PAJAMA.HE4
+    file[]: crc = 558514f2; size =    413586; name = PAJAMA.HE7
+    file[]: crc = 08ea3f42; size =    134920; name = PAJAMA.HLP; optional = true
+    file[]: crc = aee1266f; size =      2172; name = PAJAMA.INF; optional = true
+    file[]: crc = 384e4671; size =    323584; name = PAJAMA.W32
+    file[]: crc = f63aa758; size =     11148; name = README.TXT; optional = true
+
+
+
+end
+
+//
+// 1999 version
+//
+game[pc-en-991027]:
+    name = English 1999-10-27
+    anchorfile = PAJAMA.EXE
+    launch = "$(rootpath)\pajama.w32" // skip license screen
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 71be7ac9; size =     32039; name = JA-AD.PCX; optional = true
+    file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+    file[]: crc = 5a45686e; size = 124380216; name = Pajama.(a)
+    file[]: crc = 94c373b1; size =     36352; name = pajama.d32
+    file[]: crc = 1ba43ec4; size =     86016; name = PAJAMA.EXE
+    file[]: crc = 3c6c401f; size =     66505; name = Pajama.HE0
+    file[]: crc = 336a975d; size =  68279959; name = Pajama.he2
+    file[]: crc = 7d7025d0; size =  32410705; name = Pajama.he4
+    file[]: crc = 558514f2; size =    413586; name = Pajama.he7
+    file[]: crc = cc734fb1; size =    137920; name = PAJAMA.HLP; optional = true
+    file[]: crc = add042c0; size =      2600; name = PAJAMA.INF; optional = true
+    file[]: crc = 1d8182d2; size =    425984; name = pajama.w32
+
+
+end
+
+
+//
+// 2007 version
+//
+game[pc-en-070901]:
+    name = English 2007-09-01
+    anchorfile = pjSam.exe
+    launch = "$(rootpath)\pjSam.exe"
+    INCOMPATIBLE = true
+    BITNESS = false
+    COLORDEPTH = true
+    file[]: crc = 5107b8ef; size =       659; name = layout.bin
+    file[]: crc = 8112767f; size =     18708; name = License.rtf; optional = true
+    file[]: crc = 2761439d; size =    129124; name = Pajama_Manual.pdf; optional = true
+    file[]: crc = 18249abb; size =     10462; name = Pajama_readme.txt; optional = true
+    file[]: crc = 8ff5569b; size =      8628; name = PAJAMANHD.GID
+    file[]: crc = 6eab7c02; size =    235793; name = PAJAMANHD.hlp; optional = true
+    file[]: crc = 3e985e4e; size = 141867500; name = pjsam.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = pjSam.d32
+    file[]: crc = 09a54d61; size =    696376; name = pjSam.exe
+    file[]: crc = 22d4d2f7; size =     66608; name = pjsam.HE0
+    file[]: crc = 188369ae; size =  68281692; name = pjsam.HE2
+    file[]: crc = 7d7025d0; size =  32410705; name = pjSam.he4
+    file[]: crc = efee520f; size =    183713; name = pjSam.ICO; optional = true
+    file[]: crc = efcbf679; size =      2185; name = pjSam.inf; optional = true
+    file[]: crc = 0d52f018; size =   1440056; name = setup.bmp; optional = true
+
+
+
+end
+
+//
+// 1996 Dutch version
+//
+game[pc-nl-960909]:
+    name = Dutch 1996-09-09
+    anchorfile = PAJAMA.EXE
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: name = JA-AD.BMP; optional = true
+    file[]: crc = f6e85a8e; size =     78958; name = Pajama.bmp; optional = true
+    file[]: crc = 9b1d4f36; size =     34304; name = PAJAMA.D32
+    file[]: crc = f9e12b58; size =      8896; name = PAJAMA.DLL
+    file[]: crc = 13befd98; size =     21616; name = PAJAMA.EXE
+    file[]: crc = b8a621d2; size =     66377; name = PAJAMA.HE0
+    file[]: crc = 59e1858a; size = 124779289; name = PAJAMA.HE1
+    file[]: crc = fab350d9; size =  79447672; name = PAJAMA.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PAJAMA.HE3
+    file[]: crc = 6ee74557; size =  32418653; name = PAJAMA.HE4
+    file[]: crc = 558514f2; size =    413586; name = PAJAMA.HE7
+    file[]: crc = affa0a50; size =    273602; name = PAJAMA.HLP; optional = true
+    file[]: crc = 5beed1a3; size =     22486; name = PAJAMA.ICO; optional = true
+    file[]: crc = eaa53205; size =      2145; name = PAJAMA.INF; optional = true
+    file[]: crc = db2d1c95; size =    330240; name = PAJAMA.W32
+    file[]: crc = 0b97f939; size =     31004; name = Pajama_.he5; optional = true
+    file[]: crc = 63cf2512; size =    104509; name = Pajama_.he6; optional = true
+    file[]: crc = d734a93c; size =    308278; name = SCREEN1.BMP; optional = true
+
+end
+
+
+//
+// 1996 French version
+//
+game[pc-fr-980307]:
+    name = French 1998-03-07
+    anchorfile = SAMPYJAM.EXE
+    launch = "$(rootpath)\SAMPYJAM.EXE"
+    file[]: crc = 0839cc5e; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 4c1abac3; size =     11306; name = LISEZMOI.TXT; optional = true
+    file[]: crc = 837c16a4; size =    131830; name = SAMPYJAM.BMP; optional = true
+    file[]: crc = 4dfeb4a8; size =     35840; name = SAMPYJAM.D32
+    file[]: crc = 855b5079; size =      9200; name = SAMPYJAM.DLL
+    file[]: crc = 13befd98; size =     21616; name = SAMPYJAM.EXE
+    file[]: crc = 875da0fd; size =     66377; name = SAMPYJAM.HE0
+    file[]: crc = ebac9cc0; size = 123738611; name = SAMPYJAM.HE1
+    file[]: crc = 05a3c5d3; size =  65124001; name = SAMPYJAM.HE2
+    file[]: crc = 00492eb9; size =  32411280; name = SAMPYJAM.HE4
+    file[]: crc = 558514f2; size =    413586; name = SAMPYJAM.HE7
+    file[]: crc = bc6fbcdb; size =    145538; name = SAMPYJAM.HLP; optional = true
+    file[]: crc = eed961fd; size =      2238; name = SAMPYJAM.INF; optional = true
+    file[]: crc = ab125a5c; size =    330240; name = SAMPYJAM.W32
+    file[]: crc = 35d17e13; size =      1282; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// 1999 German version
+//
+game[pc-de-991018]:
+    name = German 1999-10-18
+    anchorfile = PYJAMA.EXE
+    launch = "$(rootpath)\PYJAMA.EXE"
+    file[]: crc = 1d5c638c; size =       713; name = COPYRIGHT.TXT; optional = true 
+    file[]: crc = a640f91a; size =     27355; name = JA-AD.pcx; optional = true // seems to be corrupted
+    file[]: crc = 60ef8fdf; size = 124585072; name = PYJAMA.(A)
+    file[]: crc = 15a2f5d4; size =    132406; name = pyjama.bmp; optional = true
+    file[]: crc = 46996e05; size =     34816; name = PYJAMA.D32
+    file[]: crc = b62b3e68; size =     77824; name = PYJAMA.EXE
+    file[]: crc = 2cab10c4; size =     66505; name = PYJAMA.HE0
+    file[]: crc = 9f93279f; size =  81166188; name = PYJAMA.HE2
+    file[]: crc = ffd8d67d; size =  32403932; name = PYJAMA.HE4
+    file[]: crc = 558514f2; size =    413586; name = PYJAMA.HE7
+    file[]: crc = 1c93045e; size =    133446; name = PYJAMA.HLP; optional = true
+    file[]: crc = 892c5170; size =       766; name = PYJAMA.ICO; optional = true
+    file[]: crc = 28fccd4f; size =      2544; name = PYJAMA.INF; optional = true
+    file[]: crc = 4aac5902; size =    425984; name = PYJAMA.W32
+
+end
+
+
+
+
+end

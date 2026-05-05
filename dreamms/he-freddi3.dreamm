@@ -1,0 +1,316 @@
+desc[he-freddi3]:
+
+name = Freddi Fish 3: The Case of the Stolen Conch Shell
+icon = he-freddi3.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\FREDDI3.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1997 version
+//
+game[pc-en-971214]:
+    name = English 1997-12-14
+    anchorfile = FREDDI3.EXE
+    file[]: crc = d5752ac9; size =    132406; name = FREDDI3.BMP; optional = true
+    file[]: crc = a6712191; size =     36352; name = FREDDI3.D32
+    file[]: crc = a26710b2; size =      8896; name = FREDDI3.DLL
+    file[]: crc = ee48f171; size =     21616; name = FREDDI3.EXE
+    file[]: crc = 2444137b; size =     55959; name = FREDDI3.HE0
+    file[]: crc = ffb5e2d8; size =  74589514; name = FREDDI3.HE1
+    file[]: crc = 5a572dd0; size =  70957466; name = FREDDI3.HE2
+    file[]: crc = 1b893e4a; size =  27716525; name = FREDDI3.HE4
+    file[]: crc = 600cbab1; size =    650773; name = FREDDI3.HLP; optional = true
+    file[]: crc = 3365b814; size =       766; name = FREDDI3.ICO
+    file[]: crc = 62a4ee14; size =      2132; name = FREDDI3.INF; optional = true
+    file[]: crc = 929c4f9d; size =    368640; name = FREDDI3.W32
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = a08bf880; size =     97120; name = JA-AD.BMP; optional = true
+    file[]: crc = dc88e1c4; size =     24420; name = README.TXT; optional = true
+
+
+end
+
+//
+// 2001 version
+//
+game[pc-en-010411-gm]:
+    name = English 2001-04-11
+    anchorfile = FREDDI3.EXE
+    launch = "$(rootpath)\FREDDI3.W32"
+    file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 3ee72ce3; size =     89378; name = FFmenu.pcx; optional = true
+    file[]: crc = 9ac2b653; size =     83186; name = FFreg.pcx; optional = true
+    file[]: crc = a6712191; size =     36352; name = FREDDI3.D32
+    file[]: crc = a26710b2; size =      8896; name = FREDDI3.DLL
+    file[]: crc = c666862a; size =     98304; name = FREDDI3.EXE
+    file[]: crc = 2444137b; size =     55959; name = FREDDI3.HE0
+    file[]: crc = ffb5e2d8; size =  74589514; name = FREDDI3.HE1
+    file[]: crc = 5a572dd0; size =  70957466; name = FREDDI3.HE2
+    file[]: crc = 0fb07a5f; size =     11513; name = FREDDI3.HE3
+    file[]: crc = 1b893e4a; size =  27716525; name = FREDDI3.HE4
+    file[]: crc = 600cbab1; size =    650773; name = FREDDI3.HLP; optional = true
+    file[]: crc = 3365b814; size =       766; name = FREDDI3.ICO; optional = true
+    file[]: crc = 2247bc9f; size =      2722; name = FREDDI3.INF; optional = true
+    file[]: crc = 929c4f9d; size =    368640; name = FREDDI3.W32
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 9eccb5fd; size =      9297; name = Hints.txt; optional = true
+    file[]: crc = 8d845bd1; size =      5752; name = License.txt; optional = true
+    file[]: crc = 14d4db15; size =     25534; name = README.TXT; optional = true
+
+
+end
+
+//
+// 2001 UK version
+//
+game[pc-en-010308-uk]:
+    name = English 2001-03-08 UK Dub
+    anchorfile = FreddiSCS.EXE
+    launch = "$(rootpath)\FreddiSCS.EXE"
+    file[]: crc = ae103768; size =  75069855; name = FreddiSCS.(a)
+    file[]: crc = ff0be092; size =     45056; name = FreddiSCS.d32
+    file[]: crc = 4dcddba6; size =     86016; name = FreddiSCS.EXE
+    file[]: crc = 3f8a1931; size =     56068; name = FreddiSCS.HE0
+    file[]: crc = 0ad97c87; size =  78780608; name = FreddiSCS.HE2
+    file[]: crc = 6a242b7c; size =  27721455; name = FreddiSCS.HE4
+    file[]: crc = d1518202; size =    653011; name = FreddiSCS.hlp; optional = true
+    file[]: crc = 3365b814; size =       766; name = FREDDISCS.ICO; optional = true
+    file[]: crc = 7030cf0f; size =      2372; name = FreddiSCS.inf; optional = true
+    file[]: crc = a70e6247; size =    475182; name = freddiSCS.w32
+    file[]: crc = d9db2667; size =     87083; name = Ja-ad.pcx; optional = true
+    file[]: crc = bf9ea09b; size =    192575; name = seticon.exe; optional = true
+
+
+end
+
+//
+// 1998 Dutch version
+//
+game[pc-nl-981022]:
+    name = Dutch 1998-10-22
+    anchorfile = FREDDI3.EXE
+    file[]: crc = 92cadd32; size =    132406; name = FREDDI3.BMP; optional = true
+    file[]: crc = 54e5b871; size =     34304; name = FREDDI3.D32
+    file[]: crc = f9e12b58; size =      8896; name = FREDDI3.DLL
+    file[]: crc = ee48f171; size =     21616; name = FREDDI3.EXE
+    file[]: crc = 08c14d07; size =     55959; name = FREDDI3.HE0
+    file[]: crc = c47dbce2; size =  74624719; name = FREDDI3.HE1
+    file[]: crc = 4686461b; size =  77965598; name = FREDDI3.HE2
+    file[]: crc = cc41ca11; size =  27719552; name = FREDDI3.HE4
+    file[]: crc = 2869d14a; size =    850283; name = FREDDI3.HLP; optional = true
+    file[]: crc = aac084b9; size =      2189; name = FREDDI3.INF; optional = true
+    file[]: crc = 929c4f9d; size =    368640; name = FREDDI3.W32
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 49abbb50; size =     92452; name = JA-AD.BMP; optional = true
+
+
+end
+
+//
+// 1998 Dutch version (Atari variant)
+//
+game[pc-nl-981022-alt]:
+    name = Dutch 1998-10-22 (Atari variant)
+    anchorfile = JA-AD.BMP
+    imports = pc-nl-981022
+    file[]: crc = 9b48ad8b; size =     90886; name = JA-AD.BMP
+
+
+end
+
+//
+// 2000 French version
+//
+game[pc-fr-001114]:
+    name = French 2000-11-14
+    anchorfile = MaliceMCV.exe
+    launch = "$(rootpath)\MaliceMCV.exe"
+    file[]: crc = a15680f7; size =     70450; name = JA-AD.pcx; optional = true
+    file[]: crc = 3eb6afcc; size =  74650500; name = MaliceMCV.(a)
+    file[]: crc = 81980e29; size =     35840; name = MaliceMCV.D32
+    file[]: crc = 7e681865; size =     86016; name = MaliceMCV.exe
+    file[]: crc = d7168dec; size =     56068; name = MaliceMCV.HE0
+    file[]: crc = ec21e777; size =  65721887; name = MaliceMCV.HE2
+    file[]: crc = 56796a70; size =  27732362; name = MaliceMCV.HE4
+    file[]: crc = 69f5aa06; size =    655844; name = MALICEMCV.HLP; optional = true
+    file[]: crc = d0cc28ce; size =      2521; name = MaliceMCV.inf; optional = true
+    file[]: crc = 704d8452; size =    442368; name = MaliceMCV.w32
+
+
+end
+
+//
+// 1997 German version
+//
+game[pc-de-970925]:
+    name = German 1997-09-25
+    anchorfile = FRITZI3.EXE
+    launch = "$(rootpath)\FRITZI3.EXE"
+    file[]: crc = fe455fda; size =  74334409; name = FRITZI3.(A)
+    file[]: crc = f3401a36; size =    132406; name = FRITZI3.BMP; optional = true
+    file[]: crc = 46996e05; size =     34816; name = FRITZI3.D32
+    file[]: crc = 46b8aa5a; size =      9088; name = FRITZI3.DLL
+    file[]: crc = ee48f171; size =     21616; name = FRITZI3.EXE
+    file[]: crc = dec33add; size =     56034; name = FRITZI3.HE0
+    file[]: crc = cfb3ea71; size =  70418484; name = FRITZI3.HE2
+    file[]: crc = 5287e3fa; size =  27757276; name = FRITZI3.HE4
+    file[]: crc = d93cb23f; size =    668761; name = FRITZI3.HLP; optional = true
+    file[]: crc = 3365b814; size =       766; name = FRITZI3.ICO; optional = true
+    file[]: crc = f4854f4d; size =      2176; name = FRITZI3.INF; optional = true
+    file[]: crc = cfd14e61; size =    444928; name = FRITZI3.W32
+    file[]: crc = 5209e370; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = fc96a004; size =     27922; name = README.TXT; optional = true
+
+
+
+end
+
+//
+// 2000 German version
+//
+game[pc-de-001114]:
+    name = German 2000-11-14
+    anchorfile =  FreddiFGT.exe
+    launch = "$(rootpath)\FreddiFGT.exe"
+    file[]: crc = cb9f5a73; size =  74617807; name = FreddiFGT.(a)
+    file[]: crc = 46996e05; size =     34816; name = FreddiFGT.D32
+    file[]: crc = 7e681865; size =     86016; name = FreddiFGT.exe
+    file[]: crc = 27248acf; size =     56068; name = FreddiFGT.HE0
+    file[]: crc = bba8ad68; size =  70526411; name = FreddiFGT.HE2
+    file[]: crc = ea57ed18; size =  27762206; name = FreddiFGT.HE4
+    file[]: crc = 108f68b6; size =    663800; name = FreddiFGT.hlp; optional = true
+    file[]: crc = f5c15856; size =      2535; name = FreddiFGT.INF; optional = true
+    file[]: crc = 704d8452; size =    442368; name = FreddiFGT.w32
+    file[]: crc = ca08560d; size =     76886; name = Ja-ad.pcx; optional = true
+
+
+end
+
+
+//
+// 2003 Hebrew version
+//
+game[pc-he-030309]:
+    name = Hebrew 2003-03-09
+    anchorfile = FREDDI3.EXE
+    file[]: crc = 33654cc3; size =  75053085; name = FREDDI3.(A)
+    file[]: crc = dab62617; size =    132406; name = FREDDI3.BMP; optional = true
+    file[]: crc = 4865cbb6; size =     53248; name = FREDDI3.D32
+    file[]: crc = e9389a6a; size =    475182; name = FREDDI3.EXE
+    file[]: crc = d2dd049f; size =     56068; name = FREDDI3.HE0
+    file[]: crc = a0e6ceaf; size =  79569025; name = FREDDI3.HE2
+    file[]: crc = 607e1aad; size =  27736693; name = FREDDI3.HE4
+    file[]: crc = 06ae9b7a; size =   1402667; name = FREDDI3.HLP; optional = true
+    file[]: crc = 3365b814; size =       766; name = FREDDI3.ICO; optional = true
+    file[]: crc = 15efc454; size =      2061; name = FREDDI3.INF; optional = true
+
+
+end
+
+//
+// 1997 Demo version
+//
+game[pc-en-970925-demo]:
+    name = English Demo 1997-09-25
+    anchorfile = F3-MDEMO.EXE
+    launch = "$(rootpath)\F3-MDEMO.EXE"
+    file[]: crc = a6712191; size =     36352; name = F3-MDEMO.D32
+    file[]: crc = a26710b2; size =      8896; name = F3-MDEMO.DLL
+    file[]: crc = ee48f171; size =     21616; name = F3-MDEMO.EXE
+    file[]: crc = dce3912d; size =     22718; name = F3-MDEMO.HE0
+    file[]: crc = 3389d5e3; size =   5579470; name = F3-MDEMO.HE1
+    file[]: crc = 97284c1a; size =   4544647; name = F3-MDEMO.HE2
+    file[]: crc = f905d48e; size =   2371550; name = F3-MDEMO.HE4
+    file[]: crc = 125992a1; size =    337614; name = F3-MDEMO.HLP; optional = true
+    file[]: crc = 6230b256; size =      2190; name = F3-MDEMO.INF; optional = true
+    file[]: crc = 2591b798; size =    366080; name = F3-MDEMO.W32
+
+
+end
+
+//
+// 1997 Dutch Demo version
+//
+game[pc-nl-971028-demo]:
+    name = Dutch Demo 1997-10-28
+    anchorfile = FF3-DEMO.EXE
+    launch = "$(rootpath)\FF3-DEMO.EXE"
+    file[]: crc = 54e5b871; size =     34304; name = FF3-DEMO.D32
+    file[]: crc = f9e12b58; size =      8896; name = FF3-DEMO.DLL
+    file[]: crc = 4108d6f5; size =    366592; name = FF3-DEMO.EXE
+    file[]: crc = dee1a736; size =     22718; name = FF3-DEMO.HE0
+    file[]: crc = b595cdb3; size =   5589099; name = FF3-DEMO.HE1
+    file[]: crc = 5ee526d8; size =   4912141; name = FF3-DEMO.HE2
+    file[]: crc = f905d48e; size =   2371550; name = FF3-DEMO.HE4
+    file[]: crc = a720fd16; size =     43591; name = FF3-DEMO.HLP; optional = true
+    file[]: crc = 44fb6d91; size =      2214; name = FF3-DEMO.INF; optional = true
+
+
+end
+
+//
+// 1997 French Demo version
+//
+game[pc-fr-971213-demo]:
+    name = French Demo 1997-12-13
+    anchorfile = MM3-DEMO.EXE
+    launch = "$(rootpath)\MM3-DEMO.EXE"
+    file[]: crc = e878a682; size =     35840; name = MM3-DEMO.D32
+    file[]: crc = 855b5079; size =      9200; name = MM3-DEMO.DLL
+    file[]: crc = 929c4f9d; size =    368640; name = MM3-DEMO.EXE
+    file[]: crc = 414a3419; size =     22718; name = MM3-DEMO.HE0
+    file[]: crc = c621dc9e; size =   5578249; name = MM3-DEMO.HE1
+    file[]: crc = f4d75d62; size =   4096395; name = MM3-DEMO.HE2
+    file[]: crc = f905d48e; size =   2371550; name = MM3-DEMO.HE4
+    file[]: crc = b3321390; size =    163023; name = MM3-DEMO.HLP; optional = true
+    file[]: crc = 2b2bb78a; size =      2247; name = MM3-DEMO.INF; optional = true
+
+
+
+end
+
+//
+// 2001 Hebrew Demo version
+//
+game[pc-he-010328-demo]:
+    name = Hebrew Demo 2001-03-28
+    anchorfile = FF3DEMO.EXE
+    launch = "$(rootpath)\FF3DEMO.EXE"
+    winres = 640x480x16
+    file[]: crc = 7ea20a98; size =   5557057; name = FF3DEMO.(A)
+    file[]: crc = 4865cbb6; size =     53248; name = FF3DEMO.D32
+    file[]: crc = 6899a034; size =    503867; name = FF3DEMO.EXE
+    file[]: crc = e3c4ce6a; size =     22779; name = FF3DEMO.HE0
+    file[]: crc = f2c68694; size =   5239757; name = FF3DEMO.HE2
+    file[]: crc = f905d48e; size =   2371550; name = FF3DEMO.HE4
+    file[]: crc = a50d1fd7; size =   1402864; name = FF3DEMO.HLP; optional = true
+    file[]: crc = 787daa36; size =      2087; name = FF3DEMO.INF; optional = true
+
+
+end
+
+
+
+
+
+end

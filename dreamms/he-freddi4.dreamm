@@ -1,0 +1,299 @@
+desc[he-freddi4]:
+
+name = Freddi Fish 4: The Case of the Hogfish Rustlers of Briny Gulch
+icon = he-freddi4.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\FREDDI4.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1999 version
+//
+game[pc-en-990120]:
+    name = English 1999-01-20
+    anchorfile = FREDDI4.EXE
+    file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = c1b90819; size = 117440938; name = FREDDI4.(A)
+    file[]: crc = 94c373b1; size =     36352; name = FREDDI4.D32
+    file[]: crc = a26710b2; size =      8896; name = Freddi4.dll
+    file[]: crc = 9fc44367; size =     21616; name = FREDDI4.EXE
+    file[]: crc = 639030c4; size =     44190; name = FREDDI4.HE0
+    file[]: crc = 00bf3415; size =  97816825; name = FREDDI4.HE2
+    file[]: crc = 7d99eb40; size =  40758122; name = FREDDI4.HE4
+    file[]: crc = 30414fb0; size =    760891; name = Freddi4.hlp; optional = true
+    file[]: crc = 1a9d8f94; size =       766; name = freddi4.ico; optional = true
+    file[]: crc = 65476cb0; size =      2162; name = FREDDI4.INF; optional = true
+    file[]: crc = 79eb8326; size =       258; name = Freddi4.lnk; optional = true
+    file[]: crc = 132873bb; size =    444928; name = FREDDI4.W32
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = bdc319c1; size =    137878; name = JA-AD.bmp; optional = true
+    file[]: crc = 7b240499; size =     25228; name = Readme.txt; optional = true
+
+
+end
+
+
+//
+// 2001 UK version
+//
+game[pc-en-010221-uk]:
+    name = English 2001-02-21 UK Dub
+    anchorfile = Freddihrbg.exe
+    launch = "$(rootpath)\Freddihrbg.exe"
+    file[]: crc = a736cafe; size = 117445462; name = FreddiHRBG.(a)
+    file[]: crc = ff0be092; size =     45056; name = FreddiHRBG.d32
+    file[]: crc = 9b32902b; size =     86016; name = Freddihrbg.exe
+    file[]: crc = b25b1e5a; size =     44035; name = FreddiHRBG.HE0
+    file[]: crc = a04c1139; size = 108698840; name = FreddiHRBG.he2
+    file[]: crc = 66d7b476; size =  40785517; name = FreddiHRBG.he4
+    file[]: crc = 10312daa; size =    767167; name = FREDDIHRBG.hlp; optional = true
+    file[]: crc = a8bccf7c; size =      2418; name = FREDDIHRBG.inf; optional = true
+    file[]: crc = f503e43d; size =    475136; name = FreddiHRBG.w32
+    file[]: crc = a0153614; size =     57976; name = JA-AD.pcx; optional = true
+
+
+end
+
+//
+// 1999 Dutch version
+//
+game[pc-nl-990914]:
+    name = Dutch 1999-09-14
+    anchorfile = FREDDI4.EXE
+    file[]: crc = 7c159c93; size =       587; name = COPYRIGHT.TXT; optional = true
+    file[]: crc = 8025c3cc; size = 117639735; name = Freddi4.(a)
+    file[]: crc = 54e5b871; size =     34304; name = FREDDI4.D32
+    file[]: crc = a26710b2; size =      8896; name = Freddi4.dll
+    file[]: crc = 9b8debe2; size =     77824; name = FREDDI4.EXE
+    file[]: crc = 1370d99c; size =     44208; name = Freddi4.he0
+    file[]: crc = 970e7d85; size = 101504480; name = Freddi4.he2
+    file[]: crc = 48b61d26; size =  40821925; name = Freddi4.he4
+    file[]: crc = 3ad3ec46; size =   1274970; name = FREDDI4.HLP; optional = true
+    file[]: crc = 0fcd5244; size =      2688; name = Freddi4.inf; optional = true
+    file[]: crc = 132873bb; size =    444928; name = FREDDI4.W32
+    file[]: crc = 46a2d568; size =     56733; name = JA-AD.PCX; optional = true
+
+
+end
+
+//
+// 2000 French version
+//
+game[pc-fr-000926]:
+    name = French 2000-09-26
+    anchorfile = MaliceMRC.exe
+    launch = "$(rootpath)\MaliceMRC.exe"
+    file[]: crc = ca7edd68; size =     56693; name = JA-AD.pcx; optional = true
+    file[]: crc = 2a3f81c7; size = 117689819; name = MaliceMRC.(a)
+    file[]: crc = 81980e29; size =     35840; name = MaliceMRC.D32
+    file[]: crc = d9b5b7a6; size =     86016; name = MaliceMRC.exe
+    file[]: crc = 311f656c; size =     44233; name = MaliceMRC.HE0
+    file[]: crc = e1df4ac1; size =  99313358; name = MaliceMRC.HE2
+    file[]: crc = fa6705b5; size =  40778131; name = MaliceMRC.HE4
+    file[]: crc = c8ac69a8; size =    927694; name = MALICEMRC.HLP; optional = true
+    file[]: crc = b33902e8; size =      2281; name = MaliceMRC.INF; optional = true
+    file[]: crc = 5638339b; size =    442368; name = MaliceMRC.w32
+
+
+end
+
+//
+// 2000 German version
+//
+game[pc-de-001004]:
+    name = German 2000-09-26
+    anchorfile = FREDDIGS.EXE
+    launch = "$(rootpath)\FREDDIGS.EXE"
+    file[]: crc = a1440ce8; size = 117399294; name = FreddiGS.(a)
+    file[]: crc = 46996e05; size =     34816; name = FreddiGS.D32
+    file[]: crc = c8bccd80; size =     86016; name = FREDDIGS.EXE
+    file[]: crc = 8d8ec012; size =     44233; name = FreddiGS.HE0
+    file[]: crc = 552904d0; size =  96792527; name = FreddiGS.HE2
+    file[]: crc = 97d8787e; size =  40855724; name = FreddiGS.HE4
+    file[]: crc = 08856d83; size =    743553; name = FreddiGS.HLP; optional = true
+    file[]: crc = b6bdcf5f; size =      2267; name = FreddiGS.INF; optional = true
+    file[]: crc = 303bf074; size =    442368; name = FreddiGS.w32
+    file[]: crc = 6c220c46; size =     67289; name = Ja-ad.pcx; optional = true
+
+
+end
+
+//
+// 2001 Italian version
+//
+game[pc-it-010213]:
+    name = Italian 2001-02-13
+    anchorfile = FreddiCMP.EXE
+    launch = "$(rootpath)\FreddiCMP.EXE"
+    file[]: crc = 9d5a048d; size = 117369454; name = FreddiCMP.(a)
+    file[]: crc = e4f06b02; size =     49152; name = FreddiCMP.d32
+    file[]: crc = 9846b9f3; size =     86016; name = FreddiCMP.EXE
+    file[]: crc = 73ee1fbc; size =     44035; name = FreddiCMP.HE0
+    file[]: crc = 5c42e124; size =  92895307; name = FreddiCMP.he2
+    file[]: crc = 9acc7188; size =  40968221; name = FreddiCMP.he4
+    file[]: crc = e414d380; size =    561372; name = FreddiCMP.hlp; optional = true
+    file[]: crc = 5c204575; size =      2600; name = FreddiCMP.INF; optional = true
+    file[]: crc = cac10f7b; size =    475182; name = FreddiCMP.w32
+    file[]: crc = c5d48ab9; size =     59097; name = JA-AD.PCX; optional = true
+
+
+end
+
+//
+// 1999 English Demo
+//
+game[pc-en-990208-demo]:
+    name = English Demo 1999-02-08
+    anchorfile = F4-demo.exe
+    launch = "$(rootpath)\F4-demo.exe"
+    file[]: crc = fd4dadc4; size =   6243174; name = F4-DEMO.(A)
+    file[]: crc = 94c373b1; size =     36352; name = F4-demo.d32
+    file[]: crc = 132873bb; size =    444928; name = F4-demo.exe
+    file[]: crc = 3d6688c8; size =     13584; name = F4-DEMO.HE0
+    file[]: crc = 8bb1bc07; size =   3990430; name = F4-DEMO.HE2
+    file[]: crc = 6303cb3c; size =    623933; name = F4-DEMO.HE4
+    file[]: crc = 6b9f5356; size =    297416; name = f4-demo.hlp; optional = true
+    file[]: crc = adb6b9bd; size =      2186; name = F4-demo.inf; optional = true
+
+
+end
+
+
+//
+// 1999 UK English Demo
+//
+game[pc-en-990307-demo-uk]:
+    name = English Demo 1999-03-07 (UK Dub)
+    anchorfile = ff4demo.exe
+    launch = "$(rootpath)\ff4demo.exe"
+    file[]: crc = d064630a; size =   6322129; name = FF4DEMO.(A)
+    file[]: crc = ff0be092; size =     45056; name = ff4demo.d32
+    file[]: crc = cac10f7b; size =    475182; name = ff4demo.exe
+    file[]: crc = ace2be27; size =     13600; name = FF4DEMO.HE0
+    file[]: crc = 4d21f5c2; size =   4203746; name = FF4DEMO.HE2
+    file[]: crc = 4cdff2be; size =    623886; name = ff4demo.he4
+    file[]: crc = 10312daa; size =    767167; name = FF4DEMO.hlp; optional = true
+    file[]: crc = ceaba86f; size =      2146; name = ff4demo.inf; optional = true
+    file[]: crc = 1a9d8f94; size =       766; name = FreddiUK.ICO; optional = true
+
+
+end
+
+//
+// 2001 English Demo
+//
+game[pc-en-010330-demo]:
+    name = English Demo 2001-03-30
+    anchorfile = f4-demo.exe
+    launch = "$(rootpath)\f4-demo.exe"
+    file[]: crc = 2796eb11; size =   6243281; name = f4-demo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = f4-demo.D32
+    file[]: crc = a26710b2; size =      8896; name = F4-demo.dll
+    file[]: crc = adce3360; size =    430080; name = f4-demo.exe
+    file[]: crc = f3321f99; size =     13609; name = f4-demo.HE0
+    file[]: crc = 8bb1bc07; size =   3990430; name = f4-demo.he2
+    file[]: crc = 6303cb3c; size =    623933; name = f4-demo.he4
+    file[]: crc = 800020d8; size =      2238; name = f4-demo.inf; optional = true
+
+
+end
+
+//
+// 1999 Dutch Demo
+//
+game[pc-nl-990307-demo]:
+    name = Dutch Demo 1999-03-07
+    anchorfile = FF4DEMO.EXE
+    launch = "$(rootpath)\FF4DEMO.EXE"
+    file[]: crc = c967cf68; size =   6511799; name = ff4demo.(a)
+    file[]: crc = b60e543d; size =     49152; name = FF4DEMO.D32
+    file[]: crc = cac10f7b; size =    475182; name = FF4DEMO.EXE
+    file[]: crc = 0b2a1f07; size =     13609; name = ff4demo.he0
+    file[]: crc = 1bf3841d; size =   3837951; name = ff4demo.he2
+    file[]: crc = 4cdff2be; size =    623886; name = ff4demo.he4
+    file[]: crc = 3b9fa5d4; size =    921296; name = Ff4demo.hlp; optional = true
+    file[]: crc = b8477dcb; size =      2312; name = FF4DEMO.INF; optional = true
+
+
+end
+
+//
+// 2000 French Demo
+//
+game[pc-fr-001127-demo]:
+    name = French Demo 2000-11-27
+    anchorfile = MM4DEMO.EXE
+    launch = "$(rootpath)\MM4DEMO.EXE"
+    file[]: crc = f3615431; size =       535; name = Copyrite.txt; optional = true
+    file[]: crc = ca7edd68; size =     56693; name = JA-AD.PCX; optional = true
+    file[]: crc = 3b3a0c00; size =   6083430; name = Mm4demo.(a)
+    file[]: crc = 81980e29; size =     35840; name = MM4demo.D32
+    file[]: crc = d36a8e1b; size =    442368; name = MM4DEMO.EXE
+    file[]: crc = 59ddd654; size =     13609; name = Mm4demo.HE0
+    file[]: crc = 1aa1c7e3; size =   3701659; name = Mm4demo.HE2
+    file[]: crc = 6303cb3c; size =    623933; name = Mm4demo.he4
+    file[]: crc = 85a6ac22; size =    927696; name = MM4Demo.HLP; optional = true
+    file[]: crc = 1a9d8f94; size =       766; name = mm4demo.ICO; optional = true
+    file[]: crc = 4dc72fb1; size =      2221; name = Mm4demo.INF; optional = true
+
+
+end
+
+//
+// 2000 German Demo
+//
+game[pc-de-001127-demo]:
+    name = German Demo 2000-11-27
+    anchorfile = FF4DEMO.EXE
+    launch = "$(rootpath)\FF4DEMO.EXE"
+    file[]: crc = 4861034d; size =   6061386; name = Ff4demo.(a)
+    file[]: crc = ac099622; size =     49152; name = Ff4demo.d32
+    file[]: crc = d36a8e1b; size =    442368; name = FF4DEMO.EXE
+    file[]: crc = ec245339; size =     13609; name = Ff4demo.HE0
+    file[]: crc = f3e72394; size =   3880733; name = Ff4demo.HE2
+    file[]: crc = 6303cb3c; size =    623933; name = Ff4demo.he4
+    file[]: crc = 08856d83; size =    743553; name = FF4Demo.HLP; optional = true
+    file[]: crc = 9fa99f58; size =      2343; name = FF4demo.inf; optional = true
+
+
+end
+
+//
+// 2001 Italian Demo
+//
+game[pc-it-010828-demo]:
+    name = Italian Demo 2001-08-28
+    anchorfile = FF4DEMO.EXE
+    launch = "$(rootpath)\FF4DEMO.EXE"
+    file[]: crc = dce3b27c; size =   6877546; name = ff4demo.(a)
+    file[]: crc = e4f06b02; size =     49152; name = FF4demo.d32
+    file[]: crc = aff9ef17; size =    475136; name = FF4DEMO.EXE
+    file[]: crc = 7ae5998b; size =     13609; name = ff4demo.HE0
+    file[]: crc = 68b5e39e; size =   3645585; name = FF4DEMO.HE2
+    file[]: crc = 4cdff2be; size =    623886; name = FF4DEMO.HE4
+    file[]: crc = e414d380; size =    561372; name = Ff4demo.HLP; optional = true
+    file[]: crc = a2eadccd; size =      2347; name = FF4demo.INF; optional = true
+
+
+end
+
+
+end

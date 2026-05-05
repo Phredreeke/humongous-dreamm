@@ -1,0 +1,289 @@
+desc[he-spyfoxcheese]:
+
+name = Spy Fox in Cheese Chase
+icon = he-spyfoxcheese.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\CHASE.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1998 version
+//
+game[pc-en-980308]:
+    name = English 1998-03-08
+    anchorfile = CHASE.EXE
+    file[]: crc = 1298cce4; size =    132406; name = CHASE.BMP; optional = true
+    file[]: crc = 94c373b1; size =     36352; name = CHASE.D32
+    file[]: crc = a26710b2; size =      8896; name = CHASE.DLL
+    file[]: crc = 0c7a805e; size =     21616; name = CHASE.EXE
+    file[]: crc = daab4a4a; size =     39100; name = CHASE.HE0
+    file[]: crc = 951d56fb; size =  27590817; name = CHASE.HE1
+    file[]: crc = 08f79b85; size =   3106345; name = CHASE.HE2
+    file[]: crc = 402a992d; size =   3764825; name = CHASE.HE4
+    file[]: crc = fe60f65c; size =     96048; name = CHASE.HE8
+    file[]: crc = ef4a82da; size =    149600; name = CHASE.HE9
+    file[]: crc = 4605ff46; size =    337410; name = CHASE.HLP; optional = true
+    file[]: crc = 73e94b03; size =       766; name = CHASE.ICO; optional = true
+    file[]: crc = ecea47bd; size =      2107; name = CHASE.INF; optional = true
+    file[]: crc = fec42f64; size =    422912; name = CHASE.W32
+    file[]: crc = 76b49d04; size =     36864; name = CHASE.X32
+    file[]: crc = 9c887e46; size =       662; name = COPYRITE.TXT; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = ce086bcd; size =     23602; name = README.TXT; optional = true
+    file[]: crc = 7dc889e0; size =    139078; name = REGSCR.BMP; optional = true
+    file[]: crc = 27bf903e; size =      1794; name = CUSTOM\CHASE001.MAP
+    file[]: crc = cb0f1237; size =     44084; name = CUSTOM\CHASE001.OBJ
+    file[]: crc = 2b1c5b16; size =      1794; name = CUSTOM\CHASE002.MAP
+    file[]: crc = cb0f1237; size =     44084; name = CUSTOM\CHASE002.OBJ
+    file[]: crc = 0b551efc; size =      1794; name = CUSTOM\CHASE003.MAP
+    file[]: crc = cb0f1237; size =     44084; name = CUSTOM\CHASE003.OBJ
+    file[]: crc = 5a1a3662; size =      1794; name = CUSTOM\CHASE004.MAP
+    file[]: crc = cb0f1237; size =     44084; name = CUSTOM\CHASE004.OBJ
+    file[]: crc = 70c9890f; size =      1794; name = CUSTOM\CHASE005.MAP
+    file[]: crc = cb0f1237; size =     44084; name = CUSTOM\CHASE005.OBJ
+    file[]: crc = 0202c872; size =      1794; name = CUSTOM\CHASE006.MAP
+    file[]: crc = 809a044e; size =     44084; name = CUSTOM\CHASE006.OBJ
+    file[]: crc = f64b9bce; size =      1794; name = CUSTOM\CHASE007.MAP
+    file[]: crc = 809a044e; size =     44084; name = CUSTOM\CHASE007.OBJ
+    file[]: crc = 5f01cca3; size =      1794; name = CUSTOM\CHASE008.MAP
+    file[]: crc = 809a044e; size =     44084; name = CUSTOM\CHASE008.OBJ
+    file[]: crc = 4ca8f021; size =      1794; name = CUSTOM\CHASE009.MAP
+    file[]: crc = 809a044e; size =     44084; name = CUSTOM\CHASE009.OBJ
+    file[]: crc = d9e493e6; size =      1794; name = CUSTOM\CHASE010.MAP
+    file[]: crc = 809a044e; size =     44084; name = CUSTOM\CHASE010.OBJ
+    file[]: crc = 2ce551b0; size =      1794; name = CUSTOM\CHASE011.MAP
+    file[]: crc = 48e80c52; size =     44084; name = CUSTOM\CHASE011.OBJ
+    file[]: crc = 0c82edb4; size =      1794; name = CUSTOM\CHASE012.MAP
+    file[]: crc = 48e80c52; size =     44084; name = CUSTOM\CHASE012.OBJ
+    file[]: crc = a340bdcf; size =      1794; name = CUSTOM\CHASE013.MAP
+    file[]: crc = 48e80c52; size =     44084; name = CUSTOM\CHASE013.OBJ
+    file[]: crc = b1314d12; size =      1794; name = CUSTOM\CHASE014.MAP
+    file[]: crc = 48e80c52; size =     44084; name = CUSTOM\CHASE014.OBJ
+    file[]: crc = 0699897b; size =      1794; name = CUSTOM\CHASE015.MAP
+    file[]: crc = 48e80c52; size =     44084; name = CUSTOM\CHASE015.OBJ
+    file[]: crc = a2e694b3; size =      1724; name = LEVELS\CHASE001.MAP
+    file[]: crc = 7381afb8; size =     44084; name = LEVELS\CHASE001.OBJ
+    file[]: crc = fc0a235e; size =      1724; name = LEVELS\CHASE002.MAP
+    file[]: crc = 61a1c61a; size =     44084; name = LEVELS\CHASE002.OBJ
+    file[]: crc = 49685b58; size =      1724; name = LEVELS\CHASE003.MAP
+    file[]: crc = 775cb698; size =     44084; name = LEVELS\CHASE003.OBJ
+    file[]: crc = 6fb6b3f9; size =      1724; name = LEVELS\CHASE004.MAP
+    file[]: crc = 982c10a8; size =     44084; name = LEVELS\CHASE004.OBJ
+    file[]: crc = d8887f6c; size =      1724; name = LEVELS\CHASE005.MAP
+    file[]: crc = b48972c2; size =     44084; name = LEVELS\CHASE005.OBJ
+    file[]: crc = 74049702; size =      1724; name = LEVELS\CHASE006.MAP
+    file[]: crc = 1435d9d7; size =     44084; name = LEVELS\CHASE006.OBJ
+    file[]: crc = c12bf862; size =      2074; name = LEVELS\CHASE007.MAP
+    file[]: crc = 4c4578d4; size =     44084; name = LEVELS\CHASE007.OBJ
+    file[]: crc = 568002e7; size =      2564; name = LEVELS\CHASE008.MAP
+    file[]: crc = 2d89ecd8; size =     44084; name = LEVELS\CHASE008.OBJ
+    file[]: crc = 18481585; size =      2564; name = LEVELS\CHASE009.MAP
+    file[]: crc = 6c123722; size =     44084; name = LEVELS\CHASE009.OBJ
+    file[]: crc = 0354c185; size =      2564; name = LEVELS\CHASE010.MAP
+    file[]: crc = 7b26456d; size =     44084; name = LEVELS\CHASE010.OBJ
+    file[]: crc = 9e5096c8; size =      2424; name = LEVELS\CHASE011.MAP
+    file[]: crc = 91025ae7; size =     44084; name = LEVELS\CHASE011.OBJ
+    file[]: crc = 0201a1ae; size =      2424; name = LEVELS\CHASE012.MAP
+    file[]: crc = 21393728; size =     44084; name = LEVELS\CHASE012.OBJ
+    file[]: crc = 9a44d612; size =      2564; name = LEVELS\CHASE013.MAP
+    file[]: crc = 6239add6; size =     44084; name = LEVELS\CHASE013.OBJ
+    file[]: crc = c32898b8; size =      2564; name = LEVELS\CHASE014.MAP
+    file[]: crc = 6a4901ce; size =     44084; name = LEVELS\CHASE014.OBJ
+    file[]: crc = 93f4c3ba; size =      2564; name = LEVELS\CHASE015.MAP
+    file[]: crc = a61ce5c6; size =     44084; name = LEVELS\CHASE015.OBJ
+    file[]: crc = cf16da3b; size =      2564; name = LEVELS\CHASE016.MAP
+    file[]: crc = 841fd5e0; size =     44084; name = LEVELS\CHASE016.OBJ
+    file[]: crc = 15dc9262; size =      2424; name = LEVELS\CHASE017.MAP
+    file[]: crc = db8f6be2; size =     44084; name = LEVELS\CHASE017.OBJ
+    file[]: crc = 21a7cb19; size =      2424; name = LEVELS\CHASE018.MAP
+    file[]: crc = 76329896; size =     44084; name = LEVELS\CHASE018.OBJ
+    file[]: crc = 19aa0d6f; size =      2424; name = LEVELS\CHASE019.MAP
+    file[]: crc = ca1a49f3; size =     44084; name = LEVELS\CHASE019.OBJ
+    file[]: crc = 52d970e4; size =      2424; name = LEVELS\CHASE020.MAP
+    file[]: crc = 3c2feb85; size =     44084; name = LEVELS\CHASE020.OBJ
+    file[]: crc = 2480aa31; size =      2144; name = LEVELS\CHASE021.MAP
+    file[]: crc = 6979c4ee; size =     44084; name = LEVELS\CHASE021.OBJ
+    file[]: crc = 9c20a374; size =      1794; name = LEVELS\CHASE022.MAP
+    file[]: crc = 59a4b333; size =     44084; name = LEVELS\CHASE022.OBJ
+    file[]: crc = f02e08b1; size =      2438; name = LEVELS\CHASE023.MAP
+    file[]: crc = 2d51cbe6; size =     44084; name = LEVELS\CHASE023.OBJ
+    file[]: crc = 68b4b4e6; size =      2494; name = LEVELS\CHASE024.MAP
+    file[]: crc = 41aa2e91; size =     44084; name = LEVELS\CHASE024.OBJ
+    file[]: crc = ad985b0d; size =      2564; name = LEVELS\CHASE025.MAP
+    file[]: crc = a917aa80; size =     44084; name = LEVELS\CHASE025.OBJ
+    file[]: crc = e0e8d92e; size =      2564; name = LEVELS\CHASE026.MAP
+    file[]: crc = 8cd0cb0e; size =     44084; name = LEVELS\CHASE026.OBJ
+    file[]: crc = 1cb713e7; size =      2424; name = LEVELS\CHASE027.MAP
+    file[]: crc = 872ec83e; size =     44084; name = LEVELS\CHASE027.OBJ
+    file[]: crc = 2aa8f3bc; size =      2424; name = LEVELS\CHASE028.MAP
+    file[]: crc = 1cf0d63d; size =     44084; name = LEVELS\CHASE028.OBJ
+    file[]: crc = 45e7ae69; size =      2424; name = LEVELS\CHASE029.MAP
+    file[]: crc = 2a0268b1; size =     44084; name = LEVELS\CHASE029.OBJ
+    file[]: crc = 5620f4e7; size =      2424; name = LEVELS\CHASE030.MAP
+    file[]: crc = 6a720826; size =     44084; name = LEVELS\CHASE030.OBJ
+    file[]: crc = 3057c81c; size =      2424; name = LEVELS\CHASE031.MAP
+    file[]: crc = eb12232c; size =     44084; name = LEVELS\CHASE031.OBJ
+    file[]: crc = dfe29ebb; size =      2424; name = LEVELS\CHASE032.MAP
+    file[]: crc = d115d7cd; size =     44084; name = LEVELS\CHASE032.OBJ
+    file[]: crc = 2832d1e1; size =      2424; name = LEVELS\CHASE033.MAP
+    file[]: crc = f9d64591; size =     44084; name = LEVELS\CHASE033.OBJ
+    file[]: crc = 74b4b580; size =      2424; name = LEVELS\CHASE034.MAP
+    file[]: crc = e8358953; size =     44084; name = LEVELS\CHASE034.OBJ
+    file[]: crc = 8184e0cf; size =      2424; name = LEVELS\CHASE035.MAP
+    file[]: crc = 8d62791e; size =     44084; name = LEVELS\CHASE035.OBJ
+    file[]: crc = 576b3673; size =      2564; name = LEVELS\CHASE036.MAP
+    file[]: crc = ec3e71da; size =     44084; name = LEVELS\CHASE036.OBJ
+    file[]: crc = f60937fc; size =      2494; name = LEVELS\CHASE037.MAP
+    file[]: crc = fc8e8c31; size =     44084; name = LEVELS\CHASE037.OBJ
+    file[]: crc = 10458303; size =      2564; name = LEVELS\CHASE038.MAP
+    file[]: crc = 4ae03890; size =     44084; name = LEVELS\CHASE038.OBJ
+    file[]: crc = e3d55fe1; size =      2424; name = LEVELS\CHASE039.MAP
+    file[]: crc = 49361c06; size =     44084; name = LEVELS\CHASE039.OBJ
+    file[]: crc = d1025c50; size =      2494; name = LEVELS\CHASE040.MAP
+    file[]: crc = 03f0974a; size =     44084; name = LEVELS\CHASE040.OBJ
+    file[]: crc = 8de5ba01; size =      2424; name = LEVELS\CHASE041.MAP
+    file[]: crc = 8361f7c2; size =     44084; name = LEVELS\CHASE041.OBJ
+    file[]: crc = baac0231; size =      2424; name = LEVELS\CHASE042.MAP
+    file[]: crc = a911ce57; size =     44084; name = LEVELS\CHASE042.OBJ
+    file[]: crc = c1351565; size =      2424; name = LEVELS\CHASE043.MAP
+    file[]: crc = c0f1b1fb; size =     44084; name = LEVELS\CHASE043.OBJ
+    file[]: crc = 7e070844; size =      2424; name = LEVELS\CHASE044.MAP
+    file[]: crc = 9dd2ee85; size =     44084; name = LEVELS\CHASE044.OBJ
+    file[]: crc = 9d96b230; size =      1724; name = LEVELS\CHASE045.MAP
+    file[]: crc = 8cf43c3b; size =     44084; name = LEVELS\CHASE045.OBJ
+    file[]: crc = 19a6357a; size =      2424; name = LEVELS\CHASE046.MAP
+    file[]: crc = 616ac369; size =     44084; name = LEVELS\CHASE046.OBJ
+    file[]: crc = 3b303b28; size =      2424; name = LEVELS\CHASE047.MAP
+    file[]: crc = f5cb2ce6; size =     44084; name = LEVELS\CHASE047.OBJ
+    file[]: crc = f87ff001; size =      2424; name = LEVELS\CHASE048.MAP
+    file[]: crc = 598f8d79; size =     44084; name = LEVELS\CHASE048.OBJ
+    file[]: crc = 2c2ae35f; size =      2424; name = LEVELS\CHASE049.MAP
+    file[]: crc = c9471c5d; size =     44084; name = LEVELS\CHASE049.OBJ
+    file[]: crc = 1398d8bd; size =      2424; name = LEVELS\CHASE050.MAP
+    file[]: crc = 1b2a9a7a; size =     44084; name = LEVELS\CHASE050.OBJ
+    file[]: crc = 93bae08e; size =      2564; name = LEVELS\CHASE051.MAP
+    file[]: crc = ef386a58; size =     44084; name = LEVELS\CHASE051.OBJ
+    file[]: crc = f50976ad; size =      2564; name = LEVELS\CHASE052.MAP
+    file[]: crc = 46c78cd4; size =     44084; name = LEVELS\CHASE052.OBJ
+    file[]: crc = 25dfbe55; size =      2564; name = LEVELS\CHASE053.MAP
+    file[]: crc = 8d8c08de; size =     44084; name = LEVELS\CHASE053.OBJ
+    file[]: crc = ddd77fa3; size =      2564; name = LEVELS\CHASE054.MAP
+    file[]: crc = ff9e9f68; size =     44084; name = LEVELS\CHASE054.OBJ
+    file[]: crc = 9824c933; size =      2424; name = LEVELS\CHASE055.MAP
+    file[]: crc = 9c04cfc3; size =     44084; name = LEVELS\CHASE055.OBJ
+    file[]: crc = 6583cbac; size =      2704; name = LEVELS\CHASE056.MAP
+    file[]: crc = 654ca14f; size =     44084; name = LEVELS\CHASE056.OBJ
+    file[]: crc = fb4b6ea5; size =      2424; name = LEVELS\CHASE057.MAP
+    file[]: crc = 6b52d533; size =     44084; name = LEVELS\CHASE057.OBJ
+    file[]: crc = be790f90; size =      2424; name = LEVELS\CHASE058.MAP
+    file[]: crc = a5b91f92; size =     44084; name = LEVELS\CHASE058.OBJ
+    file[]: crc = 1a7d509d; size =      2424; name = LEVELS\CHASE059.MAP
+    file[]: crc = 4d801178; size =     44084; name = LEVELS\CHASE059.OBJ
+    file[]: crc = 4d3d0182; size =      2424; name = LEVELS\CHASE060.MAP
+    file[]: crc = d47096ca; size =     44084; name = LEVELS\CHASE060.OBJ
+    file[]: crc = fba6d9a0; size =      2424; name = LEVELS\CHASE061.MAP
+    file[]: crc = f9e61ebe; size =     44084; name = LEVELS\CHASE061.OBJ
+    file[]: crc = 32f06b72; size =      2564; name = LEVELS\CHASE062.MAP
+    file[]: crc = ecda2ed7; size =     44084; name = LEVELS\CHASE062.OBJ
+    file[]: crc = b4d25137; size =      2564; name = LEVELS\CHASE063.MAP
+    file[]: crc = a44f569d; size =     44084; name = LEVELS\CHASE063.OBJ
+    file[]: crc = aaa94882; size =      2564; name = LEVELS\CHASE064.MAP
+    file[]: crc = 8c8f0955; size =     44084; name = LEVELS\CHASE064.OBJ
+    file[]: crc = b0bce672; size =      2424; name = LEVELS\CHASE065.MAP
+    file[]: crc = 4ea42f71; size =     44084; name = LEVELS\CHASE065.OBJ
+    file[]: crc = 245ca3d0; size =      2494; name = LEVELS\CHASE066.MAP
+    file[]: crc = 6216b4e0; size =     44084; name = LEVELS\CHASE066.OBJ
+    file[]: crc = e5ade7e3; size =      2424; name = LEVELS\CHASE067.MAP
+    file[]: crc = 132d0504; size =     44084; name = LEVELS\CHASE067.OBJ
+    file[]: crc = a4fa7ba7; size =      2424; name = LEVELS\CHASE068.MAP
+    file[]: crc = 598957f7; size =     44084; name = LEVELS\CHASE068.OBJ
+    file[]: crc = 1bdc613e; size =      2424; name = LEVELS\CHASE069.MAP
+    file[]: crc = f2f560ee; size =     44084; name = LEVELS\CHASE069.OBJ
+    file[]: crc = 4f7908b1; size =      2424; name = LEVELS\CHASE070.MAP
+    file[]: crc = b6a71193; size =     44084; name = LEVELS\CHASE070.OBJ
+    file[]: crc = 87061090; size =      2424; name = LEVELS\CHASE071.MAP
+    file[]: crc = b0c1cd28; size =     44084; name = LEVELS\CHASE071.OBJ
+    file[]: crc = c499cc0a; size =      2424; name = LEVELS\CHASE072.MAP
+    file[]: crc = e593a3ec; size =     44084; name = LEVELS\CHASE072.OBJ
+    file[]: crc = c4767016; size =      2144; name = LEVELS\CHASE073.MAP
+    file[]: crc = f1f8fb04; size =     44084; name = LEVELS\CHASE073.OBJ
+    file[]: crc = e3eeff5b; size =      2424; name = LEVELS\CHASE074.MAP
+    file[]: crc = d4d15222; size =     44084; name = LEVELS\CHASE074.OBJ
+    file[]: crc = e474b245; size =      2284; name = LEVELS\CHASE075.MAP
+    file[]: crc = 35fae624; size =     44084; name = LEVELS\CHASE075.OBJ
+    file[]: crc = a0ff2f3e; size =      2424; name = LEVELS\CHASE076.MAP
+    file[]: crc = 9834a27c; size =     44084; name = LEVELS\CHASE076.OBJ
+    file[]: crc = e312c63d; size =      2494; name = LEVELS\CHASE077.MAP
+    file[]: crc = 7efcfab5; size =     44084; name = LEVELS\CHASE077.OBJ
+    file[]: crc = 71b5c8a0; size =      2564; name = LEVELS\CHASE078.MAP
+    file[]: crc = aaed0c78; size =     44084; name = LEVELS\CHASE078.OBJ
+    file[]: crc = 62a90b63; size =      2354; name = LEVELS\CHASE079.MAP
+    file[]: crc = 6ee5542f; size =     44084; name = LEVELS\CHASE079.OBJ
+    file[]: crc = b55844c7; size =      2914; name = LEVELS\CHASE080.MAP
+    file[]: crc = ed10589c; size =     44084; name = LEVELS\CHASE080.OBJ
+    file[]: crc = 905bd6cf; size =      2424; name = LEVELS\CHASE081.MAP
+    file[]: crc = c2766536; size =     44084; name = LEVELS\CHASE081.OBJ
+    file[]: crc = 718929d9; size =      2424; name = LEVELS\CHASE082.MAP
+    file[]: crc = 978606c8; size =     44084; name = LEVELS\CHASE082.OBJ
+    file[]: crc = 473c4607; size =      2424; name = LEVELS\CHASE083.MAP
+    file[]: crc = 0f509bed; size =     44084; name = LEVELS\CHASE083.OBJ
+    file[]: crc = 9fa46064; size =      2424; name = LEVELS\CHASE084.MAP
+    file[]: crc = cebd8d92; size =     44084; name = LEVELS\CHASE084.OBJ
+    file[]: crc = dd3afe4b; size =      2424; name = LEVELS\CHASE085.MAP
+    file[]: crc = 21c497bb; size =     44084; name = LEVELS\CHASE085.OBJ
+    file[]: crc = fc2e3926; size =      2564; name = LEVELS\CHASE086.MAP
+    file[]: crc = 6ae310e3; size =     44084; name = LEVELS\CHASE086.OBJ
+    file[]: crc = 66bc0683; size =      2424; name = LEVELS\CHASE087.MAP
+    file[]: crc = 98526f51; size =     44084; name = LEVELS\CHASE087.OBJ
+    file[]: crc = 146edd37; size =      2424; name = LEVELS\CHASE088.MAP
+    file[]: crc = 3ca56355; size =     44084; name = LEVELS\CHASE088.OBJ
+    file[]: crc = dac5faee; size =      2494; name = LEVELS\CHASE089.MAP
+    file[]: crc = 6a84401c; size =     44084; name = LEVELS\CHASE089.OBJ
+    file[]: crc = 3c5e8e52; size =      2578; name = LEVELS\CHASE090.MAP
+    file[]: crc = 4326a211; size =     44084; name = LEVELS\CHASE090.OBJ
+    file[]: crc = 17208a20; size =      2564; name = LEVELS\CHASE091.MAP
+    file[]: crc = 1edce94f; size =     44084; name = LEVELS\CHASE091.OBJ
+    file[]: crc = 1362246e; size =      2564; name = LEVELS\CHASE092.MAP
+    file[]: crc = 7401ed8d; size =     44084; name = LEVELS\CHASE092.OBJ
+    file[]: crc = 2273d974; size =      2564; name = LEVELS\CHASE093.MAP
+    file[]: crc = 1f6706a3; size =     44084; name = LEVELS\CHASE093.OBJ
+    file[]: crc = 4c706e8d; size =      2564; name = LEVELS\CHASE094.MAP
+    file[]: crc = 412c41cc; size =     44084; name = LEVELS\CHASE094.OBJ
+    file[]: crc = d3b3883d; size =      2564; name = LEVELS\CHASE095.MAP
+    file[]: crc = 3c50d412; size =     44084; name = LEVELS\CHASE095.OBJ
+    file[]: crc = 9b4b831b; size =      2494; name = LEVELS\CHASE096.MAP
+    file[]: crc = 831975aa; size =     44084; name = LEVELS\CHASE096.OBJ
+    file[]: crc = bfe9a8d9; size =      2494; name = LEVELS\CHASE097.MAP
+    file[]: crc = 032a404e; size =     44084; name = LEVELS\CHASE097.OBJ
+    file[]: crc = b4c6e8a2; size =      2704; name = LEVELS\CHASE098.MAP
+    file[]: crc = a8232c1c; size =     44084; name = LEVELS\CHASE098.OBJ
+    file[]: crc = 310c0111; size =      2494; name = LEVELS\CHASE099.MAP
+    file[]: crc = 7b9358e9; size =     44084; name = LEVELS\CHASE099.OBJ
+    file[]: crc = a9b17a44; size =      2564; name = LEVELS\CHASE100.MAP
+    file[]: crc = 437f5c3e; size =     44084; name = LEVELS\CHASE100.OBJ
+
+
+end
+
+
+
+
+end

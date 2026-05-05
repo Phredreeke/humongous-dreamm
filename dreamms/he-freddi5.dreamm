@@ -1,0 +1,96 @@
+desc[he-freddi5]:
+
+name = Freddi Fish 5: The Case of the Creature of Coral Cave
+icon = he-freddi5.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\freddicove.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x16
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// warnings
+//
+warning[unsupported]:
+    text = This game does not run correctly in tested DREAMM version (4.0x11)
+end
+
+//
+// Color depth
+//
+config[bitness]:
+    title = Color depth
+    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
+    option[16bitcolor]: name = 16-bit; priority = 1
+end
+
+//
+// English version
+//
+game[pc-en-010406]:
+    name = English 2001-04-06
+    anchorfile = freddicove.EXE
+    file[]: crc = 9ac2b653; size =     83186; name = CoveReg.pcx; optional = true
+    file[]: crc = 38241e81; size =     27628; name = ErrorLog.txt; optional = true
+    file[]: crc = 622834d3; size = 123791021; name = freddicove.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = FreddiCove.d32
+    file[]: crc = 72b86e5f; size =     98304; name = freddicove.EXE
+    file[]: crc = 81c669e1; size =     41165; name = freddicove.HE0
+    file[]: crc = 16e916f8; size =  83174190; name = freddicove.he2
+    file[]: crc = 57c9375c; size =     11274; name = FreddiCove.he3
+    file[]: crc = 34d85d62; size =  39152181; name = freddicove.he4
+    file[]: crc = 5578847f; size =    707084; name = FREDDICOVE.HLP; optional = true
+    file[]: crc = 70ff0523; size =       766; name = FreddiCove.ico; optional = true
+    file[]: crc = 63da708a; size =      3104; name = freddiCove.inf; optional = true
+    file[]: crc = 7c9540c7; size =    503867; name = freddicove.w32
+    file[]: crc = 7a7c3b65; size =     15056; name = heini.exe; optional = true
+    file[]: crc = 8d845bd1; size =      5752; name = license.txt; optional = true
+
+end
+
+//
+// French version
+//
+game[pc-fr-011203]:
+    name = English 2001-12-03
+    anchorfile = FreddiMML.EXE
+    launch = "$(rootpath)\FreddiMML.EXE"
+    file[]: crc = 2adfe452; size = 123485049; name = FreddiMML.(a)
+    file[]: crc = 6b12365f; size =     49152; name = FreddiMML.D32
+    file[]: crc = b469107d; size =    696371; name = FreddiMML.EXE
+    file[]: crc = d1bdf027; size =     41182; name = FreddiMML.HE0
+    file[]: crc = 843c34c9; size =  75681678; name = FreddiMML.he2
+    file[]: crc = 1499f98f; size =    123431; name = FreddiMML.he3
+    file[]: crc = 34d85d62; size =  39152181; name = FreddiMML.he4
+    file[]: crc = b5824bfc; size =    705738; name = FreddiMML.HLP; optional = true
+    file[]: crc = 70ff0523; size =       766; name = FreddiMML.ico; optional = true
+    file[]: crc = 939f83d3; size =      2627; name = FreddiMML.inf; optional = true
+    file[]: crc = 40cef7a9; size =     85277; name = ja-ad.pcx; optional = true
+
+end
+
+//
+// Demo version
+//
+game[pc-en-010711-demo]:
+    name = English Demo 2001-07-11
+    anchorfile = ffCoveDemo.exe
+    launch = "$(rootpath)\ffCoveDemo.exe"
+    file[]: crc = e49f0c68; size =  27382107; name = FFCoveDemo.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = FFCoveDemo.d32
+    file[]: crc = 7f253178; size =    692224; name = ffCoveDemo.exe
+    file[]: crc = d4f0089f; size =     18422; name = FFCoveDemo.HE0
+    file[]: crc = 44e401b2; size =  13593302; name = ffCoveDemo.he2
+    file[]: crc = 750b660a; size =   5663629; name = ffCoveDemo.he4
+    file[]: crc = 6b67c1c2; size =      2899; name = FFCoveDemo.inf; optional = true
+
+end
+
+end

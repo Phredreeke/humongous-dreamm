@@ -1,0 +1,222 @@
+desc[he-freddi2]:
+
+name = Freddi Fish 2: The Case of the Haunted Schoolhouse
+icon = he-freddi2.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\FREDDI2.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1996 version
+//
+game[pc-en-961107]:
+    name = English 1996-11-08
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 03ea4366; size =    132404; name = FREDDI2.BMP; optional = true
+    file[]: crc = a26710b2; size =      8896; name = FREDDI2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FREDDI2.EXE
+    file[]: crc = d02314ed; size =     65305; name = FREDDI2.HE0
+    file[]: crc = 88ed90ba; size = 115095852; name = FREDDI2.HE1
+    file[]: crc = 4c380307; size =  34564440; name = FREDDI2.HE2
+    file[]: crc = b4a49af8; size =  42636360; name = FREDDI2.HE4
+    file[]: crc = e8cbd95f; size =    166947; name = FREDDI2.HLP; optional = true
+    file[]: crc = 23cba256; size =      2122; name = FREDDI2.INF; optional = true
+    file[]: crc = 83a9046e; size =    323584; name = FREDDI2.W32
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 77892d97; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = cf687819; size =     11149; name = README.TXT; optional = true
+
+
+end
+
+//
+// 1999 version
+//
+game[pc-en-991027]:
+    name = English 1999-10-27
+    anchorfile = FREDDI2.EXE
+    launch = "$(rootpath)\FREDDI2.W32" // running FREDDI2.EXE displays a license agreement every time, by running FREDDI2.W32 we can skip it
+    file[]: crc = f573bc4b; size = 115340334; name = Freddi2.(a)
+    file[]: crc = 94c373b1; size =     36352; name = Freddi2.d32
+    file[]: crc = 3b9f8c76; size =     86016; name = FREDDI2.EXE
+    file[]: crc = c4f8f455; size =     65413; name = Freddi2.HE0
+    file[]: crc = 5822202a; size =  34564440; name = Freddi2.he2
+    file[]: crc = 2d288c66; size =  42596874; name = Freddi2.he4
+    file[]: crc = 9fb9e2b0; size =    164579; name = FREDDI2.HLP; optional = true
+    file[]: crc = 4c0c11a0; size =      2586; name = freddi2.inf; optional = true
+    file[]: crc = 88ae2695; size =    425984; name = FREDDI2.w32
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
+    file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+
+
+end
+
+//
+// Dutch version (from Duo Pack)
+//
+game[pc-nl-961107]:
+    name = Dutch 1996-11-07
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 5877fdf1; size =     32768; name = FREDDI2.D32
+    file[]: crc = 8666e33f; size =      8896; name = FREDDI2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FREDDI2.EXE
+    file[]: crc = af64401c; size =     65305; name = FREDDI2.HE0
+    file[]: crc = c2c99c02; size = 114934043; name = FREDDI2.HE1
+    file[]: crc = c86ed81c; size =  39345384; name = FREDDI2.HE2
+    file[]: crc = b7b0cd3e; size =  42689160; name = FREDDI2.HE4
+    file[]: crc = 1f8656c4; size =    146194; name = FREDDI2.HLP; optional = true
+    file[]: crc = 79c24453; size =      2106; name = FREDDI2.INF; optional = true
+    file[]: crc = 4172bcb3; size =    330240; name = FREDDI2.W32
+    file[]: crc = 2c35ec39; size =     14784; name = HEINI.EXE; optional = true
+    file[]: crc = 07cc92e9; size =     99872; name = JA-AD.BMP; optional = true
+
+
+end
+
+//
+// Dutch version
+//
+game[pc-nl-970328]:
+    name = Dutch 1997-03-28
+    imports = pc-nl-961107
+    anchorfile = FREDDI2.EXE
+    file[]: crc = b43783b8; size =    132406; name = FREDDI2.BMP; optional = true
+    file[]: crc = c4ad195d; size =     65305; name = FREDDI2.HE0
+    file[]: crc = 4ef01477; size = 114934050; name = FREDDI2.HE1
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 69c94f5c; size =      1801; name = REGISTER.HTM; optional = true
+
+
+end
+
+//
+// French version
+//
+game[pc-fr-961107]:
+    name = French 1996-11-07
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 9da61c21; size =    132118; name = FREDDI2.BMP; optional = true
+    file[]: crc = aee46264; size =     34816; name = FREDDI2.D32
+    file[]: crc = e67992eb; size =      9024; name = FREDDI2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FREDDI2.EXE
+    file[]: crc = 7077a269; size =     65305; name = FREDDI2.HE0
+    file[]: crc = e9f2e67d; size = 115246919; name = FREDDI2.HE1
+    file[]: crc = 9d26e13b; size =  32483184; name = FREDDI2.HE2
+    file[]: crc = 71402b9a; size =  42685776; name = FREDDI2.HE4
+    file[]: crc = c6cca909; size =    250448; name = FREDDI2.HLP; optional = true
+    file[]: crc = d808e55a; size =      2105; name = FREDDI2.INF; optional = true
+    file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
+    file[]: crc = 3b8ee175; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 7dd26489; size =     13702; name = README.TXT; optional = true
+
+
+end
+
+
+//
+// German version
+//
+game[pc-de-961107]:
+    name = German 1996-11-07
+    anchorfile = FREDDI2.EXE
+    file[]: crc = d81f87c5; size =    132406; name = FREDDI2.BMP; optional = true
+    file[]: crc = ae996d40; size =     34816; name = FREDDI2.D32
+    file[]: crc = 69a6466c; size =      9104; name = FREDDI2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FREDDI2.EXE
+    file[]: crc = 5d38baf2; size =     65305; name = FREDDI2.HE0
+    file[]: crc = 9e6b7369; size = 115074001; name = FREDDI2.HE1
+    file[]: crc = 4d92a204; size =  35537738; name = FREDDI2.HE2
+    file[]: crc = 2b6cf271; size =  42713216; name = FREDDI2.HE4
+    file[]: crc = 967ef432; size =    168504; name = FREDDI2.HLP; optional = true
+    file[]: crc = ceca73fe; size =      2131; name = FREDDI2.INF; optional = true
+    file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
+    file[]: crc = 854fd0db; size =    308278; name = HE.BMP; optional = true
+    file[]: crc = f849c6b9; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = a72cdc5a; size =     11651; name = README.TXT; optional = true
+
+
+end
+
+//
+// English demo
+//
+game[pc-en-961029-demo]:
+    name = English Demo 1996-10-29
+    anchorfile = FF2-DEMO.EXE
+    launch = "$(rootpath)\FF2-DEMO.EXE"
+    file[]: crc = a26710b2; size =      8896; name = FF2-DEMO.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FF2-DEMO.EXE
+    file[]: crc = 59cb3e93; size =     27298; name = FF2-DEMO.HE0
+    file[]: crc = 7597b789; size =  16911456; name = FF2-DEMO.HE1
+    file[]: crc = 4eb3b1de; size =   9914018; name = FF2-DEMO.HE2
+    file[]: crc = d805d3c6; size =  15125757; name = FF2-DEMO.HE4
+    file[]: crc = 125992a1; size =    337614; name = FF2-DEMO.HLP; optional = true
+    file[]: crc = 8981dba1; size =      2176; name = FF2-DEMO.INF; optional = true
+    file[]: crc = 3ac54229; size =    323584; name = FF2-DEMO.W32
+
+
+
+end
+
+//
+// English demo, found on 2003 disc in Quiznos meal promo
+//
+game[pc-en-demo-03]:
+    name = English Demo 2003
+    anchorfile = FFHSDemo.exe
+    launch = "$(rootpath)\FFHSDemo.exe"
+    file[]: crc = 3dba6d98; size =  30532295; name = FFHSDemo.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = FFHSDemo.d32
+    file[]: crc = 7d055b8a; size =    512052; name = FFHSDemo.exe
+    file[]: crc = 435693b4; size =     27470; name = FFHSDemo.HE0
+    file[]: crc = 645cb29d; size =   9948036; name = FFHSDemo.he2
+    file[]: crc = d805d3c6; size =  15125757; name = FFHSDemo.he4
+    file[]: crc = d062321a; size =      2311; name = FFHSDemo.inf; optional = true
+
+
+
+end
+
+//
+// Dutch demo
+//
+game[pc-nl-981026-demo]:
+    name = Dutch Demo 1998-10-26 
+    anchorfile = ff2-demo.exe
+    launch = "$(rootpath)\ff2-demo.exe"
+    file[]: crc = 8e050805; size =     32768; name = ff2-demo.d32
+    file[]: crc = 8666e33f; size =      8896; name = ff2-demo.dll
+    file[]: crc = a05aa5e5; size =    330240; name = ff2-demo.exe
+    file[]: crc = f3d192bb; size =     27298; name = ff2-demo.he0
+    file[]: crc = 175f716d; size =  16917363; name = ff2-demo.he1
+    file[]: crc = 3fb4feee; size =  11702696; name = ff2-demo.he2
+    file[]: crc = b14a7119; size =  15133434; name = ff2-demo.he4
+    file[]: crc = 1c043fec; size =     37265; name = ff2-demo.hlp; optional = true
+    file[]: crc = a877fa2e; size =      2107; name = ff2-demo.inf; optional = true
+
+
+
+end
+
+
+end

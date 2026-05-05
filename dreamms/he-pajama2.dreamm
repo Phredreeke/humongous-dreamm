@@ -1,0 +1,207 @@
+desc[he-pajama2]:
+
+name = Pajama Sam 2: Thunder and Lightning Aren't so Frightening
+icon = he-pajama2.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PAJAMA2.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// Color depth
+//
+COLORDEPTH = false
+config[colordepth]:
+    condition = $(COLORDEPTH)
+    title = Color depth
+    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
+    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This version does not run correctly in tested DREAMM version (4.0x12)
+end
+
+//
+// 1996 version
+//
+game[pc-en-980424]:
+    name = English 1998-04-24
+    anchorfile = PAJAMA2.EXE
+    file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: name = JA-AD.BMP; optional = true
+    file[]: crc = 88a59098; size =      8178; name = license.txt; optional = true
+    file[]: crc = ac442f7a; size =    132406; name = PAJAMA2.BMP; optional = true
+    file[]: crc = ca7b4a4f; size =    661707; name = PAJAMA2.chm; optional = true
+    file[]: crc = 94c373b1; size =     36352; name = PAJAMA2.D32
+    file[]: crc = a26710b2; size =      8896; name = Pajama2.dll
+    file[]: crc = 95b4e9d7; size =     22352; name = PAJAMA2.EXE
+    file[]: crc = 6e2cd948; size =     60557; name = PAJAMA2.HE0
+    file[]: crc = 3cd775dc; size =  97612229; name = PAJAMA2.HE1
+    file[]: crc = 8b8e177f; size =  79029771; name = PAJAMA2.HE2
+    file[]: crc = 477991a4; size =  22611842; name = PAJAMA2.HE4
+    file[]: crc = b8cd3125; size =      2127; name = pajama2.inf; optional = true
+    file[]: crc = 0420320f; size =    427008; name = PAJAMA2.W32
+    file[]: crc = 76b49d04; size =     36864; name = PAJAMA2.X32
+    file[]: crc = a49072ec; size =     22479; name = README.TXT; optional = true
+    file[]: crc = eea4f0ee; size =       766; name = sam2.ico; optional = true
+
+
+
+end
+
+//
+// 2001 UK version
+//
+game[pc-en-010308-uk]:
+    name = English 2001-03-08 UK Dub
+    anchorfile = PajamaTAL.EXE
+    launch = "$(rootpath)\PajamaTAL.EXE"
+    file[]: crc = b954b49c; size =     31802; name = Ja-ad.pcx; optional = true
+    file[]: crc = 23b7d616; size =  97758924; name = PajamaTAL.(a)
+    file[]: crc = ff0be092; size =     45056; name = PajamaTAL.D32
+    file[]: crc = 4b1dbe8f; size =     86016; name = PajamaTAL.EXE
+    file[]: crc = 2d22a060; size =     60678; name = PajamaTAL.HE0
+    file[]: crc = bd02bdfb; size =  86656610; name = PajamaTAL.he2
+    file[]: crc = 477991a4; size =  22611842; name = PajamaTAL.he4
+    file[]: crc = 6fce5abe; size =   1156578; name = PajamaTAL.hlp; optional = true
+    file[]: crc = 4c54e01c; size =      2368; name = PajamaTAL.inf; optional = true
+    file[]: crc = 3051a415; size =    475182; name = PajamaTAL.w32
+
+
+
+end
+
+//
+// 1996 Dutch version
+//
+game[pc-nl-990413]:
+    name = Dutch 1999-04-13
+    anchorfile = PAJAMA2.EXE
+    file[]: crc = 14d7ad91; size =       588; name = COPYRITE.TXT; optional = true
+    file[]: crc = 6003621d; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 69df5284; size =     26376; name = LEESMIJ.TXT; optional = true
+    file[]: crc = 246284e9; size =  98122420; name = PAJAMA2.(A)
+    file[]: crc = cbd3b5d0; size =    128662; name = PAJAMA2.BMP; optional = true
+    file[]: crc = 1e2f9505; size =     34304; name = PAJAMA2.D32
+    file[]: crc = f9e12b58; size =      8896; name = PAJAMA2.DLL
+    file[]: crc = f2d16c4f; size =     21616; name = PAJAMA2.EXE
+    file[]: crc = 70def0ed; size =     60653; name = PAJAMA2.HE0
+    file[]: crc = 115221c8; size =  91773392; name = PAJAMA2.HE2
+    file[]: crc = 477991a4; size =  22611842; name = PAJAMA2.HE4
+    file[]: crc = 514143bc; size =   1295876; name = PAJAMA2.HLP; optional = true
+    file[]: crc = d3aaa1fc; size =      2184; name = PAJAMA2.INF; optional = true
+    file[]: crc = c3133791; size =    444928; name = PAJAMA2.W32
+    file[]: crc = eea4f0ee; size =       766; name = SAM2.ICO; optional = true
+
+end
+
+
+//
+// 2001 German version
+//
+game[pc-de-010129]:
+    name = German 2001-01-29
+    anchorfile = PyjamaDBMN.EXE
+    launch = "$(rootpath)\PyjamaDBMN.EXE"
+    file[]: crc = 62a03bb9; size =     26377; name = JA-AD.PCX; optional = true
+    file[]: crc = 66c5e785; size =  97912612; name = PyjamaDBMN.(a)
+    file[]: crc = a6e94229; size =     49152; name = PyjamaDBMN.D32
+    file[]: crc = 8dd73962; size =     86016; name = PyjamaDBMN.EXE
+    file[]: crc = 4f7898eb; size =     60678; name = PyjamaDBMN.HE0
+    file[]: crc = 81aa174d; size =  80057001; name = PyjamaDBMN.HE2
+    file[]: crc = 477991a4; size =  22611842; name = PyjamaDBMN.HE4
+    file[]: crc = 26adcaea; size =    845505; name = PyjamaDBMN.hlp; optional = true
+    file[]: crc = d9fbff55; size =      2486; name = PyjamaDBMN.INF; optional = true
+    file[]: crc = 9cb5ede0; size =    430080; name = PyjamaDBMN.w32
+
+end
+
+//
+// 2003 Hebrew version
+//
+game[pc-he-030309]:
+    name = Hebrew 2003-03-09
+    anchorfile = PAJAMA2.EXE
+    file[]: crc = d2f04c3a; size =  98234917; name = Pajama2.(a)
+    file[]: crc = fc336e3f; size =    132406; name = PAJAMA2.BMP; optional = true
+    file[]: crc = 4865cbb6; size =     53248; name = Pajama2.d32
+    file[]: crc = a26710b2; size =      8896; name = PAJAMA2.DLL
+    file[]: crc = e9389a6a; size =    475182; name = PAJAMA2.EXE
+    file[]: crc = 2b394080; size =     60678; name = Pajama2.HE0
+    file[]: crc = 4c05ef64; size =  86506912; name = Pajama2.he2
+    file[]: crc = 5328ecf5; size =  22611842; name = Pajama2.he4
+    file[]: crc = 9d1f02bc; size =   2332212; name = Pajama2.HLP; optional = true
+    file[]: crc = 2032192e; size =      2065; name = Pajama2.inf; optional = true
+
+end
+
+//
+// 1998 English Demo
+//
+demo[pc-en-980510-demo]:
+    name = English Demo 1998-05-10
+    anchorfile = PJ2DEMO.EXE
+    launch = "$(rootpath)\PJ2DEMO.EXE"
+    file[]: crc = 94c373b1; size =     36352; name = PJ2DEMO.D32
+    file[]: crc = a26710b2; size =      8896; name = PJ2DEMO.DLL
+    file[]: crc = 0420320f; size =    427008; name = PJ2DEMO.EXE
+    file[]: crc = 164df975; size =     58749; name = PJ2DEMO.HE0
+    file[]: crc = fae73d95; size =   6103756; name = PJ2DEMO.HE1
+    file[]: crc = b6768886; size =   2341979; name = PJ2DEMO.HE2
+    file[]: crc = d304f3a6; size =    848616; name = PJ2DEMO.HE4
+    file[]: crc = c05a70bd; size =    190655; name = PJ2DEMO.HLP; optional = true
+    file[]: crc = 72fe4c14; size =      2136; name = pj2demo.inf; optional = true
+    file[]: crc = 76b49d04; size =     36864; name = PJ2DEMO.X32
+
+end
+
+//
+// 2001 Hebrew Demo
+//
+demo[pc-en-010328-demo]:
+    name = Hebrew Demo 2001-03-28
+    anchorfile = PS2DEMO.EXE
+    launch = "$(rootpath)\PS2DEMO.EXE"
+    INCOMPATIBLE = true
+    BITNESS = false
+    COLORDEPTH = true
+    file[]: crc = e15a7563; size =   6141228; name = PS2DEMO.(A)
+    file[]: crc = 4865cbb6; size =     53248; name = PS2DEMO.D32
+    file[]: crc = 6899a034; size =    503867; name = PS2DEMO.EXE
+    file[]: crc = 98a60840; size =     52975; name = PS2DEMO.HE0
+    file[]: crc = c52ed13e; size =   2458805; name = PS2DEMO.HE2
+    file[]: crc = d304f3a6; size =    848616; name = PS2DEMO.HE4
+    file[]: crc = b52f6dc1; size =   2410222; name = PS2DEMO.HLP; optional = true
+    file[]: crc = 5e4f45f9; size =      2070; name = PS2DEMO.INF; optional = true
+
+end
+
+
+end

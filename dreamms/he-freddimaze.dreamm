@@ -1,0 +1,94 @@
+desc[he-freddimaze]:
+
+name = Freddi Fish and Luther's Maze Madness
+icon = he-freddimaze.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\MAZE.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1996 version
+//
+game[pc-en-961126]:
+    name = English 1996-11-26
+    anchorfile = MAZE.EXE
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 77892d97; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = b827aa76; size =    132406; name = MAZE.BMP; optional = true
+    file[]: crc = a26710b2; size =      8896; name = MAZE.DLL
+    file[]: crc = 57b089f1; size =     21648; name = MAZE.EXE
+    file[]: crc = 367f943a; size =     23479; name = MAZE.HE0
+    file[]: crc = f75ac48c; size =  11783273; name = MAZE.HE1
+    file[]: crc = 00b7a5cb; size =   7275888; name = MAZE.HE2
+    file[]: crc = c9365702; size =  21498460; name = MAZE.HE4
+    file[]: crc = 3d714df4; size =    211800; name = MAZE.HE8
+    file[]: crc = 4433c0f8; size =    126300; name = MAZE.HLP; optional = true
+    file[]: crc = de18a0a5; size =      2080; name = MAZE.INF; optional = true
+    file[]: crc = 19d81924; size =    324096; name = MAZE.W32
+    file[]: crc = b030850a; size =     10880; name = README.TXT; optional = true
+
+end
+
+//
+// 1999 version
+//
+game[pc-en-991103]:
+    name = English 1999-11-03
+    anchorfile = Maze.EXE
+    file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
+    file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+    file[]: crc = a9f1f095; size =  11771922; name = Maze.(a)
+    file[]: crc = 94c373b1; size =     36352; name = maze.d32
+    file[]: crc = 1593772a; size =     86016; name = Maze.EXE
+    file[]: crc = ac05920f; size =     23555; name = Maze.HE0
+    file[]: crc = 00b7a5cb; size =   7275888; name = Maze.he2
+    file[]: crc = c9365702; size =  21498460; name = Maze.he4
+    file[]: crc = 3d714df4; size =    211800; name = Maze.he8
+    file[]: crc = 2edc224a; size =    129270; name = MAZE.HLP; optional = true
+    file[]: crc = 25ae0f68; size =      2543; name = maze.inf; optional = true
+    file[]: crc = 28bcf360; size =    425984; name = Maze.w32
+
+end
+
+//
+// 2002 version
+//
+game[pc-en-020627]:
+    name = English 2002-06-27
+    anchorfile = Maze.EXE
+    file[]: crc = 13f36f76; size =  29610570; name = Maze.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = Maze.d32
+    file[]: crc = a26710b2; size =      8896; name = MAZE.DLL
+    file[]: crc = c0b45b79; size =    512052; name = Maze.exe
+    file[]: crc = f9f58716; size =     23649; name = Maze.HE0
+    file[]: crc = f75ac48c; size =  11783273; name = MAZE.HE1
+    file[]: crc = 00b7a5cb; size =   7275888; name = Maze.he2
+    file[]: crc = c9365702; size =  21498460; name = Maze.he4
+    file[]: crc = 3d714df4; size =    211800; name = MAZE.HE8
+    file[]: crc = 7d610f3f; size =    221039; name = Maze.hlp; optional = true
+    file[]: crc = fa40a734; size =      2037; name = Maze.inf; optional = true
+    file[]: crc = 19d81924; size =    324096; name = MAZE.W32
+
+end
+
+
+end

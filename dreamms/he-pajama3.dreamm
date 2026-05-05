@@ -1,0 +1,154 @@
+desc[he-pajama3]:
+
+name = Pajama Sam 3: You Are What You Eat From Your Head to Your Feet
+icon = he-pajama3.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\Pajama3.exe"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+
+//
+// 2000 version
+//
+game[pc-en-000202]:
+    name = English 2000-02-02
+    anchorfile = Pajama3.exe
+    launch = "$(rootpath)\Pajama3.w32"
+    file[]: crc = c7579078; size =       764; name = Copyrite.txt; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEIni.exe; optional = true
+    file[]: crc = 78e848a5; size =     28689; name = Ja-ad.pcx; optional = true
+    file[]: crc = 71972d85; size =      5725; name = License.txt; optional = true
+    file[]: crc = f52d70e1; size =  90301125; name = PAJAMA3.(A)
+    file[]: crc = 94c373b1; size =     36352; name = Pajama3.d32
+    file[]: crc = 2e56f301; size =     81920; name = Pajama3.exe
+    file[]: crc = f431808b; size =     79382; name = PAJAMA3.HE0
+    file[]: crc = 16cbb479; size = 101075336; name = PAJAMA3.HE2
+    file[]: crc = d0a344d5; size =  55177145; name = PAJAMA3.HE4
+    file[]: crc = 01a6ae3b; size =   2266216; name = Pajama3.hlp; optional = true
+    file[]: crc = 8cf2ae22; size =      2706; name = Pajama3.inf; optional = true
+    file[]: crc = 143a755a; size =    425984; name = Pajama3.w32
+
+
+end
+
+//
+// 2001 UK version
+//
+game[pc-en-010221]:
+    name = English 2001-02-21 UK Dub
+    anchorfile = UKPajamaEAT.EXE
+    launch = "$(rootpath)\UKPajamaEAT.EXE"
+    file[]: crc = 10673b2f; size =     25572; name = Ja-ad.pcx; optional = true
+    file[]: crc = 69d836b0; size =  90255247; name = UKPajamaEAT.(a)
+    file[]: crc = ff0be092; size =     45056; name = UKPajamaEAT.d32
+    file[]: crc = 0d9c73da; size =     86016; name = UKPajamaEAT.EXE
+    file[]: crc = 077e3a86; size =     79382; name = UKPajamaEAT.HE0
+    file[]: crc = 53fde965; size = 109044642; name = UKpajamaEAT.he2
+    file[]: crc = d0a344d5; size =  55177145; name = UKpajamaEAT.HE4
+    file[]: crc = 4401854a; size =   2013889; name = UKPajamaEAT.hlp; optional = true
+    file[]: crc = 7d3a6645; size =      2496; name = UKPajamaEAT.inf; optional = true
+    file[]: crc = 0925883b; size =    475136; name = UKPajamaEAT.w32
+
+
+end
+
+//
+// 2000 French version
+//
+game[pc-fr-001009]:
+    name = French 2000-10-09
+    anchorfile = PYJAMAHG.EXE
+    launch = "$(rootpath)\PYJAMAHG.EXE"
+    file[]: crc = 16553ea3; size =     25118; name = Ja-ad.pcx; optional = true
+    file[]: crc = 88ad34de; size =  90532821; name = PyjamaHG.(a)
+    file[]: crc = f3a63895; size =     49152; name = PyjamaHG.D32
+    file[]: crc = 1255e9f1; size =     86016; name = PYJAMAHG.EXE
+    file[]: crc = 2839b01b; size =     79382; name = PyjamaHG.HE0
+    file[]: crc = 16dd4f2d; size = 105930176; name = PyjamaHG.he2
+    file[]: crc = 12ae7a38; size =  55315376; name = PyjamaHG.he4
+    file[]: crc = 6f1eaf40; size =   1946355; name = PYJAMAHG.HLP; optional = true
+    file[]: crc = eac3ac07; size =      2488; name = PyjamaHG.INF; optional = true
+    file[]: crc = af56cc11; size =    442368; name = PyjamaHG.w32
+
+
+end
+
+//
+// 1999 Demo version
+//
+demo[pc-en-991104-demo]:
+    name = English Demo 1999-11-04
+    anchorfile = pj3-demo.exe
+    launch = "$(rootpath)\pj3-demo.exe"
+    file[]: crc = c94cc730; size =      8462; name = Pajama Sam Readme.txt; optional = true
+    file[]: crc = 320c26fd; size =   5513492; name = pj3-demo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = pj3-demo.D32
+    file[]: crc = 143a755a; size =    425984; name = pj3-demo.exe
+    file[]: crc = c04e77ca; size =     13893; name = pj3-demo.HE0
+    file[]: crc = b2e1cd8b; size =   3554373; name = pj3-demo.he2
+    file[]: crc = 9f871492; size =   1088621; name = pj3-demo.he4
+    file[]: crc = 0a159cff; size =      2135; name = pj3-demo.inf; optional = true
+
+
+end
+
+//
+// 2000 Demo version
+//
+demo[pc-en-000104-demo]:
+    name = English Demo 2000-01-04
+    anchorfile = pj3-demo.exe
+    launch = "$(rootpath)\pj3-demo.exe"
+    file[]: crc = 20b2f7dc; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 47a8b307; size =   5517718; name = pj3-demo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = pj3-demo.D32
+    file[]: crc = a26710b2; size =      8896; name = pj3-demo.dll
+    file[]: crc = e88e13c8; size =     21616; name = pj3-demo.exe
+    file[]: crc = 6f5d5dc8; size =     13902; name = pj3-demo.HE0
+    file[]: crc = c94b9a6b; size =   3576443; name = pj3-demo.he2
+    file[]: crc = 9f871492; size =   1088621; name = pj3-demo.he4
+    file[]: crc = 0a159cff; size =      2135; name = pj3-demo.inf; optional = true
+    file[]: crc = 143a755a; size =    425984; name = pj3-demo.w32
+    file[]: crc = c94cc730; size =      8462; name = readme.txt; optional = true
+
+
+end
+
+//
+// 2000 French Demo version
+//
+demo[pc-fr-001009-demo]:
+    name = French Demo 2000-10-09
+    anchorfile = FPJ3Demo.exe
+    launch = "$(rootpath)\FPJ3Demo.exe"
+    file[]: crc = 26f67858; size =   5431202; name = Fpj3demo.(a)
+    file[]: crc = f3a63895; size =     49152; name = FPJ3Demo.D32
+    file[]: crc = af56cc11; size =    442368; name = FPJ3Demo.exe
+    file[]: crc = 07739d30; size =     13884; name = Fpj3demo.HE0
+    file[]: crc = 681b0504; size =   3843606; name = Fpj3demo.he2
+    file[]: crc = ff28d26a; size =   1034157; name = FPJ3Demo.HE4
+    file[]: crc = 2e057651; size =   1943944; name = FPJ3Demo.HLP; optional = true
+    file[]: crc = b64af2b9; size =      2268; name = FPJ3Demo.INF; optional = true
+
+
+end
+
+end

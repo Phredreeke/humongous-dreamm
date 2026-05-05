@@ -1,0 +1,290 @@
+desc[he-spyfox1]:
+
+name = Spy Fox: Dry Cereal
+icon = he-spyfox1.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\SPYFOX.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1997 version
+//
+game[pc-en-970723]:
+    name = English 1997-07-23
+    anchorfile = SPYFOX.EXE
+    file[]: crc = 80b7bc15; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = a7be2cf3; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = a9a4a36b; size =     29588; name = README.TXT; optional = true
+    file[]: crc = 46ec6374; size =     90872; name = SPYFOX.BMP; optional = true
+    file[]: crc = a6712191; size =     36352; name = SPYFOX.D32
+    file[]: crc = a26710b2; size =      8896; name = SPYFOX.DLL
+    file[]: crc = 15a41cb8; size =     21616; name = SPYFOX.EXE
+    file[]: crc = cb8aff06; size =     49221; name = SPYFOX.HE0
+    file[]: crc = ccc9aee3; size =  69543091; name = SPYFOX.HE1
+    file[]: crc = 9c28add4; size = 139053674; name = SPYFOX.HE2
+    file[]: crc = 1755fb24; size =  30445290; name = SPYFOX.HE4
+    file[]: crc = 31b81422; size =   1011429; name = SPYFOX.HLP; optional = true
+    file[]: crc = 19d8853f; size =       766; name = SPYFOX.ICO; optional = true
+    file[]: crc = 5300bcda; size =      2176; name = SPYFOX.INF; optional = true
+    file[]: crc = fabebd7c; size =    365056; name = SPYFOX.W32
+
+
+
+end
+
+
+//
+// 2001 UK version
+//
+game[pc-en-010221-uk]:
+    name = English 2001-02-21 UK Dub
+    anchorfile = SPYFOXDC.EXE
+    launch = "$(rootpath)\SPYFOXDC.EXE"
+    file[]: crc = ebfd6bcb; size =     24736; name = Ja-ad.pcx; optional = true
+    file[]: crc = 81a65b60; size =  69716465; name = SPYFoxDC.(a)
+    file[]: crc = ff0be092; size =     45056; name = SPYFoxDC.D32
+    file[]: crc = e6b4ff82; size =     86016; name = SPYFOXDC.EXE
+    file[]: crc = b5e4a391; size =     49675; name = SPYFoxDC.HE0
+    file[]: crc = b472a628; size = 152271916; name = SPYFoxDC.he2
+    file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxDC.he4
+    file[]: crc = f7b9bd9c; size =   1019175; name = SPYFoxDC.hlp; optional = true
+    file[]: crc = e7ec6040; size =      2498; name = SPYFoxDC.inf; optional = true
+    file[]: crc = 0972928b; size =    475136; name = spyfoxdc.w32
+
+
+end
+
+//
+// 2007 version
+//
+game[pc-en-070901]:
+    name = English 2007-09-01
+    anchorfile = SpyFox.exe
+    launch = "$(rootpath)\SpyFox.exe"
+    file[]: crc = 859b4140; size =       664; name = layout.bin; optional = true
+    file[]: crc = 8112767f; size =     18708; name = License.rtf; optional = true
+    file[]: crc = 35ac281f; size =  87467399; name = SpyFox.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = SpyFox.d32
+    file[]: crc = 1e92fbd3; size =    503862; name = SpyFox.exe
+    file[]: crc = e632f6cd; size =      8628; name = SPYFOX.GID
+    file[]: crc = 3d7f1a12; size =     49751; name = SpyFox.he0
+    file[]: crc = f0ae5141; size = 139199268; name = SpyFox.he2
+    file[]: crc = 5ecaea09; size =  30324471; name = SpyFox.he4
+    file[]: crc = 9cd9c279; size =   1133912; name = SPYFOX.hlp; optional = true
+    file[]: crc = 3c5fd9e5; size =     59034; name = SpyFox.ico; optional = true
+    file[]: crc = 5a430384; size =      2158; name = SpyFox.inf; optional = true
+    file[]: crc = 63dec5fb; size =    128676; name = SpyFox_Manual.pdf; optional = true
+    file[]: crc = 424af85d; size =     10387; name = SpyFox_readme.txt; optional = true
+
+
+end
+
+//
+// Dutch 1997 version
+//
+game[pc-nl-970405]:
+    name = Dutch 1997-04-05
+    anchorfile = SPYFOX.EXE
+    file[]: crc = fa109203; size =       588; name = COPYRITE.TXT; optional = true
+    file[]: crc = b1515182; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 80ac2141; size =     20205; name = LEESMIJ.TXT; optional = true
+    file[]: crc = ca760ae9; size =     90392; name = SPYFLIB.DLL
+    file[]: crc = 0adaac03; size =  69484569; name = SPYFOX.(A)
+    file[]: crc = 1e2f9505; size =     34304; name = SPYFOX.D32
+    file[]: crc = f9e12b58; size =      8896; name = SPYFOX.DLL
+    file[]: crc = 15a41cb8; size =     21616; name = SPYFOX.EXE
+    file[]: crc = a04f2a4f; size =     49300; name = SPYFOX.HE0
+    file[]: crc = e72fc3a9; size = 185288795; name = SPYFOX.HE2
+    file[]: crc = 6487d551; size =  30321625; name = SPYFOX.HE4
+    file[]: crc = 4a3e5b5c; size =   1243580; name = SPYFOX.HLP; optional = true
+    file[]: crc = 0ad97d61; size =      2220; name = SPYFOX.INF; optional = true
+    file[]: crc = 2383adb9; size =    444928; name = SPYFOX.W32
+
+
+end
+
+
+//
+// French 2000 version
+//
+game[pc-fr-001114]:
+    name = French 2000-11-14
+    anchorfile = SPYFoxOM.EXE
+    launch = "$(rootpath)\SPYFoxOM.EXE"
+    file[]: crc = bd72f130; size =     38712; name = JA-AD.pcx; optional = true
+    file[]: crc = 86c83543; size =  69125194; name = SPYFoxOM.(a)
+    file[]: crc = ec7c10f1; size =     35840; name = SPYFoxOM.d32
+    file[]: crc = 7744d4a7; size =     86016; name = SPYFoxOM.EXE
+    file[]: crc = 8c81235e; size =     49325; name = SPYFoxOM.HE0
+    file[]: crc = 46faf08f; size = 155023130; name = SPYFoxOM.HE2
+    file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxOM.HE4
+    file[]: crc = 8d51f23a; size =   1069026; name = SpyfoxOM.hlp; optional = true
+    file[]: crc = a0787290; size =      2700; name = SPYFoxOM.INF; optional = true
+    file[]: crc = d3beccf8; size =    430080; name = SPYFoxOM.w32
+
+
+end
+
+//
+// German 1998 version
+//
+game[pc-de-980825]:
+    name = German 1998-08-25
+    anchorfile = FUCHS.EXE
+    launch = "$(rootpath)\FUCHS.EXE"
+    file[]: crc = 2fbbbb6b; size =    132406; name = FUCHS.BMP; optional = true
+    file[]: crc = 46996e05; size =     34816; name = FUCHS.D32
+    file[]: crc = 46b8aa5a; size =      9088; name = FUCHS.DLL
+    file[]: crc = 15a41cb8; size =     21616; name = FUCHS.EXE
+    file[]: crc = 6517c5cf; size =     49221; name = FUCHS.HE0
+    file[]: crc = 63bc2a76; size =  69892668; name = FUCHS.HE1
+    file[]: crc = 443d5680; size = 145231253; name = FUCHS.HE2
+    file[]: crc = 5ecaea09; size =  30324471; name = FUCHS.HE4
+    file[]: crc = 6bfbcd68; size =   1135439; name = FUCHS.HLP
+    file[]: crc = 19d8853f; size =       766; name = FUCHS.ICO; optional = true
+    file[]: crc = 7ea41c33; size =      2273; name = FUCHS.INF; optional = true
+    file[]: crc = fabebd7c; size =    365056; name = FUCHS.W32
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 568f85fc; size =    139078; name = JA-AD.BMP; optional = true
+
+
+end
+
+
+//
+// German 2000 version
+//
+game[pc-de-001114]:
+    name = German 2000-11-14
+    anchorfile = SPYFoxDMK.EXE
+    launch = "$(rootpath)\SPYFoxDMK.EXE"
+    file[]: crc = 3ad2e8bf; size =     25941; name = Ja-ad.pcx; optional = true
+    file[]: crc = 076b6be5; size =  69294266; name = SPYFoxDMK.(a)
+    file[]: crc = a6e94229; size =     49152; name = SPYFoxDMK.D32
+    file[]: crc = 7744d4a7; size =     86016; name = SPYFoxDMK.EXE
+    file[]: crc = 1184a0d4; size =     49325; name = SPYFoxDMK.HE0
+    file[]: crc = 07f125f8; size = 145639456; name = SPYFoxDMK.HE2
+    file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxDMK.HE4
+    file[]: crc = 130a3a4d; size =   1109491; name = SpyfoxDMK.hlp; optional = true
+    file[]: crc = 19c15c45; size =      2672; name = SPYFoxDMK.INF; optional = true
+    file[]: crc = d3beccf8; size =    430080; name = SPYFoxDMK.w32
+
+
+end
+
+//
+// English 1997 demo
+//
+game[pc-en-971214-demo]:
+    name = English Demo 1997-12-14
+    anchorfile = FOXDEMO.EXE
+    launch = "$(rootpath)\FOXDEMO.EXE"
+    file[]: crc = a6712191; size =     36352; name = FOXDEMO.D32
+    file[]: crc = a26710b2; size =      8896; name = FOXDEMO.DLL
+    file[]: crc = 15a41cb8; size =     21616; name = FOXDEMO.EXE
+    file[]: crc = 5855a484; size =     20103; name = FOXDEMO.HE0
+    file[]: crc = 437b8aae; size =  14746318; name = FOXDEMO.HE1
+    file[]: crc = 32360424; size =  16355143; name = FOXDEMO.HE2
+    file[]: crc = 5106d9b0; size =  12602664; name = FOXDEMO.HE4
+    file[]: crc = 125992a1; size =    337614; name = FOXDEMO.HLP; optional = true
+    file[]: crc = 77384391; size =      2218; name = FOXDEMO.INF; optional = true
+    file[]: crc = fabebd7c; size =    365056; name = FOXDEMO.W32
+
+end
+
+//
+// English 1999 demo
+//
+game[pc-en-990818-demo]:
+    name = English Demo 1999-08-18
+    anchorfile = spydemo.exe
+    launch = "$(rootpath)\spydemo.exe"
+    file[]: crc = a6712191; size =     36352; name = spydemo.d32
+    file[]: crc = a26710b2; size =      8896; name = spydemo.dll
+    file[]: crc = fabebd7c; size =    365056; name = spydemo.exe
+    file[]: crc = c1cae4cb; size =     15693; name = spydemo.HE0
+    file[]: crc = c02dffd2; size =   5545111; name = spydemo.HE1
+    file[]: crc = 7238bce5; size =   2798427; name = spydemo.he2
+    file[]: crc = 1c2a8248; size =   1295332; name = spydemo.he4
+    file[]: crc = 6b9f5356; size =    297416; name = spydemo.hlp; optional = true
+    file[]: crc = 91938e35; size =      2203; name = spydemo.inf; optional = true
+
+end
+
+//
+// English demo, found on 2003 disc in Quiznos meal promo
+//
+game[pc-en-demo-03]:
+    name = English Demo 2003
+    anchorfile = Spydemo.exe
+    launch = "$(rootpath)\Spydemo.exe"
+    file[]: crc = 3655ea77; size =  18880847; name = Spydemo.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = Spydemo.d32
+    file[]: crc = f375a7d0; size =    512052; name = Spydemo.exe
+    file[]: crc = f80f74b7; size =     15943; name = Spydemo.HE0
+    file[]: crc = e7443c17; size =   2842596; name = Spydemo.he2
+    file[]: crc = 1c2a8248; size =   1295332; name = Spydemo.he4
+    file[]: crc = d96982ea; size =      2180; name = SpyDemo.inf; optional = true
+
+end
+
+//
+// Dutch 1999 demo
+//
+game[pc-nl-990405-demo]:
+    name = Dutch Demo 1999-04-05
+    anchorfile = Spydemo.EXE
+    launch = "$(rootpath)\Spydemo.EXE"
+    file[]: crc = d167a057; size =  14553711; name = Spydemo.(A)
+    file[]: crc = 1e2f9505; size =     34304; name = Spydemo.D32
+    file[]: crc = f9e12b58; size =      8896; name = Spydemo.DLL
+    file[]: crc = 2383adb9; size =    444928; name = Spydemo.EXE
+    file[]: crc = a804f5e9; size =     20141; name = Spydemo.HE0
+    file[]: crc = b52affec; size =  20230881; name = Spydemo.HE2
+    file[]: crc = 5106d9b0; size =  12602664; name = Spydemo.HE4
+    file[]: crc = b056b738; size =     21592; name = Spydemo.HLP; optional = true
+    file[]: crc = bd517475; size =      2246; name = Spydemo.INF; optional = true
+
+end
+
+//
+// French 1997 demo
+//
+game[pc-fr-970809-demo]:
+    name = French Demo 1997-08-09
+    anchorfile = JAMESDEM.EXE
+    launch = "$(rootpath)\JAMESDEM.EXE"
+    file[]: crc = e1649017; size =     35840; name = JAMESDEM.D32
+    file[]: crc = 855b5079; size =      9200; name = JAMESDEM.DLL
+    file[]: crc = fabebd7c; size =    365056; name = JAMESDEM.EXE
+    file[]: crc = 363cf4f8; size =     20103; name = JAMESDEM.HE0
+    file[]: crc = 0b01ad5d; size =  14759324; name = JAMESDEM.HE1
+    file[]: crc = 251dc687; size =  17518939; name = JAMESDEM.HE2
+    file[]: crc = 5106d9b0; size =  12602664; name = JAMESDEM.HE4
+    file[]: crc = b3321390; size =    163023; name = JAMESDEM.HLP; optional = true
+    file[]: crc = 40ca3fde; size =      2296; name = JAMESDEM.INF; optional = true
+
+end
+
+end

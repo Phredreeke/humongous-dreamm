@@ -1,0 +1,129 @@
+desc[he-spyfox2]:
+
+name = SPY Fox 2: Some Assembly Required
+icon = he-spyfox2.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\Spyfox2.exe"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1999 version
+//
+game[pc-en-990805]:
+    name = English 1999-08-05
+    anchorfile = Spyfox2.exe
+    launch = "$(rootpath)\Spyfox2.w32"
+    file[]: crc = abb96326; size =    308278; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE
+    file[]: crc = cd6bf819; size =     42178; name = JA-AD.pcx; optional = true
+    file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+    file[]: crc = 4f108ede; size =     31642; name = SPY Fox 2 Readme; optional = true
+    file[]: crc = 255aed37; size =        80; name = spy2arc.hst
+    file[]: crc = 0a103dca; size =  88105181; name = spyfox2.(a)
+    file[]: crc = 94c373b1; size =     36352; name = SPYFOX2.D32
+    file[]: crc = a26710b2; size =      8896; name = SPYFOX2.DLL
+    file[]: crc = 1f4712c9; size =    159744; name = Spyfox2.exe
+    file[]: crc = 54c28f71; size =     51286; name = SPYFOX2.HE0
+    file[]: crc = 9f9a4649; size = 121479578; name = SPYFOX2.HE2
+    file[]: crc = 88d0b8fb; size =  42671122; name = SPYFOX2.HE4
+    file[]: crc = b0f5ec52; size =    320472; name = spyfox2.he9
+    file[]: crc = e594fe84; size =    746231; name = SPYFOX2.HLP; optional = true
+    file[]: crc = 26610513; size =       766; name = spyfox2.ico; optional = true
+    file[]: crc = 770eb4b7; size =      2931; name = SPYFOX2.INF; optional = true
+    file[]: crc = e9b6e8b0; size =    409600; name = Spyfox2.w32
+
+end
+
+//
+// 2001 UK version
+//
+game[pc-en-010221-uk]:
+    name = English 2001-02-21 UK Dub
+    anchorfile = SPYFOXSR.EXE
+    launch = "$(rootpath)\SPYFOXSR.EXE"
+    file[]: crc = ece1f375; size =     39764; name = JA-AD.pcx; optional = true 
+    file[]: crc = aadba9f4; size =  88111882; name = SPYFoxSR.(a)
+    file[]: crc = ff0be092; size =     45056; name = SPYFoxSR.d32
+    file[]: crc = e6b4ff82; size =     86016; name = SPYFOXSR.EXE
+    file[]: crc = 71c0f635; size =     51295; name = SPYFoxSR.HE0
+    file[]: crc = a657e94f; size = 141551058; name = SPYFoxSR.HE2
+    file[]: crc = 88d0b8fb; size =  42671122; name = SPYFoxSR.HE4
+    file[]: crc = b0f5ec52; size =    320472; name = SpyfoxSR.he9
+    file[]: crc = a6a4631a; size =    628831; name = SPYFOXSR.HLP; optional = true 
+    file[]: crc = cd8a163e; size =      2592; name = SPYFoxSR.INF; optional = true 
+    file[]: crc = cd49e427; size =    471040; name = SPYFOXSR.w32
+
+end
+
+game[pc-nl-000919]:
+    name = Dutch 2000-09-19
+    anchorfile = Spyfox2.exe
+    launch = "$(rootpath)\SPYFox2.EXE"
+    file[]: crc = 1fbd1765; size =     37895; name = JA-AD.pcx; optional = true // seems to be corrupted?
+    file[]: crc = 6f35a607; size =  88730276; name = Spyfox2.(a)
+    file[]: crc = da68ff6b; size =     34304; name = SPYFOX2.D32
+    file[]: crc = 514ed6ce; size =     86016; name = SPYFox2.EXE
+    file[]: crc = 683548aa; size =     51286; name = Spyfox2.HE0
+    file[]: crc = 145b9618; size = 146753841; name = Spyfox2.HE2
+    file[]: crc = d9738682; size =  42775873; name = Spyfox2.HE4
+    file[]: crc = b0f5ec52; size =    320472; name = SPYFOX2.HE9
+    file[]: crc = 61c2f46f; size =    639429; name = SPYFOX2.HLP; optional = true
+    file[]: crc = b9d3a622; size =      2381; name = SPYfox2.INF; optional = true
+    file[]: crc = c43f29dd; size =    442368; name = SPYFox2.w32
+    file[]: crc = 99aa975c; size =    699158; name = TRANSPOS.HLP; optional = true
+
+end
+
+game[pc-de-000919]:
+    name = German 2000-09-19
+    anchorfile = SPYFoxOR.EXE
+    launch = "$(rootpath)\SPYFoxOR.EXE"
+    file[]: crc = d351c73b; size =     39498; name = Ja-ad.pcx; optional = true // seems to be corrupted?
+    file[]: crc = bbb076fa; size =  89158743; name = SPYFoxOR.(a)
+    file[]: crc = a6e94229; size =     49152; name = SPYFoxOR.D32
+    file[]: crc = 5f15d470; size =     86016; name = SPYFoxOR.EXE
+    file[]: crc = 779fd5ef; size =     51286; name = SPYFoxOR.HE0
+    file[]: crc = e28fecfe; size = 130066965; name = SPYFoxOR.HE2
+    file[]: crc = 2ccf7dea; size =  42717768; name = SPYFoxOR.HE4
+    file[]: crc = b0f5ec52; size =    320472; name = SPYFoxOR.HE9
+    file[]: crc = f2bf9876; size =    798410; name = SPYFOXOR.HLP; optional = true
+    file[]: crc = 2bee82ed; size =      2514; name = SPYFoxOR.INF; optional = true
+    file[]: crc = 614cf98d; size =    442368; name = SPYFoxOR.w32
+
+end
+
+game[pc-en-000313-demo]:
+    name = English Demo 2000-03-13
+    anchorfile = SF2-DEMO.EXE
+    launch = "$(rootpath)\SF2-DEMO.EXE"
+    file[]: crc = b7818a08; size =   6162726; name = sf2-demo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = sf2-demo.D32
+    file[]: crc = a26710b2; size =      8896; name = sf2-demo.DLL
+    file[]: crc = 27bb2a36; size =    425984; name = SF2-DEMO.EXE
+    file[]: crc = 5110d706; size =     15832; name = sf2-demo.HE0
+    file[]: crc = 5117a411; size =   3780126; name = sf2-demo.he2
+    file[]: crc = 42d008de; size =   1883367; name = SF2-DEMO.HE4
+    file[]: crc = ddd935b1; size =      2326; name = SF2-DEMO.INF; optional = true
+
+end
+
+
+end
