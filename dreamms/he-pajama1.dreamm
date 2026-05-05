@@ -208,7 +208,26 @@ game[pc-de-991018]:
 
 end
 
+//
+// 1997 version
+//
+demo[pc-en-970814]:
+    name = English 1997-08-14
+    anchorfile = PJS-DEMO.EXE
+    launch = "$(rootpath)\PJS-DEMO.EXE"
+    file[]: crc = a26710b2; size =      8896; name = PJS-DEMO.DLL
+    file[]: crc = 13befd98; size =     21616; name = PJS-DEMO.EXE
+    file[]: crc = f5d97968; size =     18354; name = PJS-DEMO.HE0
+    file[]: crc = e0a92d4f; size =  13164357; name = PJS-DEMO.HE1
+    file[]: crc = be70911c; size =   6514765; name = PJS-DEMO.HE2
+    file[]: crc = e164e1b8; size =  10836436; name = PJS-DEMO.HE4
+    file[]: crc = 1371fb8c; size =     35217; name = PJS-DEMO.HLP; optional = true
+    file[]: crc = 3393ee49; size =      2201; name = PJS-DEMO.INF; optional = true
+    file[]: crc = cc302677; size =    323584; name = PJS-DEMO.W32
 
+
+
+end
 
 
 end
