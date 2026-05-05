@@ -1,0 +1,58 @@
+desc[he-baseball]:
+
+name = Backyard Baseball
+icon = he-baseball.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\BASEBALL.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1997 version
+//
+game[pc-en-970807]:
+    name = English 1997-08-07
+    anchorfile = BASEBALL.EXE
+    file[]: crc = 7f3c662f; size =    132406; name = BASEBALL.BMP; optional = true
+    file[]: crc = a6712191; size =     36352; name = BASEBALL.D32
+    file[]: crc = a26710b2; size =      8896; name = BASEBALL.DLL
+    file[]: crc = 297d30f5; size =     21616; name = BASEBALL.EXE
+    file[]: crc = 75cc3c46; size =     43338; name = BASEBALL.HE0
+    file[]: crc = 62dee3f0; size =  73061054; name = BASEBALL.HE1
+    file[]: crc = 69466940; size = 109222006; name = BASEBALL.HE2
+    file[]: crc = 4db0bdf8; size =  33326719; name = BASEBALL.HE4
+    file[]: crc = 71c27fac; size =     92180; name = BASEBALL.HE9
+    file[]: crc = 25999b5e; size =    839906; name = BASEBALL.HLP; optional = true
+    file[]: crc = cb24c890; size =       766; name = BASEBALL.ICO; optional = true
+    file[]: crc = de79875d; size =      2235; name = BASEBALL.INF; optional = true
+    file[]: crc = 79e943f6; size =    365568; name = BASEBALL.W32
+    file[]: crc = 9db80e43; size =     16384; name = BASEBALL.X32
+    file[]: crc = 34b1f112; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = b76e98c9; size =    139078; name = JS-AD.BMP; optional = true
+    file[]: crc = 5c7e6928; size =     51647; name = README.TXT; optional = true
+
+
+
+end
+
+
+end

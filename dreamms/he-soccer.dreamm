@@ -1,0 +1,60 @@
+desc[he-soccer]:
+
+name = Backyard Soccer
+icon = he-soccer.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\SOCCER.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1998 version
+//
+game[pc-en-980901]:
+    name = English 1998-09-01
+    anchorfile = SOCCER.EXE
+    file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = abb96326; size =    308278; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = b76e98c9; size =    139078; name = JS-AD.BMP; optional = true
+    file[]: crc = c506e686; size =     19045; name = readme.txt; optional = true
+    file[]: crc = f9c21907; size = 154576946; name = SOCCER.(A)
+    file[]: crc = 9d8b41b6; size =    101588; name = SOCCER.BMP; optional = true
+    file[]: crc = 94c373b1; size =     36352; name = soccer.d32
+    file[]: crc = a26710b2; size =      8896; name = SOCCER.DLL
+    file[]: crc = 9f0127ec; size =     21616; name = SOCCER.EXE
+    file[]: crc = ce497a38; size =      8628; name = SOCCER.GID
+    file[]: crc = b2835e71; size =     67178; name = SOCCER.HE0
+    file[]: crc = 8cabd7ce; size = 142080814; name = SOCCER.HE2
+    file[]: crc = 6f1be081; size =  61482410; name = SOCCER.HE4
+    file[]: crc = b4ca9f1d; size =    197484; name = SOCCER.HE9
+    file[]: crc = 1bb2d3e6; size =   1511245; name = SOCCER.HLP
+    file[]: crc = d0a3e3f8; size =       766; name = SOCCER.ICO
+    file[]: crc = 213bd36a; size =      2225; name = SOCCER.INF
+    file[]: crc = 94e3b9b4; size =    251710; name = SOCCER.MAP
+    file[]: crc = 8cec0c55; size =    123904; name = SOCCER.U32
+    file[]: crc = 00532ef8; size =    422912; name = Soccer.w32
+
+
+
+end
+
+
+end
