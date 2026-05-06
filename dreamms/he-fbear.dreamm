@@ -1,0 +1,102 @@
+desc[he-fbear]:
+
+name = Fatty Bear's Birthday Surprise
+icon = he-fbear.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\FBEAR.EXE"
+osenv = windows 98
+audiohw = gmidi
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// Set up INI file for DOS version
+//
+DOSAUDIO = false
+dynamicfile[]:
+    condition = $(DOSAUDIO)
+    path = C:\FBEAR\FBEAR.INI
+    contents = [[[$(CRLF)
+    DigitalSoundDriver=sblaster.com
+    MidiSoundDriver=sbfm.adv
+    IOAddress=220
+    IRQ=7
+    DigitalID=
+]]]
+end
+//
+
+//
+// 1993 DOS version (I have no clue how to get the music working...)
+//
+game[pc-en-930623]:
+    name = English 1993-06-23
+    anchorfile = FBEAR.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = c62a911f; size =    163752; name = FBEAR.DRV
+    file[]: crc = c29d011c; size =    139745; name = FBEAR.EXE
+    file[]: crc = 7b99fa70; size =      7732; name = FBEAR.HE0
+    file[]: crc = 25e87c78; size =   6091465; name = FBEAR.HE1
+    file[]: crc = 6d77d5b1; size =       766; name = FBEAR.ICO
+    file[]: crc = 0fe6d4f0; size =       133; name = FBEAR.INI
+    file[]: crc = b3847dab; size =       545; name = FBEAR.PIF
+    file[]: crc = 52513973; size =      1115; name = FBEAR.SNG
+    file[]: crc = bc970457; size =  10200227; name = FBEAR.TLK
+    file[]: crc = 18e6c448; size =    132123; name = SETUPCD.EXE
+
+
+end
+
+//
+// 1995 Windows version
+//
+game[pc-en-950220]:
+    name = English 1995-02-20 Windows
+    anchorfile = FBEAR.W32
+    launch = "$(rootpath)\FBEAR.W32"
+    winres = 640x480x8
+    file[]: crc = 2be2c61c; size =     69858; name = FBEAR.BMP; optional = true
+    file[]: crc = 00612556; size =     30720; name = FBEAR.EXE
+    file[]: crc = e8961d49; size =     13381; name = FBEAR.HE0
+    file[]: crc = 107dff9b; size =   7070484; name = FBEAR.HE1
+    file[]: crc = 44df598f; size =  10195172; name = FBEAR.HE2
+    file[]: crc = 76b49d04; size =     36864; name = FBEAR.HE3
+    file[]: crc = ff5724a1; size =  13271285; name = FBEAR.HE4
+    file[]: crc = 13276018; size =    102400; name = FBEAR.HLP; optional = true
+    file[]: crc = 52513973; size =      1115; name = FBEAR.SNG
+    file[]: crc = 0a63ba9c; size =    261120; name = FBEAR.W32
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF; optional = true
+
+
+end
+
+
+end
