@@ -1,7 +1,7 @@
-desc[he-baseball]:
+desc[he-bybaseball]:
 
 name = Backyard Baseball
-icon = he-baseball.png
+icon = he-bybaseball.png
 machine = pc
 rootpath = C:\
 launch = "$(rootpath)\BASEBALL.EXE"
