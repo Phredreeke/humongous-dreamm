@@ -56,5 +56,54 @@ game[pc-en-970514]:
 
 end
 
+//
+// Dutch version
+//
+game[pc-nl-000307]:
+    name = Dutch 2000-03-07
+    anchorfile = SokkenSoep.EXE
+    launch = "$(rootpath)\SokkenSoep.EXE"
+    file[]: crc = a8d7b0e0; size =     24005; name = JA-AD.PCX; optional = true
+    file[]: crc = f47ef08e; size =  13360737; name = SokkenSoep.(a)
+    file[]: crc = a24b1039; size =     49152; name = SokkenSoep.D32
+    file[]: crc = dcb460a2; size =     81920; name = SokkenSoep.EXE
+    file[]: crc = 99033d7d; size =     13668; name = SokkenSoep.HE0
+    file[]: crc = 481c8ca0; size =   5643942; name = SokkenSoep.HE2
+    file[]: crc = 2fbec258; size =   5179292; name = SokkenSoep.HE4
+    file[]: crc = a54d1dce; size =     31877; name = SokkenSoep.HE7
+    file[]: crc = cdc152a2; size =    652050; name = SOKKENSOEP.HLP; optional = true
+    file[]: crc = 573a041e; size =      2311; name = SokkenSoep.INF; optional = true
+    file[]: crc = 158a37ff; size =    425984; name = Sokkensoep.w32
+    file[]: crc = 0b97f939; size =     31004; name = SokkenSoep_.he5; optional = true
+    file[]: crc = 63cf2512; size =    104509; name = SokkenSoep_.he6; optional = true
+
+
+
+end
+
+//
+// French version
+//
+game[pc-fr-000307]:
+    name = French 2000-03-07
+    anchorfile = Chaussettes.EXE
+    launch = "$(rootpath)\Chaussettes.EXE"
+    file[]: crc = d3d2d99d; size =  13325098; name = Chaussettes.(a)
+    file[]: crc = 81980e29; size =     35840; name = Chaussettes.d32
+    file[]: crc = 3e6cf3e8; size =     81920; name = Chaussettes.EXE
+    file[]: crc = 19c673e0; size =     13668; name = Chaussettes.HE0
+    file[]: crc = 1b62eeef; size =   4809711; name = Chaussettes.HE2
+    file[]: crc = 2fbec258; size =   5179292; name = Chaussettes.HE4
+    file[]: crc = a54d1dce; size =     31877; name = Chaussettes.HE7
+    file[]: crc = 387aed79; size =    297553; name = CHAUsSETTES.HLP; optional = true
+    file[]: crc = d97f35d5; size =       766; name = Chaussettes.ICO; optional = true
+    file[]: crc = 13ce9412; size =      2380; name = Chaussettes.inf; optional = true
+    file[]: crc = 2d84a166; size =    425984; name = Chaussettes.w32
+    file[]: crc = 9eb97a09; size =     28692; name = Ja-ad.pcx; optional = true
+    file[]: crc = a54d1dce; size =     31877; name = Socks.he7; optional = true
+
+
+
+end
 
 end
