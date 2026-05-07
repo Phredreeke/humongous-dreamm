@@ -96,6 +96,28 @@ game[pc-nl-000919]:
 end
 
 //
+// French version
+//
+game[pc-fr]:
+    name = French version
+    anchorfile = SPYFoxORE.EXE
+    launch = "$(rootpath)\SPYFoxORE.EXE"
+    file[]: crc = 559994ac; size =     35907; name = JA-AD.pcx; optional = true
+    file[]: crc = 2bf514fa; size =  89647310; name = SPYFoxORE.(a)
+    file[]: crc = c598f977; size =     49152; name = SPYFoxORE.D32
+    file[]: crc = 5f15d470; size =     86016; name = SPYFoxORE.EXE
+    file[]: crc = d6425da3; size =      8628; name = SPYFoxORE.GID
+    file[]: crc = 833b1b23; size =     51286; name = SPYFoxORE.HE0
+    file[]: crc = d02093e9; size = 156183480; name = SPYFoxORE.HE2
+    file[]: crc = dec6bf03; size =  42660124; name = SPYFoxORE.HE4
+    file[]: crc = b0f5ec52; size =    320472; name = SPYFoxORE.HE9
+    file[]: crc = f78b78fe; size =    699274; name = SPYFoxORE.HLP; optional = true
+    file[]: crc = b530dd9f; size =      2499; name = SPYFoxORE.INF; optional = true
+    file[]: crc = f39636a0; size =    442368; name = SPYFoxORE.w32
+
+end
+
+//
 // 2000 German version
 //
 game[pc-de-000919]:
@@ -134,5 +156,22 @@ demo[pc-en-000313-demo]:
 
 end
 
+//
+// 2000 English demo version
+//
+demo[pc-fr-001009-demo]:
+    name = French Demo 2000-10-09
+    anchorfile = SF2demo.exe
+    launch = "$(rootpath)\SF2demo.exe"
+    file[]: crc = c0853405; size =   6174151; name = Sf2demo.(a)
+    file[]: crc = ec7c10f1; size =     35840; name = SF2Demo.D32
+    file[]: crc = 614cf98d; size =    442368; name = SF2demo.exe
+    file[]: crc = 2fa550ea; size =     15832; name = Sf2demo.HE0
+    file[]: crc = 073e64bc; size =   4697674; name = Sf2demo.HE2
+    file[]: crc = 42d008de; size =   1883367; name = SF2Demo.HE4
+    file[]: crc = 792a4e8c; size =    699274; name = SF2Demo.HLP; optional = true
+    file[]: crc = da0d629d; size =      2282; name = SF2Demo.INF; optional = true
+
+end
 
 end
