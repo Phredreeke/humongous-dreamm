@@ -63,12 +63,24 @@ game[pc-en-930623]:
     file[]: crc = c29d011c; size =    139745; name = FBEAR.EXE
     file[]: crc = 7b99fa70; size =      7732; name = FBEAR.HE0
     file[]: crc = 25e87c78; size =   6091465; name = FBEAR.HE1
-    file[]: crc = 6d77d5b1; size =       766; name = FBEAR.ICO
+    file[]: crc = 6d77d5b1; size =       766; name = FBEAR.ICO; optional = true
     file[]: crc = 0fe6d4f0; size =       133; name = FBEAR.INI
     file[]: crc = b3847dab; size =       545; name = FBEAR.PIF
     file[]: crc = 52513973; size =      1115; name = FBEAR.SNG
-    file[]: crc = bc970457; size =  10200227; name = FBEAR.TLK
+    file[]: crc = d928f4eb; size =  10200227; name = FBEAR.TLK
     file[]: crc = 18e6c448; size =    132123; name = SETUPCD.EXE
+
+
+end
+
+//
+// DOS version 
+//
+game[pc-en-980921]:
+    imports = pc-en-930623
+    name = English 1998-09-21
+    anchorfile = FBEAR.TLK
+    file[]: crc = bc970457; size =  10200227; name = FBEAR.TLK
 
 
 end
@@ -76,7 +88,7 @@ end
 //
 // 1995 Windows version
 //
-game[pc-en-950220]:
+game[pc-en-950220-win]:
     name = English 1995-02-20 Windows
     anchorfile = FBEAR.W32
     launch = "$(rootpath)\FBEAR.W32"
@@ -85,7 +97,7 @@ game[pc-en-950220]:
     file[]: crc = 00612556; size =     30720; name = FBEAR.EXE
     file[]: crc = e8961d49; size =     13381; name = FBEAR.HE0
     file[]: crc = 107dff9b; size =   7070484; name = FBEAR.HE1
-    file[]: crc = 44df598f; size =  10195172; name = FBEAR.HE2
+    file[]: crc = 2160a933; size =  10195172; name = FBEAR.HE2
     file[]: crc = 76b49d04; size =     36864; name = FBEAR.HE3
     file[]: crc = ff5724a1; size =  13271285; name = FBEAR.HE4
     file[]: crc = 13276018; size =    102400; name = FBEAR.HLP; optional = true
@@ -98,5 +110,15 @@ game[pc-en-950220]:
 
 end
 
+//
+// 1995 Windows version
+//
+game[pc-en-980921-win]:
+    name = English 1998-09-21 Windows
+    imports = pc-en-950220-win
+    anchorfile = FBEAR.HE2
+    file[]: crc = 44df598f; size =  10195172; name = FBEAR.HE2
+
+end
 
 end
