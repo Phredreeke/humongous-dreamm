@@ -1,0 +1,60 @@
+desc[he-pjssock]:
+
+name = Pajama Sam's Sock Works
+icon = he-pjssock.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\SOCKS.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+
+//
+// 1997 version
+//
+game[pc-en-970514]:
+    name = English 1997-05-14
+    anchorfile = SOCKS.EXE
+    file[]: crc = c3cb7999; size =       766; name = COPYRITE.TXT; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 6edf6344; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = cf9fc553; size =     35634; name = README.TXT; optional = true
+    file[]: crc = d3ceeb55; size =    132406; name = SOCKS.BMP; optional = true
+    file[]: crc = 4c313bb8; size =     32768; name = SOCKS.D32
+    file[]: crc = a26710b2; size =      8896; name = SOCKS.DLL
+    file[]: crc = 8f94cc65; size =     21616; name = SOCKS.EXE
+    file[]: crc = ace37482; size =     13596; name = SOCKS.HE0
+    file[]: crc = 118e4cae; size =  13575368; name = SOCKS.HE1
+    file[]: crc = 98660848; size =   4610807; name = SOCKS.HE2
+    file[]: crc = 2fbec258; size =   5179292; name = SOCKS.HE4
+    file[]: crc = a54d1dce; size =     31877; name = SOCKS.HE7
+    file[]: crc = 60f834ec; size =    139071; name = SOCKS.HLP; optional = true
+    file[]: crc = 2169c02a; size =      2055; name = SOCKS.INF; optional = true
+    file[]: crc = 73329a5a; size =    317440; name = SOCKS.W32
+
+
+
+end
+
+
+end
