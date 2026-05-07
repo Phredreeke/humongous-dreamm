@@ -8,4 +8,6 @@ M-A-Boucher: multiple icons
 
 CookieMonster123: definitions for Japanese Freddi Fish 1 and 2
 
+BackSpace7073: French version of Spy Fox 2
+
 Thanks to Aaron Giles for his great emulator
