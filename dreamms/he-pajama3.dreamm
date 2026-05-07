@@ -71,6 +71,26 @@ game[pc-en-010221]:
 end
 
 //
+// 2000 Dutch version
+//
+game[pc-nl-001009]:
+    name = Dutch 2000-10-09
+    anchorfile = PAJAMA3.EXE
+    file[]: crc = 882adf23; size =     26932; name = Ja-ad.pcx; optional = true
+    file[]: crc = 94ded985; size =  90362711; name = Pajama3.(a)
+    file[]: crc = f417f9af; size =     49152; name = PAJAMA3.D32
+    file[]: crc = 8803d9e6; size =     86016; name = PAJAMA3.EXE
+    file[]: crc = 4924ae1a; size =     79382; name = Pajama3.HE0
+    file[]: crc = c4bc7050; size = 113218915; name = Pajama3.he2
+    file[]: crc = ff0a4a9f; size =  55316990; name = PAJAMA3.HE4
+    file[]: crc = ce4da9c1; size =   1927947; name = PAJAMA3.HLP; optional = true
+    file[]: crc = a93af747; size =      2395; name = Pajama3.INF; optional = true
+    file[]: crc = 8f3dd8f7; size =    442368; name = Pajama3.w32
+
+
+end
+
+//
 // 2000 French version
 //
 game[pc-fr-001009]:
@@ -90,6 +110,7 @@ game[pc-fr-001009]:
 
 
 end
+
 
 //
 // 1999 Demo version
@@ -131,6 +152,27 @@ demo[pc-en-000104-demo]:
 
 
 end
+
+
+//
+// Dutch Demo version
+//
+demo[pc-nl-demo]:
+    name = Dutch Demo
+    anchorfile = pj3demo.exe
+    launch = "$(rootpath)\pj3demo.exe"
+    file[]: crc = 81047d23; size =   5570075; name = pj3demo.(a)
+    file[]: crc = b60e543d; size =     49152; name = pj3demo.d32
+    file[]: crc = 87a06f41; size =    475182; name = pj3demo.exe
+    file[]: crc = d1a95480; size =     13911; name = pj3demo.he0
+    file[]: crc = 29820e46; size =   4063025; name = pj3demo.he2
+    file[]: crc = 354097ec; size =   2398626; name = pj3demo.he4
+    file[]: crc = c3e9a94c; size =   1982985; name = pj3demo.hlp; optional = true
+    file[]: crc = 22749e00; size =      2384; name = pj3demo.inf; optional = true
+
+
+end
+
 
 //
 // 2000 French Demo version

@@ -212,7 +212,7 @@ end
 // 1997 version
 //
 demo[pc-en-970814]:
-    name = English 1997-08-14
+    name = English Demo 1997-08-14
     anchorfile = PJS-DEMO.EXE
     launch = "$(rootpath)\PJS-DEMO.EXE"
     file[]: crc = a26710b2; size =      8896; name = PJS-DEMO.DLL

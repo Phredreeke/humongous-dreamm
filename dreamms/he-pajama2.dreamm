@@ -183,6 +183,25 @@ demo[pc-en-980510-demo]:
 end
 
 //
+// 1999 Dutch Demo
+//
+demo[pc-nl-990413-demo]:
+    name = Dutch Demo 1999-04-13
+    anchorfile = PJS2DEMO.EXE
+    launch = "$(rootpath)\PJS2DEMO.EXE"
+    file[]: crc = 50b34291; size =   6120392; name = PJS2DEMO.(A)
+    file[]: crc = 07fbad26; size =    128086; name = PJS2DEMO.BMP; optional = true
+    file[]: crc = 1e2f9505; size =     34304; name = PJS2DEMO.D32
+    file[]: crc = c3133791; size =    444928; name = PJS2DEMO.EXE
+    file[]: crc = 2a1a277e; size =     58782; name = PJS2DEMO.HE0
+    file[]: crc = 97501448; size =   2594912; name = PJS2DEMO.HE2
+    file[]: crc = d304f3a6; size =    848616; name = PJS2DEMO.HE4
+    file[]: crc = b73afae0; size =     71717; name = PJS2DEMO.HLP; optional = true
+    file[]: crc = 70d8715b; size =      2210; name = PJS2DEMO.INF; optional = true
+
+end
+
+//
 // 2001 Hebrew Demo
 //
 demo[pc-en-010328-demo]:
