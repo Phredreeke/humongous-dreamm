@@ -158,6 +158,34 @@ game[pc-de-961107]:
 end
 
 //
+// Japanese version (added by CookieMonster123)
+//
+game[pc-ja-961107]:
+    name = Japanese 1996-11-07
+    anchorfile = FREDDI2.EXE
+    locale = ja-JP	
+    file[]: crc = 964b7c53; size =     39936; name = AUTOFRED.EXE; optional = true
+    file[]: crc = f03e4d8a; size =       289; name = AUTOFRED.INF; optional = true
+    file[]: crc = 338bdaa9; size =        48; name = AUTORUN.INF; optional = true
+    file[]: crc = 10bad16c; size =    132406; name = FREDDI2.BMP; optional = true
+    file[]: crc = 3562daab; size =     31744; name = FREDDI2.D32
+    file[]: crc = ab2bc2a7; size =      8944; name = FREDDI2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FREDDI2.EXE
+    file[]: crc = ee058857; size =     65305; name = FREDDI2.HE0
+    file[]: crc = bf56986c; size = 115118357; name = FREDDI2.HE1
+    file[]: crc = d87c8ca9; size =  45315034; name = FREDDI2.HE2
+    file[]: crc = a12a43ea; size =  42620960; name = FREDDI2.HE4
+    file[]: crc = e245c055; size =    161578; name = FREDDI2.HLP; optional = true
+    file[]: crc = 8cc15b23; size =      2099; name = FREDDI2.INF; optional = true
+    file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
+    file[]: crc = 4c8b9f85; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 8944b383; size =      6279; name = README.TXT; optional = true
+
+
+
+end
+
+//
 // English demo
 //
 demo[pc-en-961029-demo]:
