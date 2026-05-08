@@ -157,7 +157,26 @@ demo[pc-en-000313-demo]:
 end
 
 //
-// 2000 English demo version
+// 2001 UK Demo
+//
+demo[pc-en-010306-demo]:
+    name = English Demo 2001-03-06 UK Dub
+    anchorfile = sf2demo.exe
+    launch = "$(rootpath)\sf2demo.exe"
+    file[]: crc = c0c9f6f6; size =   5870072; name = SF2DEMO.(A)
+    file[]: crc = ff0be092; size =     45056; name = SF2DEMO.D32
+    file[]: crc = 9996ff23; size =    475182; name = sf2demo.exe
+    file[]: crc = 3ea5df9d; size =     14689; name = SF2DEMO.HE0
+    file[]: crc = 24e3b514; size =   4374772; name = Sf2Demo.he2
+    file[]: crc = 42d008de; size =   1883367; name = Sf2Demo.he4
+    file[]: crc = a6a4631a; size =    628831; name = Sf2Demo.HLP; optional = true
+    file[]: crc = e6f1b684; size =      2214; name = SF2DEMO.INF; optional = true
+    file[]: crc = 19d8853f; size =       766; name = SPYUK.ico; optional = true
+
+end
+
+//
+// 2000 French demo version
 //
 demo[pc-fr-001009-demo]:
     name = French Demo 2000-10-09

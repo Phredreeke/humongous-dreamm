@@ -153,6 +153,25 @@ demo[pc-en-000104-demo]:
 
 end
 
+//
+// 2001 UK Demo version
+//
+demo[pc-en-010306-demo]:
+    name = English Demo 2001-03-06 UK Dub
+    anchorfile = pj3demo.exe
+    launch = "$(rootpath)\pj3demo.exe"
+    file[]: crc = 8c54588e; size =   5476982; name = PJ3DEMO.(A)
+    file[]: crc = ff0be092; size =     45056; name = PJ3DEMO.D32
+    file[]: crc = 87a06f41; size =    475182; name = pj3demo.exe
+    file[]: crc = 88050ab4; size =     13911; name = PJ3DEMO.HE0
+    file[]: crc = 6f6f8ef2; size =   3806379; name = Pj3Demo.he2
+    file[]: crc = 354097ec; size =   2398626; name = Pj3Demo.he4
+    file[]: crc = 7a891119; size =   2013973; name = Pj3Demo.hlp; optional = true
+    file[]: crc = e568f343; size =      2110; name = pj3demo.inf; optional = true
+    file[]: crc = 1bd037c1; size =       766; name = SamUK.ICO; optional = true
+
+
+end
 
 //
 // Dutch Demo version
