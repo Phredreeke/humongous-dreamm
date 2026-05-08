@@ -10,10 +10,10 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Backyard Baseball | 🇺🇸 | |
 | Backyard Soccer | 🇺🇸 | |
 | Fatty Bear's Birthday Surprise | 🇺🇸 | |
-| Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 | |
+| Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇸 | |
 | Freddi Fish 2: The Case of the Haunted Schoolhouse | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 | |
 | Freddi Fish 3: The Case of the Stolen Conch Shell | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇸 | |
-| Freddi Fish 4: The Case of the Hogfish Rustlers of Briny Gulch | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇸 | |
+| Freddi Fish 4: The Case of the Hogfish Rustlers of Briny Gulch | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇹 | |
 | Freddi Fish 5: The Case of the Creature of Coral Cove |  🇺🇸 🇫🇷 |  |
 | Freddi Fish and Luther's Maze Madness |  🇺🇸 |  |
 | Pajama Sam: No Need to Hide When It's Dark Outside |  🇺🇸 🇳🇱 🇫🇷 🇩🇪 |  |
