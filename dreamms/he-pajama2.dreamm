@@ -122,6 +122,25 @@ game[pc-nl-990413]:
 
 end
 
+//
+// French version
+//
+game[pc-fr-2001]:
+    name = French (2001)
+    anchorfile = PyjamaHM.exe
+    launch = "$(rootpath)\PyjamaHM.exe"
+    file[]: crc = 36de5648; size =     22848; name = JA-AD.pcx
+    file[]: crc = b7957493; size =  98061916; name = PyjamaHM.(a)
+    file[]: crc = 81980e29; size =     35840; name = PyjamaHM.d32
+    file[]: crc = fe8df556; size =     86016; name = PyjamaHM.exe
+    file[]: crc = b87101ac; size =     60678; name = PyjamaHM.HE0
+    file[]: crc = 73266e6b; size =  77265582; name = PyjamaHM.HE2
+    file[]: crc = 477991a4; size =  22611842; name = Pyjamahm.HE4
+    file[]: crc = c0da6b86; size =   1183044; name = PYJAMAHM.HLP; optional = true
+    file[]: crc = 0e21a8ea; size =      2601; name = PyjamaHM.INF; optional = true
+    file[]: crc = 7f0050c1; size =    430080; name = PyjamaHM.w32
+
+end
 
 //
 // 2001 German version
