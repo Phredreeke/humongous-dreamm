@@ -1,0 +1,99 @@
+desc[he-puttputt]:
+
+name = Putt-Putt Joins the Parade
+icon = he-puttputt.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PUTTPUTT.EXE"
+osenv = windows 98
+audiohw = gmidi
+dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// Set up INI file for DOS version
+//
+DOSAUDIO = false
+dynamicfile[]:
+    condition = $(DOSAUDIO)
+    path = C:\PUTTPUTT\PUTTPUTT.INI
+    contents = [[[$(CRLF)
+    DigitalSoundDriver=sblaster.com
+    MidiSoundDriver=sbfm.adv
+    IOAddress=220
+    IRQ=7
+    DigitalID=
+]]]
+end
+//
+
+//
+// 1994 DOS version
+//
+game[pc-en-940118]:
+    name = English 1994-01-18
+    anchorfile = PUTTPUTT.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = 3e59a339; size =    197900; name = PUTTPUTT.DRV
+    file[]: crc = 125cef80; size =    142805; name = PUTTPUTT.EXE
+    file[]: crc = 5eba3918; size =      8117; name = PUTTPUTT.HE0
+    file[]: crc = 8d0fddd1; size =   4808565; name = PUTTPUTT.HE1
+    file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO; optional = true
+    file[]: crc = 4164eecb; size =       139; name = PUTTPUTT.INI
+    file[]: crc = 1398c742; size =       545; name = PUTTPUTT.PIF; optional = true
+    file[]: crc = 2ed0c10e; size =  26437948; name = PUTTPUTT.TLK
+    file[]: crc = 3486d0cc; size =    131940; name = SETUPCD.EXE
+
+
+end
+
+
+//
+// 1995 Windows version
+//
+game[pc-en-950220-win]:
+    name = English 1995-02-20 Windows
+    anchorfile = PUTTPUTT.W32
+    winres = 640x480x8
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
+    file[]: crc = 2ebf8c76; size =     79202; name = PUTTPUTT.BMP; optional = true
+    file[]: crc = e2d65050; size =     30720; name = PUTTPUTT.EXE
+    file[]: crc = ece405b0; size =     12728; name = PUTTPUTT.HE0
+    file[]: crc = c0fcad18; size =   5046281; name = PUTTPUTT.HE1
+    file[]: crc = 0278bc2c; size =  26507681; name = PUTTPUTT.HE2
+    file[]: crc = 76b49d04; size =     36864; name = PUTTPUTT.HE3
+    file[]: crc = 793b4fa9; size =  10671834; name = PUTTPUTT.HE4
+    file[]: crc = a10d9a24; size =    100352; name = PUTTPUTT.HLP; optional = true
+    file[]: crc = d5b2c3d5; size =    261120; name = PUTTPUTT.W32
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF; optional = true
+
+
+end
+
+end
