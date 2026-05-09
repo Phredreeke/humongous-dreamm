@@ -19,6 +19,7 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Pajama Sam: No Need to Hide When It's Dark Outside |  🇺🇸 🇳🇱 🇫🇷 🇩🇪 |  |
 | Pajama Sam 2: Thunder and Lightning Aren't so Frightening |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 |  |
 | Pajama Sam 3: You Are What You Eat From Your Head To Your Feet |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 |  |
+| Pajama Sam's Lost & Found |  🇺🇸 |  |
 | Pajama Sam's Sock Works |  🇺🇸 🇳🇱 🇫🇷 |  |
 | Spy Fox in "Dry Cereal" |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Spy Fox 2: "Some Assembly Required" |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
