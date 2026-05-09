@@ -1,0 +1,258 @@
+desc[he-pjslostfound]:
+
+name = Pajama Sam's Lost & Found
+icon = he-pjslostfound.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\lost.exe"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1998 version
+//
+game[pc-en-980911]:
+    name = English 1998-09-11
+    anchorfile = lost.exe
+    file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = f336995f; size =    308278; name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = a5ff2331; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 331146e7; size =  24482447; name = lost.(a)
+    file[]: crc = 175c6762; size =    132406; name = lost.BMP; optional = true
+    file[]: crc = 94c373b1; size =     36352; name = lost.d32
+    file[]: crc = a26710b2; size =      8896; name = lost.dll
+    file[]: crc = 1eb7d00f; size =     21616; name = lost.exe
+    file[]: crc = 6d82f30f; size =     24788; name = lost.HE0
+    file[]: crc = 189947ad; size =   2468390; name = lost.he2
+    file[]: crc = b6fc4dec; size =    143757; name = lost.hlp; optional = true
+    file[]: crc = b5857efe; size =       766; name = lost.ico; optional = true
+    file[]: crc = 03accbd7; size =      2202; name = lost.inf; optional = true
+    file[]: crc = 95874a52; size =    422912; name = lost.w32
+    file[]: crc = a200cfe0; size =     17270; name = README.TXT; optional = true
+    file[]: crc = 64ea9005; size =      1046; name = data\world-1\levels\level-1.ot1
+    file[]: crc = 72cd106d; size =       476; name = data\world-1\levels\level-1.ot2
+    file[]: crc = 98cf32b5; size =      1064; name = data\world-1\levels\level-10.ot1
+    file[]: crc = 50d14286; size =       844; name = data\world-1\levels\level-10.ot2
+    file[]: crc = 3d687aac; size =      1062; name = data\world-1\levels\level-11.ot1
+    file[]: crc = 176504ec; size =       956; name = data\world-1\levels\level-11.ot2
+    file[]: crc = 739e92ab; size =      1272; name = data\world-1\levels\level-12.ot1
+    file[]: crc = e7e7d0c9; size =       892; name = data\world-1\levels\level-12.ot2
+    file[]: crc = 2eb95879; size =      1088; name = data\world-1\levels\level-13.ot1
+    file[]: crc = cd7c23e3; size =      1660; name = data\world-1\levels\level-13.ot2
+    file[]: crc = 9c2e2b73; size =      1178; name = data\world-1\levels\level-14.ot1
+    file[]: crc = cdbfdb59; size =      1356; name = data\world-1\levels\level-14.ot2
+    file[]: crc = 54628b78; size =      1282; name = data\world-1\levels\level-15.ot1
+    file[]: crc = 7fd4191a; size =       652; name = data\world-1\levels\level-15.ot2
+    file[]: crc = 5da48557; size =       760; name = data\world-1\levels\level-16.ot1
+    file[]: crc = 6a009974; size =      1980; name = data\world-1\levels\level-16.ot2
+    file[]: crc = 8d68f575; size =       832; name = data\world-1\levels\level-17.ot1
+    file[]: crc = e018c6e5; size =      1020; name = data\world-1\levels\level-17.ot2
+    file[]: crc = a5d2ed7c; size =       952; name = data\world-1\levels\level-18.ot1
+    file[]: crc = 580e6f50; size =      2172; name = data\world-1\levels\level-18.ot2
+    file[]: crc = 98bda658; size =      1240; name = data\world-1\levels\level-19.ot1
+    file[]: crc = a05c2ee1; size =      3244; name = data\world-1\levels\level-19.ot2
+    file[]: crc = da52faa0; size =       898; name = data\world-1\levels\level-2.ot1
+    file[]: crc = 1d4fbbcc; size =       588; name = data\world-1\levels\level-2.ot2
+    file[]: crc = 86ef5208; size =      1370; name = data\world-1\levels\level-20.ot1
+    file[]: crc = e47842a3; size =      2348; name = data\world-1\levels\level-20.ot2
+    file[]: crc = 0df74ad7; size =       868; name = data\world-1\levels\level-3.ot1
+    file[]: crc = fda42fa5; size =       604; name = data\world-1\levels\level-3.ot2
+    file[]: crc = 15025217; size =      1078; name = data\world-1\levels\level-4.ot1
+    file[]: crc = 8b1b28bb; size =       908; name = data\world-1\levels\level-4.ot2
+    file[]: crc = b340ff20; size =      1238; name = data\world-1\levels\level-5.ot1
+    file[]: crc = c39dd169; size =       652; name = data\world-1\levels\level-5.ot2
+    file[]: crc = 56451df3; size =      1046; name = data\world-1\levels\level-6.ot1
+    file[]: crc = 90fd9c2d; size =       716; name = data\world-1\levels\level-6.ot2
+    file[]: crc = da52faa0; size =       898; name = data\world-1\levels\level-7.ot1
+    file[]: crc = 8130dfa2; size =       956; name = data\world-1\levels\level-7.ot2
+    file[]: crc = 3811b2a0; size =       612; name = data\world-1\levels\level-8.ot1
+    file[]: crc = 11b6ec13; size =       780; name = data\world-1\levels\level-8.ot2
+    file[]: crc = 8d17d8d7; size =       852; name = data\world-1\levels\level-9.ot1
+    file[]: crc = de867689; size =       428; name = data\world-1\levels\level-9.ot2
+    file[]: crc = c0317ea2; size =       338; name = data\world-2\levels\level-1.ot1
+    file[]: crc = 7c90b9b2; size =       620; name = data\world-2\levels\level-1.ot2
+    file[]: crc = 4329c550; size =       316; name = data\world-2\levels\level-10.ot1
+    file[]: crc = e1530896; size =      1676; name = data\world-2\levels\level-10.ot2
+    file[]: crc = e7306f06; size =       268; name = data\world-2\levels\level-11.ot1
+    file[]: crc = be18957e; size =      1116; name = data\world-2\levels\level-11.ot2
+    file[]: crc = bb6c2006; size =       366; name = data\world-2\levels\level-12.ot1
+    file[]: crc = f7823b8e; size =      1148; name = data\world-2\levels\level-12.ot2
+    file[]: crc = 4a319c01; size =       334; name = data\world-2\levels\level-13.ot1
+    file[]: crc = 3e27217e; size =      1612; name = data\world-2\levels\level-13.ot2
+    file[]: crc = e809d378; size =       426; name = data\world-2\levels\level-14.ot1
+    file[]: crc = b3bed6f9; size =      1452; name = data\world-2\levels\level-14.ot2
+    file[]: crc = 52d2f4c1; size =       516; name = data\world-2\levels\level-15.ot1
+    file[]: crc = 1a6aff9e; size =      1836; name = data\world-2\levels\level-15.ot2
+    file[]: crc = 05ec747f; size =       268; name = data\world-2\levels\level-16.ot1
+    file[]: crc = c2ae7b64; size =      1820; name = data\world-2\levels\level-16.ot2
+    file[]: crc = 9a723076; size =       376; name = data\world-2\levels\level-17.ot1
+    file[]: crc = 3de7f571; size =      1996; name = data\world-2\levels\level-17.ot2
+    file[]: crc = 6b4fc3fd; size =       314; name = data\world-2\levels\level-18.ot1
+    file[]: crc = c3c4be75; size =      2220; name = data\world-2\levels\level-18.ot2
+    file[]: crc = 7d4f912d; size =       434; name = data\world-2\levels\level-19.ot1
+    file[]: crc = 42940802; size =      2556; name = data\world-2\levels\level-19.ot2
+    file[]: crc = cac03704; size =       374; name = data\world-2\levels\level-2.ot1
+    file[]: crc = cfca43be; size =      1276; name = data\world-2\levels\level-2.ot2
+    file[]: crc = a02f33cb; size =       544; name = data\world-2\levels\level-20.ot1
+    file[]: crc = b41dca41; size =      2748; name = data\world-2\levels\level-20.ot2
+    file[]: crc = a6e6acc0; size =       338; name = data\world-2\levels\level-3.ot1
+    file[]: crc = ca1f3c87; size =       716; name = data\world-2\levels\level-3.ot2
+    file[]: crc = 15f2fda9; size =       308; name = data\world-2\levels\level-4.ot1
+    file[]: crc = c5efc9f0; size =       540; name = data\world-2\levels\level-4.ot2
+    file[]: crc = 3aa99b36; size =       268; name = data\world-2\levels\level-5.ot1
+    file[]: crc = 52221787; size =       492; name = data\world-2\levels\level-5.ot2
+    file[]: crc = c390c1a9; size =       518; name = data\world-2\levels\level-6.ot1
+    file[]: crc = fe49edf9; size =       716; name = data\world-2\levels\level-6.ot2
+    file[]: crc = f28ff9cc; size =       290; name = data\world-2\levels\level-7.ot1
+    file[]: crc = 4d1c40fa; size =      1212; name = data\world-2\levels\level-7.ot2
+    file[]: crc = 7dcd0100; size =       534; name = data\world-2\levels\level-8.ot1
+    file[]: crc = 2163f58a; size =      1916; name = data\world-2\levels\level-8.ot2
+    file[]: crc = 07330cec; size =       290; name = data\world-2\levels\level-9.ot1
+    file[]: crc = ca0e102e; size =      1388; name = data\world-2\levels\level-9.ot2
+    file[]: crc = e2def93f; size =       474; name = data\world-3\levels\level-1.ot1
+    file[]: crc = 2cdde013; size =       604; name = data\world-3\levels\level-1.ot2
+    file[]: crc = 53042788; size =       834; name = data\world-3\levels\level-10.ot1
+    file[]: crc = a502769a; size =       668; name = data\world-3\levels\level-10.ot2
+    file[]: crc = 865804fa; size =      1246; name = data\world-3\levels\level-11.ot1
+    file[]: crc = 293e5f65; size =       924; name = data\world-3\levels\level-11.ot2
+    file[]: crc = 8f6df6ab; size =      1360; name = data\world-3\levels\level-12.ot1
+    file[]: crc = 87417112; size =      1100; name = data\world-3\levels\level-12.ot2
+    file[]: crc = d837eb0f; size =      1120; name = data\world-3\levels\level-13.ot1
+    file[]: crc = 46a425cd; size =      1212; name = data\world-3\levels\level-13.ot2
+    file[]: crc = b2328092; size =      1170; name = data\world-3\levels\level-14.ot1
+    file[]: crc = 626c6b72; size =      3644; name = data\world-3\levels\level-14.ot2
+    file[]: crc = a7b8eb53; size =       722; name = data\world-3\levels\level-15.ot1
+    file[]: crc = 0348ab3e; size =      2204; name = data\world-3\levels\level-15.ot2
+    file[]: crc = bef1706d; size =       932; name = data\world-3\levels\level-16.ot1
+    file[]: crc = 3ebb12bf; size =      1516; name = data\world-3\levels\level-16.ot2
+    file[]: crc = f373caf0; size =      1360; name = data\world-3\levels\level-17.ot1
+    file[]: crc = 0d7e639f; size =      2012; name = data\world-3\levels\level-17.ot2
+    file[]: crc = d837eb0f; size =      1120; name = data\world-3\levels\level-18.ot1
+    file[]: crc = 1bfc21f9; size =      2316; name = data\world-3\levels\level-18.ot2
+    file[]: crc = 70a3eab4; size =       972; name = data\world-3\levels\level-19.ot1
+    file[]: crc = 3a365c79; size =      2540; name = data\world-3\levels\level-19.ot2
+    file[]: crc = 86fb9601; size =       954; name = data\world-3\levels\level-2.ot1
+    file[]: crc = efb9e267; size =      1132; name = data\world-3\levels\level-2.ot2
+    file[]: crc = f334bfc6; size =       722; name = data\world-3\levels\level-20.ot1
+    file[]: crc = 74a2d557; size =      3788; name = data\world-3\levels\level-20.ot2
+    file[]: crc = c99178e0; size =       486; name = data\world-3\levels\level-3.ot1
+    file[]: crc = 7034ff43; size =       572; name = data\world-3\levels\level-3.ot2
+    file[]: crc = 47508e02; size =       396; name = data\world-3\levels\level-4.ot1
+    file[]: crc = f883a745; size =       556; name = data\world-3\levels\level-4.ot2
+    file[]: crc = 40d136c1; size =       642; name = data\world-3\levels\level-5.ot1
+    file[]: crc = 6986a3b8; size =      1132; name = data\world-3\levels\level-5.ot2
+    file[]: crc = 3c6e6579; size =      1414; name = data\world-3\levels\level-6.ot1
+    file[]: crc = 75c0c28f; size =      1116; name = data\world-3\levels\level-6.ot2
+    file[]: crc = 3784a7a3; size =       934; name = data\world-3\levels\level-7.ot1
+    file[]: crc = e97e4749; size =      1420; name = data\world-3\levels\level-7.ot2
+    file[]: crc = 87ed4f5b; size =       400; name = data\world-3\levels\level-8.ot1
+    file[]: crc = 070e9e92; size =      1964; name = data\world-3\levels\level-8.ot2
+    file[]: crc = 407c56e7; size =      1154; name = data\world-3\levels\level-9.ot1
+    file[]: crc = 3ca70a26; size =      1596; name = data\world-3\levels\level-9.ot2
+    file[]: crc = 27a56413; size =      1712; name = data\world-4\levels\level-1.ot1
+    file[]: crc = 2cff4e08; size =      1036; name = data\world-4\levels\level-1.ot2
+    file[]: crc = d803b177; size =      3152; name = data\world-4\levels\level-10.ot1
+    file[]: crc = 2875cb42; size =      1324; name = data\world-4\levels\level-10.ot2
+    file[]: crc = 10dad8f3; size =      2062; name = data\world-4\levels\level-11.ot1
+    file[]: crc = 81d7ae94; size =       940; name = data\world-4\levels\level-11.ot2
+    file[]: crc = e068b6cf; size =      2412; name = data\world-4\levels\level-12.ot1
+    file[]: crc = d7e98b7c; size =      1212; name = data\world-4\levels\level-12.ot2
+    file[]: crc = 3e82f131; size =       972; name = data\world-4\levels\level-13.ot1
+    file[]: crc = 840da9d3; size =      1052; name = data\world-4\levels\level-13.ot2
+    file[]: crc = d1909f3f; size =      1032; name = data\world-4\levels\level-14.ot1
+    file[]: crc = 4b2bb161; size =      1324; name = data\world-4\levels\level-14.ot2
+    file[]: crc = c0fa8507; size =      1282; name = data\world-4\levels\level-15.ot1
+    file[]: crc = 52165d12; size =      1388; name = data\world-4\levels\level-15.ot2
+    file[]: crc = 46c50c8a; size =      2062; name = data\world-4\levels\level-16.ot1
+    file[]: crc = 21464558; size =      1324; name = data\world-4\levels\level-16.ot2
+    file[]: crc = f32e054a; size =      2412; name = data\world-4\levels\level-17.ot1
+    file[]: crc = bded6d71; size =      1868; name = data\world-4\levels\level-17.ot2
+    file[]: crc = 4fe39e07; size =       972; name = data\world-4\levels\level-18.ot1
+    file[]: crc = 7c37ecee; size =      2332; name = data\world-4\levels\level-18.ot2
+    file[]: crc = eb0dcc80; size =      1022; name = data\world-4\levels\level-19.ot1
+    file[]: crc = a1ecbd44; size =      2588; name = data\world-4\levels\level-19.ot2
+    file[]: crc = 1c687f4b; size =      1792; name = data\world-4\levels\level-2.ot1
+    file[]: crc = 1a0a0d5b; size =       668; name = data\world-4\levels\level-2.ot2
+    file[]: crc = 62a0af03; size =      1272; name = data\world-4\levels\level-20.ot1
+    file[]: crc = 036ea1df; size =      2812; name = data\world-4\levels\level-20.ot2
+    file[]: crc = 35fea759; size =      2462; name = data\world-4\levels\level-3.ot1
+    file[]: crc = 23cefedc; size =      1212; name = data\world-4\levels\level-3.ot2
+    file[]: crc = cd3c5627; size =      2032; name = data\world-4\levels\level-4.ot1
+    file[]: crc = 09599e99; size =      1308; name = data\world-4\levels\level-4.ot2
+    file[]: crc = 01640ebe; size =      2192; name = data\world-4\levels\level-5.ot1
+    file[]: crc = cdcb8847; size =      1564; name = data\world-4\levels\level-5.ot2
+    file[]: crc = e9ce27a2; size =      1392; name = data\world-4\levels\level-6.ot1
+    file[]: crc = 6cffcfa5; size =      1004; name = data\world-4\levels\level-6.ot2
+    file[]: crc = f8f10049; size =      2122; name = data\world-4\levels\level-7.ot1
+    file[]: crc = 11e04317; size =      1196; name = data\world-4\levels\level-7.ot2
+    file[]: crc = 143962fe; size =      1562; name = data\world-4\levels\level-8.ot1
+    file[]: crc = 4c2d94f4; size =       860; name = data\world-4\levels\level-8.ot2
+    file[]: crc = 8550bb52; size =      2352; name = data\world-4\levels\level-9.ot1
+    file[]: crc = 31865b6e; size =      1196; name = data\world-4\levels\level-9.ot2
+    file[]: crc = 3852faa7; size =      1104; name = data\world-5\levels\level-1.ot1
+    file[]: crc = 0bc50827; size =       620; name = data\world-5\levels\level-1.ot2
+    file[]: crc = a0d2cd81; size =      2632; name = data\world-5\levels\level-10.ot1
+    file[]: crc = cde228a1; size =      1436; name = data\world-5\levels\level-10.ot2
+    file[]: crc = 83c4a1bf; size =      1264; name = data\world-5\levels\level-11.ot1
+    file[]: crc = 795ff934; size =       796; name = data\world-5\levels\level-11.ot2
+    file[]: crc = 72030d18; size =      1524; name = data\world-5\levels\level-12.ot1
+    file[]: crc = 295b6f28; size =      1452; name = data\world-5\levels\level-12.ot2
+    file[]: crc = ef1d3af2; size =      1352; name = data\world-5\levels\level-13.ot1
+    file[]: crc = dc06b15d; size =       716; name = data\world-5\levels\level-13.ot2
+    file[]: crc = e7dea755; size =      1552; name = data\world-5\levels\level-14.ot1
+    file[]: crc = 2f5097ea; size =       828; name = data\world-5\levels\level-14.ot2
+    file[]: crc = 8f26fe05; size =      1388; name = data\world-5\levels\level-15.ot1
+    file[]: crc = 515c7d86; size =      1084; name = data\world-5\levels\level-15.ot2
+    file[]: crc = ad8f3e20; size =      1236; name = data\world-5\levels\level-16.ot1
+    file[]: crc = 788d867b; size =      1132; name = data\world-5\levels\level-16.ot2
+    file[]: crc = 84ea79a4; size =      1376; name = data\world-5\levels\level-17.ot1
+    file[]: crc = 4736495a; size =      1340; name = data\world-5\levels\level-17.ot2
+    file[]: crc = 34e0a5dd; size =      1352; name = data\world-5\levels\level-18.ot1
+    file[]: crc = df52a7a1; size =      1004; name = data\world-5\levels\level-18.ot2
+    file[]: crc = e9d09f74; size =      1524; name = data\world-5\levels\level-19.ot1
+    file[]: crc = c49b7ef0; size =      1212; name = data\world-5\levels\level-19.ot2
+    file[]: crc = 1ce602cb; size =      1586; name = data\world-5\levels\level-2.ot1
+    file[]: crc = f7289386; size =       972; name = data\world-5\levels\level-2.ot2
+    file[]: crc = d936ad0c; size =      1388; name = data\world-5\levels\level-20.ot1
+    file[]: crc = 49c2030c; size =      1676; name = data\world-5\levels\level-20.ot2
+    file[]: crc = f25f6d14; size =      1766; name = data\world-5\levels\level-3.ot1
+    file[]: crc = c9de57f7; size =       972; name = data\world-5\levels\level-3.ot2
+    file[]: crc = 8d899fa5; size =      1452; name = data\world-5\levels\level-4.ot1
+    file[]: crc = 27356927; size =       684; name = data\world-5\levels\level-4.ot2
+    file[]: crc = 4affa126; size =      2006; name = data\world-5\levels\level-5.ot1
+    file[]: crc = 38496987; size =      1068; name = data\world-5\levels\level-5.ot2
+    file[]: crc = bf7c3b77; size =      2222; name = data\world-5\levels\level-6.ot1
+    file[]: crc = 778ceded; size =      1932; name = data\world-5\levels\level-6.ot2
+    file[]: crc = 0a0c8089; size =      2432; name = data\world-5\levels\level-7.ot1
+    file[]: crc = 68a5d1e5; size =      1420; name = data\world-5\levels\level-7.ot2
+    file[]: crc = 7ee89e2d; size =      1822; name = data\world-5\levels\level-8.ot1
+    file[]: crc = ec2cf7c0; size =      1644; name = data\world-5\levels\level-8.ot2
+    file[]: crc = 4885eded; size =      2012; name = data\world-5\levels\level-9.ot1
+    file[]: crc = 8afcc58c; size =      1420; name = data\world-5\levels\level-9.ot2
+
+
+
+
+end
+
+
+
+
+end

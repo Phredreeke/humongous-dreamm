@@ -259,6 +259,20 @@ demo[pc-en-970925-demo]:
 end
 
 //
+// 1998 Demo version
+//
+demo[pc-en-980914-demo]:
+    name = English Demo 1998-09-14
+    imports = pc-en-970925-demo
+    file[]: crc = 4108d6f5; size =    366592; name = F3-MDEMO.EXE
+    file[]: crc = c05a70bd; size =    190655; name = F3-MDEMO.HLP; optional = true
+    file[]: crc = a9916771; size =      2189; name = F3-MDEMO.INF; optional = true
+    file[]: remove = F3-MDEMO.W32
+
+
+end
+
+//
 // 1997 Dutch Demo version
 //
 demo[pc-nl-971028-demo]:
