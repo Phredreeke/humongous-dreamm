@@ -258,6 +258,20 @@ demo[pc-fr-001127-demo]:
 end
 
 //
+// 2001 French Demo
+//
+demo[pc-fr-010716-demo]:
+    name = French Demo 2001-07-16
+    imports = pc-fr-001127-demo
+    file[]: remove = Copyrite.txt
+    file[]: remove = JA-AD.PCX
+    file[]: crc = cac10f7b; size =    475182; name = mm4demo.exe
+    file[]: crc = 95bc0391; size =    921665; name = MM4Demo.HLP
+
+
+end
+
+//
 // 2000 German Demo
 //
 demo[pc-de-001127-demo]:

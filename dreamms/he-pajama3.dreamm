@@ -212,4 +212,20 @@ demo[pc-fr-001009-demo]:
 
 end
 
+//
+// 2001 French Demo version
+//
+demo[pc-fr-010116-demo]:
+    name = French Demo 2001-01-16
+    imports = pc-fr-001009-demo
+    file[]: crc = 1bd037c1; size =       766; name = AutoStart.ICO; optional = true
+    file[]: crc = 89906796; size =   5496475; name = FPJ3Demo.(a)
+    file[]: crc = 87a06f41; size =    475182; name = fpj3demo.exe
+    file[]: crc = 5a28eb75; size =     13911; name = FPJ3Demo.HE0
+    file[]: crc = 354097ec; size =   2398626; name = FPJ3demo.he4
+    file[]: crc = 1ddb85bf; size =   1946144; name = FPJ3Demo.HLP
+
+end
+
+
 end
