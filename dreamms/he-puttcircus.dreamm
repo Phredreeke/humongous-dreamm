@@ -1,0 +1,53 @@
+desc[he-puttcircus]:
+
+name = Putt-Putt Joins the Circus
+icon = he-puttcircus.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\puttcircus.exe"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 2000 version
+//
+game[pc-en-000515]:
+    name = English 2000-05-15
+    anchorfile = puttcircus.exe
+    file[]: crc = 91310986; size =       726; name = Copyrite.txt; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEIni.exe; optional = true
+    file[]: crc = 7615e717; size =     52892; name = ja-ad.pcx; optional = true
+    file[]: crc = 71bcc3f5; size =      5733; name = license.txt; optional = true
+    file[]: crc = df916947; size =  97411959; name = puttcircus.(a)
+    file[]: crc = 94c373b1; size =     36352; name = puttcircus.D32
+    file[]: crc = 148071d7; size =     86016; name = puttcircus.exe
+    file[]: crc = 082a48fb; size =     36655; name = puttcircus.HE0
+    file[]: crc = f00c8028; size =  84146242; name = puttcircus.he2
+    file[]: crc = f4163b50; size =  27138683; name = puttcircus.HE4
+    file[]: crc = 156424a8; size =   1879418; name = puttcircus.hlp; optional = true
+    file[]: crc = 69d8214f; size =       766; name = PUTTCIRCUS.ICO; optional = true
+    file[]: crc = 942ce8ea; size =      2864; name = puttcircus.inf; optional = true
+    file[]: crc = 4aca680f; size =    425984; name = PUTTCIRCUS.w32
+
+
+
+end
+
+
+end

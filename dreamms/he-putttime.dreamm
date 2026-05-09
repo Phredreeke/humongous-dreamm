@@ -1,0 +1,125 @@
+desc[he-putttime]:
+
+name = Putt-Putt Travels Through Time
+icon = he-putttime.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PUTTTIME.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+config[bitness]:
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1997 version
+//
+game[pc-en-970407]:
+    name = English 1997-04-07
+    anchorfile = PUTTTIME.EXE
+    file[]: crc = 4b258701; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = fdaaed73; size =    137880; name = JA-AD.BMP; optional = true
+    file[]: crc = 3f95b432; size =     74960; name = PUTTTIME.BMP; optional = true
+    file[]: crc = 4c313bb8; size =     32768; name = PUTTTIME.D32
+    file[]: crc = a26710b2; size =      8896; name = PUTTTIME.DLL
+    file[]: crc = 0d3da3c8; size =     21616; name = PUTTTIME.EXE
+    file[]: crc = 33136767; size =     62582; name = PUTTTIME.HE0
+    file[]: crc = bf5c8354; size = 133815358; name = PUTTTIME.HE1
+    file[]: crc = 3777c6c7; size = 100741922; name = PUTTTIME.HE2
+    file[]: crc = d9bba029; size =  47958830; name = PUTTTIME.HE4
+    file[]: crc = 1d2ea6a2; size =    293102; name = PUTTTIME.HLP; optional = true
+    file[]: crc = 26520fe7; size =      2230; name = PUTTTIME.INF; optional = true
+    file[]: crc = 793dfea4; size =    317440; name = PUTTTIME.W32
+    file[]: crc = 602db545; size =     50631; name = README.TXT; optional = true
+
+
+
+end
+
+
+//
+// 2001 UK version
+//
+game[pc-en-010308-uk]:
+    name = English 2001-03-08 UK Dub
+    anchorfile = PUTTPUTTTTT.EXE
+    launch = "$(rootpath)\PUTTPUTTTTT.EXE"
+    file[]: crc = 18221edb; size =     70499; name = Ja-ad.pcx; optional = true
+    file[]: crc = c03491d9; size = 135479067; name = puttputtTTT.(a)
+    file[]: crc = ff0be092; size =     45056; name = PuttPuttTTT.D32
+    file[]: crc = ed47dc51; size =     86016; name = PUTTPUTTTTT.EXE
+    file[]: crc = a446265f; size =     62698; name = puttputtTTT.HE0
+    file[]: crc = d239f83d; size = 103585396; name = PuttPuttTTT.HE2
+    file[]: crc = 1814089c; size =  48631847; name = PuttPuttTTT.HE4
+    file[]: crc = 95447680; size =    289876; name = PuttPuttTTT.hlp; optional = true
+    file[]: crc = aae9ed6e; size =      2467; name = PuttPuttTTT.INF; optional = true
+    file[]: crc = 294c46ba; size =    475182; name = puttputtTTT.w32
+
+
+
+end
+
+//
+// 1998 Dutch version
+//
+game[pc-nl-980421]:
+    name = Dutch 1998-04-21
+    anchorfile = PUTTTIJD.EXE
+    launch = "$(rootpath)\PUTTTIJD.EXE"
+    file[]: crc = 4b258701; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = d6444632; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = af71a0cd; size =     34304; name = PUTTTIJD.D32
+    file[]: crc = f9e12b58; size =      8896; name = PUTTTIJD.DLL
+    file[]: crc = da9b7a6c; size =     21616; name = PUTTTIJD.EXE
+    file[]: crc = 896b49bd; size =     62582; name = PUTTTIJD.HE0
+    file[]: crc = ce1a6da5; size = 133881899; name = PUTTTIJD.HE1
+    file[]: crc = c2184d73; size = 112464231; name = PUTTTIJD.HE2
+    file[]: crc = 4712cc8e; size =  48597338; name = PUTTTIJD.HE4
+    file[]: crc = 374b43ae; size =    668438; name = PUTTTIJD.HLP; optional = true
+    file[]: crc = bb45b1d7; size =      2289; name = PUTTTIJD.INF; optional = true
+    file[]: crc = f377bb6f; size =    330240; name = PUTTTIJD.W32
+
+
+
+end
+
+//
+// 2000 French version
+//
+game[pc-fr-001113]:
+    name = French 2000-11-13
+    anchorfile = POUCEVDT.EXE
+    launch = "$(rootpath)\POUCEVDT.EXE"
+    file[]: crc = 219fade0; size =     77001; name = JA-AD.pcx; optional = true
+    file[]: crc = 57330d2d; size = 134308519; name = PouceVDT.(a)
+    file[]: crc = 81980e29; size =     35840; name = PouceVDT.D32
+    file[]: crc = 087e1e19; size =     86016; name = POUCEVDT.EXE
+    file[]: crc = 58cc995c; size =     62698; name = PouceVDT.HE0
+    file[]: crc = ee37a931; size =  96034718; name = PouceVDT.HE2
+    file[]: crc = 22bf86cd; size =  48619853; name = PouceVDT.HE4
+    file[]: crc = ff467f24; size =    291747; name = POUCEVDT.HLP; optional = true
+    file[]: crc = 096cb1d7; size =      2442; name = PouceVDT.INF; optional = true
+    file[]: crc = a8e16fea; size =    442368; name = PouceVDT.w32
+
+
+
+end
+
+end
