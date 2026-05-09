@@ -9,7 +9,7 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | --- | --- | --- |
 | Backyard Baseball | 🇺🇸 | |
 | Backyard Soccer | 🇺🇸 | |
-| Fatty Bear's Birthday Surprise | 🇺🇸 | |
+| Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | |
 | Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇱 | |
 | Freddi Fish 2: The Case of the Haunted Schoolhouse | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 | |
 | Freddi Fish 3: The Case of the Stolen Conch Shell | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 | |
@@ -21,6 +21,9 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Pajama Sam 3: You Are What You Eat From Your Head To Your Feet |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 |  |
 | Pajama Sam's Lost & Found |  🇺🇸 |  |
 | Pajama Sam's Sock Works |  🇺🇸 🇳🇱 🇫🇷 |  |
+| Putt-Putt Joins the Parade |  🇺🇸 |  |
+| Putt-Putt Travels Through Time |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 |  |
+| Putt-Putt Joins the Circus |  🇺🇸 |  |
 | Spy Fox in "Dry Cereal" |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Spy Fox 2: "Some Assembly Required" |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Spy Fox: "Operation Ozone" |  🇺🇸 |  |
