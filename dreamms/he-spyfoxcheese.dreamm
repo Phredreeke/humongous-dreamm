@@ -283,7 +283,32 @@ game[pc-en-980308]:
 
 end
 
+//
+// 2002 version
+//
+game[pc-en-020521]:
+    name = English 2002-05-21
+    imports = pc-en-980308
+    file[]: crc = df6d6f86; size =  45282987; name = Chase.(a)  // new file
+    file[]: crc = 8c2168aa; size =     53248; name = Chase.d32  // replaces 94c373b1/36352
+    file[]: crc = f375a7d0; size =    512052; name = Chase.exe  // replaces 0c7a805e/21616
+    file[]: crc = a40bd136; size =     39286; name = Chase.HE0  // replaces daab4a4a/39100
+    file[]: crc = 446c2ff8; size =   3106345; name = Chase.he2  // replaces 08f79b85/3106345
+    file[]: crc = e3581ee0; size =    325815; name = CHASE.HLP  // replaces 4605ff46/337410
+    file[]: crc = b210991a; size =      2145; name = chase.inf  // replaces ecea47bd/2107
+    file[]: crc = 89efa723; size =     44084; name = levels\chase028.obj  // replaces 1cf0d63d/44084
+    file[]: crc = 9876b085; size =     44084; name = levels\chase054.obj  // replaces ff9e9f68/44084
+    file[]: crc = 2bfbfaba; size =    118784; name = uberedit.u32  // new file
+    file[]: remove = CHASE.BMP
+    file[]: remove = CHASE.HE1
+    file[]: remove = CHASE.ICO
+    file[]: remove = CHASE.W32
+    file[]: remove = COPYRITE.TXT
+    file[]: remove = HEINI.EXE
+    file[]: remove = README.TXT
+    file[]: remove = REGSCR.BMP
 
+end
 
 
 end
