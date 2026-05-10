@@ -75,6 +75,27 @@ game[pc-en-010221-uk]:
 end
 
 //
+// 2002 version (note: this version is not currently installable!)
+//
+game[pc-en-020521]:
+    name = English 2002-05-21
+    anchorfile = SPYFOX.EXE
+    file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE; optional = true
+    file[]: crc = 7916ab5a; size =      5726; name = License.txt; optional = true
+    file[]: crc = 3f3f6fdc; size =  87359317; name = Spyfox.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = Spyfox.d32
+    file[]: crc = f375a7d0; size =    512052; name = SPYFOX.EXE
+    file[]: crc = 526c0a4f; size =     49751; name = SPYFOX.HE0; exactonly = true
+    file[]: crc = b05d782e; size = 139135797; name = SPYFOX.HE2
+    file[]: crc = 5ecaea09; size =  30324471; name = SPYFOX.HE4
+    file[]: crc = a3a345b5; size =   1163398; name = SPYFOX.HLP; optional = true
+    file[]: crc = e96188dc; size =      2151; name = SPYFOX.INF; optional = true
+
+
+
+end
+
+//
 // 2007 version
 //
 game[pc-en-070901]:
