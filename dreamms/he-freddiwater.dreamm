@@ -1,0 +1,77 @@
+desc[he-freddiwater]:
+
+name = Freddi Fish and Luther's Water Worries
+icon = he-freddiwater.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\WATER.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+
+//
+// 1996 version
+//
+game[pc-en-961015]:
+    name = English 1996-10-15
+    anchorfile = WATER.EXE
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 77892d97; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = f6c83afa; size =     11191; name = README.TXT; optional = true
+    file[]: crc = b98a08d5; size =    132406; name = WATER.BMP; optional = true
+    file[]: crc = a26710b2; size =      8896; name = WATER.DLL
+    file[]: crc = a495395f; size =     21616; name = WATER.EXE
+    file[]: crc = 1bd08e6b; size =     12699; name = WATER.HE0
+    file[]: crc = 12ae250b; size =  11761971; name = WATER.HE1
+    file[]: crc = 8e7bade3; size =   4933716; name = WATER.HE2
+    file[]: crc = 107bf9d8; size =  43673987; name = WATER.HE4
+    file[]: crc = b6ecd1c5; size =     16686; name = WATER.HE7
+    file[]: crc = 4cb5d0c6; size =    133786; name = WATER.HLP; optional = true
+    file[]: crc = 8a696e24; size =      2097; name = WATER.INF; optional = true
+    file[]: crc = df345520; size =    324096; name = WATER.W32
+
+end
+
+//
+// 1999 version
+//
+game[pc-en-991103]:
+    name = English 1999-11-03
+    anchorfile = WATER.EXE
+    BITNESS = false
+    file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
+    file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+    file[]: crc = e26bbea8; size =  11812882; name = Water.(a)
+    file[]: crc = 94c373b1; size =     36352; name = Water.d32
+    file[]: crc = 2aedf386; size =     86016; name = Water.exe
+    file[]: crc = ababbde2; size =     12772; name = Water.he0
+    file[]: crc = 01750000; size =   4926858; name = Water.he2
+    file[]: crc = 107bf9d8; size =  43673987; name = Water.he4
+    file[]: crc = b6ecd1c5; size =     16686; name = Water.he7
+    file[]: crc = 20d46c65; size =    141093; name = Water.hlp; optional = true
+    file[]: crc = 2e8dc456; size =      2547; name = Water.inf; optional = true
+    file[]: crc = f58faffb; size =    425984; name = WATER.w32
+
+end
+
+
+end

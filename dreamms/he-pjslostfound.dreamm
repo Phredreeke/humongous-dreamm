@@ -252,7 +252,22 @@ game[pc-en-980911]:
 
 end
 
-
-
+//
+// 1999 version (Super Arcade 2)
+//
+game[pc-en-990723]:
+    name = English 1999-07-23 (Super Arcade 2)
+    anchorfile = lost.exe
+    imports = pc-en-980911
+    file[]: crc = baf8834b; size =       677; name = COPYRITE.TXT  // replaces 7fab0f20/672
+    file[]: crc = 95874a52; size =    422912; name = lost.a32  // new file
+    file[]: crc = 4113e471; size =    244224; name = LOST.EXE  // replaces 1eb7d00f/21616
+    file[]: crc = 518d6587; size =      2189; name = lost.inf  // replaces 03accbd7/2202
+    file[]: crc = ac1894a3; size =       382; name = LOST31.TXT  // new file
+    file[]: remove = HE.BMP
+    file[]: remove = HEINI.EXE
+    file[]: remove = JA-AD.BMP
+    file[]: remove = lost.BMP
+    file[]: remove = lost.w32
 
 end

@@ -1,0 +1,78 @@
+desc[he-puttdog]:
+
+name = Putt-Putt and Pep's Dog on a Stick
+icon = he-puttdog.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\DOG.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1996 version
+//
+game[pc-en-960822]:
+    name = English 1996-08-22
+    anchorfile = DOG.EXE
+    file[]: crc = a6670f92; size =    132404; name = DOG.BMP; optional = true
+    file[]: crc = a26710b2; size =      8896; name = DOG.DLL
+    file[]: crc = bc2f01df; size =     21648; name = DOG.EXE
+    file[]: crc = 8b37f537; size =     19681; name = DOG.HE0
+    file[]: crc = 6e4620c4; size =  10321230; name = DOG.HE1
+    file[]: crc = 6fa10c9b; size =   3911101; name = DOG.HE2
+    file[]: crc = ea3d84da; size =  38396593; name = DOG.HE4
+    file[]: crc = 424a11d6; size =      4752; name = DOG.HE7
+    file[]: crc = 23e03a73; size =     26400; name = DOG.HE8
+    file[]: crc = 99840580; size =    106084; name = DOG.HLP; optional = true
+    file[]: crc = e54535d1; size =      2069; name = DOG.INF; optional = true
+    file[]: crc = 8fde0657; size =    322560; name = DOG.W32
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = a76e046f; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = 761b55c1; size =     11192; name = README.TXT; optional = true
+
+
+
+end
+
+//
+// 1999 version (Super Arcade 2)
+//
+game[pc-en-990723]:
+    name = English 1999-07-23 (Super Arcade 2)
+    imports = pc-en-960822
+    anchorfile = DOG.EXE
+    file[]: crc = 6e78e04b; size =       681; name = COPYRITE.TXT; optional = true  // new file
+    file[]: crc = cb1d364f; size =    322560; name = dog.a32  // new file
+    file[]: crc = fb74cc42; size =    244224; name = dog.exe  // replaces bc2f01df/21648
+    file[]: crc = e0730f25; size =       766; name = DOG.ICO; optional = true  // new file
+    file[]: crc = f36badf1; size =      2067; name = dog.inf; optional = true  // replaces e54535d1/2069
+    file[]: remove = DOG.BMP
+    file[]: remove = DOG.W32
+    file[]: remove = HE.BMP
+    file[]: remove = HEINI.EXE
+    file[]: remove = JA-AD.BMP
+
+
+
+end
+
+end

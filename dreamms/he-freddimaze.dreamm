@@ -18,7 +18,9 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
@@ -49,6 +51,25 @@ game[pc-en-961126]:
 end
 
 //
+// 1999 version (Super Arcade 2)
+//
+game[pc-en-990824]:
+    name = English 1999-08-24 (Super Arcade 2)
+    anchorfile = MAZE.EXE
+    imports = pc-en-961126
+    file[]: crc = 6e78e04b; size =       681; name = COPYRITE.TXT  // new file
+    file[]: crc = 19d81924; size =    324096; name = maze.a32  // new file
+    file[]: crc = f91190c2; size =    244224; name = MAZE.EXE  // replaces 57b089f1/21648
+    file[]: crc = ad4744ab; size =      2067; name = maze.inf  // replaces de18a0a5/2080
+    file[]: remove = HE.BMP
+    file[]: remove = HEINI.EXE
+    file[]: remove = JA-AD.BMP
+    file[]: remove = MAZE.BMP
+    file[]: remove = MAZE.W32
+
+end
+
+//
 // 1999 version
 //
 game[pc-en-991103]:
@@ -74,6 +95,7 @@ end
 //
 game[pc-en-020627]:
     name = English 2002-06-27
+    BITNESS = false
     anchorfile = Maze.EXE
     file[]: crc = 13f36f76; size =  29610570; name = Maze.(a)
     file[]: crc = 8c2168aa; size =     53248; name = Maze.d32
