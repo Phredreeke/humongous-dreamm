@@ -21,7 +21,7 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | A Gaspocket Adventure: Aliens Ate My Cookies |  🇺🇸 | Prototype of unreleased game |
 | Pajama Sam: No Need to Hide When It's Dark Outside |  🇺🇸 🇳🇱 🇫🇷 🇩🇪 |  |
 | Pajama Sam 2: Thunder and Lightning Aren't so Frightening |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 |  |
-| Pajama Sam 3: You Are What You Eat From Your Head To Your Feet |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 |  |
+| Pajama Sam 3: You Are What You Eat From Your Head To Your Feet |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Pajama Sam's Lost & Found |  🇺🇸 |  |
 | Pajama Sam's Sock Works |  🇺🇸 🇳🇱 🇫🇷 |  |
 | Putt-Putt Joins the Parade |  🇺🇸 🇮🇱 |  |
