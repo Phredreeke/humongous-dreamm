@@ -27,26 +27,6 @@ config[bitness]:
     option[win98]: name = Windows 98; priority = 1
 end
 
-//
-// Color depth
-//
-COLORDEPTH = false
-config[colordepth]:
-    condition = $(COLORDEPTH)
-    title = Color depth
-    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
-    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
-end
-
-//
-// warnings
-//
-INCOMPATIBLE = false
-warning[incompatible]:
-    condition = $(INCOMPATIBLE)
-    text = This version does not run correctly in tested DREAMM version (4.0x12)
-end
-
 
 //
 // 1996 version
@@ -129,9 +109,8 @@ game[pc-en-070901]:
     name = English 2007-09-01
     anchorfile = pjSam.exe
     launch = "$(rootpath)\pjSam.exe"
-    INCOMPATIBLE = true
     BITNESS = false
-    COLORDEPTH = true
+    winres = 640x480x16
     file[]: crc = 5107b8ef; size =       659; name = layout.bin
     file[]: crc = 8112767f; size =     18708; name = License.rtf; optional = true
     file[]: crc = 2761439d; size =    129124; name = Pajama_Manual.pdf; optional = true
