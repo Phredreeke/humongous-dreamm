@@ -43,3 +43,8 @@ CookieMonster123: definitions for Japanese Freddi Fish 1 and 2
 BackSpace7073: French version of Spy Fox 2
 
 Thanks to Aaron Giles for his great emulator
+
+# Other .dreammpacks
+- Sierra: https://github.com/M-A-Boucher/sierra-dreamm
+- 3DRealms/Apogee: https://github.com/M-A-Boucher/3drealms-dreamm
+- id Software: https://github.com/M-A-Boucher/idsoftware-dreamm
