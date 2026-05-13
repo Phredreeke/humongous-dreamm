@@ -25,7 +25,7 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Pajama Sam's Lost & Found |  🇺🇸 |  |
 | Pajama Sam's Sock Works |  🇺🇸 🇳🇱 🇫🇷 |  |
 | Putt-Putt Joins the Parade |  🇺🇸 🇮🇱 |  |
-| Putt-Putt Travels Through Time |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 |  |
+| Putt-Putt Travels Through Time |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Putt-Putt Joins the Circus |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 |  |
 | Putt-Putt and Pep's Balloon-O-Rama |  🇺🇸 |  |
 | Putt-Putt and Pep's Dog on a Stick |  🇺🇸 |  |
