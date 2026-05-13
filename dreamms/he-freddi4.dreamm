@@ -15,14 +15,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Windows version
-//
-config[bitness]:
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
 
 //
 // 1999 version
@@ -286,6 +278,25 @@ demo[pc-de-001127-demo]:
     file[]: crc = 6303cb3c; size =    623933; name = Ff4demo.he4
     file[]: crc = 08856d83; size =    743553; name = FF4Demo.HLP; optional = true
     file[]: crc = 9fa99f58; size =      2343; name = FF4demo.inf; optional = true
+
+
+end
+
+//
+// 2001 German Demo
+//
+demo[pc-de-010716-demo]:
+    name = German Demo 2001-07-16
+    anchorfile = FF4DEMO.EXE
+    launch = "$(rootpath)\FF4DEMO.EXE"
+    file[]: crc = 79b302a7; size =   6451799; name = Ff4demo.(a)
+    file[]: crc = ef478c69; size =     49152; name = Ff4demo.d32
+    file[]: crc = cac10f7b; size =    475182; name = FF4DEMO.EXE
+    file[]: crc = 72a7e638; size =     13609; name = Ff4demo.HE0
+    file[]: crc = be616ddc; size =   3828563; name = Ff4demo.HE2
+    file[]: crc = 4cdff2be; size =    623886; name = Ff4demo.he4
+    file[]: crc = 08856d83; size =    743553; name = FF4Demo.HLP; optional = true
+    file[]: crc = b0cd88d0; size =      2303; name = FF4demo.inf; optional = true
 
 
 end

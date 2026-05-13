@@ -62,6 +62,7 @@ end
 game[pc-nl-000307]:
     name = Dutch 2000-03-07
     anchorfile = SokkenSoep.EXE
+    BITNESS = false
     launch = "$(rootpath)\SokkenSoep.EXE"
     file[]: crc = a8d7b0e0; size =     24005; name = JA-AD.PCX; optional = true
     file[]: crc = f47ef08e; size =  13360737; name = SokkenSoep.(a)
@@ -87,6 +88,7 @@ end
 game[pc-fr-000307]:
     name = French 2000-03-07
     anchorfile = Chaussettes.EXE
+    BITNESS = false
     launch = "$(rootpath)\Chaussettes.EXE"
     file[]: crc = d3d2d99d; size =  13325098; name = Chaussettes.(a)
     file[]: crc = 81980e29; size =     35840; name = Chaussettes.d32

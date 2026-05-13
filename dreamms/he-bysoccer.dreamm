@@ -18,7 +18,9 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
@@ -56,5 +58,29 @@ game[pc-en-980901]:
 
 end
 
+//
+// Backyard Soccer MLS Edition (2000)
+//
+game[pc-en-000803]:
+    name = Backyard Soccer MLS Edition 2000-08-03
+    anchorfile = SoccerMLS.exe
+    anchordepth = 1
+    BITNESS = false
+    winres = 640x480x16
+    launch = "$(rootpath)\SoccerMLS.exe"
+    file[]: crc = 626bd348; size = 203771068; name = SoccerMLS.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = SoccerMLS.d32
+    file[]: crc = ac764fb4; size =    454656; name = SoccerMLS.exe
+    file[]: crc = 7a021367; size =     73539; name = SoccerMLS.HE0
+    file[]: crc = 4d40eb83; size = 199460216; name = SoccerMLS.he2
+    file[]: crc = 79b0cc2b; size =  75800072; name = SoccerMLS.he4
+    file[]: crc = b4ca9f1d; size =    197484; name = SoccerMLS.he9
+    file[]: crc = 395a155f; size =   1085191; name = SoccerMLS.hlp
+    file[]: crc = b67bdd2a; size =      4505; name = SoccerMLS.INF
+    file[]: crc = ecd249c5; size =    135168; name = SoccerMLS.u32
+
+
+
+end
 
 end

@@ -15,14 +15,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Windows version
-//
-config[bitness]:
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
 
 //
 // 1999 version
@@ -47,7 +39,7 @@ game[pc-en-990805]:
     file[]: crc = b0f5ec52; size =    320472; name = spyfox2.he9
     file[]: crc = e594fe84; size =    746231; name = SPYFOX2.HLP; optional = true
     file[]: crc = 26610513; size =       766; name = spyfox2.ico; optional = true
-    file[]: crc = 770eb4b7; size =      2931; name = SPYFOX2.INF; optional = true
+    file[]: crc = 770eb4b7; size =      2931; name = SPYFOX2.INF
     file[]: crc = e9b6e8b0; size =    409600; name = Spyfox2.w32
 
 end
@@ -68,7 +60,7 @@ game[pc-en-010221-uk]:
     file[]: crc = 88d0b8fb; size =  42671122; name = SPYFoxSR.HE4
     file[]: crc = b0f5ec52; size =    320472; name = SpyfoxSR.he9
     file[]: crc = a6a4631a; size =    628831; name = SPYFOXSR.HLP; optional = true 
-    file[]: crc = cd8a163e; size =      2592; name = SPYFoxSR.INF; optional = true 
+    file[]: crc = cd8a163e; size =      2592; name = SPYFoxSR.INF
     file[]: crc = cd49e427; size =    471040; name = SPYFOXSR.w32
 
 end
@@ -89,7 +81,7 @@ game[pc-nl-000919]:
     file[]: crc = d9738682; size =  42775873; name = Spyfox2.HE4
     file[]: crc = b0f5ec52; size =    320472; name = SPYFOX2.HE9
     file[]: crc = 61c2f46f; size =    639429; name = SPYFOX2.HLP; optional = true
-    file[]: crc = b9d3a622; size =      2381; name = SPYfox2.INF; optional = true
+    file[]: crc = b9d3a622; size =      2381; name = SPYfox2.INF
     file[]: crc = c43f29dd; size =    442368; name = SPYFox2.w32
     file[]: crc = 99aa975c; size =    699158; name = TRANSPOS.HLP; optional = true
 
@@ -112,7 +104,7 @@ game[pc-fr]:
     file[]: crc = dec6bf03; size =  42660124; name = SPYFoxORE.HE4
     file[]: crc = b0f5ec52; size =    320472; name = SPYFoxORE.HE9
     file[]: crc = f78b78fe; size =    699274; name = SPYFoxORE.HLP; optional = true
-    file[]: crc = b530dd9f; size =      2499; name = SPYFoxORE.INF; optional = true
+    file[]: crc = b530dd9f; size =      2499; name = SPYFoxORE.INF
     file[]: crc = f39636a0; size =    442368; name = SPYFoxORE.w32
 
 end
@@ -133,7 +125,7 @@ game[pc-de-000919]:
     file[]: crc = 2ccf7dea; size =  42717768; name = SPYFoxOR.HE4
     file[]: crc = b0f5ec52; size =    320472; name = SPYFoxOR.HE9
     file[]: crc = f2bf9876; size =    798410; name = SPYFOXOR.HLP; optional = true
-    file[]: crc = 2bee82ed; size =      2514; name = SPYFoxOR.INF; optional = true
+    file[]: crc = 2bee82ed; size =      2514; name = SPYFoxOR.INF
     file[]: crc = 614cf98d; size =    442368; name = SPYFoxOR.w32
 
 end
@@ -170,10 +162,30 @@ demo[pc-en-010306-demo]:
     file[]: crc = 24e3b514; size =   4374772; name = Sf2Demo.he2
     file[]: crc = 42d008de; size =   1883367; name = Sf2Demo.he4
     file[]: crc = a6a4631a; size =    628831; name = Sf2Demo.HLP; optional = true
-    file[]: crc = e6f1b684; size =      2214; name = SF2DEMO.INF; optional = true
+    file[]: crc = e6f1b684; size =      2214; name = SF2DEMO.INF
     file[]: crc = 19d8853f; size =       766; name = SPYUK.ico; optional = true
 
 end
+
+
+//
+// 2001 Dutch Demo (from Freddi Fish 5 disc)
+//
+demo[pc-nl-010306-demo]:
+    name = Dutch Demo 2001-03-06
+    anchorfile = sf2demo.exe
+    launch = "$(rootpath)\sf2demo.exe"
+    file[]: crc = 650b4713; size =   5990459; name = sf2demo.(a)
+    file[]: crc = b60e543d; size =     49152; name = SF2DEMO.D32
+    file[]: crc = 9996ff23; size =    475182; name = sf2demo.exe
+    file[]: crc = 31d72843; size =     14689; name = sf2demo.HE0
+    file[]: crc = 98720c11; size =   4861792; name = sf2demo.he2
+    file[]: crc = 42d008de; size =   1883367; name = sf2demo.he4
+    file[]: crc = d5a0c8f7; size =    648704; name = Sf2Demo.hlp; optional = true
+    file[]: crc = ae53726e; size =      2234; name = Sf2demo.INF
+
+end
+
 
 //
 // 2000 French demo version
@@ -189,7 +201,45 @@ demo[pc-fr-001009-demo]:
     file[]: crc = 073e64bc; size =   4697674; name = Sf2demo.HE2
     file[]: crc = 42d008de; size =   1883367; name = SF2Demo.HE4
     file[]: crc = 792a4e8c; size =    699274; name = SF2Demo.HLP; optional = true
-    file[]: crc = da0d629d; size =      2282; name = SF2Demo.INF; optional = true
+    file[]: crc = da0d629d; size =      2282; name = SF2Demo.INF
+
+end
+
+//
+// 2000 German demo version
+//
+demo[pc-de-001009-demo]:
+    name = German Demo 2000-10-09
+    anchorfile = SF2demo.exe
+    launch = "$(rootpath)\SF2demo.exe"
+    file[]: crc = 005d5b8a; size =   6050609; name = SF2demo.(a)
+    file[]: crc = ac099622; size =     49152; name = SF2demo.D32
+    file[]: crc = 614cf98d; size =    442368; name = SF2demo.exe
+    file[]: crc = b1dbeb4e; size =     15832; name = SF2demo.HE0
+    file[]: crc = 622d8fa1; size =   3903289; name = SF2demo.HE2
+    file[]: crc = 42d008de; size =   1883367; name = SF2demo.HE4
+    file[]: crc = 265f47e1; size =    792560; name = SF2Demo.HLP; optional = true
+    file[]: crc = 2789f79b; size =      2290; name = SF2demo.INF
+
+
+end
+//
+// 2001 German demo version
+//
+
+demo[pc-de-010802-demo]:
+    name = German Demo 2001-08-02
+    anchorfile = SF2demo.exe
+    launch = "$(rootpath)\SF2demo.exe"
+    file[]: crc = eb0a6f65; size =   5964873; name = SF2demo.(a)
+    file[]: crc = ef478c69; size =     49152; name = SF2demo.D32
+    file[]: crc = 614cf98d; size =    442368; name = SF2demo.exe
+    file[]: crc = 228172b5; size =     14689; name = SF2demo.HE0
+    file[]: crc = 622d8fa1; size =   3903289; name = SF2demo.HE2
+    file[]: crc = 42d008de; size =   1883367; name = SF2demo.HE4
+    file[]: crc = 265f47e1; size =    792560; name = SF2Demo.HLP; optional = true
+    file[]: crc = d009ac08; size =      2213; name = SF2demo.INF
+
 
 end
 

@@ -1,0 +1,160 @@
+desc[he-activity]:
+
+name = Putt-Putt & Fatty Bear's Activity Pack
+icon = he-activity.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\ACTIVITY.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// Color depth
+//
+COLORDEPTH = false
+config[colordepth]:
+    condition = $(COLORDEPTH)
+    title = Color depth
+    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
+    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
+end
+
+//
+// Set up INI file for DOS version
+//
+DOSAUDIO = false
+dynamicfile[]:
+    condition = $(DOSAUDIO)
+    path = $(INIPATH)\FUNPACK.INI
+    contents = [[[$(CRLF)
+    DigitalSoundDriver=sblaster.com
+    MidiSoundDriver=sbfm.adv
+    MidiType=0
+    IOAddress=220
+    IRQ=7
+]]]
+end
+//
+
+//
+// 1993 DOS version 
+//
+game[pc-en-930301]:
+    name = Putt-Putt's Fun Pack English DOS 1993-03-01
+    anchorfile = FUNPACK.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    INIPATH = C:\FUNPACK
+    launch = "$(rootpath)\FUNPACK.EXE" 
+    file[]: crc = d9c83981; size =      5217; name = CHECK.EXE
+    file[]: crc = a9c9ca05; size =    111964; name = FUNPACK.DRV
+    file[]: crc = 658f9780; size =    128779; name = FUNPACK.EXE
+    file[]: crc = 4e7c3215; size =      5798; name = FUNPACK.HE0
+    file[]: crc = 6e375151; size =    860415; name = FUNPACK.HE1
+    file[]: crc = 1cc08fcf; size =       766; name = FUNPACK.ICO; optional = true
+    file[]: crc = 8a0889a6; size =       182; name = FUNPACK.INI; optional = true
+    file[]: crc = b4e3ee66; size =       545; name = FUNPACK.PIF; optional = true
+    file[]: crc = 2ae33e01; size =   1818654; name = FUNPACK.TLK
+    file[]: crc = 34e73a06; size =    124508; name = SETUPCD.EXE; optional = true
+
+
+end
+
+
+//
+// 1995 Windows version
+//
+game[pc-en-950220-win]:
+    name = English Windows 1995-02-20
+    anchorfile = ACTIVITY.EXE
+    file[]: crc = 34dc359f; size =     70976; name = ACTIVITY.BMP; optional = true
+    file[]: crc = 40dbd412; size =    159430; name = ACTIVITY.BRS
+    file[]: crc = 93c4684c; size =      8380; name = ACTIVITY.C00
+    file[]: crc = e4d9dcdc; size =      9456; name = ACTIVITY.C01
+    file[]: crc = 28f3c1fe; size =      7552; name = ACTIVITY.C02
+    file[]: crc = 8f98f612; size =      6297; name = ACTIVITY.C03
+    file[]: crc = d8887be7; size =     10155; name = ACTIVITY.C04
+    file[]: crc = 818bef7a; size =      7581; name = ACTIVITY.C05
+    file[]: crc = b9df8a1c; size =      9028; name = ACTIVITY.C06
+    file[]: crc = 37ee45f9; size =      8056; name = ACTIVITY.C07
+    file[]: crc = 7732ee2b; size =      7826; name = ACTIVITY.C08
+    file[]: crc = 9ab83772; size =      6995; name = ACTIVITY.C09
+    file[]: crc = 91ec9b25; size =      8919; name = ACTIVITY.C10
+    file[]: crc = 924409dd; size =     12225; name = ACTIVITY.C11
+    file[]: crc = ec50395f; size =      8047; name = ACTIVITY.C12
+    file[]: crc = de0946bc; size =     11658; name = ACTIVITY.C13
+    file[]: crc = 645d32f9; size =      7998; name = ACTIVITY.C14
+    file[]: crc = 8fae47e9; size =     10791; name = ACTIVITY.C15
+    file[]: crc = 57c77476; size =     10629; name = ACTIVITY.C16
+    file[]: crc = bb2d2f90; size =      8698; name = ACTIVITY.C17
+    file[]: crc = d08a3ec3; size =     14064; name = ACTIVITY.C18
+    file[]: crc = 81f33ef1; size =      9498; name = ACTIVITY.C19
+    file[]: crc = 70a07322; size =      9345; name = ACTIVITY.C20
+    file[]: crc = 458240b0; size =      9562; name = ACTIVITY.C21
+    file[]: crc = 36d26e82; size =      7698; name = ACTIVITY.C22
+    file[]: crc = 6bd6a66b; size =      8829; name = ACTIVITY.C23
+    file[]: crc = cec68bae; size =     10538; name = ACTIVITY.C24
+    file[]: crc = 811271d7; size =     10306; name = ACTIVITY.C25
+    file[]: crc = d8adf004; size =     10308; name = ACTIVITY.C26
+    file[]: crc = 222ad791; size =     11313; name = ACTIVITY.C27
+    file[]: crc = 5f850e43; size =     12568; name = ACTIVITY.C28
+    file[]: crc = bd687332; size =     13569; name = ACTIVITY.C29
+    file[]: crc = d7094f30; size =     10329; name = ACTIVITY.C30
+    file[]: crc = b59b797d; size =      8602; name = ACTIVITY.C31
+    file[]: crc = b174f8fc; size =     12434; name = ACTIVITY.C32
+    file[]: crc = d582fc85; size =     14211; name = ACTIVITY.C33
+    file[]: crc = ff246c77; size =     10403; name = ACTIVITY.C34
+    file[]: crc = 4a925420; size =      1252; name = ACTIVITY.CR0
+    file[]: crc = 3b6a0c54; size =      2002; name = ACTIVITY.CR1
+    file[]: crc = 8886c92e; size =      7002; name = ACTIVITY.CR2
+    file[]: crc = 896e76ed; size =     14252; name = ACTIVITY.CR3
+    file[]: crc = 19764fe7; size =     30720; name = ACTIVITY.EXE
+    file[]: crc = 8f8ce04a; size =      9410; name = ACTIVITY.HE0
+    file[]: crc = 549135e8; size =   2424317; name = ACTIVITY.HE1
+    file[]: crc = e6ab1de2; size =   5348583; name = ACTIVITY.HE2
+    file[]: crc = 76b49d04; size =     36864; name = ACTIVITY.HE3
+    file[]: crc = f566eacc; size =   6189353; name = ACTIVITY.HE4
+    file[]: crc = 313ca6a6; size =    122880; name = ACTIVITY.HLP
+    file[]: crc = cbe3153d; size =     30000; name = ACTIVITY.PAL
+    file[]: crc = 259eb635; size =     94490; name = ACTIVITY.TAN
+    file[]: crc = 480744f3; size =    261120; name = ACTIVITY.W32
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
+
+
+
+
+end
+
+
+
+end

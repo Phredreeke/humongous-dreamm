@@ -1,0 +1,47 @@
+desc[he-gaspocket]:
+
+name = A Gaspocket Adventure: Aliens Ate My Cookies
+icon = he-gaspocket.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\GASPOCKE.EXE"
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x16
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// 2001 Prototype
+//
+game[pc-en-010503]:
+    name = English 2001-05-03
+    anchorfile = GASPOCKE.EXE
+    file[]: crc = 26411f38; size =    291328; name = BINKW32.DLL
+    file[]: crc = cf712219; size =       983; name = COPYRIGH.TXT
+    file[]: crc = abd9584e; size =  41413470; name = GASPOCKE.(A)
+    file[]: crc = 8c2168aa; size =     53248; name = GASPOCKE.D32
+    file[]: crc = ffaa8afe; size =     98304; name = GASPOCKE.EXE
+    file[]: crc = d9500459; size =      8628; name = GASPOCKE.GID
+    file[]: crc = 2ffbce5b; size =     13819; name = GASPOCKE.HE0
+    file[]: crc = 7186353e; size =  17944974; name = GASPOCKE.HE2
+    file[]: crc = 7e39501e; size =  25753678; name = GASPOCKE.HE4
+    file[]: crc = 3cf7d589; size =   1013584; name = GASPOCKE.HLP
+    file[]: crc = 924eec7c; size =       766; name = GASPOCKE.ICO
+    file[]: crc = ccaaccdc; size =      2759; name = GASPOCKE.INF
+    file[]: crc = 8479df5b; size =    692280; name = GASPOCKE.W32
+    file[]: crc = bc872609; size =   6914652; name = INTRO.BIK
+    file[]: crc = 8d845bd1; size =      5752; name = LICENSE.TXT
+    file[]: crc = c5128684; size =    346624; name = MSS32.DLL
+
+end
+
+
+
+
+end

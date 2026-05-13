@@ -8,6 +8,7 @@ launch = "$(rootpath)\FREDDI.EXE"
 osenv = windows 98
 audiohw = gmidi
 winres = 640x480x8
+dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
 
 //
 // filesystem
@@ -18,7 +19,9 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
@@ -30,7 +33,6 @@ end
 game[pc-en-941023]:
     name = English 1994-10-23
     anchorfile = FREDDI.W32
-    launch = "$(rootpath)\FREDDI.W32"
     file[]: crc = e5e877a0; size =     63184; name = FREDDI.BMP; optional = true
     file[]: crc = ce80d4ac; size =     31744; name = FREDDI.EXE
     file[]: crc = 0fc51b98; size =     26105; name = FREDDI.HE0
@@ -53,7 +55,7 @@ end
 game[pc-en-950322]:
     name = English 1995-03-22
     anchorfile = FREDDIE.EXE
-    launch = "$(rootpath)\FREDDIE.W32"
+    launch = "$(rootpath)\FREDDIE.EXE"
     file[]: crc = aa4e39ad; size =     30720; name = FREDDIE.EXE
     file[]: crc = 0980beea; size =     26078; name = FREDDIE.HE0
     file[]: crc = d0cbb432; size =  54672462; name = FREDDIE.HE1
@@ -121,6 +123,7 @@ end
 game[pc-en-070831]:
     name = English 2007-08-31
     anchorfile = Freddi1.exe
+    BITNESS = false
     launch = "$(rootpath)\Freddi1.exe"
     file[]: crc = fdb48e21; size =      8628; name = Freddi.GID; optional = true
     file[]: crc = 5c0c33f3; size =    120843; name = FREDDI.hlp; optional = true
@@ -169,6 +172,7 @@ end
 //
 game[pc-no-000407]:
     name = Norwegian 2000-04-07
+    BITNESS = false
     anchorfile = FREDDI.EXE
     file[]: crc = 49e25ed6; size =       651; name = Copyright.txt; optional = true
     file[]: crc = c9ee4614; size =  53873063; name = Freddi.(a)
@@ -275,6 +279,7 @@ end
 game[pc-de-991108]:
     name = German 1999-11-08
     anchorfile = FRITZI.EXE
+    BITNESS = false
     launch = "$(rootpath)\FRITZI.EXE"
     file[]: crc = 6a668572; size =       552; name = COPYRIGHT.TXT; optional = true
     file[]: crc = 20110dc6; size =  53923482; name = FRITZI.(A)
@@ -299,7 +304,7 @@ end
 game[pc-he-021017]:
     name = Hebrew 2002-10-17
     anchorfile = FREDDI.EXE
-    launch = "$(rootpath)\FREDDI.W32"
+//    launch = "$(rootpath)\FREDDI.W32"
     file[]: crc = 15ed44d6; size =    132406; name = FREDDI.BMP; optional = true
     file[]: crc = d4964e9f; size =     31232; name = FREDDI.EXE
     file[]: crc = ba9bd78c; size =     26483; name = FREDDI.HE0
@@ -337,6 +342,46 @@ game[pc-ja-950831]:
     file[]: crc = 82bd6d2d; size =    295936; name = FREDDI.W32
     file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
     file[]: crc = 4a1b8706; size =      1251; name = SNDCARDS.INF; optional = true
+end
+
+//
+// 1994 Demo version
+//
+demo[pc-en-940504-demo]:
+    name = English Demo 1994-05-04
+    anchorfile = FREDDEMO.EXE
+    launch = "$(rootpath)\FREDDEMO.EXE"
+    file[]: crc = 814c4a19; size =     30720; name = FREDDEMO.EXE
+    file[]: crc = db486ff5; size =      9800; name = FREDDEMO.HE0
+    file[]: crc = 88ac38da; size =   6186860; name = FREDDEMO.HE1
+    file[]: crc = 03c0d621; size =   1546248; name = FREDDEMO.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = FREDDEMO.HE3
+    file[]: crc = 1e864f1d; size =   4802906; name = FREDDEMO.HE4
+    file[]: crc = 1981a558; size =    184320; name = FREDDEMO.HLP; optional = true
+    file[]: crc = 1bf72264; size =    296448; name = FREDDEMO.W32
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
+
+
+end
+
+//
+// 1995 Demo version
+//
+demo[pc-en-950220-demo]:
+    name = English Demo 1995-02-20
+    anchorfile = FREDDEMO.EXE
+    launch = "$(rootpath)\FREDDEMO.EXE"
+    file[]: crc = ed1a7128; size =     30720; name = FREDDEMO.EXE
+    file[]: crc = 8a41a6f6; size =      9779; name = FREDDEMO.HE0
+    file[]: crc = 745051ce; size =   6141457; name = FREDDEMO.HE1
+    file[]: crc = 03c0d621; size =   1546248; name = FREDDEMO.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = FREDDEMO.HE3
+    file[]: crc = 1e864f1d; size =   4802906; name = FREDDEMO.HE4
+    file[]: crc = 9fbc0c5c; size =     98304; name = FREDDEMO.HLP; optional = true
+    file[]: crc = 8371b5d7; size =    246784; name = FREDDEMO.W32
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF; optional = true
+
+
 end
 
 //

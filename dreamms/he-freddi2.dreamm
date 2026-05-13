@@ -18,7 +18,9 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
@@ -54,7 +56,6 @@ end
 game[pc-en-991027]:
     name = English 1999-10-27
     anchorfile = FREDDI2.EXE
-    launch = "$(rootpath)\FREDDI2.W32" // running FREDDI2.EXE displays a license agreement every time, by running FREDDI2.W32 we can skip it
     file[]: crc = f573bc4b; size = 115340334; name = Freddi2.(a)
     file[]: crc = 94c373b1; size =     36352; name = Freddi2.d32
     file[]: crc = 3b9f8c76; size =     86016; name = FREDDI2.EXE
@@ -67,6 +68,30 @@ game[pc-en-991027]:
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
     file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+
+
+end
+
+
+//
+// 2002 version
+//
+game[pc-en-020605]:
+    name = English 2002-06-05
+    anchorfile = FreddiCHSH.exe
+    BITNESS = false
+    launch = "$(rootpath)\FreddiCHSH.exe" 
+    anchordepth = 1
+    file[]: crc = 1acc9994; size = 135158283; name = FreddiCHSH.(a); exactonly = true
+    file[]: crc = 8c2168aa; size =     53248; name = FreddiCHSH.d32; exactonly = true
+    file[]: crc = 7d055b8a; size =    512052; name = FreddiCHSH.exe
+    file[]: crc = 97aae1b3; size =     65489; name = FreddiCHSH.HE0; exactonly = true
+    file[]: crc = 5822202a; size =  34564440; name = FreddiCHSH.he2; exactonly = true
+    file[]: crc = 2d288c66; size =  42596874; name = FreddiCHSH.he4; exactonly = true
+    file[]: crc = a3504ae3; size =   1021067; name = FreddiCHSH.hlp; exactonly = true
+    file[]: crc = a41d1aaa; size =      2291; name = FreddiCHSH.inf; exactonly = true
+    file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE
+    file[]: crc = 9e709d8d; size =      5726; name = License.txt; exactonly = true
 
 
 end
@@ -212,6 +237,7 @@ end
 demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = FFHSDemo.exe
+    BITNESS = false
     launch = "$(rootpath)\FFHSDemo.exe"
     file[]: crc = 3dba6d98; size =  30532295; name = FFHSDemo.(a)
     file[]: crc = 8c2168aa; size =     53248; name = FFHSDemo.d32

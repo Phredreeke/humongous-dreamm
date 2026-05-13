@@ -18,7 +18,9 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
@@ -59,6 +61,7 @@ end
 game[pc-en-010221-uk]:
     name = English 2001-02-21 UK Dub
     anchorfile = SPYFOXDC.EXE
+    BITNESS = false
     launch = "$(rootpath)\SPYFOXDC.EXE"
     file[]: crc = ebfd6bcb; size =     24736; name = Ja-ad.pcx; optional = true
     file[]: crc = 81a65b60; size =  69716465; name = SPYFoxDC.(a)
@@ -75,11 +78,13 @@ game[pc-en-010221-uk]:
 end
 
 //
-// 2002 version (note: this version is not currently installable!)
+// 2002 version 
 //
 game[pc-en-020521]:
     name = English 2002-05-21
+    BITNESS = false
     anchorfile = SPYFOX.EXE
+    anchordepth = 1
     file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE; optional = true
     file[]: crc = 7916ab5a; size =      5726; name = License.txt; optional = true
     file[]: crc = 3f3f6fdc; size =  87359317; name = Spyfox.(a)
@@ -101,6 +106,7 @@ end
 game[pc-en-070901]:
     name = English 2007-09-01
     anchorfile = SpyFox.exe
+    BITNESS = false
     launch = "$(rootpath)\SpyFox.exe"
     file[]: crc = 859b4140; size =       664; name = layout.bin; optional = true
     file[]: crc = 8112767f; size =     18708; name = License.rtf; optional = true
@@ -151,6 +157,7 @@ end
 game[pc-fr-001114]:
     name = French 2000-11-14
     anchorfile = SPYFoxOM.EXE
+    BITNESS = false
     launch = "$(rootpath)\SPYFoxOM.EXE"
     file[]: crc = bd72f130; size =     38712; name = JA-AD.pcx; optional = true
     file[]: crc = 86c83543; size =  69125194; name = SPYFoxOM.(a)
@@ -199,6 +206,7 @@ end
 game[pc-de-001114]:
     name = German 2000-11-14
     anchorfile = SPYFoxDMK.EXE
+    BITNESS = false
     launch = "$(rootpath)\SPYFoxDMK.EXE"
     file[]: crc = 3ad2e8bf; size =     25941; name = Ja-ad.pcx; optional = true
     file[]: crc = 076b6be5; size =  69294266; name = SPYFoxDMK.(a)
@@ -259,6 +267,7 @@ end
 demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = Spydemo.exe
+    BITNESS = false
     launch = "$(rootpath)\Spydemo.exe"
     file[]: crc = 3655ea77; size =  18880847; name = Spydemo.(a)
     file[]: crc = 8c2168aa; size =     53248; name = Spydemo.d32
@@ -276,6 +285,7 @@ end
 demo[pc-nl-990405-demo]:
     name = Dutch Demo 1999-04-05
     anchorfile = Spydemo.EXE
+    BITNESS = false
     launch = "$(rootpath)\Spydemo.EXE"
     file[]: crc = d167a057; size =  14553711; name = Spydemo.(A)
     file[]: crc = 1e2f9505; size =     34304; name = Spydemo.D32

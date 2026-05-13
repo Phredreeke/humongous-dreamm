@@ -7,7 +7,7 @@ rootpath = C:\
 launch = "$(rootpath)\spyozon.exe"
 osenv = windows 98
 audiohw = gmidi
-winres = 640x480x8
+winres = 640x480x16
 
 //
 // filesystem
@@ -15,25 +15,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Color depth
-//
-COLORDEPTH = true
-config[colordepth]:
-    condition = $(COLORDEPTH)
-    title = Color depth
-    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
-    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
-end
-
-//
-// warnings
-//
-INCOMPATIBLE = false
-warning[incompatible]:
-    condition = $(INCOMPATIBLE)
-    text = This version does not run correctly in tested DREAMM version (4.0x12)
-end
 
 //
 // 2001 version
@@ -41,7 +22,6 @@ end
 game[pc-en-010326]:
     name = English 2001-03-26
     anchorfile = spyozon.exe
-    INCOMPATIBLE = true
     file[]: crc = 7a7c3b65; size =     15056; name = heini.exe; optional = true
     file[]: crc = 13df1872; size =      2791; name = HELP.TXT; optional = true
     file[]: crc = 8d845bd1; size =      5752; name = LICENSE.TXT; optional = true
@@ -58,6 +38,50 @@ game[pc-en-010326]:
     file[]: crc = b53b8d65; size =    503867; name = spyozon.w32
 
 end
+
+//
+// 2001 UK version
+//
+game[pc-en-010613-uk]:
+    name = English 2001-06-13 UK Dub
+    anchorfile = spyfoxozu.exe
+    launch = "$(rootpath)\spyfoxozu.exe"
+    file[]: crc = 335cc807; size =     22239; name = Ja-ad.pcx; optional = true
+    file[]: crc = 955b2e30; size =  97113888; name = SPYFoxOzu.(a)
+    file[]: crc = ff0be092; size =     45056; name = SPYFoxOZU.d32
+    file[]: crc = 741a7bb4; size =     98304; name = spyfoxozu.exe
+    file[]: crc = 83bcb278; size =     47119; name = SPYFoxOzu.HE0
+    file[]: crc = 4d3ab288; size = 127728862; name = SPYFoxOzu.he2
+    file[]: crc = 1499f98f; size =    123431; name = SPYFoxOZU.HE3
+    file[]: crc = 9245fc4c; size =  71656930; name = SPYFoxOzu.he4
+    file[]: crc = 1e28f180; size =   2803949; name = SpyFoxOZU.hlp; optional = true
+    file[]: crc = 1cd5bc77; size =      2554; name = SPYFoxOZU.inf; optional = true
+    file[]: crc = b53b8d65; size =    503867; name = spyfoxozu.w32
+    file[]: crc = 4ae4806c; size =       766; name = SPYOZON.ICO; optional = true
+
+end
+
+//
+// 2001 French version
+//
+game[pc-fr-010612]:
+    name = French 2001-06-12
+    anchorfile = SPYFoxSOS.exe
+    launch = "$(rootpath)\SPYFoxSOS.exe"
+    file[]: crc = dab72f26; size =     22262; name = Ja-ad.pcx; optional = true
+    file[]: crc = 1779aa8e; size =  97390021; name = SPYFoxSOS.(a)
+    file[]: crc = 6b12365f; size =     49152; name = SPYFoxSOS.D32
+    file[]: crc = 741a7bb4; size =     98304; name = SPYFoxSOS.exe
+    file[]: crc = 1706e81f; size =     47119; name = SPYFoxSOS.HE0
+    file[]: crc = 97d3aa3e; size = 137243666; name = SPYFoxSOS.he2
+    file[]: crc = 1499f98f; size =    123431; name = SPYFoxSOS.HE3
+    file[]: crc = 9245fc4c; size =  71656930; name = SPYFoxSOS.he4
+    file[]: crc = 212524b2; size =   1645891; name = SPYFoxSOS.HLP; optional = true
+    file[]: crc = f8379bb4; size =      2727; name = SPYFoxSOS.INF; optional = true
+    file[]: crc = b53b8d65; size =    503867; name = SPYFoxSOS.w32
+
+end
+
 
 
 

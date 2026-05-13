@@ -1,0 +1,323 @@
+desc[he-byfootball]:
+
+name = Backyard Football 
+icon = he-byfootball.png
+machine = pc
+rootpath = C:\
+launch = $(rootpath)\FOOTBALL.W32
+osenv = windows 98
+audiohw = gmidi
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\        ; srcpath = $(ifsdeltapath)  ; writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+
+//
+// English version (provided by ue neub)
+//
+game[pc-en]:
+    name = English
+    anchorfile = FOOTBALL.EXE
+    file[]: crc = 13b5cc2c; size =     89717; name = AUTOFOOT.PCX
+    file[]: crc = 920648b0; size =    308278; name = BFL.BMP
+    file[]: crc = b59a6056; size =    741376; name = BYMAIA.DLL
+    file[]: crc = ad4cb08c; size = 197867294; name = FOOTBALL.(A)
+    file[]: crc = 41e25cd3; size =   3614878; name = FOOTBALL.(B)
+    file[]: crc = 94c373b1; size =     36352; name = FOOTBALL.D32
+    file[]: crc = 4e903198; size =       320; name = FOOTBALL.ESK
+    file[]: crc = 2c85a644; size =     98304; name = FOOTBALL.EXE
+    file[]: crc = 4dc84fac; size =     77769; name = FOOTBALL.HE0
+    file[]: crc = 28de8b83; size = 124481242; name = FOOTBALL.HE2
+    file[]: crc = da3ed3b7; size =  19112847; name = FOOTBALL.HE4
+    file[]: crc = 046e990d; size =   4973844; name = FOOTBALL.HLP
+    file[]: crc = 65b2569d; size =      4997; name = FOOTBALL.INF
+    file[]: crc = 40078f68; size =       703; name = FOOTBALL.MMZ
+    file[]: crc = 1f4712c9; size =    159744; name = FOOTBALL.R32
+    file[]: crc = a9b469f3; size =    155648; name = FOOTBALL.U32
+    file[]: crc = cc23bb2c; size =    425984; name = FOOTBALL.W32
+    file[]: crc = abb96326; size =    308278; name = HE.BMP
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE
+    file[]: crc = 1a354a57; size =     43929; name = JS-AD.PCX
+    file[]: crc = fd23d797; size =    142336; name = PATCHW32.DLL
+    file[]: crc = 1d0029ff; size =    106496; name = RESTART.EXE
+    file[]: crc = d2a357c1; size =    219136; name = ROVER.DLL
+    file[]: crc = 85d2cd37; size =    300544; name = UPGRADE.DLL
+end
+
+//
+// 2002 version
+//
+game[pc-en-2002]:
+    name = Backyard Football 2002
+    anchorfile = Football2002.exe
+    anchordepth = 1
+    BITNESS = false
+    winres = 640x480x16
+    launch = "$(rootpath)\Football2002.exe"
+    file[]: crc = 26411f38; size =    291328; name = binkw32.dll
+    file[]: crc = 8c2168aa; size =     53248; name = Football2002.d32
+    file[]: crc = d06e2583; size =    696376; name = Football2002.exe
+    file[]: crc = 8f97525c; size =      3591; name = Football2002.inf
+    file[]: crc = 577fb58b; size =     90156; name = Football2002.u32
+    file[]: crc = c5128684; size =    346624; name = mss32.dll
+    file[]: crc = d21db163; size =     45056; name = udpping.dll
+
+    file[]: crc = 6af761f2; size = 346696978; name = Football2002.(a)
+    file[]: crc = 3dda7313; size =   2205188; name = Football2002.(b)
+    file[]: crc = b5bf8366; size =     91941; name = Football2002.HE0
+    file[]: crc = 15d5074b; size = 191140158; name = Football2002.HE2
+    file[]: crc = db8cae69; size =     74067; name = Football2002.HE3
+    file[]: crc = ce2bf90a; size =  70349387; name = Football2002.HE4
+    file[]: crc = 68d98fb7; size =      4679; name = lang.dat
+    file[]: crc = 73639833; size =       998; name = layout.bin
+    file[]: crc = 8d845bd1; size =      5752; name = License.txt
+    file[]: crc = 2d71e76e; size =       450; name = os.dat
+    file[]: crc = dbadfac3; size =     41780; name = register.pcx
+    file[]: crc = e968e01c; size =  10658912; name = DATA\intro.da2
+    file[]: crc = 649945d9; size =    111832; name = DATA\endzones\ez-cactus-cu-left.da2
+    file[]: crc = 211bfb44; size =    112996; name = DATA\endzones\ez-cactus-cu-right.da2
+    file[]: crc = 8d1fd617; size =     98400; name = DATA\endzones\ez-cactus-rain-left.da2
+    file[]: crc = 55fd7324; size =     95756; name = DATA\endzones\ez-cactus-rain-right.da2
+    file[]: crc = 2329e911; size =    170560; name = DATA\endzones\ez-cactus-snow-left.da2
+    file[]: crc = 169770f5; size =    168436; name = DATA\endzones\ez-cactus-snow-right.da2
+    file[]: crc = 80a4040d; size =     90860; name = DATA\endzones\ez-dimitri-cu-left.da2
+    file[]: crc = e6a8fa4e; size =     90840; name = DATA\endzones\ez-dimitri-cu-right.da2
+    file[]: crc = 11d71bde; size =     91204; name = DATA\endzones\ez-dimitri-rain-left.da2
+    file[]: crc = 65e75a06; size =     91064; name = DATA\endzones\ez-dimitri-rain-right.da2
+    file[]: crc = f33434f9; size =     54080; name = DATA\endzones\ez-dimitri-snow-left.da2
+    file[]: crc = 44d7a987; size =     54124; name = DATA\endzones\ez-dimitri-snow-right.da2
+    file[]: crc = a325b7be; size =     95144; name = DATA\endzones\ez-dirt-cu-left.da2
+    file[]: crc = e3c8b30f; size =     97624; name = DATA\endzones\ez-dirt-cu-right.da2
+    file[]: crc = ef5d4ca9; size =     92096; name = DATA\endzones\ez-dirt-rain-left.da2
+    file[]: crc = 939ba722; size =     95484; name = DATA\endzones\ez-dirt-rain-right.da2
+    file[]: crc = 20e9de57; size =     69504; name = DATA\endzones\ez-dirt-snow-left.da2
+    file[]: crc = beaf8b00; size =     55156; name = DATA\endzones\ez-dirt-snow-right.da2
+    file[]: crc = ec907c3c; size =    105000; name = DATA\endzones\ez-king-dome-cu-left.da2
+    file[]: crc = ec907c3c; size =    105000; name = DATA\endzones\ez-king-dome-cu-right.da2
+    file[]: crc = 2a6c4573; size =     99696; name = DATA\endzones\ez-lakes-cu-left.da2
+    file[]: crc = 20e49486; size =    106244; name = DATA\endzones\ez-lakes-cu-right.da2
+    file[]: crc = cc140a6a; size =     91472; name = DATA\endzones\ez-lakes-rain-left.da2
+    file[]: crc = cc140a6a; size =     91472; name = DATA\endzones\ez-lakes-rain-right.da2
+    file[]: crc = 9877fae3; size =     54416; name = DATA\endzones\ez-lakes-snow-left.da2
+    file[]: crc = 9877fae3; size =     54416; name = DATA\endzones\ez-lakes-snow-right.da2
+    file[]: crc = 78d00150; size =     93532; name = DATA\endzones\ez-metro-cu-left.da2
+    file[]: crc = 78d00150; size =     93532; name = DATA\endzones\ez-metro-cu-right.da2
+    file[]: crc = 6f747603; size =     88228; name = DATA\endzones\ez-metro-rain-left.da2
+    file[]: crc = 3f00ad4e; size =     87696; name = DATA\endzones\ez-metro-rain-right.da2
+    file[]: crc = dc173fc5; size =     47812; name = DATA\endzones\ez-metro-snow-left.da2
+    file[]: crc = dc173fc5; size =     47812; name = DATA\endzones\ez-metro-snow-right.da2
+    file[]: crc = 7ad39912; size =     93944; name = DATA\endzones\ez-phillips-cu-left.da2
+    file[]: crc = 6f519119; size =     93992; name = DATA\endzones\ez-phillips-cu-right.da2
+    file[]: crc = 3e27c135; size =     91264; name = DATA\endzones\ez-phillips-rain-left.da2
+    file[]: crc = 0a95da27; size =     91912; name = DATA\endzones\ez-phillips-rain-right.da2
+    file[]: crc = 57f014d4; size =     52360; name = DATA\endzones\ez-phillips-snow-left.da2
+    file[]: crc = 57f014d4; size =     52360; name = DATA\endzones\ez-phillips-snow-right.da2
+    file[]: crc = 775323c0; size =     52488; name = DATA\endzones\ez-playground-cu-left.da2
+    file[]: crc = 775323c0; size =     52488; name = DATA\endzones\ez-playground-cu-right.da2
+    file[]: crc = d95ba3bb; size =     50428; name = DATA\endzones\ez-playground-rain-left.da2
+    file[]: crc = 58119368; size =     50436; name = DATA\endzones\ez-playground-rain-right.da2
+    file[]: crc = b5af915d; size =     14572; name = DATA\endzones\ez-playground-snow-left.da2
+    file[]: crc = b5af915d; size =     14572; name = DATA\endzones\ez-playground-snow-right.da2
+    file[]: crc = 7f934d2a; size =     95432; name = DATA\endzones\ez-rocky-cu-left.da2
+    file[]: crc = 94b1d502; size =     95032; name = DATA\endzones\ez-rocky-cu-right.da2
+    file[]: crc = e655ccec; size =     87404; name = DATA\endzones\ez-rocky-rain-left.da2
+    file[]: crc = 906cc21c; size =     88580; name = DATA\endzones\ez-rocky-rain-right.da2
+    file[]: crc = 680a1571; size =     51364; name = DATA\endzones\ez-rocky-snow-left.da2
+    file[]: crc = 5158dcbd; size =     55104; name = DATA\endzones\ez-rocky-snow-right.da2
+    file[]: crc = 47a65e60; size =    134096; name = DATA\endzones\ez-sandy-cu-left.da2
+    file[]: crc = b2ef72e0; size =    135264; name = DATA\endzones\ez-sandy-cu-right.da2
+    file[]: crc = 364de2fd; size =     76212; name = DATA\endzones\ez-sandy-rain-left.da2
+    file[]: crc = 9d1984c0; size =     95164; name = DATA\endzones\ez-sandy-rain-right.da2
+    file[]: crc = 659a0161; size =     70508; name = DATA\endzones\ez-sandy-snow-left.da2
+    file[]: crc = 702018fd; size =     55788; name = DATA\endzones\ez-sandy-snow-right.da2
+    file[]: crc = 2a331e18; size =     91144; name = DATA\endzones\ez-tropics-cu-left.da2
+    file[]: crc = 2a331e18; size =     91144; name = DATA\endzones\ez-tropics-cu-right.da2
+    file[]: crc = 1f222e55; size =     90392; name = DATA\endzones\ez-tropics-rain-left.da2
+    file[]: crc = 936df843; size =     90532; name = DATA\endzones\ez-tropics-rain-right.da2
+    file[]: crc = 49a3f2fd; size =    114132; name = DATA\endzones\ez-tropics-snow-left.da2
+    file[]: crc = 49a3f2fd; size =    114132; name = DATA\endzones\ez-tropics-snow-right.da2
+    file[]: crc = f1ee0d1b; size =     91560; name = DATA\endzones\ez-woodlands-cu-left.da2
+    file[]: crc = 543b5bc8; size =     92048; name = DATA\endzones\ez-woodlands-cu-right.da2
+    file[]: crc = 8363395b; size =     86444; name = DATA\endzones\ez-woodlands-rain-left.da2
+    file[]: crc = 359ed0b6; size =     87256; name = DATA\endzones\ez-woodlands-rain-right.da2
+    file[]: crc = 7d067f58; size =     51032; name = DATA\endzones\ez-woodlands-snow-left.da2
+    file[]: crc = 7d067f58; size =     51032; name = DATA\endzones\ez-woodlands-snow-right.da2
+    file[]: crc = 9c7dae99; size =     47220; name = DATA\fieldgoals\cactus_l_goal_rain.da2
+    file[]: crc = 2f1c9681; size =     81808; name = DATA\fieldgoals\cactus_l_goal_snow.da2
+    file[]: crc = 2c566343; size =     46216; name = DATA\fieldgoals\cactus_l_goal_sun.da2
+    file[]: crc = 1faab5a4; size =     22672; name = DATA\fieldgoals\cactus_r_goal_rain.da2
+    file[]: crc = 308b7a9f; size =     58008; name = DATA\fieldgoals\cactus_r_goal_snow.da2
+    file[]: crc = 9574b3f4; size =     24360; name = DATA\fieldgoals\cactus_r_goal_sun.da2
+    file[]: crc = 54fdc10e; size =     80588; name = DATA\fieldgoals\Dirtyards_L_Goal_Rain.da2
+    file[]: crc = 04a178ca; size =     84016; name = DATA\fieldgoals\dirtyards_l_goal_snow.da2
+    file[]: crc = ed216988; size =     80884; name = DATA\fieldgoals\dirtyards_l_goal_sun.da2
+    file[]: crc = 8e6113fa; size =     91676; name = DATA\fieldgoals\dirtyards_r_goal_rain.da2
+    file[]: crc = 82457e76; size =     88820; name = DATA\fieldgoals\dirtyards_r_goal_snow.da2
+    file[]: crc = 1d37e422; size =     88756; name = DATA\fieldgoals\dirtyards_r_goal_sun.da2
+    file[]: crc = fb3bd67c; size =     55360; name = DATA\fieldgoals\dmitri_l_goal_rain.da2
+    file[]: crc = 72d75ef2; size =     57432; name = DATA\fieldgoals\dmitri_l_goal_snow.da2
+    file[]: crc = 2d4ff1b1; size =     44852; name = DATA\fieldgoals\dmitri_l_goal_sun.da2
+    file[]: crc = b454e287; size =     56948; name = DATA\fieldgoals\dmitri_r_goal_rain.da2
+    file[]: crc = 6788e357; size =     61172; name = DATA\fieldgoals\dmitri_r_goal_snow.da2
+    file[]: crc = 16787bc4; size =     46668; name = DATA\fieldgoals\dmitri_r_goal_sun.da2
+    file[]: crc = b554d4ce; size =     71292; name = DATA\fieldgoals\king_l_goal.da2
+    file[]: crc = 983ec0a7; size =     71196; name = DATA\fieldgoals\king_r_goal.da2
+    file[]: crc = 839b992f; size =     61532; name = DATA\fieldgoals\lakes_l_goal_rain.da2
+    file[]: crc = 9d71cea5; size =     64032; name = DATA\fieldgoals\lakes_l_goal_snow.da2
+    file[]: crc = 9517ef41; size =     61004; name = DATA\fieldgoals\lakes_l_goal_sun.da2
+    file[]: crc = 17b3ab8d; size =     61276; name = DATA\fieldgoals\lakes_r_goal_rain.da2
+    file[]: crc = 17b3ab8d; size =     61276; name = DATA\fieldgoals\lakes_r_goal_snow.da2
+    file[]: crc = f369d1b6; size =     57016; name = DATA\fieldgoals\lakes_r_goal_sun.da2
+    file[]: crc = b06f993e; size =     59912; name = DATA\fieldgoals\metro_l_goal_rain.da2
+    file[]: crc = 02ba5447; size =     61116; name = DATA\fieldgoals\metro_l_goal_snow.da2
+    file[]: crc = c16b439f; size =     61480; name = DATA\fieldgoals\metro_l_goal_sun.da2
+    file[]: crc = e2017760; size =     68800; name = DATA\fieldgoals\metro_r_goal_rain.da2
+    file[]: crc = 16c954d3; size =     71684; name = DATA\fieldgoals\metro_r_goal_snow.da2
+    file[]: crc = e755ce6b; size =     67216; name = DATA\fieldgoals\metro_r_goal_sun.da2
+    file[]: crc = d2dbde50; size =     62560; name = DATA\fieldgoals\phillips_l_goal_rain.da2
+    file[]: crc = d2dbde50; size =     62560; name = DATA\fieldgoals\phillips_l_goal_snow.da2
+    file[]: crc = 79b106b4; size =     56592; name = DATA\fieldgoals\phillips_l_goal_sun.da2
+    file[]: crc = d2dbde50; size =     62560; name = DATA\fieldgoals\phillips_r_goal_rain.da2
+    file[]: crc = d2dbde50; size =     62560; name = DATA\fieldgoals\phillips_r_goal_snow.da2
+    file[]: crc = 79b106b4; size =     56592; name = DATA\fieldgoals\phillips_r_goal_sun.da2
+    file[]: crc = ba13ceab; size =     84620; name = DATA\fieldgoals\playground_l_goal_rain.da2
+    file[]: crc = f50f7c3c; size =     75952; name = DATA\fieldgoals\playground_l_goal_snow.da2
+    file[]: crc = 8d706cde; size =     74916; name = DATA\fieldgoals\playground_l_goal_sun.da2
+    file[]: crc = 9b696131; size =     73064; name = DATA\fieldgoals\playground_r_goal_rain.da2
+    file[]: crc = ffd37131; size =     69816; name = DATA\fieldgoals\playground_r_goal_snow.da2
+    file[]: crc = f3f4e357; size =     82404; name = DATA\fieldgoals\playground_r_goal_sun.da2
+    file[]: crc = 5fbb5f19; size =     86656; name = DATA\fieldgoals\rocky_l_goal_rain.da2
+    file[]: crc = 68cab824; size =     90544; name = DATA\fieldgoals\rocky_l_goal_snow.da2
+    file[]: crc = fe75ee34; size =     46864; name = DATA\fieldgoals\rocky_l_goal_sun.da2
+    file[]: crc = 05677b7c; size =     81172; name = DATA\fieldgoals\rocky_r_goal_rain.da2
+    file[]: crc = 04f0a46e; size =     85916; name = DATA\fieldgoals\rocky_r_goal_snow.da2
+    file[]: crc = f77481fe; size =     67044; name = DATA\fieldgoals\rocky_r_goal_sun.da2
+    file[]: crc = 273e3233; size =     78604; name = DATA\fieldgoals\sandy_l_goal_rain.da2
+    file[]: crc = df8f0e67; size =     80032; name = DATA\fieldgoals\sandy_l_goal_snow.da2
+    file[]: crc = ad0a0f9b; size =     36260; name = DATA\fieldgoals\sandy_l_goal_sun.da2
+    file[]: crc = 0b427304; size =     63796; name = DATA\fieldgoals\sandy_r_goal_rain.da2
+    file[]: crc = 0b606c85; size =     62984; name = DATA\fieldgoals\sandy_r_goal_snow.da2
+    file[]: crc = 8383280d; size =     24396; name = DATA\fieldgoals\sandy_r_goal_sun.da2
+    file[]: crc = aad02214; size =     62104; name = DATA\fieldgoals\tropical_l_goal_rain.da2
+    file[]: crc = 6a0118bc; size =     62712; name = DATA\fieldgoals\tropical_l_goal_snow.da2
+    file[]: crc = e6a813a8; size =     37644; name = DATA\fieldgoals\tropical_l_goal_sun.da2
+    file[]: crc = 1b4e876b; size =     47724; name = DATA\fieldgoals\tropical_r_goal_rain.da2
+    file[]: crc = 5f76459c; size =     48148; name = DATA\fieldgoals\tropical_r_goal_snow.da2
+    file[]: crc = 189befa0; size =     36804; name = DATA\fieldgoals\tropical_r_goal_sun.da2
+    file[]: crc = 0a7b4ab3; size =     77500; name = DATA\fieldgoals\woodland_l_goal_rain.da2
+    file[]: crc = 0b47d64a; size =     78960; name = DATA\fieldgoals\woodland_l_goal_snow.da2
+    file[]: crc = 4f2bea31; size =     72932; name = DATA\fieldgoals\woodland_l_goal_sun.da2
+    file[]: crc = ea30f142; size =     53816; name = DATA\fieldgoals\woodland_r_goal_rain.da2
+    file[]: crc = 5c32139f; size =     55832; name = DATA\fieldgoals\woodland_r_goal_snow.da2
+    file[]: crc = abf9fb59; size =     54412; name = DATA\fieldgoals\woodland_r_goal_sun.da2
+    file[]: crc = 199e79c4; size =     31612; name = HelpFile\00_clubhouse_w_network.jpg
+    file[]: crc = 0b2408ed; size =      4685; name = HelpFile\assistan.htm
+    file[]: crc = 8dd15204; size =      4380; name = HelpFile\bflstructure1.gif
+    file[]: crc = 31661739; size =       869; name = HelpFile\border.htm
+    file[]: crc = b5fdb1cb; size =      6232; name = HelpFile\clubhous.htm
+    file[]: crc = 314e5894; size =      1892; name = HelpFile\create_team.htm
+    file[]: crc = 108fda33; size =      1499; name = HelpFile\create_team_single.htm
+    file[]: crc = 4133c696; size =     36691; name = HelpFile\credits.htm
+    file[]: crc = 192ff110; size =      3300; name = HelpFile\draft.htm
+    file[]: crc = 0df15338; size =      2441; name = HelpFile\draft_players.htm
+    file[]: crc = 60264947; size =       789; name = HelpFile\framespage.htm
+    file[]: crc = 31a6963b; size =       227; name = HelpFile\gamepad-.htm
+    file[]: crc = b3afeb83; size =       227; name = HelpFile\gamepad-1.htm
+    file[]: crc = d1da5dbd; size =     13335; name = HelpFile\gameplay.htm
+    file[]: crc = ceb0f7eb; size =      4978; name = HelpFile\Image4.gif
+    file[]: crc = e984a453; size =       875; name = HelpFile\index.htm
+    file[]: crc = 06f0cd72; size =       217; name = HelpFile\keyboard.htm
+    file[]: crc = 200c9f5c; size =       225; name = HelpFile\mouse-1.htm
+    file[]: crc = a205e2e4; size =       225; name = HelpFile\mouse-2.htm
+    file[]: crc = 2a709626; size =     11503; name = HelpFile\official.htm
+    file[]: crc = 784ec876; size =      2793; name = HelpFile\options.htm
+    file[]: crc = 2350087f; size =      4257; name = HelpFile\practice.htm
+    file[]: crc = 533b304e; size =      2203; name = HelpFile\season.htm
+    file[]: crc = 22850e29; size =      2749; name = HelpFile\season_options.htm
+    file[]: crc = d098eca7; size =      2571; name = HelpFile\season_setup.htm
+    file[]: crc = 97b75210; size =      7321; name = HelpFile\single.htm
+    file[]: crc = 29f82a7c; size =      4070; name = HelpFile\starting.htm
+    file[]: crc = 362612d7; size =      5920; name = HelpFile\system.htm
+    file[]: crc = 7b7c3c46; size =      2687; name = HelpFile\team_info_page.htm
+    file[]: crc = fd3ddbe3; size =      1469; name = HelpFile\team_info_page_single.htm
+    file[]: crc = 4501855b; size =     12670; name = HelpFile\team_strategy.htm
+    file[]: crc = 4f25ac92; size =     12569; name = HelpFile\team_strategy_single.htm
+    file[]: crc = ac6309c5; size =      1295; name = HelpFile\welcome.htm
+    file[]: crc = d6590673; size =      9094; name = HelpFile\fb2banner.tem\banner.gif
+    file[]: crc = 8bc0b920; size =       418; name = HelpFile\fb2banner.tem\fb2banner.htm
+    file[]: crc = 199e79c4; size =     31612; name = HelpFile\images\00_clubhouse_w_network.jpg
+    file[]: crc = 36d6ae2c; size =     31542; name = HelpFile\images\00_clubhouse_w_online.jpg
+    file[]: crc = b5d0ce44; size =     31722; name = HelpFile\images\01_singlegamesetup.jpg
+    file[]: crc = 81eeb93f; size =     26243; name = HelpFile\images\02_coachsignin.jpg
+    file[]: crc = a4563e52; size =     31687; name = HelpFile\images\03_seasonsetup.jpg
+    file[]: crc = 73de128a; size =     30008; name = HelpFile\images\04_options.jpg
+    file[]: crc = 0804ae33; size =     18046; name = HelpFile\images\06_asstcoach.jpg
+    file[]: crc = 2e45b70e; size =     11526; name = HelpFile\images\07_practicemodes.jpg
+    file[]: crc = f2d1a011; size =     31002; name = HelpFile\images\08_chooseteam_BYC.jpg
+    file[]: crc = ecebdeb6; size =     31708; name = HelpFile\images\10_customteam.jpg
+    file[]: crc = d1dacae4; size =     26767; name = HelpFile\images\11_leatherorlaces.jpg
+    file[]: crc = 51e16c86; size =     35098; name = HelpFile\images\12_1game_h2hdraft.jpg
+    file[]: crc = 21d34b34; size =     31256; name = HelpFile\images\16_rookie_skills.jpg
+    file[]: crc = b3aa4cc1; size =     29945; name = HelpFile\images\17.1_players_single.jpg
+    file[]: crc = d8a9dd92; size =     32033; name = HelpFile\images\17_players.jpg
+    file[]: crc = afe4d028; size =     34921; name = HelpFile\images\19_statistics.jpg
+    file[]: crc = fbad2a2d; size =     26200; name = HelpFile\images\20_trophycase.jpg
+    file[]: crc = 3befaa8a; size =     32679; name = HelpFile\images\22_schedule.jpg
+    file[]: crc = d15a7940; size =     27797; name = HelpFile\images\27_standings.jpg
+    file[]: crc = 3cd3191e; size =     36588; name = HelpFile\images\28_leagueleaders.jpg
+    file[]: crc = 1f9d4207; size =     29454; name = HelpFile\images\30_strategy.jpg
+    file[]: crc = 98400a17; size =     30399; name = HelpFile\images\31_changeplaybook.jpg
+    file[]: crc = bf3f2bd6; size =     25336; name = HelpFile\images\33_createplay.jpg
+    file[]: crc = e5d0ff9c; size =      4081; name = HelpFile\images\badge_S.gif
+    file[]: crc = a13918c3; size =      5075; name = HelpFile\images\badge_S_alpha.gif
+    file[]: crc = d6590673; size =      9094; name = HelpFile\images\banner.gif
+    file[]: crc = bac5d460; size =      4829; name = HelpFile\images\banner_transparent.gif
+    file[]: crc = 920648b0; size =    308278; name = HelpFile\images\bfl.bmp
+    file[]: crc = 6e1f6af4; size =      1782; name = HelpFile\images\button_beginners.gif
+    file[]: crc = 69abc039; size =      1749; name = HelpFile\images\button_BFLrules.gif
+    file[]: crc = eb078408; size =      1768; name = HelpFile\images\button_clubhouse.gif
+    file[]: crc = 521fba68; size =      1749; name = HelpFile\images\button_credits.gif
+    file[]: crc = c9f99edf; size =      1782; name = HelpFile\images\button_gameplay.gif
+    file[]: crc = 0e8b4299; size =      1770; name = HelpFile\images\button_home.gif
+    file[]: crc = 6020d3d4; size =      1794; name = HelpFile\images\button_options.gif
+    file[]: crc = 0d1cf99f; size =      1756; name = HelpFile\images\button_practice.gif
+    file[]: crc = 63858c86; size =      1823; name = HelpFile\images\button_season.gif
+    file[]: crc = aa8dae29; size =      1794; name = HelpFile\images\button_singlegame.gif
+    file[]: crc = 4d833e0e; size =      1868; name = HelpFile\images\button_starting.gif
+    file[]: crc = 8d912bac; size =      1798; name = HelpFile\images\button_system.gif
+    file[]: crc = 596bea52; size =       327; name = HelpFile\images\endzone.gif
+    file[]: crc = f29aefe2; size =      1197; name = HelpFile\images\navbutton.gif
+    file[]: crc = 0d1cf99f; size =      1756; name = HelpFile\navbar.tem\button_practice.gif
+    file[]: crc = 97162450; size =      1918; name = HelpFile\navbar.tem\navbar.htm
+    file[]: crc = eb078408; size =      1768; name = HelpFile\navtemp.tem\button_clubhouse.gif
+    file[]: crc = 0e8b4299; size =      1770; name = HelpFile\navtemp.tem\button_home.gif
+    file[]: crc = aa8dae29; size =      1794; name = HelpFile\navtemp.tem\button_singlegame.gif
+    file[]: crc = 4d833e0e; size =      1868; name = HelpFile\navtemp.tem\button_starting.gif
+    file[]: crc = 8d912bac; size =      1798; name = HelpFile\navtemp.tem\button_system.gif
+    file[]: crc = 236aa09a; size =      1336; name = HelpFile\navtemp.tem\navtemp.htm
+
+
+
+
+end
+
+
+
+
+
+end

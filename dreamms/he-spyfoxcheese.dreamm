@@ -18,11 +18,14 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
 end
+
 
 //
 // 1998 version
@@ -289,6 +292,7 @@ end
 game[pc-en-020521]:
     name = English 2002-05-21
     imports = pc-en-980308
+    BITNESS = false
     file[]: crc = df6d6f86; size =  45282987; name = Chase.(a)  // new file
     file[]: crc = 8c2168aa; size =     53248; name = Chase.d32  // replaces 94c373b1/36352
     file[]: crc = f375a7d0; size =    512052; name = Chase.exe  // replaces 0c7a805e/21616

@@ -16,22 +16,6 @@ mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
 //
-// warnings
-//
-warning[unsupported]:
-    text = This game does not run correctly in tested DREAMM version (4.0x11)
-end
-
-//
-// Color depth
-//
-config[bitness]:
-    title = Color depth
-    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
-    option[16bitcolor]: name = 16-bit; priority = 1
-end
-
-//
 // English version
 //
 game[pc-en-010406]:
@@ -48,10 +32,45 @@ game[pc-en-010406]:
     file[]: crc = 34d85d62; size =  39152181; name = freddicove.he4
     file[]: crc = 5578847f; size =    707084; name = FREDDICOVE.HLP; optional = true
     file[]: crc = 70ff0523; size =       766; name = FreddiCove.ico; optional = true
-    file[]: crc = 63da708a; size =      3104; name = freddiCove.inf; optional = true
+    file[]: crc = 63da708a; size =      3104; name = freddiCove.inf
     file[]: crc = 7c9540c7; size =    503867; name = freddicove.w32
     file[]: crc = 7a7c3b65; size =     15056; name = heini.exe; optional = true
     file[]: crc = 8d845bd1; size =      5752; name = license.txt; optional = true
+
+end
+
+//
+// Dutch 2001 version
+//
+game[pc-nl-011203]:
+    name = Dutch 2001-12-03
+    anchorfile = FreddiDZZ.EXE
+    launch = "$(rootpath)\FreddiDZZ.EXE"
+    file[]: crc = d4b1cb63; size = 123380154; name = FreddiDZZ.(a)
+    file[]: crc = b60e543d; size =     49152; name = FreddiDZZ.D32
+    file[]: crc = b469107d; size =    696371; name = FreddiDZZ.EXE
+    file[]: crc = 62ee0126; size =     41182; name = FreddiDZZ.HE0
+    file[]: crc = 527d7a01; size =  89381685; name = FreddiDZZ.he2
+    file[]: crc = 1499f98f; size =    123431; name = FreddiDZZ.he3
+    file[]: crc = 34d85d62; size =  39152181; name = FreddiDZZ.he4
+    file[]: crc = 03038fcb; size =    706408; name = FreddiDZZ.hlp; optional = true
+    file[]: crc = 70ff0523; size =       766; name = FreddiDZZ.ico; optional = true
+    file[]: crc = 24fc4199; size =      2638; name = FreddiDZZ.inf
+    file[]: crc = db9250b7; size =     84344; name = ja-ad.pcx; optional = true
+
+end
+
+//
+// Dutch 2007 version
+//
+game[pc-nl-070525]:
+    name = Dutch 2007-05-25
+    imports = pc-nl-011203
+    anchorfile = FreddiDZZ.EXE
+    file[]: crc = 48dadd7e; size = 123380541; name = FreddiDZZ.(a)  // replaces d4b1cb63/123380154
+    file[]: crc = b9bcb6df; size =     41182; name = FreddiDZZ.HE0  // replaces 62ee0126/41182
+    file[]: crc = 3637066b; size =  89381685; name = FreddiDZZ.he2  // replaces 527d7a01/89381685
+    file[]: crc = fa06bddd; size =    709437; name = FreddiDZZ.hlp; optional = true  // replaces 03038fcb/706408
 
 end
 
@@ -71,7 +90,7 @@ game[pc-fr-011203]:
     file[]: crc = 34d85d62; size =  39152181; name = FreddiMML.he4
     file[]: crc = b5824bfc; size =    705738; name = FreddiMML.HLP; optional = true
     file[]: crc = 70ff0523; size =       766; name = FreddiMML.ico; optional = true
-    file[]: crc = 939f83d3; size =      2627; name = FreddiMML.inf; optional = true
+    file[]: crc = 939f83d3; size =      2627; name = FreddiMML.inf
     file[]: crc = 40cef7a9; size =     85277; name = ja-ad.pcx; optional = true
 
 end
@@ -79,7 +98,7 @@ end
 //
 // Demo version
 //
-game[pc-en-010711-demo]:
+demo[pc-en-010711-demo]:
     name = English Demo 2001-07-11
     anchorfile = ffCoveDemo.exe
     launch = "$(rootpath)\ffCoveDemo.exe"
@@ -89,7 +108,7 @@ game[pc-en-010711-demo]:
     file[]: crc = d4f0089f; size =     18422; name = FFCoveDemo.HE0
     file[]: crc = 44e401b2; size =  13593302; name = ffCoveDemo.he2
     file[]: crc = 750b660a; size =   5663629; name = ffCoveDemo.he4
-    file[]: crc = 6b67c1c2; size =      2899; name = FFCoveDemo.inf; optional = true
+    file[]: crc = 6b67c1c2; size =      2899; name = FFCoveDemo.inf
 
 end
 

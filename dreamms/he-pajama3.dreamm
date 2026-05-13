@@ -15,14 +15,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Windows version
-//
-config[bitness]:
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
 
 
 //
@@ -111,6 +103,26 @@ game[pc-fr-001009]:
 
 end
 
+//
+// 2000 German version
+//
+game[pc-de-001009]:
+    name = German 2000-10-09
+    anchorfile = PyjamaSKS.exe
+    launch = "$(rootpath)\PyjamaSKS.exe"
+    file[]: crc = ec3bec07; size =     28287; name = Ja-ad.pcx; optional = true
+    file[]: crc = e2247598; size =  90508062; name = PyjamaSKS.(a)
+    file[]: crc = 6a962fd0; size =     49152; name = PyjamaSKS.d32
+    file[]: crc = b583984c; size =     86016; name = PyjamaSKS.exe
+    file[]: crc = 9f145772; size =     79382; name = PyjamaSKS.HE0
+    file[]: crc = 88e2f264; size =  97948068; name = PyjamaSKS.he2
+    file[]: crc = 30431ae9; size =  55313852; name = PyjamaSKS.he4
+    file[]: crc = a0823b38; size =   2357237; name = PyjamaSKS.HLP; optional = true
+    file[]: crc = 17efa2cb; size =      2403; name = PyjamaSKS.INF
+    file[]: crc = d3ad7cea; size =    442368; name = PyjamaSKS.w32
+
+
+end
 
 //
 // 1999 Demo version
@@ -156,7 +168,7 @@ end
 //
 // 2001 UK Demo version
 //
-demo[pc-en-010306-demo]:
+demo[pc-en-010306-demo-uk]:
     name = English Demo 2001-03-06 UK Dub
     anchorfile = pj3demo.exe
     launch = "$(rootpath)\pj3demo.exe"
@@ -174,10 +186,24 @@ demo[pc-en-010306-demo]:
 end
 
 //
-// Dutch Demo version
+// 2001 UK Demo version (from Putt Putt Travels through time disc)
 //
-demo[pc-nl-demo]:
-    name = Dutch Demo
+demo[pc-en-010503-demo-uk]:
+    name = English Demo 2001-05-03 UK Dub
+    imports = pc-en-010306-demo-uk
+    file[]: crc = 1ad9ca22; size =   5476892; name = PJ3DEMO.(A)
+    file[]: crc = 3c2ba2ca; size =     13911; name = PJ3DEMO.HE0
+    file[]: crc = da5f0a8f; size =   3823943; name = Pj3Demo.he2
+    file[]: crc = 14f13377; size =        48; name = Pj3Demo.he4
+
+
+end
+
+//
+// Dutch Demo version (From Freddi Fish 5 CD)
+//
+demo[pc-nl-010306-demo]:
+    name = Dutch Demo 2001-03-06
     anchorfile = pj3demo.exe
     launch = "$(rootpath)\pj3demo.exe"
     file[]: crc = 81047d23; size =   5570075; name = pj3demo.(a)
@@ -227,5 +253,22 @@ demo[pc-fr-010116-demo]:
 
 end
 
+//
+// 2001 German Demo version
+//
+demo[pc-de-010716-demo]:
+    name = German Demo 2001-07-16
+    anchorfile = GPJ3Demo.exe
+    launch = "$(rootpath)\GPJ3Demo.exe"
+    file[]: crc = 0379565d; size =   5521055; name = Gpj3demo.(a)
+    file[]: crc = ac099622; size =     49152; name = GPJ3Demo.d32
+    file[]: crc = 87a06f41; size =    475182; name = GPJ3Demo.exe
+    file[]: crc = 4c0417e4; size =     13911; name = Gpj3demo.HE0
+    file[]: crc = b52b9eaa; size =   3611721; name = GPJ3Demo.HE2
+    file[]: crc = 354097ec; size =   2398626; name = GPJ3Demo.HE4
+    file[]: crc = a0823b38; size =   2357237; name = GPJ3Demo.HLP; optional = true
+    file[]: crc = b646479e; size =      2247; name = GPJ3demo.inf
+
+end
 
 end

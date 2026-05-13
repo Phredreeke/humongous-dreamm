@@ -81,7 +81,6 @@ end
 game[pc-en-991027]:
     name = English 1999-10-27
     anchorfile = PAJAMA.EXE
-    launch = "$(rootpath)\pajama.w32" // skip license screen
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 71be7ac9; size =     32039; name = JA-AD.PCX; optional = true
     file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
@@ -99,6 +98,29 @@ game[pc-en-991027]:
 
 end
 
+//
+// 2002 version
+//
+game[pc-en-020520]:
+    name = English 2002-05-20
+    anchorfile = PajamaNHD.exe
+    BITNESS = false
+    launch = "$(rootpath)\PajamaNHD.exe" 
+    file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE
+    file[]: crc = 7916ab5a; size =      5726; name = License.txt
+    file[]: crc = cf0052ee; size = 141943944; name = PajamaNHD.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = PajamaNHD.d32
+    file[]: crc = 1d279123; size =    512052; name = PajamaNHD.exe
+    file[]: crc = df630329; size =     66599; name = PajamaNHD.HE0
+    file[]: crc = b89c35a7; size =  68247166; name = PajamaNHD.he2
+    file[]: crc = fe0b9a98; size =     36864; name = PajamaNHD.he3
+    file[]: crc = 7d7025d0; size =  32410705; name = PajamaNHD.he4
+    file[]: crc = 558514f2; size =    413586; name = PajamaNHD.he7
+    file[]: crc = ce2b93d8; size =    192375; name = PAJAMANHD.HLP
+    file[]: crc = a54490f0; size =      2301; name = PajamaNHD.inf
+
+
+end
 
 //
 // 2007 version
@@ -160,7 +182,7 @@ end
 
 
 //
-// 1996 French version
+// 1998 French version
 //
 game[pc-fr-980307]:
     name = French 1998-03-07
@@ -191,6 +213,7 @@ game[pc-de-991018]:
     name = German 1999-10-18
     anchorfile = PYJAMA.EXE
     launch = "$(rootpath)\PYJAMA.EXE"
+    BITNESS = false
     file[]: crc = 1d5c638c; size =       713; name = COPYRIGHT.TXT; optional = true 
     file[]: crc = a640f91a; size =     27355; name = JA-AD.pcx; optional = true // seems to be corrupted
     file[]: crc = 60ef8fdf; size = 124585072; name = PYJAMA.(A)
@@ -209,9 +232,9 @@ game[pc-de-991018]:
 end
 
 //
-// 1997 version
+// 1997 demo version
 //
-demo[pc-en-970814]:
+demo[pc-en-970814-demo]:
     name = English Demo 1997-08-14
     anchorfile = PJS-DEMO.EXE
     launch = "$(rootpath)\PJS-DEMO.EXE"

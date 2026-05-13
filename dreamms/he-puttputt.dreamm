@@ -96,4 +96,31 @@ game[pc-en-950220-win]:
 
 end
 
+//
+// 1994 Hebrew DOS version
+//
+game[pc-he]:
+    name = Hebrew
+    anchorfile = PUTTPUTT.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = 5f41f1d4; size =    162085; name = PUTTPUTT.DRV
+    file[]: crc = 125cef80; size =    142805; name = Puttputt.exe
+    file[]: crc = ee5b8e14; size =      8032; name = PUTTPUTT.HE0
+    file[]: crc = c68cb3af; size =   4495948; name = PUTTPUTT.HE1
+    file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO
+    file[]: crc = a5de7985; size =        75; name = PUTTPUTT.INI
+    file[]: crc = 14cf2f67; size =   6461116; name = PUTTPUTT.TLK
+    file[]: crc = 00a6f17c; size =    131546; name = Setupcd.exe
+
+
+end
+
 end

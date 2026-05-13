@@ -19,7 +19,9 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
+BITNESS = true
 config[bitness]:
+    condition = $(BITNESS)
     title = Windows version
     option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
     option[win98]: name = Windows 98; priority = 1
@@ -59,6 +61,7 @@ end
 game[pc-en-010308-uk]:
     name = English 2001-03-08 UK Dub
     anchorfile = PUTTPUTTTTT.EXE
+    BITNESS = false
     launch = "$(rootpath)\PUTTPUTTTTT.EXE"
     file[]: crc = 18221edb; size =     70499; name = Ja-ad.pcx; optional = true
     file[]: crc = c03491d9; size = 135479067; name = puttputtTTT.(a)
@@ -70,6 +73,30 @@ game[pc-en-010308-uk]:
     file[]: crc = 95447680; size =    289876; name = PuttPuttTTT.hlp; optional = true
     file[]: crc = aae9ed6e; size =      2467; name = PuttPuttTTT.INF; optional = true
     file[]: crc = 294c46ba; size =    475182; name = puttputtTTT.w32
+
+
+
+end
+
+//
+// 2002 version
+//
+game[pc-en-020521]:
+    name = English 2002-05-21
+    anchorfile = PuttTTT.exe
+    BITNESS = false
+    launch = "$(rootpath)\PuttTTT.exe"
+    anchordepth = 1
+    file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE; optional = true
+    file[]: crc = 7916ab5a; size =      5726; name = License.txt; optional = true
+    file[]: crc = cd52ef60; size = 151414849; name = PuttTTT.(a); exactonly = true
+    file[]: crc = 8c2168aa; size =     53248; name = PuttTTT.d32
+    file[]: crc = 587c2dd3; size =    512052; name = PuttTTT.exe
+    file[]: crc = ebfc7229; size =     62783; name = PuttTTT.HE0; exactonly = true
+    file[]: crc = 55ace00f; size = 100606864; name = PuttTTT.he2; exactonly = true
+    file[]: crc = 09d76e43; size =  48583917; name = PuttTTT.he4; exactonly = true
+    file[]: crc = cef9fc03; size =   2818333; name = PuttTTT.hlp; exactonly = true
+    file[]: crc = e1708edd; size =      2206; name = PuttTTT.inf
 
 
 
@@ -106,6 +133,7 @@ end
 game[pc-fr-001113]:
     name = French 2000-11-13
     anchorfile = POUCEVDT.EXE
+    BITNESS = false
     launch = "$(rootpath)\POUCEVDT.EXE"
     file[]: crc = 219fade0; size =     77001; name = JA-AD.pcx; optional = true
     file[]: crc = 57330d2d; size = 134308519; name = PouceVDT.(a)
@@ -121,5 +149,98 @@ game[pc-fr-001113]:
 
 
 end
+
+//
+// 2000 German version
+//
+game[pc-de-001113]:
+    name = German 2000-11-13
+    anchorfile = ToffZeit.EXE
+    BITNESS = false
+    launch = "$(rootpath)\ToffZeit.EXE"
+    file[]: crc = 4d459ad3; size =     70694; name = Ja-ad.pcx; optional = true
+    file[]: crc = a12b3ad6; size = 133927366; name = ToffZeit.(a)
+    file[]: crc = a6e94229; size =     49152; name = ToffZeit.D32
+    file[]: crc = 087e1e19; size =     86016; name = ToffZeit.EXE
+    file[]: crc = 203a4a7b; size =     62698; name = ToffZeit.HE0
+    file[]: crc = 963b8e55; size = 105048497; name = ToffZeit.HE2
+    file[]: crc = 15397d2d; size =  48515788; name = ToffZeit.HE4
+    file[]: crc = 778404e6; size =    326766; name = TOFFZEIT.HLP; optional = true
+    file[]: crc = bf0d7aa8; size =      2584; name = ToffZeit.INF; optional = true
+    file[]: crc = 7079cbf1; size =    442368; name = ToffZeit.w32
+
+
+
+end
+
+//
+// 1997 Demo version
+//
+demo[pc-en-970312-demo]:
+    name = English Demo 1997-03-12
+    anchorfile = TIMEDEMO.EXE
+    launch = "$(rootpath)\TIMEDEMO.EXE"
+    file[]: crc = a6712191; size =     36352; name = TIMEDEMO.D32
+    file[]: crc = a26710b2; size =      8896; name = TIMEDEMO.DLL
+    file[]: crc = 0d3da3c8; size =     21616; name = TIMEDEMO.EXE
+    file[]: crc = c7e61b3d; size =     18394; name = TIMEDEMO.HE0
+    file[]: crc = 1aeee8c4; size =  12042331; name = TIMEDEMO.HE1
+    file[]: crc = 0a2ec5cb; size =   6434131; name = TIMEDEMO.HE2
+    file[]: crc = b8c094b6; size =   9557765; name = TIMEDEMO.HE4
+    file[]: crc = 125992a1; size =    337614; name = TIMEDEMO.HLP; optional = true
+    file[]: crc = 55a80eeb; size =      2237; name = TIMEDEMO.INF; optional = true
+    file[]: crc = e8890f73; size =    365568; name = TIMEDEMO.W32
+
+
+
+end
+
+//
+// 1997 Dutch Demo version
+//
+demo[pc-nl-980817-demo]:
+    name = Dutch Demo 1998-07-17
+    anchorfile = TIJDDEMO.EXE
+    launch = "$(rootpath)\TIJDDEMO.EXE"
+    file[]: crc = 919ee4d2; size =     34304; name = TIJDDEMO.D32
+    file[]: crc = f9e12b58; size =      8896; name = TIJDDEMO.DLL
+    file[]: crc = 89d383b8; size =    368640; name = TIJDDEMO.EXE
+    file[]: crc = a8978ce6; size =     18403; name = TIJDDEMO.HE0
+    file[]: crc = 93b51012; size =  12077721; name = TIJDDEMO.HE1
+    file[]: crc = c6ef9d06; size =   6865109; name = TIJDDEMO.HE2
+    file[]: crc = 40dba48d; size =   9540287; name = TIJDDEMO.HE4
+    file[]: crc = 7b124dbf; size =    159657; name = TIJDDEMO.HLP; optional = true
+    file[]: crc = 06c499ee; size =      2314; name = TIJDDEMO.INF; optional = true
+
+
+
+end
+
+//
+// 1998 French Demo version (from Pyjama Sam CD)
+//
+demo[pc-fr-980216-demo]:
+    name = French Demo 1998-02-16
+    anchorfile = TEMPDEMO.EXE
+    launch = "$(rootpath)\TEMPDEMO.EXE"
+    file[]: crc = 09b2c55b; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = 1bad3a0b; size =      7634; name = LISEZMOI.TXT; optional = true
+    file[]: crc = e1649017; size =     35840; name = TEMPDEMO.D32
+    file[]: crc = 855b5079; size =      9200; name = TEMPDEMO.DLL
+    file[]: crc = da9b7a6c; size =     21616; name = TEMPDEMO.EXE
+    file[]: crc = 1ba6fafb; size =     18394; name = TEMPDEMO.HE0
+    file[]: crc = 630eb5b6; size =  12136331; name = TEMPDEMO.HE1
+    file[]: crc = b00a2ca9; size =   5896491; name = TEMPDEMO.HE2
+    file[]: crc = 9d7d7e3d; size =   9533303; name = TEMPDEMO.HE4
+    file[]: crc = 6ba0ccc6; size =    100363; name = TEMPDEMO.HLP; optional = true
+    file[]: crc = 98fe2bbc; size =      2325; name = TEMPDEMO.INF; optional = true
+    file[]: crc = a873aa71; size =    368640; name = TEMPDEMO.W32
+
+
+end
+
+
+
+
 
 end

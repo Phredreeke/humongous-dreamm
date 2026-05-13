@@ -15,14 +15,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Windows version
-//
-config[bitness]:
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
 
 //
 // 2000 version
@@ -48,6 +40,181 @@ game[pc-en-000515]:
 
 
 end
+
+
+//
+// 2001 UK version
+//
+game[pc-en-010413-uk]:
+    name = English 2001-04-13 UK Dub
+    anchorfile = puttputtjtc.exe
+    launch = "$(rootpath)\puttputtjtc.exe" 
+    file[]: crc = c00f50f5; size =     49994; name = ja-ad.pcx; optional = true
+    file[]: crc = ea264641; size =  97343350; name = PuttPuttJTC.(a)
+    file[]: crc = ff0be092; size =     45056; name = PuttPuttJTC.d32
+    file[]: crc = cba67fa5; size =     98304; name = puttputtjtc.exe
+    file[]: crc = fcf101da; size =     36655; name = PuttPuttJTC.HE0
+    file[]: crc = 4298c128; size =  92915552; name = PuttPuttJTC.he2
+    file[]: crc = 732fc6c6; size =  27118884; name = PuttPuttJTC.he4
+    file[]: crc = 33778914; size =   1518524; name = PuttPuttJTC.hlp; optional = true
+    file[]: crc = 69d8214f; size =       766; name = PUTTPUTTJTC.ICO; optional = true
+    file[]: crc = f3d5c2b4; size =      2483; name = PuttPuttJTC.inf; optional = true
+    file[]: crc = b893b321; size =    475182; name = puttputtjtc.w32
+
+
+
+end
+
+
+//
+// Dutch 2001 version
+//
+game[pc-nl-010827]:
+    name = Dutch 2001-08-27
+    anchorfile = puttihc.exe
+    launch = "$(rootpath)\puttihc.exe" 
+    file[]: crc = 3c2acf04; size =     50874; name = Ja-ad.pcx; optional = true
+    file[]: crc = 85db4ff7; size =  97421557; name = Puttihc.(a)
+    file[]: crc = b60e543d; size =     49152; name = PuttIHC.D32
+    file[]: crc = cba67fa5; size =     98304; name = puttihc.exe
+    file[]: crc = a23434cb; size =     36655; name = Puttihc.he0
+    file[]: crc = 8574a1b9; size = 100789821; name = Puttihc.he2
+    file[]: crc = 6b7429d4; size =  27169420; name = Puttihc.he4
+    file[]: crc = 1006270a; size =   1573752; name = PuttIHC.hlp; optional = true
+    file[]: crc = 6d71beb9; size =      2543; name = PuttIHC.INF; optional = true
+    file[]: crc = b893b321; size =    475182; name = PuttIHC.w32
+
+end
+
+
+//
+// French 2001 version
+//
+game[pc-fr-010514]:
+    name = French 2001-05-14
+    anchorfile = poucedlc.exe
+    launch = "$(rootpath)\poucedlc.exe" 
+    file[]: crc = 87a276f2; size =     51122; name = Ja-ad.pcx; optional = true
+    file[]: crc = f7ed7fc4; size =  97458862; name = PouceDLC.(a)
+    file[]: crc = 1004b871; size =     49152; name = PouceDLC.D32
+    file[]: crc = cba67fa5; size =     98304; name = poucedlc.exe
+    file[]: crc = 70426320; size =     36655; name = PouceDLC.HE0
+    file[]: crc = 2bf3dc83; size =  82059607; name = PouceDLC.he2
+    file[]: crc = c936c307; size =  27119867; name = PouceDLC.he4
+    file[]: crc = b23a55b4; size =   1505091; name = PouceDLC.hlp; optional = true
+    file[]: crc = 80339884; size =      2571; name = PouceDLC.INF; optional = true
+    file[]: crc = b893b321; size =    475182; name = PouceDLC.w32
+
+end
+
+//
+// German 2001 version
+//
+game[pc-de-010829]:
+    name = German 2001-08-29
+    anchorfile = ToffToffGZZ.exe
+    launch = "$(rootpath)\ToffToffGZZ.exe" 
+    file[]: crc = 5180fd3d; size =     51521; name = Ja-ad.pcx; optional = true
+    file[]: crc = 9498c4ae; size =  97351039; name = ToffToffGZZ.(a)
+    file[]: crc = ef478c69; size =     49152; name = ToffToffGZZ.D32
+    file[]: crc = 8d59d10b; size =     98304; name = ToffToffGZZ.exe
+    file[]: crc = c13a8930; size =     36655; name = ToffToffGZZ.HE0
+    file[]: crc = 00e27285; size =  82079716; name = ToffToffGZZ.he2
+    file[]: crc = bcd935a2; size =  27101237; name = ToffToffGZZ.he4
+    file[]: crc = 0286a760; size =   1564224; name = ToffToffGZZ.HLP; optional = true
+    file[]: crc = 69d8214f; size =       766; name = ToffToffGZZ.ICO; optional = true
+    file[]: crc = 683f4bdf; size =      2549; name = ToffToffGZZ.inf
+    file[]: crc = b893b321; size =    475182; name = ToffToffGzz.w32
+
+end
+
+//
+// Hebrew 2003 version
+//
+game[pc-he-030309]:
+    name = Hebrew 2003-03-09
+    anchorfile = puttcircus.exe
+    file[]: crc = 82b52110; size =    308278; name = he.bmp; optional = true
+    file[]: crc = 0e4ef952; size =  98547641; name = PuttCircus.(a)
+    file[]: crc = 4865cbb6; size =     53248; name = PuttCircus.d32
+    file[]: crc = 148071d7; size =     86016; name = puttcircus.exe
+    file[]: crc = caf7c078; size =     36646; name = PuttCircus.HE0
+    file[]: crc = 7d0e57bc; size =  97818723; name = PuttCircus.he2
+    file[]: crc = 04175dcb; size =  27122609; name = PuttCircus.he4
+    file[]: crc = 7d69bdf7; size =   2571550; name = puttcircus.hlp; optional = true
+    file[]: crc = 1bcedf37; size =       766; name = puttcircus.ico; optional = true
+    file[]: crc = b87e66ef; size =      2083; name = PuttCircus.inf; optional = true
+    file[]: crc = e9389a6a; size =    475182; name = PUTTCIRCUS.w32
+
+end
+
+//
+// 2000 Demo version
+//
+game[pc-en-000504-demo]:
+    name = English Demo 2000-05-04
+    anchorfile = circdemo.exe
+    launch = "$(rootpath)\circdemo.exe" 
+    file[]: crc = 52aa7da1; size =   5953808; name = circdemo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = circdemo.D32
+    file[]: crc = a26710b2; size =      8896; name = circdemo.dll; optional = true
+    file[]: crc = 5b3f02d2; size =    425984; name = circdemo.exe
+    file[]: crc = 9ba47615; size =     12364; name = circdemo.HE0
+    file[]: crc = 35182e08; size =   3007148; name = circdemo.he2
+    file[]: crc = ca3204fe; size =    551505; name = circdemo.he4
+    file[]: crc = cb8be822; size =      2259; name = circdemo.inf; optional = true
+    file[]: crc = 20b2f7dc; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 1bcedf37; size =       766; name = PUTTCIRCUS.ICO; optional = true
+    file[]: crc = 0dfb2c6c; size =      7450; name = readme.txt; optional = true
+
+
+
+end
+
+//
+// 2001 French Demo version
+//
+game[pc-fr-010716-demo]:
+    name = French Demo 2001-07-16
+    anchorfile = circusdemo.exe
+    launch = "$(rootpath)\circusdemo.exe" 
+    file[]: crc = 69d8214f; size =       766; name = autostart.ICO; optional = true
+    file[]: crc = 3eb9f32e; size =   5986556; name = CircusDemo.(a)
+    file[]: crc = 81980e29; size =     35840; name = CircusDemo.D32
+    file[]: crc = b893b321; size =    475182; name = circusdemo.exe
+    file[]: crc = 8626b4ef; size =     12364; name = CircusDemo.he0
+    file[]: crc = 6280829b; size =   2954056; name = CircusDemo.he2
+    file[]: crc = ca3204fe; size =    551505; name = CircusDemo.he4
+    file[]: crc = 40fb9427; size =   1505762; name = Circusdemo.hlp; optional = true
+    file[]: crc = 54ac7716; size =      2093; name = CircusDemo.INF; optional = true
+
+
+
+end
+
+
+
+
+//
+// Hebrew 2001 Demo version
+//
+demo[pc-he-010309-demo]:
+    name = Hebrew Demo 2001-03-09
+    anchorfile = circdemo.exe
+    launch = "$(rootpath)\circdemo.exe" 
+    BITNESS = false
+    winres = 640x480x16
+    file[]: crc = f0f3adb9; size =   5987610; name = circDemo.(a)
+    file[]: crc = 4865cbb6; size =     53248; name = circdemo.d32
+    file[]: crc = 6899a034; size =    503867; name = circdemo.exe
+    file[]: crc = 2bb765af; size =     12364; name = circDemo.HE0
+    file[]: crc = a9dca8ca; size =   3133867; name = circdemo.he2
+    file[]: crc = a9d6dde4; size =    541610; name = circdemo.he4
+    file[]: crc = c07381dd; size =   2570718; name = circdemo.HLP; optional = true
+    file[]: crc = aa8dfe9f; size =      2081; name = circdemo.inf; optional = true
+
+end
+
 
 
 end
