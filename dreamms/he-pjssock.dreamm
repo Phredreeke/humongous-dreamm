@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\SOCKS.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //

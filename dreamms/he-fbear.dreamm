@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\FBEAR.EXE"
 osenv = windows 98
-audiohw = gmidi
 dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
 
 //

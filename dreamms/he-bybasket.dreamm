@@ -1,0 +1,378 @@
+desc[he-bybasket]:
+
+name = Backyard Basketball
+icon = he-bybasket.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\Basketball.exe"
+osenv = windows 98
+winres = 640x480x16
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// 2001 version
+//
+game[pc-en-010921]:
+    name = English 2001-09-21
+    anchordepth = 1
+    anchorfile = Basketball.exe
+    file[]: crc = b7eefbb2; size = 212421604; name = Basketball.(a)
+    file[]: crc = 1e21b136; size =   3781297; name = Basketball.(b)
+    file[]: crc = 8c2168aa; size =     53248; name = Basketball.d32
+    file[]: crc = e854e9cf; size =    696374; name = Basketball.exe
+    file[]: crc = 0fbc8ae8; size =     83174; name = Basketball.he0
+    file[]: crc = 382a47a1; size =  85285354; name = Basketball.he2
+    file[]: crc = ed8e68f1; size =     86742; name = Basketball.he3
+    file[]: crc = 50cfa8da; size =  60267402; name = Basketball.he4
+    file[]: crc = 4c08d4c1; size =       766; name = Basketball.ico
+    file[]: crc = df6282f7; size =      3683; name = Basketball.inf
+    file[]: crc = a6381580; size =    282690; name = Basketball.u32
+    file[]: crc = 5a25964b; size =     16384; name = Basketball.x32
+    file[]: crc = 26411f38; size =    291328; name = binkw32.dll
+    file[]: crc = c5128684; size =    346624; name = mss32.dll
+    file[]: crc = 8d845bd1; size =      5752; name = License.txt
+    file[]: crc = f67639a6; size =     35094; name = players.plr
+    file[]: crc = fc83f119; size =      8582; name = README.TXT
+    file[]: crc = c2726037; size =     56893; name = register.pcx
+    file[]: crc = 6868be43; size =  12479188; name = Data\intro_movie.da2
+    file[]: crc = ad0a03d4; size =      1967; name = Data\courts\Barn.cof
+    file[]: crc = 51729b25; size =      1478; name = Data\courts\CrownHill.cof
+    file[]: crc = 32d58c3a; size =      1884; name = Data\courts\Dobbaguchi.cof
+    file[]: crc = 8622a5a0; size =      1635; name = Data\courts\Garden.cof
+    file[]: crc = 400e3b99; size =      2256; name = Data\courts\Jocindas.cof
+    file[]: crc = 375489d6; size =      1852; name = Data\courts\McMillan.cof
+    file[]: crc = 2baf3ba8; size =      1969; name = Data\courts\Memorial.cof
+    file[]: crc = 4557d304; size =      2415; name = Data\courts\Park.cof
+    file[]: crc = 46a185e3; size =      1737; name = Data\courts\Polk.cof
+    file[]: crc = aa6e3173; size =      1616; name = Data\courts\Queens.cof
+    file[]: crc = e3956445; size =      2348; name = Data\courts\SandyFlats.cof
+    file[]: crc = 2cabfd98; size =      1650; name = Data\courts\Scheffler.cof
+    file[]: crc = bd997e73; size =      2474; name = Data\courts\TechState.cof
+    file[]: crc = 31661739; size =       869; name = Help File\border.htm
+    file[]: crc = a4b5e2a8; size =       417; name = Help File\box.htm
+    file[]: crc = ea6753bf; size =      5339; name = Help File\clubhous.htm
+    file[]: crc = c4388b67; size =     10857; name = Help File\courts.htm
+    file[]: crc = 57d4faec; size =      1865; name = Help File\create_team.htm
+    file[]: crc = bef78118; size =      1872; name = Help File\create_team_single.htm
+    file[]: crc = 6fc3e046; size =     59097; name = Help File\credits.htm
+    file[]: crc = 363ea10c; size =      3930; name = Help File\draft.htm
+    file[]: crc = aee91d34; size =      4040; name = Help File\draft_players.htm
+    file[]: crc = 6d41e19f; size =      9789; name = Help File\extras.htm
+    file[]: crc = 1deefbe8; size =       783; name = Help File\framespage.htm
+    file[]: crc = 31a6963b; size =       227; name = Help File\gamepad-.htm
+    file[]: crc = b3afeb83; size =       227; name = Help File\gamepad-1.htm
+    file[]: crc = eba84e40; size =     26400; name = Help File\gameplay.htm
+    file[]: crc = 9d5f2263; size =       895; name = Help File\index.htm
+    file[]: crc = 06f0cd72; size =       217; name = Help File\keyboard.htm
+    file[]: crc = 200c9f5c; size =       225; name = Help File\mouse-1.htm
+    file[]: crc = a205e2e4; size =       225; name = Help File\mouse-2.htm
+    file[]: crc = e99156e5; size =      5599; name = Help File\official.htm
+    file[]: crc = 7c30b0c7; size =      3184; name = Help File\options.htm
+    file[]: crc = 018b5913; size =       252; name = Help File\powerups.htm
+    file[]: crc = 8bfe080d; size =      2198; name = Help File\season.htm
+    file[]: crc = 158a72d0; size =      3256; name = Help File\season_options.htm
+    file[]: crc = 52c6df62; size =      2956; name = Help File\season_setup.htm
+    file[]: crc = cea62d16; size =      8397; name = Help File\single.htm
+    file[]: crc = 2f5a1a6c; size =      4158; name = Help File\starting.htm
+    file[]: crc = 90ca393e; size =      5313; name = Help File\system.htm
+    file[]: crc = ea6b45f0; size =      3147; name = Help File\team_info_page.htm
+    file[]: crc = 1743bcef; size =      1981; name = Help File\team_info_page_single.htm
+    file[]: crc = 362b14b5; size =      3913; name = Help File\team_strategy.htm
+    file[]: crc = f343f8e9; size =      3685; name = Help File\team_strategy_single.htm
+    file[]: crc = d10a9714; size =      1602; name = Help File\welcome.htm
+    file[]: crc = ee42adc7; size =     14966; name = Help File\banner.tem\banner.dib
+    file[]: crc = 03607d67; size =        86; name = Help File\banner.tem\banner.inf
+    file[]: crc = 884573c5; size =       583; name = Help File\banner.tem\_vti_cnf\banner.dib
+    file[]: crc = 884573c5; size =       583; name = Help File\banner.tem\_vti_cnf\banner.inf
+    file[]: crc = ee42adc7; size =     14966; name = Help File\content.tem\content.dib
+    file[]: crc = 83013311; size =        86; name = Help File\content.tem\content.inf
+    file[]: crc = 884573c5; size =       583; name = Help File\content.tem\_vti_cnf\content.dib
+    file[]: crc = 884573c5; size =       583; name = Help File\content.tem\_vti_cnf\content.inf
+    file[]: crc = d6590673; size =      9094; name = Help File\fb2banner.tem\banner.gif
+    file[]: crc = 042a55f2; size =     14966; name = Help File\fb2banner.tem\fb2banner.dib
+    file[]: crc = 57562bf1; size =       462; name = Help File\fb2banner.tem\fb2banner.htm
+    file[]: crc = c30ffa44; size =       126; name = Help File\fb2banner.tem\fb2banner.inf
+    file[]: crc = 92a672bb; size =       781; name = Help File\fb2banner.tem\_vti_cnf\banner.gif
+    file[]: crc = 0073b768; size =       583; name = Help File\fb2banner.tem\_vti_cnf\fb2banner.dib
+    file[]: crc = 770e2c20; size =       969; name = Help File\fb2banner.tem\_vti_cnf\fb2banner.htm
+    file[]: crc = 0073b768; size =       583; name = Help File\fb2banner.tem\_vti_cnf\fb2banner.inf
+    file[]: crc = c8a8074b; size =     29723; name = Help File\images\00_clubhouse.jpg
+    file[]: crc = b287c88a; size =     29804; name = Help File\images\00_clubhouse_new.jpg
+    file[]: crc = 31e92f90; size =     27411; name = Help File\images\01_setup_singlegame.jpg
+    file[]: crc = 187d7da0; size =     27449; name = Help File\images\01_setup_singlegame_new.jpg
+    file[]: crc = 5905add4; size =     20748; name = Help File\images\02_coachsignin.jpg
+    file[]: crc = ba7ee17d; size =     27567; name = Help File\images\03_setup_season.jpg
+    file[]: crc = 2efb8217; size =     24407; name = Help File\images\04_options.jpg
+    file[]: crc = 7c7bfef9; size =     26263; name = Help File\images\05_controldetails_1button.jpg
+    file[]: crc = 05a3bddd; size =     28967; name = Help File\images\05_controldetails_2button.jpg
+    file[]: crc = 4854c4ab; size =      9631; name = Help File\images\05_details_gp_def.gif
+    file[]: crc = 5e89e097; size =      9259; name = Help File\images\05_details_gp_hud.gif
+    file[]: crc = 67a6ca4a; size =      8965; name = Help File\images\05_details_gp_off.gif
+    file[]: crc = 548939ee; size =     11469; name = Help File\images\05_details_kb_def.gif
+    file[]: crc = 8ccb782c; size =     11444; name = Help File\images\05_details_kb_hud.gif
+    file[]: crc = 64b7fa91; size =     11506; name = Help File\images\05_details_kb_off.gif
+    file[]: crc = 6e7d250e; size =     24676; name = Help File\images\06_parksconference.jpg
+    file[]: crc = f8b49604; size =     27070; name = Help File\images\08_customizeteam.jpg
+    file[]: crc = 77e1ef0f; size =     28836; name = Help File\images\08_customizeteam_new.jpg
+    file[]: crc = 00a3a795; size =     31914; name = Help File\images\09_logoorvalve.jpg
+    file[]: crc = 56fc1c70; size =     36932; name = Help File\images\10_draft_single_bleachers.jpg
+    file[]: crc = 188b61de; size =     39642; name = Help File\images\10_draft_single_bleachers_n.jpg
+    file[]: crc = 52ff2a52; size =     33216; name = Help File\images\10_draft_single_card.jpg
+    file[]: crc = 95619468; size =      5933; name = Help File\images\10_draft_single_finder.gif
+    file[]: crc = 078a4f50; size =     34562; name = Help File\images\10_draft_single_finder.jpg
+    file[]: crc = ee850852; size =     32958; name = Help File\images\10_draft_single_KG_new.jpg
+    file[]: crc = 299c3e81; size =     33021; name = Help File\images\10_draft_single_LL_new.jpg
+    file[]: crc = 6fb4221a; size =     36398; name = Help File\images\10_meettheplayers.jpg
+    file[]: crc = aa630290; size =     34142; name = Help File\images\10_meettheplayers_action.jpg
+    file[]: crc = 6abc9b86; size =     33905; name = Help File\images\10_meettheplayers_card.jpg
+    file[]: crc = 332e929d; size =     32405; name = Help File\images\11_fulldraft.jpg
+    file[]: crc = 116f14f8; size =     32959; name = Help File\images\13_rookie_skills.jpg
+    file[]: crc = 58918b93; size =     33342; name = Help File\images\13_rookie_skills_new.jpg
+    file[]: crc = 4f4a3e93; size =     33686; name = Help File\images\15_players_season_actionbio.jpg
+    file[]: crc = 145dd3dd; size =     28937; name = Help File\images\15_players_singlegame.jpg
+    file[]: crc = a0ed5317; size =     30277; name = Help File\images\15_teamphoto_season_gymrats.jpg
+    file[]: crc = ba8f67dd; size =     30781; name = Help File\images\15_teamphoto_single_hackers.jpg
+    file[]: crc = 9b90271b; size =     29677; name = Help File\images\15_teamphoto_single_hotdogg.jpg
+    file[]: crc = 6dcadc1f; size =     29587; name = Help File\images\15_teamphoto_single_jesters.jpg
+    file[]: crc = 1ee73887; size =     28864; name = Help File\images\15_teamphoto_single_melonhe.jpg
+    file[]: crc = fbe8a51c; size =     28264; name = Help File\images\15_teamphoto_single_sneaker.jpg
+    file[]: crc = 76f96a4c; size =     27054; name = Help File\images\17_statistics_season.jpg
+    file[]: crc = b372a972; size =     24897; name = Help File\images\17_statistics_singlegame.jpg
+    file[]: crc = 5e0d6fca; size =     25473; name = Help File\images\17_trophycase_awards.jpg
+    file[]: crc = 67490651; size =     24051; name = Help File\images\18_trophycase.jpg
+    file[]: crc = 03e37882; size =     28298; name = Help File\images\19_schedule.jpg
+    file[]: crc = e9a678d1; size =     22438; name = Help File\images\23_standings.jpg
+    file[]: crc = e486c28c; size =     22438; name = Help File\images\23_standings_new.jpg
+    file[]: crc = cadcc8f2; size =     26099; name = Help File\images\24_leagueleaders_ind.jpg
+    file[]: crc = 612e7b71; size =     24829; name = Help File\images\25_leagueleaders_team.jpg
+    file[]: crc = ef291002; size =     23459; name = Help File\images\26_strategy_offense.jpg
+    file[]: crc = 658f5e09; size =     23274; name = Help File\images\27_strategy_defense.jpg
+    file[]: crc = 2b6c6dc4; size =     23780; name = Help File\images\27_strategy_defense_new.jpg
+    file[]: crc = fdd592bc; size =     26715; name = Help File\images\28_matchup.jpg
+    file[]: crc = 3a4f5102; size =     27799; name = Help File\images\30_loading-lineups.jpg
+    file[]: crc = 8a604f8b; size =     29100; name = Help File\images\35_halloffame_champions.jpg
+    file[]: crc = c79205de; size =     26059; name = Help File\images\35_halloffame_recordbook.jpg
+    file[]: crc = 9d61f161; size =     22135; name = Help File\images\36_halloffame_credits.jpg
+    file[]: crc = 5275a6ca; size =     24742; name = Help File\images\40_scoreboard.jpg
+    file[]: crc = 57999b44; size =     28307; name = Help File\images\99_gameplay_01.jpg
+    file[]: crc = 2b3094aa; size =     27958; name = Help File\images\99_gameplay_02.jpg
+    file[]: crc = ab2c27ed; size =     28289; name = Help File\images\99_gameplay_03.jpg
+    file[]: crc = efb8a70d; size =     27730; name = Help File\images\99_gameplay_04.jpg
+    file[]: crc = 03535bf6; size =     26904; name = Help File\images\99_gameplay_05.jpg
+    file[]: crc = a4c4a337; size =     27192; name = Help File\images\99_gameplay_06.jpg
+    file[]: crc = a644f432; size =     27135; name = Help File\images\99_gameplay_07.jpg
+    file[]: crc = 6280b62d; size =     10455; name = Help File\images\badge.jpg
+    file[]: crc = 3192aa8c; size =    121915; name = Help File\images\boxcover_m.jpg
+    file[]: crc = e3a0273a; size =     19210; name = Help File\images\boxcover_s.JPG
+    file[]: crc = 7a375360; size =      1547; name = Help File\images\button_bbarules.gif
+    file[]: crc = 5b2eeb72; size =      1268; name = Help File\images\button_bbarules_RO.gif
+    file[]: crc = b7c3c3ed; size =      1391; name = Help File\images\button_beginners.gif
+    file[]: crc = ca331334; size =      1286; name = Help File\images\button_beginners_RO.gif
+    file[]: crc = f4d57eb9; size =      2455; name = Help File\images\button_blank.gif
+    file[]: crc = 0a10324f; size =      1573; name = Help File\images\button_clubhouse.gif
+    file[]: crc = 7e9db37e; size =      1284; name = Help File\images\button_clubhouse_RO.gif
+    file[]: crc = 119569a5; size =      1492; name = Help File\images\button_courts.gif
+    file[]: crc = f7ad4474; size =      1173; name = Help File\images\button_courts_RO.gif
+    file[]: crc = b9da7027; size =      1461; name = Help File\images\button_credits.gif
+    file[]: crc = 1b3dc34c; size =      1373; name = Help File\images\button_credits_RO.gif
+    file[]: crc = f2b8a696; size =      1445; name = Help File\images\button_extras.gif
+    file[]: crc = 9d62cd5e; size =      1343; name = Help File\images\button_extras_RO.gif
+    file[]: crc = 4ef4c82e; size =      1569; name = Help File\images\button_gameplay.gif
+    file[]: crc = 7ab32a25; size =      1283; name = Help File\images\button_gameplay_RO.gif
+    file[]: crc = 45ef9ab1; size =      1652; name = Help File\images\button_getstarted.gif
+    file[]: crc = 4c9d237d; size =      1360; name = Help File\images\button_getstarted_RO.gif
+    file[]: crc = f80ba079; size =      1339; name = Help File\images\button_home.gif
+    file[]: crc = 2d3c9056; size =      1022; name = Help File\images\button_home_RO.gif
+    file[]: crc = 0137073e; size =      1489; name = Help File\images\button_options.gif
+    file[]: crc = cd2f864c; size =      1206; name = Help File\images\button_options_RO.gif
+    file[]: crc = cfce108d; size =      1504; name = Help File\images\button_practice.gif
+    file[]: crc = 13269c8f; size =      1240; name = Help File\images\button_practice_RO.gif
+    file[]: crc = 0b518d0e; size =      1525; name = Help File\images\button_season.gif
+    file[]: crc = 0e3fb4ca; size =      1457; name = Help File\images\button_seasonplay_RO.gif
+    file[]: crc = 08557bf7; size =      1505; name = Help File\images\button_singlegame.gif
+    file[]: crc = 30150e33; size =      1437; name = Help File\images\button_singlegame_RO.gif
+    file[]: crc = d8d8dfac; size =      1452; name = Help File\images\button_system.gif
+    file[]: crc = 7345efb2; size =      1352; name = Help File\images\button_system_RO.gif
+    file[]: crc = 17793cd6; size =     13739; name = Help File\images\court_crownhill.jpg
+    file[]: crc = 18c3b7eb; size =     12612; name = Help File\images\court_dobbaguchi.jpg
+    file[]: crc = 1f6dff50; size =     15346; name = Help File\images\court_humgarden.jpg
+    file[]: crc = b4412532; size =     12116; name = Help File\images\court_jocinda.jpg
+    file[]: crc = 07bd0ab8; size =     12509; name = Help File\images\court_mcmillan.jpg
+    file[]: crc = d32ff317; size =     14386; name = Help File\images\court_memorial.jpg
+    file[]: crc = 6c7c4ae8; size =     12802; name = Help File\images\court_park.jpg
+    file[]: crc = f5e24ddb; size =     13492; name = Help File\images\court_polk.jpg
+    file[]: crc = 7cb0220e; size =     11611; name = Help File\images\court_queens.jpg
+    file[]: crc = 9fa570cc; size =     13987; name = Help File\images\court_sandyflats.jpg
+    file[]: crc = 2ed7edf8; size =     11442; name = Help File\images\court_scheffler.jpg
+    file[]: crc = 7a3ed48b; size =     12596; name = Help File\images\court_techstate.jpg
+    file[]: crc = 10a060b1; size =      4110; name = Help File\images\courtbg.jpg
+    file[]: crc = acd5bcec; size =      1767; name = Help File\images\floor_blue.gif
+    file[]: crc = a116e5d7; size =      1579; name = Help File\images\floor_natural.gif
+    file[]: crc = 5e9c306c; size =      1145; name = Help File\images\icon_jump.gif
+    file[]: crc = 5039dc88; size =      1041; name = Help File\images\icon_move.gif
+    file[]: crc = 124ac9e0; size =      1144; name = Help File\images\icon_pass.gif
+    file[]: crc = 253d8e3d; size =      1122; name = Help File\images\icon_shoot.gif
+    file[]: crc = 2aed4f1d; size =      1169; name = Help File\images\icon_steal.gif
+    file[]: crc = b7a94b97; size =     19164; name = Help File\images\KG_cover.gif
+    file[]: crc = 596a956a; size =     17222; name = Help File\images\XX_sunnybarry.jpg
+    file[]: crc = 37287662; size =       795; name = Help File\images\_vti_cnf\00_clubhouse.jpg
+    file[]: crc = 50db3e5a; size =       608; name = Help File\images\_vti_cnf\00_clubhouse_new.jpg
+    file[]: crc = 6ed0827d; size =       793; name = Help File\images\_vti_cnf\01_setup_singlegame.jpg
+    file[]: crc = d8c37324; size =       608; name = Help File\images\_vti_cnf\01_setup_singlegame_new.jpg
+    file[]: crc = e96ff6ff; size =       793; name = Help File\images\_vti_cnf\02_coachsignin.jpg
+    file[]: crc = fd92073d; size =       799; name = Help File\images\_vti_cnf\03_setup_season.jpg
+    file[]: crc = fd0312f3; size =       813; name = Help File\images\_vti_cnf\04_options.jpg
+    file[]: crc = 742515cc; size =       783; name = Help File\images\_vti_cnf\05_controldetails_1button.jpg
+    file[]: crc = 25cc6bed; size =       783; name = Help File\images\_vti_cnf\05_controldetails_2button.jpg
+    file[]: crc = 1190eb9f; size =       794; name = Help File\images\_vti_cnf\05_details_gp_def.gif
+    file[]: crc = 072fa634; size =       794; name = Help File\images\_vti_cnf\05_details_gp_hud.gif
+    file[]: crc = d722b397; size =       794; name = Help File\images\_vti_cnf\05_details_gp_off.gif
+    file[]: crc = eab6e4dd; size =       795; name = Help File\images\_vti_cnf\05_details_kb_def.gif
+    file[]: crc = 197a0aed; size =       795; name = Help File\images\_vti_cnf\05_details_kb_hud.gif
+    file[]: crc = 3473d53f; size =       795; name = Help File\images\_vti_cnf\05_details_kb_off.gif
+    file[]: crc = 42086150; size =       821; name = Help File\images\_vti_cnf\06_parksconference.jpg
+    file[]: crc = 142509ca; size =       821; name = Help File\images\_vti_cnf\08_customizeteam.jpg
+    file[]: crc = c5a198d4; size =       608; name = Help File\images\_vti_cnf\08_customizeteam_new.jpg
+    file[]: crc = bcac6a01; size =       792; name = Help File\images\_vti_cnf\09_logoorvalve.jpg
+    file[]: crc = 0ee31745; size =       810; name = Help File\images\_vti_cnf\10_draft_single_bleachers.jpg
+    file[]: crc = 6afa72c5; size =       608; name = Help File\images\_vti_cnf\10_draft_single_bleachers_n.jpg
+    file[]: crc = 8e7987f3; size =       810; name = Help File\images\_vti_cnf\10_draft_single_card.jpg
+    file[]: crc = 51cbe7f7; size =       809; name = Help File\images\_vti_cnf\10_draft_single_finder.gif
+    file[]: crc = f64b3e4e; size =       783; name = Help File\images\_vti_cnf\10_draft_single_finder.jpg
+    file[]: crc = 1904bc3f; size =       608; name = Help File\images\_vti_cnf\10_draft_single_KG_new.jpg
+    file[]: crc = 9acd7ec6; size =       608; name = Help File\images\_vti_cnf\10_draft_single_LL_new.jpg
+    file[]: crc = 2dd2fb9d; size =       608; name = Help File\images\_vti_cnf\10_meettheplayers.jpg
+    file[]: crc = 09a25029; size =       608; name = Help File\images\_vti_cnf\10_meettheplayers_action.jpg
+    file[]: crc = b084a48c; size =       608; name = Help File\images\_vti_cnf\10_meettheplayers_card.jpg
+    file[]: crc = 336aa012; size =       800; name = Help File\images\_vti_cnf\11_fulldraft.jpg
+    file[]: crc = 46e5549e; size =       810; name = Help File\images\_vti_cnf\13_rookie_skills.jpg
+    file[]: crc = bf9ba2e5; size =       608; name = Help File\images\_vti_cnf\13_rookie_skills_new.jpg
+    file[]: crc = 5bcb540d; size =       608; name = Help File\images\_vti_cnf\15_players_season_actionbio.jpg
+    file[]: crc = 664c947b; size =       808; name = Help File\images\_vti_cnf\15_players_singlegame.jpg
+    file[]: crc = 1161e539; size =       801; name = Help File\images\_vti_cnf\15_teamphoto_season_gymrats.jpg
+    file[]: crc = e9b37072; size =       783; name = Help File\images\_vti_cnf\15_teamphoto_single_hackers.jpg
+    file[]: crc = 0ece033c; size =       783; name = Help File\images\_vti_cnf\15_teamphoto_single_hotdogg.jpg
+    file[]: crc = c2e81bc8; size =       783; name = Help File\images\_vti_cnf\15_teamphoto_single_jesters.jpg
+    file[]: crc = 187ac4f5; size =       783; name = Help File\images\_vti_cnf\15_teamphoto_single_melonhe.jpg
+    file[]: crc = e91bb8fa; size =       783; name = Help File\images\_vti_cnf\15_teamphoto_single_sneaker.jpg
+    file[]: crc = 40113f46; size =       801; name = Help File\images\_vti_cnf\17_statistics_season.jpg
+    file[]: crc = f9b8d8a5; size =       808; name = Help File\images\_vti_cnf\17_statistics_singlegame.jpg
+    file[]: crc = 34650a7c; size =       801; name = Help File\images\_vti_cnf\17_trophycase_awards.jpg
+    file[]: crc = 9e76fd82; size =       783; name = Help File\images\_vti_cnf\18_trophycase.jpg
+    file[]: crc = a5aca52a; size =       801; name = Help File\images\_vti_cnf\19_schedule.jpg
+    file[]: crc = c9c260a2; size =       783; name = Help File\images\_vti_cnf\23_standings.jpg
+    file[]: crc = d3a6981c; size =       626; name = Help File\images\_vti_cnf\23_standings_new.jpg
+    file[]: crc = df857c4b; size =       801; name = Help File\images\_vti_cnf\24_leagueleaders_ind.jpg
+    file[]: crc = ac3816b5; size =       801; name = Help File\images\_vti_cnf\25_leagueleaders_team.jpg
+    file[]: crc = 29f04a49; size =       825; name = Help File\images\_vti_cnf\26_strategy_offense.jpg
+    file[]: crc = dec17be7; size =       783; name = Help File\images\_vti_cnf\27_strategy_defense.jpg
+    file[]: crc = b30fd472; size =       650; name = Help File\images\_vti_cnf\27_strategy_defense_new.jpg
+    file[]: crc = 9b80abbc; size =       783; name = Help File\images\_vti_cnf\28_matchup.jpg
+    file[]: crc = be89acba; size =       783; name = Help File\images\_vti_cnf\30_loading-lineups.jpg
+    file[]: crc = eb52bc63; size =       608; name = Help File\images\_vti_cnf\35_halloffame_champions.jpg
+    file[]: crc = 8c5fb550; size =       608; name = Help File\images\_vti_cnf\35_halloffame_recordbook.jpg
+    file[]: crc = 1169ae08; size =       608; name = Help File\images\_vti_cnf\36_halloffame_credits.jpg
+    file[]: crc = 22775866; size =       825; name = Help File\images\_vti_cnf\40_scoreboard.jpg
+    file[]: crc = e19db599; size =       608; name = Help File\images\_vti_cnf\99_gameplay_01.jpg
+    file[]: crc = 4c6efb6f; size =       608; name = Help File\images\_vti_cnf\99_gameplay_02.jpg
+    file[]: crc = 04d41005; size =       608; name = Help File\images\_vti_cnf\99_gameplay_03.jpg
+    file[]: crc = 7fa16ff4; size =       608; name = Help File\images\_vti_cnf\99_gameplay_04.jpg
+    file[]: crc = ed8f2804; size =       608; name = Help File\images\_vti_cnf\99_gameplay_05.jpg
+    file[]: crc = 64ffae37; size =       608; name = Help File\images\_vti_cnf\99_gameplay_06.jpg
+    file[]: crc = 49480e81; size =       608; name = Help File\images\_vti_cnf\99_gameplay_07.jpg
+    file[]: crc = 65ddfc55; size =       809; name = Help File\images\_vti_cnf\badge.jpg
+    file[]: crc = 6660a007; size =       616; name = Help File\images\_vti_cnf\boxcover_m.jpg
+    file[]: crc = b71f74c6; size =       608; name = Help File\images\_vti_cnf\boxcover_s.JPG
+    file[]: crc = 90104444; size =       802; name = Help File\images\_vti_cnf\button_bbarules.gif
+    file[]: crc = 8dfec2ca; size =       781; name = Help File\images\_vti_cnf\button_bbarules_RO.gif
+    file[]: crc = 32fbac61; size =       781; name = Help File\images\_vti_cnf\button_beginners.gif
+    file[]: crc = b38e0fe9; size =       781; name = Help File\images\_vti_cnf\button_beginners_RO.gif
+    file[]: crc = a87f7de1; size =       802; name = Help File\images\_vti_cnf\button_blank.gif
+    file[]: crc = 2cb49f97; size =       802; name = Help File\images\_vti_cnf\button_clubhouse.gif
+    file[]: crc = ce092b4a; size =       781; name = Help File\images\_vti_cnf\button_clubhouse_RO.gif
+    file[]: crc = 6df9a29e; size =       802; name = Help File\images\_vti_cnf\button_courts.gif
+    file[]: crc = 7ea9489f; size =       781; name = Help File\images\_vti_cnf\button_courts_RO.gif
+    file[]: crc = 27c23860; size =       802; name = Help File\images\_vti_cnf\button_credits.gif
+    file[]: crc = d1b33d37; size =       781; name = Help File\images\_vti_cnf\button_credits_RO.gif
+    file[]: crc = dd8df6bc; size =       802; name = Help File\images\_vti_cnf\button_extras.gif
+    file[]: crc = 566285fa; size =       781; name = Help File\images\_vti_cnf\button_extras_RO.gif
+    file[]: crc = 740c348a; size =       802; name = Help File\images\_vti_cnf\button_gameplay.gif
+    file[]: crc = 79aea546; size =       781; name = Help File\images\_vti_cnf\button_gameplay_RO.gif
+    file[]: crc = 690925ed; size =       802; name = Help File\images\_vti_cnf\button_getstarted.gif
+    file[]: crc = 1a7f8014; size =       781; name = Help File\images\_vti_cnf\button_getstarted_RO.gif
+    file[]: crc = dc25f91f; size =       802; name = Help File\images\_vti_cnf\button_home.gif
+    file[]: crc = 24c15e5c; size =       781; name = Help File\images\_vti_cnf\button_home_RO.gif
+    file[]: crc = 9ce6cdb7; size =       781; name = Help File\images\_vti_cnf\button_options.gif
+    file[]: crc = b28c3357; size =       781; name = Help File\images\_vti_cnf\button_options_RO.gif
+    file[]: crc = 493698c1; size =       781; name = Help File\images\_vti_cnf\button_practice.gif
+    file[]: crc = 981ef442; size =       781; name = Help File\images\_vti_cnf\button_practice_RO.gif
+    file[]: crc = ab8e8c14; size =       802; name = Help File\images\_vti_cnf\button_season.gif
+    file[]: crc = 04b9d7ae; size =       781; name = Help File\images\_vti_cnf\button_seasonplay_RO.gif
+    file[]: crc = 24d2aadd; size =       802; name = Help File\images\_vti_cnf\button_singlegame.gif
+    file[]: crc = 8d874fac; size =       781; name = Help File\images\_vti_cnf\button_singlegame_RO.gif
+    file[]: crc = 9501c8f6; size =       802; name = Help File\images\_vti_cnf\button_system.gif
+    file[]: crc = 2942a390; size =       781; name = Help File\images\_vti_cnf\button_system_RO.gif
+    file[]: crc = 2975c874; size =       618; name = Help File\images\_vti_cnf\court_crownhill.jpg
+    file[]: crc = 9dea5cf3; size =       618; name = Help File\images\_vti_cnf\court_dobbaguchi.jpg
+    file[]: crc = d17eddd1; size =       618; name = Help File\images\_vti_cnf\court_humgarden.jpg
+    file[]: crc = 5820a651; size =       618; name = Help File\images\_vti_cnf\court_jocinda.jpg
+    file[]: crc = 73f266b8; size =       618; name = Help File\images\_vti_cnf\court_mcmillan.jpg
+    file[]: crc = 062fc961; size =       618; name = Help File\images\_vti_cnf\court_memorial.jpg
+    file[]: crc = f2a1bab3; size =       618; name = Help File\images\_vti_cnf\court_park.jpg
+    file[]: crc = 8eacc506; size =       618; name = Help File\images\_vti_cnf\court_polk.jpg
+    file[]: crc = 6486bce5; size =       618; name = Help File\images\_vti_cnf\court_queens.jpg
+    file[]: crc = 4ad12efb; size =       618; name = Help File\images\_vti_cnf\court_sandyflats.jpg
+    file[]: crc = 6791d528; size =       618; name = Help File\images\_vti_cnf\court_scheffler.jpg
+    file[]: crc = ad42e1cf; size =       618; name = Help File\images\_vti_cnf\court_techstate.jpg
+    file[]: crc = dafaf5a0; size =       782; name = Help File\images\_vti_cnf\courtbg.jpg
+    file[]: crc = d394f901; size =       808; name = Help File\images\_vti_cnf\floor_blue.gif
+    file[]: crc = b0e78397; size =      1135; name = Help File\images\_vti_cnf\floor_natural.gif
+    file[]: crc = 938c38d8; size =       792; name = Help File\images\_vti_cnf\icon_jump.gif
+    file[]: crc = 1862cad7; size =       792; name = Help File\images\_vti_cnf\icon_move.gif
+    file[]: crc = 7dac954e; size =       792; name = Help File\images\_vti_cnf\icon_pass.gif
+    file[]: crc = 3d89c9d9; size =       792; name = Help File\images\_vti_cnf\icon_shoot.gif
+    file[]: crc = 90f1ce36; size =       792; name = Help File\images\_vti_cnf\icon_steal.gif
+    file[]: crc = 2cdb0555; size =       619; name = Help File\images\_vti_cnf\KG_cover.gif
+    file[]: crc = 0fdca463; size =       783; name = Help File\images\_vti_cnf\XX_sunnybarry.jpg
+    file[]: crc = 0d1cf99f; size =      1756; name = Help File\navbar.tem\button_practice.gif
+    file[]: crc = ac7307d4; size =     14966; name = Help File\navbar.tem\navbar.dib
+    file[]: crc = 433e63ad; size =      2140; name = Help File\navbar.tem\navbar.htm
+    file[]: crc = bab8ab5c; size =       118; name = Help File\navbar.tem\navbar.inf
+    file[]: crc = 90b44b38; size =       781; name = Help File\navbar.tem\_vti_cnf\button_practice.gif
+    file[]: crc = 4c19a3d2; size =       583; name = Help File\navbar.tem\_vti_cnf\navbar.dib
+    file[]: crc = a0c2d7ff; size =      1464; name = Help File\navbar.tem\_vti_cnf\navbar.htm
+    file[]: crc = 4c19a3d2; size =       583; name = Help File\navbar.tem\_vti_cnf\navbar.inf
+    file[]: crc = eb078408; size =      1768; name = Help File\navtemp.tem\button_clubhouse.gif
+    file[]: crc = 0e8b4299; size =      1770; name = Help File\navtemp.tem\button_home.gif
+    file[]: crc = aa8dae29; size =      1794; name = Help File\navtemp.tem\button_singlegame.gif
+    file[]: crc = 4d833e0e; size =      1868; name = Help File\navtemp.tem\button_starting.gif
+    file[]: crc = 8d912bac; size =      1798; name = Help File\navtemp.tem\button_system.gif
+    file[]: crc = 6eaf8704; size =     14966; name = Help File\navtemp.tem\navtemp.dib
+    file[]: crc = 236aa09a; size =      1336; name = Help File\navtemp.tem\navtemp.htm
+    file[]: crc = 661be225; size =        82; name = Help File\navtemp.tem\navtemp.inf
+    file[]: crc = 2435ab4d; size =       804; name = Help File\navtemp.tem\_vti_cnf\button_clubhouse.gif
+    file[]: crc = 72aeb0eb; size =       804; name = Help File\navtemp.tem\_vti_cnf\button_home.gif
+    file[]: crc = aacdd0c5; size =       804; name = Help File\navtemp.tem\_vti_cnf\button_singlegame.gif
+    file[]: crc = 4e92ffb8; size =       804; name = Help File\navtemp.tem\_vti_cnf\button_starting.gif
+    file[]: crc = b153bcd6; size =       804; name = Help File\navtemp.tem\_vti_cnf\button_system.gif
+    file[]: crc = f5e52499; size =       583; name = Help File\navtemp.tem\_vti_cnf\navtemp.dib
+    file[]: crc = 37ff08eb; size =      1045; name = Help File\navtemp.tem\_vti_cnf\navtemp.htm
+    file[]: crc = f5e52499; size =       583; name = Help File\navtemp.tem\_vti_cnf\navtemp.inf
+    file[]: crc = ee42adc7; size =     14966; name = Help File\text.tem\text.dib
+    file[]: crc = 79e54383; size =       115; name = Help File\text.tem\text.inf
+    file[]: crc = 6473c20e; size =       583; name = Help File\text.tem\_vti_cnf\text.dib
+    file[]: crc = 6473c20e; size =       583; name = Help File\text.tem\_vti_cnf\text.inf
+
+
+
+
+end
+
+
+end

@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\WATER.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -46,7 +45,7 @@ game[pc-en-961015]:
     file[]: crc = 107bf9d8; size =  43673987; name = WATER.HE4
     file[]: crc = b6ecd1c5; size =     16686; name = WATER.HE7
     file[]: crc = 4cb5d0c6; size =    133786; name = WATER.HLP; optional = true
-    file[]: crc = 8a696e24; size =      2097; name = WATER.INF; optional = true
+    file[]: crc = 8a696e24; size =      2097; name = WATER.INF
     file[]: crc = df345520; size =    324096; name = WATER.W32
 
 end
@@ -68,8 +67,56 @@ game[pc-en-991103]:
     file[]: crc = 107bf9d8; size =  43673987; name = Water.he4
     file[]: crc = b6ecd1c5; size =     16686; name = Water.he7
     file[]: crc = 20d46c65; size =    141093; name = Water.hlp; optional = true
-    file[]: crc = 2e8dc456; size =      2547; name = Water.inf; optional = true
+    file[]: crc = 2e8dc456; size =      2547; name = Water.inf
     file[]: crc = f58faffb; size =    425984; name = WATER.w32
+
+end
+
+//
+// Dutch version
+//
+game[pc-nl-990825]:
+    name = Dutch 1999-08-25
+    anchorfile = WATER.EXE
+    BITNESS = false
+    file[]: crc = 59ea8ef4; size =       578; name = COPYRITE.TXT; optional = true
+    file[]: crc = 7db99848; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = aa2ac93c; size =  11709214; name = WATER.(A)
+    file[]: crc = b2891f6e; size =    109942; name = WATER.BMP
+    file[]: crc = 1e2f9505; size =     34304; name = WATER.D32
+    file[]: crc = f9e12b58; size =      8896; name = WATER.DLL
+    file[]: crc = a495395f; size =     21616; name = WATER.EXE
+    file[]: crc = 085af35c; size =     12747; name = WATER.HE0
+    file[]: crc = ab65954d; size =   5748057; name = WATER.HE2
+    file[]: crc = 107bf9d8; size =  43673987; name = WATER.HE4
+    file[]: crc = b6ecd1c5; size =     16686; name = WATER.HE7
+    file[]: crc = 6802ab99; size =    415838; name = WATER.HLP; optional = true
+    file[]: crc = 3e29690a; size =      2164; name = WATER.INF
+    file[]: crc = ea619626; size =    444928; name = WATER.W32
+    file[]: crc = ff735d55; size =     34304; name = Water_.b32
+
+end
+
+//
+// French version
+//
+game[pc-fr-991001]:
+    name = French 1999-10-01
+    anchorfile = bulle.exe
+    BITNESS = false
+    launch = "$(rootpath)\bulle.exe"
+    file[]: crc = 665eb78a; size =  11355438; name = BULLE.(A)
+    file[]: crc = ec7c10f1; size =     35840; name = BULLE.D32
+    file[]: crc = 855b5079; size =      9200; name = BULLE.DLL
+    file[]: crc = 36e0366e; size =     77824; name = bulle.exe
+    file[]: crc = de2e028d; size =     12747; name = BULLE.HE0
+    file[]: crc = bbbb1e02; size =   4783889; name = BULLE.HE2
+    file[]: crc = 107bf9d8; size =  43673987; name = BULLE.HE4
+    file[]: crc = 92c7accf; size =    532698; name = BULLE.HLP; optional = true
+    file[]: crc = 4a5de278; size =      2508; name = BULLE.INF
+    file[]: crc = ea619626; size =    444928; name = BULLE.W32
+    file[]: crc = f45a746a; size =     87213; name = Ja-ad.pcx; optional = true
+    file[]: crc = b6ecd1c5; size =     16686; name = WATER.HE7; optional = true
 
 end
 

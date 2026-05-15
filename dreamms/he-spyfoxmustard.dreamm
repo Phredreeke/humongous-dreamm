@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\mustard.exe"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -27,14 +26,14 @@ game[pc-en-990822]:
     file[]: crc = 675144a9; size =     28068; name = map.ini
     file[]: crc = 9b934e16; size =  39296596; name = mustard.(a)
     file[]: crc = 94c373b1; size =     36352; name = mustard.d32
-    file[]: crc = f5c0d297; size =    409600; name = mustard.exe
+    file[]: crc = f5c0d297; size =    409600; name = mustard.exe; exactonly = true
     file[]: crc = 1db2abe8; size =     17968; name = mustard.HE0
     file[]: crc = 8f967c67; size =   6292820; name = mustard.he2
     file[]: crc = e30627fe; size =  13651663; name = mustard.he4
     file[]: crc = 3d42600f; size =    934452; name = mustard.he7
     file[]: crc = e28ba7b3; size =    427019; name = MUSTARD.HLP; optional = true
     file[]: crc = 4b0fc164; size =       766; name = Mustard.ico; optional = true
-    file[]: crc = 75f02408; size =      2793; name = mustard.inf; optional = true
+    file[]: crc = 75f02408; size =      2793; name = mustard.inf
     file[]: crc = 4e1a439f; size =     12096; name = images\air-01\tile-1.wiz
     file[]: crc = a9e56a25; size =     12394; name = images\air-01\tile-10.wiz
     file[]: crc = 0a4ee9ea; size =     11408; name = images\air-01\tile-11.wiz
@@ -3147,7 +3146,7 @@ game[pc-en-010116]:
     file[]: crc = 3f5a1682; size =     49315; name = ja-ad.pcx; optional = true  // new file
     file[]: crc = 71bcc3f5; size =      5733; name = license.txt; optional = true  // replaces 5564d202/5724
     file[]: crc = 9d758f77; size =     86016; name = mustard.exe  // replaces f5c0d297/409600
-    file[]: crc = 595cb505; size =      2785; name = mustard.inf; optional = true  // replaces 75f02408/2793
+    file[]: crc = 595cb505; size =      2785; name = mustard.inf  // replaces 75f02408/2793
     file[]: crc = f5c0d297; size =    409600; name = mustard.w32  // new file
 
 end

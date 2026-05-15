@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\FREDDI.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
 
@@ -113,6 +112,26 @@ game[pc-en-980120]:
     file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 9cef0e01; size =    139078; name = JA-AD.BMP; optional = true
+
+
+end
+
+//
+// 2001 Encore version
+//
+game[pc-en-010510]:
+    name = English 2001-05-10
+    anchorfile = FREDDI.EXE
+    imports = pc-en-980120
+    file[]: remove = FREDDI.BMP;
+    file[]: crc = a26710b2; size =      8896; name = FREDDI.DLL
+    file[]: crc = 942d822d; size =     98304; name = freddi.exe
+    file[]: crc = 9180a1b8; size =     53261; name = Freddi.he3
+    file[]: crc = b12dba24; size =     96553; name = FREDDI.HLP
+    file[]: crc = 6be64bd8; size =      2762; name = FREDDI.INF
+    file[]: crc = 9c714450; size =    368640; name = FREDDI.W32
+    file[]: crc = 4b81c123; size =     81042; name = FredReg.pcx; optional = true
+    file[]: remove = JA-AD.BMP
 
 
 end
@@ -304,7 +323,6 @@ end
 game[pc-he-021017]:
     name = Hebrew 2002-10-17
     anchorfile = FREDDI.EXE
-//    launch = "$(rootpath)\FREDDI.W32"
     file[]: crc = 15ed44d6; size =    132406; name = FREDDI.BMP; optional = true
     file[]: crc = d4964e9f; size =     31232; name = FREDDI.EXE
     file[]: crc = ba9bd78c; size =     26483; name = FREDDI.HE0

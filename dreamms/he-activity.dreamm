@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\ACTIVITY.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
 

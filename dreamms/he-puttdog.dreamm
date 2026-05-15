@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\DOG.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -71,6 +70,83 @@ game[pc-en-990723]:
     file[]: remove = HEINI.EXE
     file[]: remove = JA-AD.BMP
 
+
+
+end
+
+
+//
+// Dutch version
+//
+game[pc-nl-961126]:
+    name = Dutch 1996-11-26
+    anchorfile = DOG.EXE
+    file[]: crc = cc19e918; size =    132404; name = DOG.BMP; optional = true
+    file[]: crc = 98d53daf; size =     32768; name = DOG.D32
+    file[]: crc = 8666e33f; size =      8896; name = DOG.DLL
+    file[]: crc = 45fbbdd4; size =     21616; name = DOG.EXE
+    file[]: crc = beaff9cc; size =     19681; name = DOG.HE0
+    file[]: crc = be4d4d19; size =  10252637; name = DOG.HE1
+    file[]: crc = 6dbdda8e; size =   4001568; name = DOG.HE2
+    file[]: crc = ea3d84da; size =  38396593; name = DOG.HE4
+    file[]: crc = 424a11d6; size =      4752; name = DOG.HE7
+    file[]: crc = 23e03a73; size =     26400; name = DOG.HE8
+    file[]: crc = 97f9b022; size =    130424; name = DOG.HLP; optional = true
+    file[]: crc = 818ce0be; size =      2106; name = DOG.INF
+    file[]: crc = 35cd34c0; size =    308736; name = DOG.W32
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 6bb8a176; size =     98354; name = JA-AD.BMP; optional = true
+
+
+end
+
+//
+// French version
+//
+game[pc-fr-961126]:
+    name = French 1996-11-26
+    anchorfile = toutou.exe
+    launch = "$(rootpath)\toutou.exe"
+    file[]: crc = 636cec1b; size =     89612; name = Ja-ad.pcx; optional = true
+    file[]: crc = c8acb4f9; size =  10465135; name = TOUTOU.(A)
+    file[]: crc = 81980e29; size =     35840; name = TOUTOU.D32
+    file[]: crc = 855b5079; size =      9200; name = TOUTOU.DLL
+    file[]: crc = ff9260a1; size =     77824; name = toutou.exe
+    file[]: crc = e10a22b4; size =     19725; name = TOUTOU.HE0
+    file[]: crc = dd2a5eea; size =   3830321; name = TOUTOU.HE2
+    file[]: crc = ea3d84da; size =  38396593; name = TOUTOU.HE4
+    file[]: crc = 424a11d6; size =      4752; name = TOUTOU.HE7
+    file[]: crc = 23e03a73; size =     26400; name = TOUTOU.HE8
+    file[]: crc = 83a83d8d; size =    113988; name = TOUTOU.HLP; optional = true
+    file[]: crc = 62d0aced; size =      2637; name = TOUTOU.INF
+    file[]: crc = 7557657b; size =    444928; name = TOUTOU.W32
+
+
+end
+
+
+//
+// German version
+//
+game[pc-de-970331]:
+    name = German 1997-03-31
+    anchorfile = DOG.EXE
+    file[]: crc = af2e23aa; size =    131830; name = DOG.BMP; optional = true
+    file[]: crc = 871a37fd; size =     34816; name = DOG.D32
+    file[]: crc = 69a6466c; size =      9104; name = DOG.DLL
+    file[]: crc = 45fbbdd4; size =     21616; name = DOG.EXE
+    file[]: crc = 2282d79e; size =     19681; name = DOG.HE0
+    file[]: crc = 74e4ac09; size =  10408155; name = DOG.HE1
+    file[]: crc = 81f37636; size =   4317473; name = DOG.HE2
+    file[]: crc = c05daad7; size =     36864; name = DOG.HE3
+    file[]: crc = ea3d84da; size =  38396593; name = DOG.HE4
+    file[]: crc = 424a11d6; size =      4752; name = DOG.HE7
+    file[]: crc = 23e03a73; size =     26400; name = DOG.HE8
+    file[]: crc = 127f61d4; size =    111206; name = DOG.HLP; optional = true
+    file[]: crc = 184fba78; size =      2140; name = DOG.INF
+    file[]: crc = 4172bcb3; size =    330240; name = DOG.W32
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = ce279c42; size =    139078; name = JA-AD.BMP; optional = true
 
 
 end

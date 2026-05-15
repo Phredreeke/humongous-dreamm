@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\freddicove.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x16
 
 //

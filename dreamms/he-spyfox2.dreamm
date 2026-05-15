@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\Spyfox2.exe"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //

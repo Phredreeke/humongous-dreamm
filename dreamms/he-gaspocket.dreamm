@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\GASPOCKE.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x16
 
 //
@@ -20,7 +19,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 // 2001 Prototype
 //
 game[pc-en-010503]:
-    name = English 2001-05-03
+    name = Prototype
     anchorfile = GASPOCKE.EXE
     file[]: crc = 26411f38; size =    291328; name = BINKW32.DLL
     file[]: crc = cf712219; size =       983; name = COPYRIGH.TXT

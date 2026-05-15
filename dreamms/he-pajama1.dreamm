@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\PAJAMA.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -47,7 +46,7 @@ game[pc-en-960909]:
     file[]: crc = 7d7025d0; size =  32410705; name = PAJAMA.HE4
     file[]: crc = 558514f2; size =    413586; name = PAJAMA.HE7
     file[]: crc = 08ea3f42; size =    134920; name = PAJAMA.HLP; optional = true
-    file[]: crc = aee1266f; size =      2172; name = PAJAMA.INF; optional = true
+    file[]: crc = aee1266f; size =      2172; name = PAJAMA.INF
     file[]: crc = 384e4671; size =    323584; name = PAJAMA.W32
     file[]: crc = f63aa758; size =     11148; name = README.TXT; optional = true
 
@@ -72,7 +71,7 @@ game[pc-en-991027]:
     file[]: crc = 7d7025d0; size =  32410705; name = Pajama.he4
     file[]: crc = 558514f2; size =    413586; name = Pajama.he7
     file[]: crc = cc734fb1; size =    137920; name = PAJAMA.HLP; optional = true
-    file[]: crc = add042c0; size =      2600; name = PAJAMA.INF; optional = true
+    file[]: crc = add042c0; size =      2600; name = PAJAMA.INF
     file[]: crc = 1d8182d2; size =    425984; name = pajama.w32
 
 
@@ -85,18 +84,19 @@ game[pc-en-020520]:
     name = English 2002-05-20
     anchorfile = PajamaNHD.exe
     BITNESS = false
+    anchordepth = 1
     launch = "$(rootpath)\PajamaNHD.exe" 
     file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE
     file[]: crc = 7916ab5a; size =      5726; name = License.txt
-    file[]: crc = cf0052ee; size = 141943944; name = PajamaNHD.(a)
+    file[]: crc = cf0052ee; size = 141943944; name = PajamaNHD.(a); exactonly = true
     file[]: crc = 8c2168aa; size =     53248; name = PajamaNHD.d32
     file[]: crc = 1d279123; size =    512052; name = PajamaNHD.exe
-    file[]: crc = df630329; size =     66599; name = PajamaNHD.HE0
-    file[]: crc = b89c35a7; size =  68247166; name = PajamaNHD.he2
-    file[]: crc = fe0b9a98; size =     36864; name = PajamaNHD.he3
-    file[]: crc = 7d7025d0; size =  32410705; name = PajamaNHD.he4
-    file[]: crc = 558514f2; size =    413586; name = PajamaNHD.he7
-    file[]: crc = ce2b93d8; size =    192375; name = PAJAMANHD.HLP
+    file[]: crc = df630329; size =     66599; name = PajamaNHD.HE0; exactonly = true
+    file[]: crc = b89c35a7; size =  68247166; name = PajamaNHD.he2; exactonly = true
+    file[]: crc = fe0b9a98; size =     36864; name = PajamaNHD.he3; exactonly = true
+    file[]: crc = 7d7025d0; size =  32410705; name = PajamaNHD.he4; exactonly = true
+    file[]: crc = 558514f2; size =    413586; name = PajamaNHD.he7; exactonly = true
+    file[]: crc = ce2b93d8; size =    192375; name = PAJAMANHD.HLP; exactonly = true
     file[]: crc = a54490f0; size =      2301; name = PajamaNHD.inf
 
 
@@ -124,7 +124,7 @@ game[pc-en-070901]:
     file[]: crc = 188369ae; size =  68281692; name = pjsam.HE2
     file[]: crc = 7d7025d0; size =  32410705; name = pjSam.he4
     file[]: crc = efee520f; size =    183713; name = pjSam.ICO; optional = true
-    file[]: crc = efcbf679; size =      2185; name = pjSam.inf; optional = true
+    file[]: crc = efcbf679; size =      2185; name = pjSam.inf
     file[]: crc = 0d52f018; size =   1440056; name = setup.bmp; optional = true
 
 
@@ -151,7 +151,7 @@ game[pc-nl-960909]:
     file[]: crc = 558514f2; size =    413586; name = PAJAMA.HE7
     file[]: crc = affa0a50; size =    273602; name = PAJAMA.HLP; optional = true
     file[]: crc = 5beed1a3; size =     22486; name = PAJAMA.ICO; optional = true
-    file[]: crc = eaa53205; size =      2145; name = PAJAMA.INF; optional = true
+    file[]: crc = eaa53205; size =      2145; name = PAJAMA.INF
     file[]: crc = db2d1c95; size =    330240; name = PAJAMA.W32
     file[]: crc = 0b97f939; size =     31004; name = Pajama_.he5; optional = true
     file[]: crc = 63cf2512; size =    104509; name = Pajama_.he6; optional = true
@@ -179,9 +179,9 @@ game[pc-fr-980307]:
     file[]: crc = 00492eb9; size =  32411280; name = SAMPYJAM.HE4
     file[]: crc = 558514f2; size =    413586; name = SAMPYJAM.HE7
     file[]: crc = bc6fbcdb; size =    145538; name = SAMPYJAM.HLP; optional = true
-    file[]: crc = eed961fd; size =      2238; name = SAMPYJAM.INF; optional = true
+    file[]: crc = eed961fd; size =      2238; name = SAMPYJAM.INF
     file[]: crc = ab125a5c; size =    330240; name = SAMPYJAM.W32
-    file[]: crc = 35d17e13; size =      1282; name = SNDCARDS.INF; optional = true
+    file[]: crc = 35d17e13; size =      1282; name = SNDCARDS.INF
 
 end
 
@@ -205,7 +205,7 @@ game[pc-de-991018]:
     file[]: crc = 558514f2; size =    413586; name = PYJAMA.HE7
     file[]: crc = 1c93045e; size =    133446; name = PYJAMA.HLP; optional = true
     file[]: crc = 892c5170; size =       766; name = PYJAMA.ICO; optional = true
-    file[]: crc = 28fccd4f; size =      2544; name = PYJAMA.INF; optional = true
+    file[]: crc = 28fccd4f; size =      2544; name = PYJAMA.INF
     file[]: crc = 4aac5902; size =    425984; name = PYJAMA.W32
 
 end
@@ -224,8 +224,32 @@ demo[pc-en-970814-demo]:
     file[]: crc = be70911c; size =   6514765; name = PJS-DEMO.HE2
     file[]: crc = e164e1b8; size =  10836436; name = PJS-DEMO.HE4
     file[]: crc = 1371fb8c; size =     35217; name = PJS-DEMO.HLP; optional = true
-    file[]: crc = 3393ee49; size =      2201; name = PJS-DEMO.INF; optional = true
+    file[]: crc = 3393ee49; size =      2201; name = PJS-DEMO.INF
     file[]: crc = cc302677; size =    323584; name = PJS-DEMO.W32
+
+
+
+end
+
+//
+// 1997 Dutch demo version
+//
+demo[pc-nl-971118-demo]:
+    name = Dutch Demo 1997-11-18
+    anchorfile = PJS-DEMO.EXE
+    launch = "$(rootpath)\PJS-DEMO.EXE"
+    file[]: crc = 9b1d4f36; size =     34304; name = PJS-DEMO.D32
+    file[]: crc = f9e12b58; size =      8896; name = PJS-DEMO.DLL
+    file[]: crc = 13befd98; size =     21616; name = PJS-DEMO.EXE
+    file[]: crc = 4b8322df; size =     18354; name = PJS-DEMO.HE0
+    file[]: crc = 1d2ac4e5; size =  13227012; name = PJS-DEMO.HE1
+    file[]: crc = cad31110; size =   7730975; name = PJS-DEMO.HE2
+    file[]: crc = e164e1b8; size =  10836436; name = PJS-DEMO.HE4
+    file[]: crc = f0dce817; size =    121969; name = PJS-DEMO.HLP; optional = true
+    file[]: crc = 892c5170; size =       766; name = PJS-DEMO.ICO; optional = true
+    file[]: crc = 5d58d7b8; size =      2171; name = PJS-DEMO.INF
+    file[]: crc = db2d1c95; size =    330240; name = PJS-DEMO.W32
+    file[]: crc = 7e349ad5; size =     10709; name = README.TXT; optional = true
 
 
 

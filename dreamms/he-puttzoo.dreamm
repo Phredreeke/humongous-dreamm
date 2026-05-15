@@ -1,0 +1,266 @@
+desc[he-puttzoo]:
+
+name = Putt-Putt Saves the Zoo
+icon = he-puttzoo.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PUTTZOO.EXE"
+osenv = windows 98
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+
+
+game[pc_en_970108]:
+    name = English 1997-01-08 // SPUTM 7
+    anchorfile = PUTTZOO.EXE
+    file[]: crc = 110f13e3; size =     30720; name = PUTTZOO.EXE
+    file[]: crc = 2ae0ab2d; size =    298496; name = PUTTZOO.W32
+    file[]: crc = 73a91ded; size =     41998; name = PUTTZOO.HE0
+    file[]: crc = f40247dd; size =  97588111; name = PUTTZOO.HE1
+    file[]: crc = a280f1ad; size =  54132615; name = PUTTZOO.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PUTTZOO.HE3
+    file[]: crc = 569f2363; size =  66540682; name = PUTTZOO.HE4
+    file[]: crc = 525791a7; size =    347522; name = PUTTZOO.HLP
+    file[]: crc = 2f88ee76; size =      1743; name = PUTTZOO.INF
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF
+    file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
+end
+
+
+game[pc_en_990311]:
+    // Putt-Putt Saves the Zoo (USA) (Rerelease) (1999-03-11)
+    name = English 1999-03-11 // SPUTM-HE v98.5
+    BITNESS = false
+    anchorfile = PUTTZOO.(A)
+    file[]: crc = 48031138; size =  95810519; name = PUTTZOO.(A)
+    file[]: crc = 8c77a4bc; size =     21616; name = PUTTZOO.EXE
+    file[]: crc = 54cf7a4c; size =    444928; name = PUTTZOO.W32
+    file[]: crc = a26710b2; size =      8896; name = PUTTZOO.DLL
+    file[]: crc = 94c373b1; size =     36352; name = PUTTZOO.D32
+    file[]: crc = dc55b8cc; size =     43445; name = PUTTZOO.HE0
+    file[]: crc = 78289d04; size =  54144726; name = PUTTZOO.HE2
+    file[]: crc = 53c8c117; size =  66221423; name = PUTTZOO.HE4
+    file[]: crc = ffca9425; size =    595696; name = PUTTZOO.HLP
+    file[]: crc = a76e046f; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = a91f3758; size =      2119; name = PUTTZOO.INF
+end
+
+game[pc_en_1999-03-11_alt]:
+    // Probable bad dump of the above
+    name = English 1999-03-11, Alt // SPUTM-HE v98.5
+    anchorfile = PUTTZOO.(A)
+    imports = pc_en_990311
+    file[]: crc = 04cbd569; size =  95810519; name = PUTTZOO.(A)
+end
+
+game[pc_en_070906]:
+    name = English 2007-09-06 // SPUTM-HE v99
+    BITNESS = false
+    anchorfile = PuttZoo.(a)
+    file[]: crc = fbda6ce1; size =    434232; name = PuttZoo.exe
+    file[]: crc = 8c2168aa; size =     53248; name = PuttZoo.d32
+    file[]: crc = 1d759820; size =  96066453; name = PuttZoo.(a)
+    file[]: crc = a3f98c99; size =     43470; name = PuttZoo.he0
+    file[]: crc = 6340207e; size =  54144725; name = PuttZoo.he2
+    file[]: crc = 75d7453b; size =  71090461; name = PuttZoo.he4
+    file[]: crc = 21aac7a5; size =    457428; name = PUTTZOO.HLP
+    file[]: crc = a91f3758; size =      2119; name = PuttZoo.inf; optional = true
+    file[]: crc = 4e5b2d54; size =    125114; name = PuttZoo_manual.pdf; optional = true
+    file[]: crc = 5336f7d8; size =     10390; name = PuttZoo_readme.txt; optional = true
+end
+
+
+//
+// Dutch version 1995-06-13
+//
+
+game[pc_nl_950613]:
+    name = Dutch 1995-06-13
+    anchorfile = PUTTZOO.W32
+    file[]: crc = 4bc09a79; size =     35328; name = PUTTZOO.EXE
+    file[]: crc = 0ea732a1; size =    294400; name = PUTTZOO.W32
+    file[]: crc = ae559df5; size =     42079; name = PUTTZOO.HE0
+    file[]: crc = 3a02dfdb; size =  97877107; name = PUTTZOO.HE1
+    file[]: crc = 7c2fc92e; size =  56659856; name = PUTTZOO.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PUTTZOO.HE3
+    file[]: crc = 95d99ab8; size =  69946815; name = PUTTZOO.HE4
+    file[]: crc = 659ea23f; size =    328479; name = PUTTZOO.HLP
+    file[]: crc = 5ead98e7; size =      1795; name = PUTTZOO.INF
+    file[]: crc = b070631e; size =      1298; name = SNDCARDS.INF
+end
+
+//
+// Dutch version 2000-08-12
+//
+
+game[pc_nl_000812]:
+    name = Dutch 2000-08-12
+    imports = pc_nl_950613
+    anchorfile = PUTTZOO.W32
+    file[]: crc = b41ea1f0; size =    328479; name = PUTTZOO.HLP
+    file[]: crc = e1ad623a; size =    299008; name = PUTTZOO.W32
+    file[]: crc = 12acfc78; size =      1298; name = SNDCARDS.INF
+    file[]: remove = PUTTZOO.INF
+end
+
+//
+// French version 1996-10-16
+//
+game[pc-fr-961016]:
+    name = French 1996-10-16
+    anchorfile = PUTTZOO.EXE
+    file[]: crc = e0260a25; size =    132406; name = PUTTZOO.BMP
+    file[]: crc = 293814d4; size =     34816; name = PUTTZOO.EXE
+    file[]: crc = cea1f032; size =     42070; name = PUTTZOO.HE0
+    file[]: crc = 2c3b60b0; size =  98120877; name = PUTTZOO.HE1
+    file[]: crc = 5abc4511; size =  49893769; name = PUTTZOO.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PUTTZOO.HE3
+    file[]: crc = 0130f77a; size =  65940986; name = PUTTZOO.HE4
+    file[]: crc = 6289d053; size =    304160; name = PUTTZOO.HLP
+    file[]: crc = 187dfc63; size =       413; name = PUTTZOO.INF
+    file[]: crc = 9395c262; size =    286720; name = PUTTZOO.W32
+    file[]: crc = 8b976bc3; size =      1285; name = SNDCARDS.INF
+
+
+end
+
+//
+// German version 1996-10-24
+//
+game[pc-de-961024]:
+    name = German 1996-10-24
+    anchorfile = PUTTZOO.EXE
+    file[]: crc = dd5519f3; size =    102690; name = PUTTZOO.BMP
+    file[]: crc = 1a22aef6; size =     34816; name = PUTTZOO.EXE
+    file[]: crc = 055c69c4; size =     42070; name = PUTTZOO.HE0
+    file[]: crc = 8c43ea9a; size =  97926716; name = PUTTZOO.HE1
+    file[]: crc = 82fe9bba; size =  60244192; name = PUTTZOO.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PUTTZOO.HE3
+    file[]: crc = 235147c1; size =  67096226; name = PUTTZOO.HE4
+    file[]: crc = d160e965; size =    361395; name = PUTTZOO.HLP
+    file[]: crc = 838640e2; size =       464; name = PUTTZOO.INF
+    file[]: crc = 4557d16f; size =    286208; name = PUTTZOO.W32
+    file[]: crc = 72b8256f; size =      1280; name = SNDCARDS.INF
+
+
+end
+
+//
+// 1995 demo version
+//
+demo[pc-en-950705-demo]:
+    name = English Demo 1995-07-05
+    anchorfile = ZOODEMO.EXE
+    launch = "$(rootpath)\ZOODEMO.EXE"
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF
+    file[]: crc = f5fad9af; size =     30720; name = ZOODEMO.EXE
+    file[]: crc = 73568f3f; size =     14337; name = ZOODEMO.HE0
+    file[]: crc = 5d8653fa; size =  13326164; name = ZOODEMO.HE1
+    file[]: crc = 74ff42d5; size =   7569249; name = ZOODEMO.HE2
+    file[]: crc = 6825ab53; size =     36864; name = ZOODEMO.HE3
+    file[]: crc = eba099b8; size =   9683210; name = ZOODEMO.HE4
+    file[]: crc = 1981a558; size =    184320; name = ZOODEMO.HLP
+    file[]: crc = b494142c; size =    296960; name = ZOODEMO.W32
+
+
+
+end
+
+//
+// 2007 Dutch demo version
+//
+demo[pc-nl-070525-demo]:
+    name = Dutch Demo 2007-05-25
+    anchorfile = ZOODEMO.EXE
+    launch = "$(rootpath)\ZOODEMO.EXE"
+    file[]: crc = 12acfc78; size =      1298; name = SNDCARDS.INF
+    file[]: crc = 8666e33f; size =      8896; name = ZOODEMO.DLL
+    file[]: crc = aef3e676; size =     21616; name = ZOODEMO.EXE
+    file[]: crc = b6272693; size =     14337; name = ZOODEMO.HE0
+    file[]: crc = 3ebea76d; size =  13357038; name = ZOODEMO.HE1
+    file[]: crc = 54251e6f; size =   7068469; name = ZOODEMO.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = ZOODEMO.HE3
+    file[]: crc = eba099b8; size =   9683210; name = ZOODEMO.HE4
+    file[]: crc = 205d13c3; size =     37265; name = ZOODEMO.HLP
+    file[]: crc = 91433cbf; size =    286208; name = ZOODEMO.W32
+
+
+
+end
+
+//
+// 1995 French demo version
+//
+demo[pc-fr-970305-demo]:
+    name = French Demo 1997-03-05
+    anchorfile = ZOODEMO.EXE
+    launch = "$(rootpath)\ZOODEMO.EXE"
+    file[]: crc = 8b976bc3; size =      1285; name = SNDCARDS.INF
+    file[]: crc = e0260a25; size =    132406; name = ZOODEMO.BMP
+    file[]: crc = 91091655; size =     34816; name = ZOODEMO.EXE
+    file[]: crc = 8d85ef4e; size =      8628; name = ZOODEMO.GID
+    file[]: crc = 78961237; size =     14337; name = ZOODEMO.HE0
+    file[]: crc = eede2efd; size =  13349533; name = ZOODEMO.HE1
+    file[]: crc = b8d1aaff; size =   6414697; name = ZOODEMO.HE2
+    file[]: crc = 6825ab53; size =     36864; name = ZOODEMO.HE3
+    file[]: crc = e69a376f; size =   9703192; name = ZOODEMO.HE4
+    file[]: crc = a9e8378b; size =     32920; name = ZOODEMO.HLP
+    file[]: crc = 3f778d3f; size =       433; name = ZOODEMO.INF
+    file[]: crc = 2205f470; size =    286720; name = ZOODEMO.W32
+
+
+
+end
+
+
+//
+// 1997 German demo version
+//
+demo[pc-de-970319-demo]:
+    name = German Demo 1997-03-19
+    anchorfile = ZOODEMO.EXE
+    launch = "$(rootpath)\ZOODEMO.EXE"
+    file[]: crc = 72b8256f; size =      1280; name = SNDCARDS.INF
+    file[]: crc = 1a22aef6; size =     34816; name = ZOODEMO.EXE
+    file[]: crc = d59e9aec; size =     14328; name = ZOODEMO.HE0
+    file[]: crc = 5462fe85; size =  13337891; name = ZOODEMO.HE1
+    file[]: crc = adfbb5c8; size =   7678651; name = ZOODEMO.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = ZOODEMO.HE3
+    file[]: crc = e69a376f; size =   9703192; name = ZOODEMO.HE4
+    file[]: crc = 472c540d; size =     29376; name = ZOODEMO.HLP
+    file[]: crc = 1e0acdce; size =       469; name = ZOODEMO.INF
+    file[]: crc = f7a8deb8; size =    286208; name = ZOODEMO.W32
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+end

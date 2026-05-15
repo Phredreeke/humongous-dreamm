@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\PAJAMA2.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //

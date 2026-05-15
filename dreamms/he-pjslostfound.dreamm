@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\lost.exe"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -43,7 +42,7 @@ game[pc-en-980911]:
     file[]: crc = 189947ad; size =   2468390; name = lost.he2
     file[]: crc = b6fc4dec; size =    143757; name = lost.hlp; optional = true
     file[]: crc = b5857efe; size =       766; name = lost.ico; optional = true
-    file[]: crc = 03accbd7; size =      2202; name = lost.inf; optional = true
+    file[]: crc = 03accbd7; size =      2202; name = lost.inf
     file[]: crc = 95874a52; size =    422912; name = lost.w32
     file[]: crc = a200cfe0; size =     17270; name = README.TXT; optional = true
     file[]: crc = 64ea9005; size =      1046; name = data\world-1\levels\level-1.ot1
@@ -269,5 +268,326 @@ game[pc-en-990723]:
     file[]: remove = JA-AD.BMP
     file[]: remove = lost.BMP
     file[]: remove = lost.w32
+
+end
+
+//
+// Dutch version
+//
+game[pc-nl-000307]:
+    name = Dutch 2000-03-07
+    anchorfile = VERLOREN.EXE
+    launch = "$(rootpath)\VERLOREN.EXE"
+    file[]: crc = a8d7b0e0; size =     24005; name = JA-AD.PCX; optional = true
+    file[]: crc = fbb9a02c; size =  24330428; name = Verloren.(a)
+    file[]: crc = a24b1039; size =     49152; name = VERLOREN.D32
+    file[]: crc = 4a1fc8c8; size =     81920; name = VERLOREN.EXE
+    file[]: crc = 17433a0f; size =     24822; name = Verloren.HE0
+    file[]: crc = 74bf34bf; size =   2811726; name = Verloren.HE2
+    file[]: crc = 14f13377; size =        48; name = Verloren.HE4
+    file[]: crc = c133359f; size =    524673; name = VERLOREN.HLP; optional = true
+    file[]: crc = 862a09b8; size =      2356; name = VERLOREN.INF
+    file[]: crc = 5a07f2f0; size =    430080; name = VERLOREN.w32
+    file[]: crc = c0a7aec7; size =     12892; name = DATA\WORLD-1\LEVELS\LEVEL-1
+    file[]: crc = fa583c2c; size =      1046; name = DATA\WORLD-1\LEVELS\LEVEL-1.OT1
+    file[]: crc = 72cd106d; size =       476; name = DATA\WORLD-1\LEVELS\LEVEL-1.OT2
+    file[]: crc = c09821c4; size =     16523; name = DATA\WORLD-1\LEVELS\LEVEL-10
+    file[]: crc = 703a4cab; size =      1064; name = DATA\WORLD-1\LEVELS\LEVEL-10.OT1
+    file[]: crc = 1dd7e7ce; size =       844; name = DATA\WORLD-1\LEVELS\LEVEL-10.OT2
+    file[]: crc = 6e969aef; size =     19529; name = DATA\WORLD-1\LEVELS\LEVEL-11
+    file[]: crc = 1c4e34b5; size =      1062; name = DATA\WORLD-1\LEVELS\LEVEL-11.OT1
+    file[]: crc = feed3e09; size =       956; name = DATA\WORLD-1\LEVELS\LEVEL-11.OT2
+    file[]: crc = 2f02f935; size =     22049; name = DATA\WORLD-1\LEVELS\LEVEL-12
+    file[]: crc = 52926445; size =      1272; name = DATA\WORLD-1\LEVELS\LEVEL-12.OT1
+    file[]: crc = 85681841; size =       892; name = DATA\WORLD-1\LEVELS\LEVEL-12.OT2
+    file[]: crc = e3a9a4c6; size =     24320; name = DATA\WORLD-1\LEVELS\LEVEL-13
+    file[]: crc = 6db29ea9; size =      1088; name = DATA\WORLD-1\LEVELS\LEVEL-13.OT1
+    file[]: crc = 99653f14; size =      1660; name = DATA\WORLD-1\LEVELS\LEVEL-13.OT2
+    file[]: crc = 98375880; size =     23257; name = DATA\WORLD-1\LEVELS\LEVEL-14
+    file[]: crc = 1321e074; size =      1178; name = DATA\WORLD-1\LEVELS\LEVEL-14.OT1
+    file[]: crc = be12223c; size =      1356; name = DATA\WORLD-1\LEVELS\LEVEL-14.OT2
+    file[]: crc = 378d4d8e; size =     20087; name = DATA\WORLD-1\LEVELS\LEVEL-15
+    file[]: crc = 1606b9b6; size =      1282; name = DATA\WORLD-1\LEVELS\LEVEL-15.OT1
+    file[]: crc = 370e6f4a; size =       652; name = DATA\WORLD-1\LEVELS\LEVEL-15.OT2
+    file[]: crc = 22f70cd4; size =     22441; name = DATA\WORLD-1\LEVELS\LEVEL-16
+    file[]: crc = 490192f5; size =       760; name = DATA\WORLD-1\LEVELS\LEVEL-16.OT1
+    file[]: crc = 4849d52f; size =      1980; name = DATA\WORLD-1\LEVELS\LEVEL-16.OT2
+    file[]: crc = 8839bad9; size =     16266; name = DATA\WORLD-1\LEVELS\LEVEL-17
+    file[]: crc = ded716b3; size =       832; name = DATA\WORLD-1\LEVELS\LEVEL-17.OT1
+    file[]: crc = bbeab3df; size =      1020; name = DATA\WORLD-1\LEVELS\LEVEL-17.OT2
+    file[]: crc = 11c43ae2; size =     28635; name = DATA\WORLD-1\LEVELS\LEVEL-18
+    file[]: crc = ef7adb97; size =       952; name = DATA\WORLD-1\LEVELS\LEVEL-18.OT1
+    file[]: crc = c4644172; size =      2172; name = DATA\WORLD-1\LEVELS\LEVEL-18.OT2
+    file[]: crc = 74bd4e42; size =     42208; name = DATA\WORLD-1\LEVELS\LEVEL-19
+    file[]: crc = cdf554a2; size =      1240; name = DATA\WORLD-1\LEVELS\LEVEL-19.OT1
+    file[]: crc = 4ae3da86; size =      3244; name = DATA\WORLD-1\LEVELS\LEVEL-19.OT2
+    file[]: crc = 15004c47; size =     12320; name = DATA\WORLD-1\LEVELS\LEVEL-2
+    file[]: crc = 55deeacb; size =       898; name = DATA\WORLD-1\LEVELS\LEVEL-2.OT1
+    file[]: crc = cc7542b4; size =       588; name = DATA\WORLD-1\LEVELS\LEVEL-2.OT2
+    file[]: crc = 87618180; size =     36078; name = DATA\WORLD-1\LEVELS\LEVEL-20
+    file[]: crc = 13c4fcc8; size =      1370; name = DATA\WORLD-1\LEVELS\LEVEL-20.OT1
+    file[]: crc = 21d0a4a6; size =      2348; name = DATA\WORLD-1\LEVELS\LEVEL-20.OT2
+    file[]: crc = 34985be2; size =     12112; name = DATA\WORLD-1\LEVELS\LEVEL-3
+    file[]: crc = 92faab96; size =       868; name = DATA\WORLD-1\LEVELS\LEVEL-3.OT1
+    file[]: crc = 11b5c9bc; size =       604; name = DATA\WORLD-1\LEVELS\LEVEL-3.OT2
+    file[]: crc = 6fc8f04e; size =     17558; name = DATA\WORLD-1\LEVELS\LEVEL-4
+    file[]: crc = 6a39f131; size =      1078; name = DATA\WORLD-1\LEVELS\LEVEL-4.OT1
+    file[]: crc = 9b95009e; size =       908; name = DATA\WORLD-1\LEVELS\LEVEL-4.OT2
+    file[]: crc = d06ce72c; size =     17870; name = DATA\WORLD-1\LEVELS\LEVEL-5
+    file[]: crc = 59094027; size =      1238; name = DATA\WORLD-1\LEVELS\LEVEL-5.OT1
+    file[]: crc = 03f9bedc; size =       652; name = DATA\WORLD-1\LEVELS\LEVEL-5.OT2
+    file[]: crc = 99c18fed; size =     15000; name = DATA\WORLD-1\LEVELS\LEVEL-6
+    file[]: crc = c8f7b1da; size =      1046; name = DATA\WORLD-1\LEVELS\LEVEL-6.OT1
+    file[]: crc = 96b35490; size =       716; name = DATA\WORLD-1\LEVELS\LEVEL-6.OT2
+    file[]: crc = e7d107bd; size =     15538; name = DATA\WORLD-1\LEVELS\LEVEL-7
+    file[]: crc = a9ee534c; size =       898; name = DATA\WORLD-1\LEVELS\LEVEL-7.OT1
+    file[]: crc = 07d5aba2; size =       956; name = DATA\WORLD-1\LEVELS\LEVEL-7.OT2
+    file[]: crc = 44a2b5f4; size =     11027; name = DATA\WORLD-1\LEVELS\LEVEL-8
+    file[]: crc = 35e0a8a2; size =       612; name = DATA\WORLD-1\LEVELS\LEVEL-8.OT1
+    file[]: crc = feabb931; size =       780; name = DATA\WORLD-1\LEVELS\LEVEL-8.OT2
+    file[]: crc = 42e23698; size =     11524; name = DATA\WORLD-1\LEVELS\LEVEL-9
+    file[]: crc = 902708b1; size =       852; name = DATA\WORLD-1\LEVELS\LEVEL-9.OT1
+    file[]: crc = 91c4f37f; size =       428; name = DATA\WORLD-1\LEVELS\LEVEL-9.OT2
+    file[]: crc = b4c9091a; size =      7052; name = DATA\WORLD-2\LEVELS\LEVEL-1
+    file[]: crc = 8780f3af; size =       338; name = DATA\WORLD-2\LEVELS\LEVEL-1.OT1
+    file[]: crc = 92ca9886; size =       620; name = DATA\WORLD-2\LEVELS\LEVEL-1.OT2
+    file[]: crc = 2bffdec5; size =     16217; name = DATA\WORLD-2\LEVELS\LEVEL-10
+    file[]: crc = 6a30f559; size =       316; name = DATA\WORLD-2\LEVELS\LEVEL-10.OT1
+    file[]: crc = 0eb980af; size =      1676; name = DATA\WORLD-2\LEVELS\LEVEL-10.OT2
+    file[]: crc = ac96438a; size =     11019; name = DATA\WORLD-2\LEVELS\LEVEL-11
+    file[]: crc = cae2206b; size =       268; name = DATA\WORLD-2\LEVELS\LEVEL-11.OT1
+    file[]: crc = 71dacaad; size =      1116; name = DATA\WORLD-2\LEVELS\LEVEL-11.OT2
+    file[]: crc = 0d34992a; size =     11761; name = DATA\WORLD-2\LEVELS\LEVEL-12
+    file[]: crc = b616895f; size =       366; name = DATA\WORLD-2\LEVELS\LEVEL-12.OT1
+    file[]: crc = 79879c56; size =      1148; name = DATA\WORLD-2\LEVELS\LEVEL-12.OT2
+    file[]: crc = b67cb6a8; size =     15892; name = DATA\WORLD-2\LEVELS\LEVEL-13
+    file[]: crc = 0b330b16; size =       334; name = DATA\WORLD-2\LEVELS\LEVEL-13.OT1
+    file[]: crc = 3ac227b8; size =      1612; name = DATA\WORLD-2\LEVELS\LEVEL-13.OT2
+    file[]: crc = adf66563; size =     15307; name = DATA\WORLD-2\LEVELS\LEVEL-14
+    file[]: crc = d6f671f1; size =       426; name = DATA\WORLD-2\LEVELS\LEVEL-14.OT1
+    file[]: crc = 0550977d; size =      1452; name = DATA\WORLD-2\LEVELS\LEVEL-14.OT2
+    file[]: crc = 4deea0df; size =     19256; name = DATA\WORLD-2\LEVELS\LEVEL-15
+    file[]: crc = f4c0652f; size =       516; name = DATA\WORLD-2\LEVELS\LEVEL-15.OT1
+    file[]: crc = 9be43b00; size =      1836; name = DATA\WORLD-2\LEVELS\LEVEL-15.OT2
+    file[]: crc = 4a8fa9bb; size =     17192; name = DATA\WORLD-2\LEVELS\LEVEL-16
+    file[]: crc = 283e3b12; size =       268; name = DATA\WORLD-2\LEVELS\LEVEL-16.OT1
+    file[]: crc = 9c5abbd7; size =      1820; name = DATA\WORLD-2\LEVELS\LEVEL-16.OT2
+    file[]: crc = 635ce914; size =     19361; name = DATA\WORLD-2\LEVELS\LEVEL-17
+    file[]: crc = 20879758; size =       376; name = DATA\WORLD-2\LEVELS\LEVEL-17.OT1
+    file[]: crc = 0334b7fb; size =      1996; name = DATA\WORLD-2\LEVELS\LEVEL-17.OT2
+    file[]: crc = 4dd44dfe; size =     20907; name = DATA\WORLD-2\LEVELS\LEVEL-18
+    file[]: crc = 5214a76e; size =       314; name = DATA\WORLD-2\LEVELS\LEVEL-18.OT1
+    file[]: crc = 4d6df54d; size =      2220; name = DATA\WORLD-2\LEVELS\LEVEL-18.OT2
+    file[]: crc = 4bc72690; size =     24752; name = DATA\WORLD-2\LEVELS\LEVEL-19
+    file[]: crc = 190ea117; size =       434; name = DATA\WORLD-2\LEVELS\LEVEL-19.OT1
+    file[]: crc = ffeacf5d; size =      2556; name = DATA\WORLD-2\LEVELS\LEVEL-19.OT2
+    file[]: crc = 7f3ff4e4; size =     12746; name = DATA\WORLD-2\LEVELS\LEVEL-2
+    file[]: crc = 5c382e4c; size =       374; name = DATA\WORLD-2\LEVELS\LEVEL-2.OT1
+    file[]: crc = 5c64c3dc; size =      1276; name = DATA\WORLD-2\LEVELS\LEVEL-2.OT2
+    file[]: crc = 09b68749; size =     27309; name = DATA\WORLD-2\LEVELS\LEVEL-20
+    file[]: crc = 259577cc; size =       544; name = DATA\WORLD-2\LEVELS\LEVEL-20.OT1
+    file[]: crc = 81c03219; size =      2748; name = DATA\WORLD-2\LEVELS\LEVEL-20.OT2
+    file[]: crc = 0fd4abb8; size =      7980; name = DATA\WORLD-2\LEVELS\LEVEL-3
+    file[]: crc = 247d9c64; size =       338; name = DATA\WORLD-2\LEVELS\LEVEL-3.OT1
+    file[]: crc = f74a548a; size =       716; name = DATA\WORLD-2\LEVELS\LEVEL-3.OT2
+    file[]: crc = 4569fbe8; size =      6069; name = DATA\WORLD-2\LEVELS\LEVEL-4
+    file[]: crc = f1411462; size =       308; name = DATA\WORLD-2\LEVELS\LEVEL-4.OT1
+    file[]: crc = 460be0c9; size =       540; name = DATA\WORLD-2\LEVELS\LEVEL-4.OT2
+    file[]: crc = 315d5d44; size =      5467; name = DATA\WORLD-2\LEVELS\LEVEL-5
+    file[]: crc = 423e197b; size =       268; name = DATA\WORLD-2\LEVELS\LEVEL-5.OT1
+    file[]: crc = 8ba3b620; size =       492; name = DATA\WORLD-2\LEVELS\LEVEL-5.OT2
+    file[]: crc = 1b9e523a; size =      9615; name = DATA\WORLD-2\LEVELS\LEVEL-6
+    file[]: crc = 02031cd0; size =       518; name = DATA\WORLD-2\LEVELS\LEVEL-6.OT1
+    file[]: crc = 5c39b63c; size =       716; name = DATA\WORLD-2\LEVELS\LEVEL-6.OT2
+    file[]: crc = c1f6f4d4; size =     12188; name = DATA\WORLD-2\LEVELS\LEVEL-7
+    file[]: crc = 50c4ca86; size =       290; name = DATA\WORLD-2\LEVELS\LEVEL-7.OT1
+    file[]: crc = 5c8ed583; size =      1212; name = DATA\WORLD-2\LEVELS\LEVEL-7.OT2
+    file[]: crc = 7eeade9c; size =     20281; name = DATA\WORLD-2\LEVELS\LEVEL-8
+    file[]: crc = 218b1186; size =       534; name = DATA\WORLD-2\LEVELS\LEVEL-8.OT1
+    file[]: crc = 6d8a305c; size =      1916; name = DATA\WORLD-2\LEVELS\LEVEL-8.OT2
+    file[]: crc = 3b61001c; size =     13941; name = DATA\WORLD-2\LEVELS\LEVEL-9
+    file[]: crc = 02d6dd5b; size =       290; name = DATA\WORLD-2\LEVELS\LEVEL-9.OT1
+    file[]: crc = 85f4252b; size =      1388; name = DATA\WORLD-2\LEVELS\LEVEL-9.OT2
+    file[]: crc = 26ca8a0b; size =      7292; name = DATA\WORLD-3\LEVELS\LEVEL-1
+    file[]: crc = 8ee31386; size =       474; name = DATA\WORLD-3\LEVELS\LEVEL-1.OT1
+    file[]: crc = 9149459f; size =       604; name = DATA\WORLD-3\LEVELS\LEVEL-1.OT2
+    file[]: crc = 3cd19801; size =     14339; name = DATA\WORLD-3\LEVELS\LEVEL-10
+    file[]: crc = fb5d9bbe; size =       834; name = DATA\WORLD-3\LEVELS\LEVEL-10.OT1
+    file[]: crc = ef18ba1a; size =       668; name = DATA\WORLD-3\LEVELS\LEVEL-10.OT2
+    file[]: crc = 9a30c57e; size =     20563; name = DATA\WORLD-3\LEVELS\LEVEL-11
+    file[]: crc = e95d424e; size =      1246; name = DATA\WORLD-3\LEVELS\LEVEL-11.OT1
+    file[]: crc = 28df7236; size =       924; name = DATA\WORLD-3\LEVELS\LEVEL-11.OT2
+    file[]: crc = 5052371b; size =     23203; name = DATA\WORLD-3\LEVELS\LEVEL-12
+    file[]: crc = 268906c5; size =      1360; name = DATA\WORLD-3\LEVELS\LEVEL-12.OT1
+    file[]: crc = de5937cb; size =      1100; name = DATA\WORLD-3\LEVELS\LEVEL-12.OT2
+    file[]: crc = eb8cb95c; size =     20611; name = DATA\WORLD-3\LEVELS\LEVEL-13
+    file[]: crc = c44efb7b; size =      1120; name = DATA\WORLD-3\LEVELS\LEVEL-13.OT1
+    file[]: crc = c628c3fe; size =      1212; name = DATA\WORLD-3\LEVELS\LEVEL-13.OT2
+    file[]: crc = fd8b02fb; size =     44094; name = DATA\WORLD-3\LEVELS\LEVEL-14
+    file[]: crc = 917f14d2; size =      1170; name = DATA\WORLD-3\LEVELS\LEVEL-14.OT1
+    file[]: crc = 60b29013; size =      3644; name = DATA\WORLD-3\LEVELS\LEVEL-14.OT2
+    file[]: crc = d9e7dfb8; size =     24552; name = DATA\WORLD-3\LEVELS\LEVEL-15
+    file[]: crc = 00b79a96; size =       722; name = DATA\WORLD-3\LEVELS\LEVEL-15.OT1
+    file[]: crc = adaa12ab; size =      2204; name = DATA\WORLD-3\LEVELS\LEVEL-15.OT2
+    file[]: crc = beab9071; size =     22491; name = DATA\WORLD-3\LEVELS\LEVEL-16
+    file[]: crc = 86f6f2e9; size =       932; name = DATA\WORLD-3\LEVELS\LEVEL-16.OT1
+    file[]: crc = bef95037; size =      1516; name = DATA\WORLD-3\LEVELS\LEVEL-16.OT2
+    file[]: crc = 4b239753; size =     31193; name = DATA\WORLD-3\LEVELS\LEVEL-17
+    file[]: crc = 5a973a9e; size =      1360; name = DATA\WORLD-3\LEVELS\LEVEL-17.OT1
+    file[]: crc = 13a870e2; size =      2012; name = DATA\WORLD-3\LEVELS\LEVEL-17.OT2
+    file[]: crc = e840b575; size =     30228; name = DATA\WORLD-3\LEVELS\LEVEL-18
+    file[]: crc = c44efb7b; size =      1120; name = DATA\WORLD-3\LEVELS\LEVEL-18.OT1
+    file[]: crc = d87e5985; size =      2316; name = DATA\WORLD-3\LEVELS\LEVEL-18.OT2
+    file[]: crc = cd10f2f3; size =     31343; name = DATA\WORLD-3\LEVELS\LEVEL-19
+    file[]: crc = a8b6d1c7; size =       972; name = DATA\WORLD-3\LEVELS\LEVEL-19.OT1
+    file[]: crc = 380add28; size =      2540; name = DATA\WORLD-3\LEVELS\LEVEL-19.OT2
+    file[]: crc = 5803b924; size =     19407; name = DATA\WORLD-3\LEVELS\LEVEL-2
+    file[]: crc = c231c19b; size =       954; name = DATA\WORLD-3\LEVELS\LEVEL-2.OT1
+    file[]: crc = 1a86a18d; size =      1132; name = DATA\WORLD-3\LEVELS\LEVEL-2.OT2
+    file[]: crc = adfd817b; size =     38540; name = DATA\WORLD-3\LEVELS\LEVEL-20
+    file[]: crc = 543bce03; size =       722; name = DATA\WORLD-3\LEVELS\LEVEL-20.OT1
+    file[]: crc = 02501919; size =      3788; name = DATA\WORLD-3\LEVELS\LEVEL-20.OT2
+    file[]: crc = 0cd6089d; size =      8049; name = DATA\WORLD-3\LEVELS\LEVEL-3
+    file[]: crc = bdd4dd96; size =       486; name = DATA\WORLD-3\LEVELS\LEVEL-3.OT1
+    file[]: crc = 91905e63; size =       572; name = DATA\WORLD-3\LEVELS\LEVEL-3.OT2
+    file[]: crc = 37c002b3; size =      6513; name = DATA\WORLD-3\LEVELS\LEVEL-4
+    file[]: crc = b3e1d716; size =       396; name = DATA\WORLD-3\LEVELS\LEVEL-4.OT1
+    file[]: crc = 9aab0c23; size =       556; name = DATA\WORLD-3\LEVELS\LEVEL-4.OT2
+    file[]: crc = e04459a0; size =     14702; name = DATA\WORLD-3\LEVELS\LEVEL-5
+    file[]: crc = 1fd1ba4c; size =       642; name = DATA\WORLD-3\LEVELS\LEVEL-5.OT1
+    file[]: crc = 01fcf98c; size =      1132; name = DATA\WORLD-3\LEVELS\LEVEL-5.OT2
+    file[]: crc = 7ae88dab; size =     25640; name = DATA\WORLD-3\LEVELS\LEVEL-6
+    file[]: crc = ac303afa; size =      1414; name = DATA\WORLD-3\LEVELS\LEVEL-6.OT1
+    file[]: crc = 24efa2a1; size =      1116; name = DATA\WORLD-3\LEVELS\LEVEL-6.OT2
+    file[]: crc = ec03232c; size =     21076; name = DATA\WORLD-3\LEVELS\LEVEL-7
+    file[]: crc = 584a37c1; size =       934; name = DATA\WORLD-3\LEVELS\LEVEL-7.OT1
+    file[]: crc = aff89b63; size =      1420; name = DATA\WORLD-3\LEVELS\LEVEL-7.OT2
+    file[]: crc = 584eca21; size =     20003; name = DATA\WORLD-3\LEVELS\LEVEL-8
+    file[]: crc = 136799e5; size =       400; name = DATA\WORLD-3\LEVELS\LEVEL-8.OT1
+    file[]: crc = 4e99c40f; size =      1964; name = DATA\WORLD-3\LEVELS\LEVEL-8.OT2
+    file[]: crc = 5d816d50; size =     26062; name = DATA\WORLD-3\LEVELS\LEVEL-9
+    file[]: crc = e2fa4417; size =      1154; name = DATA\WORLD-3\LEVELS\LEVEL-9.OT1
+    file[]: crc = 24e67454; size =      1596; name = DATA\WORLD-3\LEVELS\LEVEL-9.OT2
+    file[]: crc = 7cb97f81; size =     30249; name = DATA\WORLD-4\LEVELS\LEVEL-1
+    file[]: crc = e7b85d72; size =      1712; name = DATA\WORLD-4\LEVELS\LEVEL-1.OT1
+    file[]: crc = 3754ae06; size =      1036; name = DATA\WORLD-4\LEVELS\LEVEL-1.OT2
+    file[]: crc = 47f5afab; size =     56878; name = DATA\WORLD-4\LEVELS\LEVEL-10
+    file[]: crc = 7162120c; size =      3152; name = DATA\WORLD-4\LEVELS\LEVEL-10.OT1
+    file[]: crc = 947b75f2; size =      1324; name = DATA\WORLD-4\LEVELS\LEVEL-10.OT2
+    file[]: crc = c7fd7180; size =     35519; name = DATA\WORLD-4\LEVELS\LEVEL-11
+    file[]: crc = ebbfd340; size =      2062; name = DATA\WORLD-4\LEVELS\LEVEL-11.OT1
+    file[]: crc = 8390d118; size =       940; name = DATA\WORLD-4\LEVELS\LEVEL-11.OT2
+    file[]: crc = 4d2ab49c; size =     43581; name = DATA\WORLD-4\LEVELS\LEVEL-12
+    file[]: crc = 11630b9b; size =      2412; name = DATA\WORLD-4\LEVELS\LEVEL-12.OT1
+    file[]: crc = 61fcbaed; size =      1212; name = DATA\WORLD-4\LEVELS\LEVEL-12.OT2
+    file[]: crc = 1b38a368; size =     18255; name = DATA\WORLD-4\LEVELS\LEVEL-13
+    file[]: crc = 4594f81f; size =       972; name = DATA\WORLD-4\LEVELS\LEVEL-13.OT1
+    file[]: crc = b80a3a84; size =      1052; name = DATA\WORLD-4\LEVELS\LEVEL-13.OT2
+    file[]: crc = 4da8b173; size =     21365; name = DATA\WORLD-4\LEVELS\LEVEL-14
+    file[]: crc = 2a7a2ee8; size =      1032; name = DATA\WORLD-4\LEVELS\LEVEL-14.OT1
+    file[]: crc = fb2f8e5f; size =      1324; name = DATA\WORLD-4\LEVELS\LEVEL-14.OT2
+    file[]: crc = 99fe6f1e; size =     26108; name = DATA\WORLD-4\LEVELS\LEVEL-15
+    file[]: crc = 494e4526; size =      1282; name = DATA\WORLD-4\LEVELS\LEVEL-15.OT1
+    file[]: crc = b6cd0bb1; size =      1388; name = DATA\WORLD-4\LEVELS\LEVEL-15.OT2
+    file[]: crc = 63da3942; size =     38922; name = DATA\WORLD-4\LEVELS\LEVEL-16
+    file[]: crc = bda00739; size =      2062; name = DATA\WORLD-4\LEVELS\LEVEL-16.OT1
+    file[]: crc = a11f0cce; size =      1324; name = DATA\WORLD-4\LEVELS\LEVEL-16.OT2
+    file[]: crc = 364b62ed; size =     49401; name = DATA\WORLD-4\LEVELS\LEVEL-17
+    file[]: crc = e07df290; size =      2412; name = DATA\WORLD-4\LEVELS\LEVEL-17.OT1
+    file[]: crc = 01046456; size =      1868; name = DATA\WORLD-4\LEVELS\LEVEL-17.OT2
+    file[]: crc = 4a91ac3c; size =     29493; name = DATA\WORLD-4\LEVELS\LEVEL-18
+    file[]: crc = 34f59729; size =       972; name = DATA\WORLD-4\LEVELS\LEVEL-18.OT1
+    file[]: crc = 5fb54ed8; size =      2332; name = DATA\WORLD-4\LEVELS\LEVEL-18.OT2
+    file[]: crc = 9ccfbf72; size =     32305; name = DATA\WORLD-4\LEVELS\LEVEL-19
+    file[]: crc = dc822d4f; size =      1022; name = DATA\WORLD-4\LEVELS\LEVEL-19.OT1
+    file[]: crc = db2a9d40; size =      2588; name = DATA\WORLD-4\LEVELS\LEVEL-19.OT2
+    file[]: crc = 4b9cb194; size =     28790; name = DATA\WORLD-4\LEVELS\LEVEL-2
+    file[]: crc = eb53358b; size =      1792; name = DATA\WORLD-4\LEVELS\LEVEL-2.OT1
+    file[]: crc = 40dfa1f7; size =       668; name = DATA\WORLD-4\LEVELS\LEVEL-2.OT2
+    file[]: crc = 32c614ae; size =     38466; name = DATA\WORLD-4\LEVELS\LEVEL-20
+    file[]: crc = 97d725c2; size =      1272; name = DATA\WORLD-4\LEVELS\LEVEL-20.OT1
+    file[]: crc = 82912806; size =      2812; name = DATA\WORLD-4\LEVELS\LEVEL-20.OT2
+    file[]: crc = c5a2f7e4; size =     44626; name = DATA\WORLD-4\LEVELS\LEVEL-3
+    file[]: crc = ca7df92a; size =      2462; name = DATA\WORLD-4\LEVELS\LEVEL-3.OT1
+    file[]: crc = 3ece4878; size =      1212; name = DATA\WORLD-4\LEVELS\LEVEL-3.OT2
+    file[]: crc = 98568434; size =     38294; name = DATA\WORLD-4\LEVELS\LEVEL-4
+    file[]: crc = eed93c60; size =      2032; name = DATA\WORLD-4\LEVELS\LEVEL-4.OT1
+    file[]: crc = 32a57f85; size =      1308; name = DATA\WORLD-4\LEVELS\LEVEL-4.OT2
+    file[]: crc = b6cd2c1b; size =     42819; name = DATA\WORLD-4\LEVELS\LEVEL-5
+    file[]: crc = 60381987; size =      2192; name = DATA\WORLD-4\LEVELS\LEVEL-5.OT1
+    file[]: crc = 21b5935f; size =      1564; name = DATA\WORLD-4\LEVELS\LEVEL-5.OT2
+    file[]: crc = 488e8602; size =     23758; name = DATA\WORLD-4\LEVELS\LEVEL-6
+    file[]: crc = 82711dac; size =      1392; name = DATA\WORLD-4\LEVELS\LEVEL-6.OT1
+    file[]: crc = afa66b2b; size =      1004; name = DATA\WORLD-4\LEVELS\LEVEL-6.OT2
+    file[]: crc = 89684b83; size =     38264; name = DATA\WORLD-4\LEVELS\LEVEL-7
+    file[]: crc = 0937d42f; size =      2122; name = DATA\WORLD-4\LEVELS\LEVEL-7.OT1
+    file[]: crc = b30c3765; size =      1196; name = DATA\WORLD-4\LEVELS\LEVEL-7.OT2
+    file[]: crc = 1390b67b; size =     26390; name = DATA\WORLD-4\LEVELS\LEVEL-8
+    file[]: crc = af93336c; size =      1562; name = DATA\WORLD-4\LEVELS\LEVEL-8.OT1
+    file[]: crc = f7fe2c37; size =       860; name = DATA\WORLD-4\LEVELS\LEVEL-8.OT2
+    file[]: crc = ff8592ba; size =     42627; name = DATA\WORLD-4\LEVELS\LEVEL-9
+    file[]: crc = 421d4021; size =      2352; name = DATA\WORLD-4\LEVELS\LEVEL-9.OT1
+    file[]: crc = d43619f4; size =      1196; name = DATA\WORLD-4\LEVELS\LEVEL-9.OT2
+    file[]: crc = bcd2f1da; size =     16099; name = DATA\WORLD-5\LEVELS\LEVEL-1
+    file[]: crc = 2ee4d1fb; size =      1104; name = DATA\WORLD-5\LEVELS\LEVEL-1.OT1
+    file[]: crc = 2613b69d; size =       620; name = DATA\WORLD-5\LEVELS\LEVEL-1.OT2
+    file[]: crc = adeaeea2; size =     46988; name = DATA\WORLD-5\LEVELS\LEVEL-10
+    file[]: crc = db837d23; size =      2632; name = DATA\WORLD-5\LEVELS\LEVEL-10.OT1
+    file[]: crc = 296323b8; size =      1436; name = DATA\WORLD-5\LEVELS\LEVEL-10.OT2
+    file[]: crc = ee6efa5f; size =     20367; name = DATA\WORLD-5\LEVELS\LEVEL-11
+    file[]: crc = 13507d13; size =      1292; name = DATA\WORLD-5\LEVELS\LEVEL-11.OT1
+    file[]: crc = ccd707f6; size =       796; name = DATA\WORLD-5\LEVELS\LEVEL-11.OT2
+    file[]: crc = 42adfb23; size =     30758; name = DATA\WORLD-5\LEVELS\LEVEL-12
+    file[]: crc = a66ca6a2; size =      1524; name = DATA\WORLD-5\LEVELS\LEVEL-12.OT1
+    file[]: crc = aa75c4b4; size =      1452; name = DATA\WORLD-5\LEVELS\LEVEL-12.OT2
+    file[]: crc = 5cda65aa; size =     19841; name = DATA\WORLD-5\LEVELS\LEVEL-13
+    file[]: crc = ad13da09; size =      1352; name = DATA\WORLD-5\LEVELS\LEVEL-13.OT1
+    file[]: crc = 524ca463; size =       716; name = DATA\WORLD-5\LEVELS\LEVEL-13.OT2
+    file[]: crc = fd79ed59; size =     23622; name = DATA\WORLD-5\LEVELS\LEVEL-14
+    file[]: crc = 9e4752ad; size =      1580; name = DATA\WORLD-5\LEVELS\LEVEL-14.OT1
+    file[]: crc = 85c02ca6; size =       828; name = DATA\WORLD-5\LEVELS\LEVEL-14.OT2
+    file[]: crc = d12945f5; size =     24797; name = DATA\WORLD-5\LEVELS\LEVEL-15
+    file[]: crc = 98c4180f; size =      1388; name = DATA\WORLD-5\LEVELS\LEVEL-15.OT1
+    file[]: crc = 08d18cc6; size =      1084; name = DATA\WORLD-5\LEVELS\LEVEL-15.OT2
+    file[]: crc = e6f60021; size =     23130; name = DATA\WORLD-5\LEVELS\LEVEL-16
+    file[]: crc = c23043c8; size =      1236; name = DATA\WORLD-5\LEVELS\LEVEL-16.OT1
+    file[]: crc = 9cc795fe; size =      1132; name = DATA\WORLD-5\LEVELS\LEVEL-16.OT2
+    file[]: crc = 1747c9b8; size =     27688; name = DATA\WORLD-5\LEVELS\LEVEL-17
+    file[]: crc = 106f74e2; size =      1376; name = DATA\WORLD-5\LEVELS\LEVEL-17.OT1
+    file[]: crc = 7ccd4fb7; size =      1340; name = DATA\WORLD-5\LEVELS\LEVEL-17.OT2
+    file[]: crc = 55faab58; size =     22407; name = DATA\WORLD-5\LEVELS\LEVEL-18
+    file[]: crc = 36d13e64; size =      1352; name = DATA\WORLD-5\LEVELS\LEVEL-18.OT1
+    file[]: crc = f032d96f; size =      1004; name = DATA\WORLD-5\LEVELS\LEVEL-18.OT2
+    file[]: crc = 8f50cf6c; size =     26803; name = DATA\WORLD-5\LEVELS\LEVEL-19
+    file[]: crc = c3b326df; size =      1524; name = DATA\WORLD-5\LEVELS\LEVEL-19.OT1
+    file[]: crc = 5be972d4; size =      1212; name = DATA\WORLD-5\LEVELS\LEVEL-19.OT2
+    file[]: crc = f5a9e87f; size =     26777; name = DATA\WORLD-5\LEVELS\LEVEL-2
+    file[]: crc = eaa8cd41; size =      1586; name = DATA\WORLD-5\LEVELS\LEVEL-2.OT1
+    file[]: crc = 9dc04053; size =       972; name = DATA\WORLD-5\LEVELS\LEVEL-2.OT2
+    file[]: crc = 13208f1c; size =     29951; name = DATA\WORLD-5\LEVELS\LEVEL-20
+    file[]: crc = ced44b06; size =      1388; name = DATA\WORLD-5\LEVELS\LEVEL-20.OT1
+    file[]: crc = fc5b3d5c; size =      1676; name = DATA\WORLD-5\LEVELS\LEVEL-20.OT2
+    file[]: crc = 56167c56; size =     29005; name = DATA\WORLD-5\LEVELS\LEVEL-3
+    file[]: crc = c0b29c0e; size =      1794; name = DATA\WORLD-5\LEVELS\LEVEL-3.OT1
+    file[]: crc = 78a53a1b; size =       972; name = DATA\WORLD-5\LEVELS\LEVEL-3.OT2
+    file[]: crc = b9f86a71; size =     21546; name = DATA\WORLD-5\LEVELS\LEVEL-4
+    file[]: crc = 59201084; size =      1480; name = DATA\WORLD-5\LEVELS\LEVEL-4.OT1
+    file[]: crc = 87d22ba2; size =       684; name = DATA\WORLD-5\LEVELS\LEVEL-4.OT2
+    file[]: crc = d13db92e; size =     33342; name = DATA\WORLD-5\LEVELS\LEVEL-5
+    file[]: crc = 9190093e; size =      2034; name = DATA\WORLD-5\LEVELS\LEVEL-5.OT1
+    file[]: crc = 93c0193c; size =      1068; name = DATA\WORLD-5\LEVELS\LEVEL-5.OT2
+    file[]: crc = 1165020e; size =     45587; name = DATA\WORLD-5\LEVELS\LEVEL-6
+    file[]: crc = d78f72b8; size =      2222; name = DATA\WORLD-5\LEVELS\LEVEL-6.OT1
+    file[]: crc = 5d06aeb1; size =      1932; name = DATA\WORLD-5\LEVELS\LEVEL-6.OT2
+    file[]: crc = eeaee2f8; size =     44097; name = DATA\WORLD-5\LEVELS\LEVEL-7
+    file[]: crc = a1426a17; size =      2432; name = DATA\WORLD-5\LEVELS\LEVEL-7.OT1
+    file[]: crc = cab7dc99; size =      1420; name = DATA\WORLD-5\LEVELS\LEVEL-7.OT2
+    file[]: crc = 6cbbc71d; size =     37417; name = DATA\WORLD-5\LEVELS\LEVEL-8
+    file[]: crc = 8c2a2554; size =      1850; name = DATA\WORLD-5\LEVELS\LEVEL-8.OT1
+    file[]: crc = 7ecc2cc4; size =      1644; name = DATA\WORLD-5\LEVELS\LEVEL-8.OT2
+    file[]: crc = d215debb; size =     37909; name = DATA\WORLD-5\LEVELS\LEVEL-9
+    file[]: crc = 50f48b8c; size =      2012; name = DATA\WORLD-5\LEVELS\LEVEL-9.OT1
+    file[]: crc = 3bf399e0; size =      1420; name = DATA\WORLD-5\LEVELS\LEVEL-9.OT2
+
 
 end

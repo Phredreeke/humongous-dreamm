@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\spyozon.exe"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x16
 
 //
@@ -34,7 +33,7 @@ game[pc-en-010326]:
     file[]: crc = 1499f98f; size =    123431; name = SPYOZON.HE3
     file[]: crc = 9245fc4c; size =  71656930; name = SPYOZON.HE4
     file[]: crc = 4ae4806c; size =       766; name = SPYOZON.ICO; optional = true
-    file[]: crc = 47f88bbd; size =      2960; name = SPYOZON.INF; optional = true
+    file[]: crc = 47f88bbd; size =      2960; name = SPYOZON.INF
     file[]: crc = b53b8d65; size =    503867; name = spyozon.w32
 
 end
@@ -55,7 +54,7 @@ game[pc-en-010613-uk]:
     file[]: crc = 1499f98f; size =    123431; name = SPYFoxOZU.HE3
     file[]: crc = 9245fc4c; size =  71656930; name = SPYFoxOzu.he4
     file[]: crc = 1e28f180; size =   2803949; name = SpyFoxOZU.hlp; optional = true
-    file[]: crc = 1cd5bc77; size =      2554; name = SPYFoxOZU.inf; optional = true
+    file[]: crc = 1cd5bc77; size =      2554; name = SPYFoxOZU.inf
     file[]: crc = b53b8d65; size =    503867; name = spyfoxozu.w32
     file[]: crc = 4ae4806c; size =       766; name = SPYOZON.ICO; optional = true
 
@@ -77,11 +76,31 @@ game[pc-fr-010612]:
     file[]: crc = 1499f98f; size =    123431; name = SPYFoxSOS.HE3
     file[]: crc = 9245fc4c; size =  71656930; name = SPYFoxSOS.he4
     file[]: crc = 212524b2; size =   1645891; name = SPYFoxSOS.HLP; optional = true
-    file[]: crc = f8379bb4; size =      2727; name = SPYFoxSOS.INF; optional = true
+    file[]: crc = f8379bb4; size =      2727; name = SPYFoxSOS.INF
     file[]: crc = b53b8d65; size =    503867; name = SPYFoxSOS.w32
 
 end
 
+//
+// 2001 German version
+//
+game[pc-de-010621]:
+    name = German 2001-06-21
+    anchorfile = SPYFoxAIW.exe
+    launch = "$(rootpath)\SPYFoxAIW.exe"
+    file[]: crc = dd427996; size =     24088; name = ja-ad.pcx; optional = true
+    file[]: crc = da2f91eb; size =  97290221; name = SPYFoxAIW.(a)
+    file[]: crc = e1f8410a; size =     49152; name = SPYFoxAIW.D32
+    file[]: crc = 741a7bb4; size =     98304; name = SPYFoxAIW.exe
+    file[]: crc = 58add754; size =     47119; name = SPYFoxAIW.HE0
+    file[]: crc = 4d05c855; size = 125280146; name = SPYFoxAIW.he2
+    file[]: crc = 1499f98f; size =    123431; name = SPYFoxAIW.HE3
+    file[]: crc = 9245fc4c; size =  71656930; name = SPYFoxAIW.he4
+    file[]: crc = 4d577555; size =   2925388; name = SPYFoxAIW.hlp; optional = true
+    file[]: crc = b0403b66; size =      2594; name = SPYFoxAIW.inf
+    file[]: crc = b53b8d65; size =    503867; name = SPYFoxAIW.w32
+
+end
 
 
 

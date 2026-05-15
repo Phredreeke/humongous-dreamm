@@ -1,0 +1,102 @@
+desc[he-puttmoon]:
+
+name = Putt-Putt Goes to the Moon
+icon = he-puttmoon.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PUTTMOON.EXE"
+osenv = windows 98
+dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// Set up INI file for DOS version
+//
+DOSAUDIO = false
+dynamicfile[]:
+    condition = $(DOSAUDIO)
+    path = C:\PUTTMOON\PUTTMOON.INI
+    contents = [[[$(CRLF)
+    DigitalSoundDriver=sblaster.com
+    MidiSoundDriver=sbfm.adv
+    IOAddress=220
+    IRQ=7
+    DigitalID=
+    MidiInstFile=fat.ad
+]]]
+end
+//
+
+//
+// 1994 DOS version
+//
+game[pc-en-940118]:
+    name = English 1993-11-04
+    anchorfile = PUTTMOON.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
+    file[]: crc = 3e59a339; size =    197900; name = PUTTMOON.DRV
+    file[]: crc = fba38c66; size =    142807; name = PUTTMOON.EXE
+    file[]: crc = e56edf6f; size =      7863; name = PUTTMOON.HE0
+    file[]: crc = 09545ffe; size =   5361724; name = PUTTMOON.HE1
+    file[]: crc = 97e896b5; size =       766; name = PUTTMOON.ICO; optional = true
+    file[]: crc = e29a6ec9; size =       160; name = PUTTMOON.INI
+    file[]: crc = c1c1c5a1; size =       545; name = PUTTMOON.PIF; optional = true
+    file[]: crc = 8d8727f9; size =  11293948; name = PUTTMOON.TLK
+    file[]: crc = 1007333f; size =    132230; name = SETUPCD.EXE
+
+
+end
+
+
+//
+// 1995 Windows version
+//
+game[pc-en-950220-win]:
+    name = English 1995-02-20 Windows
+    anchorfile = PUTTMOON.W32
+    winres = 640x480x8
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
+    file[]: crc = d0d20888; size =     62614; name = PUTTMOON.BMP; optional = true
+    file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
+    file[]: crc = b84c98cf; size =     30720; name = PUTTMOON.EXE
+    file[]: crc = d4cf423a; size =     12161; name = PUTTMOON.HE0
+    file[]: crc = e365e827; size =   5745706; name = PUTTMOON.HE1
+    file[]: crc = f5ff4b94; size =  11311657; name = PUTTMOON.HE2
+    file[]: crc = 76b49d04; size =     36864; name = PUTTMOON.HE3
+    file[]: crc = f15057e0; size =  22165673; name = PUTTMOON.HE4
+    file[]: crc = cd0daebe; size =    102400; name = PUTTMOON.HLP
+    file[]: crc = c30ac98c; size =    261120; name = PUTTMOON.W32
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
+
+
+
+end
+
+end

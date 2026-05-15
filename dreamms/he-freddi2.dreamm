@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\FREDDI2.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -27,6 +26,28 @@ config[bitness]:
 end
 
 //
+// 1996 version (early)
+//
+game[pc-en-960718]:
+    name = English 1996-07-18
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 03ea4366; size =    132404; name = FREDDI2.BMP; optional = true
+    file[]: crc = c84a8028; size =     34304; name = FREDDI2.EXE
+    file[]: crc = 9d8313f8; size =     65305; name = FREDDI2.HE0
+    file[]: crc = 98de3773; size = 115098592; name = FREDDI2.HE1
+    file[]: crc = 4c380307; size =  34564440; name = FREDDI2.HE2
+    file[]: crc = b4a49af8; size =  42636360; name = FREDDI2.HE4
+    file[]: crc = 9fb3912f; size =    163468; name = FREDDI2.HLP; optional = true
+    file[]: crc = 4be7d5f4; size =      2122; name = FREDDI2.INF
+    file[]: crc = 00c24709; size =    321024; name = FREDDI2.W32
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 77892d97; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = cf687819; size =     11149; name = README.TXT; optional = true
+
+
+end
+
+//
 // 1996 version
 //
 game[pc-en-961107]:
@@ -40,7 +61,7 @@ game[pc-en-961107]:
     file[]: crc = 4c380307; size =  34564440; name = FREDDI2.HE2
     file[]: crc = b4a49af8; size =  42636360; name = FREDDI2.HE4
     file[]: crc = e8cbd95f; size =    166947; name = FREDDI2.HLP; optional = true
-    file[]: crc = 23cba256; size =      2122; name = FREDDI2.INF; optional = true
+    file[]: crc = 23cba256; size =      2122; name = FREDDI2.INF
     file[]: crc = 83a9046e; size =    323584; name = FREDDI2.W32
     file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
     file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
@@ -63,7 +84,7 @@ game[pc-en-991027]:
     file[]: crc = 5822202a; size =  34564440; name = Freddi2.he2
     file[]: crc = 2d288c66; size =  42596874; name = Freddi2.he4
     file[]: crc = 9fb9e2b0; size =    164579; name = FREDDI2.HLP; optional = true
-    file[]: crc = 4c0c11a0; size =      2586; name = freddi2.inf; optional = true
+    file[]: crc = 4c0c11a0; size =      2586; name = freddi2.inf
     file[]: crc = 88ae2695; size =    425984; name = FREDDI2.w32
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
@@ -71,7 +92,6 @@ game[pc-en-991027]:
 
 
 end
-
 
 //
 // 2002 version
@@ -97,6 +117,24 @@ game[pc-en-020605]:
 end
 
 //
+// 2008 Target version
+//
+game[pc-en-080505]:
+    name = English 2008-05-05
+    imports = pc-en-991027
+    anchorfile = FREDDI2.chm
+    file[]: crc = c0fb8a1e; size =     99095; name = FREDDI2.chm
+    file[]: remove = FREDDI2.HLP
+    file[]: crc = f7e7bfc1; size =      2553; name = freddi2.inf
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: crc = 8c0bc3e4; size =     87479; name = JA-AD.PCX; optional = true
+    file[]: crc = 88a59098; size =      8178; name = license.txt; optional = true
+
+
+end
+
+
+//
 // Dutch version (from Duo Pack)
 //
 game[pc-nl-961107]:
@@ -110,7 +148,7 @@ game[pc-nl-961107]:
     file[]: crc = c86ed81c; size =  39345384; name = FREDDI2.HE2
     file[]: crc = b7b0cd3e; size =  42689160; name = FREDDI2.HE4
     file[]: crc = 1f8656c4; size =    146194; name = FREDDI2.HLP; optional = true
-    file[]: crc = 79c24453; size =      2106; name = FREDDI2.INF; optional = true
+    file[]: crc = 79c24453; size =      2106; name = FREDDI2.INF
     file[]: crc = 4172bcb3; size =    330240; name = FREDDI2.W32
     file[]: crc = 2c35ec39; size =     14784; name = HEINI.EXE; optional = true
     file[]: crc = 07cc92e9; size =     99872; name = JA-AD.BMP; optional = true
@@ -149,7 +187,7 @@ game[pc-fr-961107]:
     file[]: crc = 9d26e13b; size =  32483184; name = FREDDI2.HE2
     file[]: crc = 71402b9a; size =  42685776; name = FREDDI2.HE4
     file[]: crc = c6cca909; size =    250448; name = FREDDI2.HLP; optional = true
-    file[]: crc = d808e55a; size =      2105; name = FREDDI2.INF; optional = true
+    file[]: crc = d808e55a; size =      2105; name = FREDDI2.INF
     file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
     file[]: crc = 3b8ee175; size =    139078; name = JA-AD.BMP; optional = true
     file[]: crc = 7dd26489; size =     13702; name = README.TXT; optional = true
@@ -173,7 +211,7 @@ game[pc-de-961107]:
     file[]: crc = 4d92a204; size =  35537738; name = FREDDI2.HE2
     file[]: crc = 2b6cf271; size =  42713216; name = FREDDI2.HE4
     file[]: crc = 967ef432; size =    168504; name = FREDDI2.HLP; optional = true
-    file[]: crc = ceca73fe; size =      2131; name = FREDDI2.INF; optional = true
+    file[]: crc = ceca73fe; size =      2131; name = FREDDI2.INF
     file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
     file[]: crc = 854fd0db; size =    308278; name = HE.BMP; optional = true
     file[]: crc = f849c6b9; size =    139078; name = JA-AD.BMP; optional = true
@@ -201,7 +239,7 @@ game[pc-ja-961107]:
     file[]: crc = d87c8ca9; size =  45315034; name = FREDDI2.HE2
     file[]: crc = a12a43ea; size =  42620960; name = FREDDI2.HE4
     file[]: crc = e245c055; size =    161578; name = FREDDI2.HLP; optional = true
-    file[]: crc = 8cc15b23; size =      2099; name = FREDDI2.INF; optional = true
+    file[]: crc = 8cc15b23; size =      2099; name = FREDDI2.INF
     file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
     file[]: crc = 4c8b9f85; size =    139078; name = JA-AD.BMP; optional = true
     file[]: crc = 8944b383; size =      6279; name = README.TXT; optional = true

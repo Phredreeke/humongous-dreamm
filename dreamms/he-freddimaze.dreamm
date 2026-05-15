@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\MAZE.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -44,7 +43,7 @@ game[pc-en-961126]:
     file[]: crc = c9365702; size =  21498460; name = MAZE.HE4
     file[]: crc = 3d714df4; size =    211800; name = MAZE.HE8
     file[]: crc = 4433c0f8; size =    126300; name = MAZE.HLP; optional = true
-    file[]: crc = de18a0a5; size =      2080; name = MAZE.INF; optional = true
+    file[]: crc = de18a0a5; size =      2080; name = MAZE.INF
     file[]: crc = 19d81924; size =    324096; name = MAZE.W32
     file[]: crc = b030850a; size =     10880; name = README.TXT; optional = true
 
@@ -85,7 +84,7 @@ game[pc-en-991103]:
     file[]: crc = c9365702; size =  21498460; name = Maze.he4
     file[]: crc = 3d714df4; size =    211800; name = Maze.he8
     file[]: crc = 2edc224a; size =    129270; name = MAZE.HLP; optional = true
-    file[]: crc = 25ae0f68; size =      2543; name = maze.inf; optional = true
+    file[]: crc = 25ae0f68; size =      2543; name = maze.inf
     file[]: crc = 28bcf360; size =    425984; name = Maze.w32
 
 end
@@ -107,10 +106,57 @@ game[pc-en-020627]:
     file[]: crc = c9365702; size =  21498460; name = Maze.he4
     file[]: crc = 3d714df4; size =    211800; name = MAZE.HE8
     file[]: crc = 7d610f3f; size =    221039; name = Maze.hlp; optional = true
-    file[]: crc = fa40a734; size =      2037; name = Maze.inf; optional = true
+    file[]: crc = fa40a734; size =      2037; name = Maze.inf
     file[]: crc = 19d81924; size =    324096; name = MAZE.W32
 
 end
 
+//
+// Dutch version
+//
+game[pc-nl-961126]:
+    name = Dutch 1996-11-26
+    anchorfile = DOOLHOF.EXE
+    launch = "$(rootpath)\DOOLHOF.EXE"
+    file[]: crc = 59ea8ef4; size =       578; name = COPYRITE.TXT; optional = true
+    file[]: crc = ea4cc3d8; size =  11706702; name = DOOLHOF.(A)
+    file[]: crc = 9ddb7945; size =    109944; name = DOOLHOF.BMP; optional = true
+    file[]: crc = 1e2f9505; size =     34304; name = DOOLHOF.D32
+    file[]: crc = f9e12b58; size =      8896; name = DOOLHOF.DLL
+    file[]: crc = 57b089f1; size =     21648; name = DOOLHOF.EXE
+    file[]: crc = 070d0cc3; size =     23530; name = DOOLHOF.HE0
+    file[]: crc = bec253ab; size =   6618241; name = DOOLHOF.HE2
+    file[]: crc = c9365702; size =  21498460; name = DOOLHOF.HE4
+    file[]: crc = 3d714df4; size =    211800; name = DOOLHOF.HE8
+    file[]: crc = 35df0e6c; size =    423066; name = DOOLHOF.HLP; optional = true
+    file[]: crc = e5f57ef8; size =      2149; name = DOOLHOF.INF
+    file[]: crc = 87a6af9e; size =    444928; name = DOOLHOF.W32
+    file[]: crc = ff735d55; size =     34304; name = DOOLHOF_.B32; optional = true
+    file[]: crc = 7db99848; size =    139078; name = JA-AD.BMP; optional = true
+
+end
+
+//
+// French version
+//
+game[pc-fr-991001]:
+    name = French 1999-10-01
+    anchorfile = gloutons.exe
+    BITNESS = false
+    launch = "$(rootpath)\gloutons.exe"
+    file[]: crc = fef23de2; size =  11858984; name = GLOUTONS.(A)
+    file[]: crc = 81980e29; size =     35840; name = GLOUTONS.D32
+    file[]: crc = 855b5079; size =      9200; name = GLOUTONS.DLL
+    file[]: crc = b96a0952; size =     77824; name = gloutons.exe
+    file[]: crc = 70362ac0; size =     23530; name = GLOUTONS.HE0
+    file[]: crc = 9c4e1b4a; size =   5199517; name = GLOUTONS.HE2
+    file[]: crc = c9365702; size =  21498460; name = GLOUTONS.HE4
+    file[]: crc = 3d714df4; size =    211800; name = GLOUTONS.HE8
+    file[]: crc = d8040aea; size =    151031; name = GLOUTONS.HLP; optional = true
+    file[]: crc = 73140cb2; size =      2534; name = GLOUTONS.INF
+    file[]: crc = 87a6af9e; size =    444928; name = GLOUTONS.W32
+    file[]: crc = f45a746a; size =     87213; name = Ja-ad.pcx; optional = true
+
+end
 
 end

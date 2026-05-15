@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\Pajama3.exe"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -23,7 +22,6 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 game[pc-en-000202]:
     name = English 2000-02-02
     anchorfile = Pajama3.exe
-    launch = "$(rootpath)\Pajama3.w32"
     file[]: crc = c7579078; size =       764; name = Copyrite.txt; optional = true
     file[]: crc = e2e2de14; size =     14912; name = HEIni.exe; optional = true
     file[]: crc = 78e848a5; size =     28689; name = Ja-ad.pcx; optional = true
@@ -58,6 +56,21 @@ game[pc-en-010221]:
     file[]: crc = 4401854a; size =   2013889; name = UKPajamaEAT.hlp; optional = true
     file[]: crc = 7d3a6645; size =      2496; name = UKPajamaEAT.inf; optional = true
     file[]: crc = 0925883b; size =    475136; name = UKPajamaEAT.w32
+
+
+end
+
+//
+// 2002 version
+//
+game[pc-en-021126]:
+    name = English 2002-11-26
+    imports = pc-en-000202
+    anchorfile = Pajama3.exe
+    file[]: remove = Ja-ad.pcx; 
+    file[]: crc = 36dfd530; size =     98372; name = pajama3.exe
+    file[]: crc = 981f1fd9; size =   2255402; name = Pajama3.hlp
+    file[]: crc = 82c7effe; size =      2543; name = Pajama3.inf
 
 
 end

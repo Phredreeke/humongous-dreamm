@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\FREDDI4.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -173,7 +172,7 @@ end
 // 1999 UK English Demo
 //
 demo[pc-en-990307-demo-uk]:
-    name = English Demo 1999-03-07 (UK Dub)
+    name = English Demo 1999-03-07 UK Dub
     anchorfile = ff4demo.exe
     launch = "$(rootpath)\ff4demo.exe"
     file[]: crc = d064630a; size =   6322129; name = FF4DEMO.(A)

@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\BASEBALL.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
@@ -49,6 +48,207 @@ game[pc-en-970807]:
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = b76e98c9; size =    139078; name = JS-AD.BMP; optional = true
     file[]: crc = 5c7e6928; size =     51647; name = README.TXT; optional = true
+
+
+
+end
+
+//
+// 2000 version
+//
+game[pc-en-000501]:
+    name = Backyard Baseball 2001 (2000-05-01)
+    anchorfile = baseball 2001.exe
+    anchordepth = 1
+    BITNESS = false
+    winres = 640x480x16
+    launch = "$(rootpath)\baseball 2001.exe"
+    file[]: crc = 95a359c3; size = 141563292; name = baseball 2001.(a)
+    file[]: crc = 99bc8ee4; size =   2158420; name = baseball 2001.(b)
+    file[]: crc = 5c6d9f2a; size =     49152; name = baseball 2001.d32
+    file[]: crc = bed12a53; size =    450623; name = baseball 2001.exe
+    file[]: crc = 85425497; size =     95480; name = baseball 2001.he0
+    file[]: crc = b0bb8a72; size = 172570952; name = baseball 2001.he2
+    file[]: crc = f3edf215; size =  43509966; name = baseball 2001.he4
+    file[]: crc = 85b4c15c; size =     92180; name = baseball 2001.he9
+    file[]: crc = 4a22de4e; size =   2250499; name = baseball 2001.hlp
+    file[]: crc = 1b9cf245; size =      2197; name = baseball 2001.inf
+    file[]: crc = 398c9c5f; size =    180224; name = baseball 2001.u32
+    file[]: crc = 5a25964b; size =     16384; name = baseball 2001.x32
+    file[]: crc = 9468e0a4; size =       322; name = baseball2001.esk
+    file[]: crc = dfaa5ea2; size =       563; name = baseball2001.mmz
+    file[]: crc = b59a6056; size =    741376; name = bymaia.dll
+    file[]: crc = fd23d797; size =    142336; name = patchw32.dll
+    file[]: crc = 1d0029ff; size =    106496; name = restart.exe
+    file[]: crc = 26dfcf8d; size =    224768; name = rover.dll
+    file[]: crc = d21db163; size =     45056; name = udpping.dll
+    file[]: crc = 85d2cd37; size =    300544; name = upgrade.dll
+
+
+
+end
+
+
+//
+// 2002 version
+//
+game[pc-en-020222]:
+    name = Backyard Baseball 2003 (2002-02-22)
+    anchorfile = Baseball2003.exe
+    anchordepth = 1
+    BITNESS = false
+    winres = 640x480x16
+    launch = "$(rootpath)\Baseball2003.exe"
+    file[]: crc = 3e5987f6; size = 196067172; name = baseball2003.(a)
+    file[]: crc = c273a322; size =   5067040; name = baseball2003.(b)
+    file[]: crc = 8c2168aa; size =     53248; name = Baseball2003.d32
+    file[]: crc = c922ed15; size =    700470; name = Baseball2003.exe
+    file[]: crc = e80471c4; size =     66003; name = baseball2003.HE0
+    file[]: crc = 43772be6; size = 167376444; name = baseball2003.he2
+    file[]: crc = 14a90f36; size =     11235; name = Baseball2003.he3
+    file[]: crc = 8250ffbc; size = 148294549; name = baseball2003.he4
+    file[]: crc = a865a789; size =    129052; name = Baseball2003.he9
+    file[]: crc = aef21215; size =       928; name = baseball2003.inf
+    file[]: crc = 09896ebb; size =    308275; name = binkw32.dll
+    file[]: crc = f872dab7; size =       766; name = BYBB3_top.ico
+    file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE
+    file[]: crc = c5128684; size =    346624; name = mss32.dll
+    file[]: crc = 76ea1109; size =   1448636; name = DATA\infogrames.da2; exactonly = true
+    file[]: crc = f2a8b1bc; size =   4874756; name = DATA\intro.da2; exactonly = true
+    file[]: crc = 22a1cd36; size =       669; name = HelpFile\border.htm; exactonly = true
+    file[]: crc = 4ebdde5c; size =       423; name = HelpFile\box.htm; exactonly = true
+    file[]: crc = 1975b228; size =      5193; name = HelpFile\clubhous.htm; exactonly = true
+    file[]: crc = 7599ba92; size =     10414; name = HelpFile\courts.htm; exactonly = true
+    file[]: crc = e9769b3c; size =      1659; name = HelpFile\create_team.htm; exactonly = true
+    file[]: crc = 36d8b8c4; size =      1779; name = HelpFile\create_team_single.htm; exactonly = true
+    file[]: crc = 600ff47b; size =     35899; name = HelpFile\credits.htm; exactonly = true
+    file[]: crc = 51d446f8; size =      3823; name = HelpFile\draft.htm; exactonly = true
+    file[]: crc = 68d7202c; size =      4070; name = HelpFile\draft_players.htm; exactonly = true
+    file[]: crc = 419d1bff; size =       786; name = HelpFile\framespage.htm; exactonly = true
+    file[]: crc = d061a965; size =     17354; name = HelpFile\gameplay.htm; exactonly = true
+    file[]: crc = b6a73bfa; size =       898; name = HelpFile\index.htm; exactonly = true
+    file[]: crc = a33c2dc0; size =     10917; name = HelpFile\official.htm; exactonly = true
+    file[]: crc = 46619d4e; size =      3072; name = HelpFile\options.htm; exactonly = true
+    file[]: crc = 50dc872f; size =      9397; name = HelpFile\powerups.htm; exactonly = true
+    file[]: crc = db84ce9b; size =      2176; name = HelpFile\season.htm; exactonly = true
+    file[]: crc = a08d1b40; size =      2984; name = HelpFile\season_options.htm; exactonly = true
+    file[]: crc = 125f16e8; size =      2730; name = HelpFile\season_setup.htm; exactonly = true
+    file[]: crc = 4a186ac0; size =      4121; name = HelpFile\single.htm; exactonly = true
+    file[]: crc = f9b46d22; size =      4430; name = HelpFile\starting.htm; exactonly = true
+    file[]: crc = 227a68c8; size =      4523; name = HelpFile\system.htm; exactonly = true
+    file[]: crc = ba519ee4; size =      3381; name = HelpFile\team_info_page.htm; exactonly = true
+    file[]: crc = 8691b112; size =      1986; name = HelpFile\team_info_page_single.htm; exactonly = true
+    file[]: crc = cc6a8294; size =      3080; name = HelpFile\team_strategy.htm; exactonly = true
+    file[]: crc = 4d53b8e0; size =      2982; name = HelpFile\team_strategy_single.htm; exactonly = true
+    file[]: crc = b92aeaad; size =      1343; name = HelpFile\welcome.htm; exactonly = true
+    file[]: crc = d6590673; size =      9094; name = HelpFile\fb2banner.tem\banner.gif; exactonly = true
+    file[]: crc = 57562bf1; size =       462; name = HelpFile\fb2banner.tem\fb2banner.htm; exactonly = true
+    file[]: crc = 86b1275b; size =    437896; name = HelpFile\images\00_clubhouse.jpg; exactonly = true
+    file[]: crc = 54cef21e; size =    437902; name = HelpFile\images\00_clubhouse_new.jpg; exactonly = true
+    file[]: crc = 05710f38; size =    366946; name = HelpFile\images\01_setup_singlegame.jpg; exactonly = true
+    file[]: crc = 542b798c; size =    366950; name = HelpFile\images\01_setup_singlegame_new.jpg; exactonly = true
+    file[]: crc = 8f6fdfb0; size =     49804; name = HelpFile\images\02_coachsignin.jpg; exactonly = true
+    file[]: crc = 552f9136; size =     68227; name = HelpFile\images\03_setup_season.jpg; exactonly = true
+    file[]: crc = d0811f99; size =     54520; name = HelpFile\images\04_options.jpg; exactonly = true
+    file[]: crc = 4c33a97b; size =     23265; name = HelpFile\images\05_details_gp_def.gif; exactonly = true
+    file[]: crc = d50eab1a; size =     23399; name = HelpFile\images\05_details_gp_off.gif; exactonly = true
+    file[]: crc = eef06f7e; size =     23473; name = HelpFile\images\05_details_gp_pitching.gif; exactonly = true
+    file[]: crc = 46286879; size =     23099; name = HelpFile\images\05_details_gp_running.gif; exactonly = true
+    file[]: crc = 97901670; size =     61186; name = HelpFile\images\06_parksconference.jpg; exactonly = true
+    file[]: crc = c9fd19c3; size =     61933; name = HelpFile\images\07_parksconference.jpg; exactonly = true
+    file[]: crc = 521824f1; size =     60947; name = HelpFile\images\08_customizeteam.jpg; exactonly = true
+    file[]: crc = f522130a; size =     61822; name = HelpFile\images\08_customizeteam_new.jpg; exactonly = true
+    file[]: crc = befb9194; size =    464310; name = HelpFile\images\09_logoorvalve.jpg; exactonly = true
+    file[]: crc = 7c1144fb; size =    524158; name = HelpFile\images\10_draft_sgle_blchrs_n.jpg; exactonly = true
+    file[]: crc = ab9c337f; size =    524128; name = HelpFile\images\10_draft_single_bleachers.jpg; exactonly = true
+    file[]: crc = a1de1901; size =     73367; name = HelpFile\images\10_draft_single_card.jpg; exactonly = true
+    file[]: crc = 90d92f91; size =     17336; name = HelpFile\images\10_draft_single_finder.gif; exactonly = true
+    file[]: crc = 8af16829; size =    192002; name = HelpFile\images\10_draft_single_finder.jpg; exactonly = true
+    file[]: crc = 7b4691ce; size =    524162; name = HelpFile\images\10_meettheplayers.jpg; exactonly = true
+    file[]: crc = e0bfb0b2; size =    166911; name = HelpFile\images\11_fulldraft.jpg; exactonly = true
+    file[]: crc = c8ac9425; size =    125512; name = HelpFile\images\13_rookie_skills.jpg; exactonly = true
+    file[]: crc = c8ac9425; size =    125512; name = HelpFile\images\13_rookie_skills_new.jpg; exactonly = true
+    file[]: crc = 46d9247b; size =     78011; name = HelpFile\images\15_players_singlegame.jpg; exactonly = true
+    file[]: crc = b28b36a6; size =    151414; name = HelpFile\images\15_tmph_season_m.jpg; exactonly = true
+    file[]: crc = 286239fe; size =    129451; name = HelpFile\images\17_statistics_season.jpg; exactonly = true
+    file[]: crc = d696e7cb; size =    123059; name = HelpFile\images\17_statistics_singlegame.jpg; exactonly = true
+    file[]: crc = 4bb62789; size =    107693; name = HelpFile\images\17_trophycase_awards.jpg; exactonly = true
+    file[]: crc = 22678096; size =    109156; name = HelpFile\images\18_trophycase.jpg; exactonly = true
+    file[]: crc = e5418775; size =    116364; name = HelpFile\images\19_schedule.jpg; exactonly = true
+    file[]: crc = d943b789; size =     99699; name = HelpFile\images\23_standings.jpg; exactonly = true
+    file[]: crc = d943b789; size =     99699; name = HelpFile\images\23_standings_new.jpg; exactonly = true
+    file[]: crc = d169ab5f; size =    106382; name = HelpFile\images\24_leagueleaders_ind.jpg; exactonly = true
+    file[]: crc = 640e59d5; size =    106250; name = HelpFile\images\25_leagueleaders_team.jpg; exactonly = true
+    file[]: crc = 6fc6099d; size =    129896; name = HelpFile\images\26_strategy_offense.jpg; exactonly = true
+    file[]: crc = d5e041aa; size =    136756; name = HelpFile\images\27_strategy_defense.jpg; exactonly = true
+    file[]: crc = d5e041aa; size =    136756; name = HelpFile\images\27_strategy_defense_new.jpg; exactonly = true
+    file[]: crc = 11703e73; size =     60072; name = HelpFile\images\28_matchup.jpg; exactonly = true
+    file[]: crc = 1d4b260d; size =     67990; name = HelpFile\images\35_halloffame_champions.jpg; exactonly = true
+    file[]: crc = 292a395d; size =     53629; name = HelpFile\images\35_hof_recdbk.jpg; exactonly = true
+    file[]: crc = 3b53cbef; size =     62896; name = HelpFile\images\36_halloffame_credits.jpg; exactonly = true
+    file[]: crc = f59b299b; size =    375529; name = HelpFile\images\40_scoreboard.jpg; exactonly = true
+    file[]: crc = 5c2a5963; size =     68588; name = HelpFile\images\40_scoreboard_infield.jpg; exactonly = true
+    file[]: crc = b401ed2e; size =     70565; name = HelpFile\images\99_gameplay_01.jpg; exactonly = true
+    file[]: crc = 078dfce7; size =     77501; name = HelpFile\images\99_gameplay_02.jpg; exactonly = true
+    file[]: crc = 9a6cee1c; size =      2274; name = HelpFile\images\alumpower.jpg; exactonly = true
+    file[]: crc = f432b97d; size =     15991; name = HelpFile\images\badge.jpg; exactonly = true
+    file[]: crc = 26e34701; size =     57950; name = HelpFile\images\BattingPractice.jpg; exactonly = true
+    file[]: crc = 8b1cd124; size =      1978; name = HelpFile\images\bigfreeze.jpg; exactonly = true
+    file[]: crc = 3192aa8c; size =    121915; name = HelpFile\images\boxcover_m.jpg; exactonly = true
+    file[]: crc = e3a0273a; size =     19210; name = HelpFile\images\boxcover_s.JPG; exactonly = true
+    file[]: crc = 821502f3; size =      4104; name = HelpFile\images\button_bbarules.gif; exactonly = true
+    file[]: crc = 55f649b4; size =      1668; name = HelpFile\images\button_blank.gif; exactonly = true
+    file[]: crc = a4bc9852; size =      4136; name = HelpFile\images\button_clubhouse.gif; exactonly = true
+    file[]: crc = 9c8d2e02; size =      3653; name = HelpFile\images\button_courts.gif; exactonly = true
+    file[]: crc = 4d032a29; size =      3806; name = HelpFile\images\button_credits.gif; exactonly = true
+    file[]: crc = e126193d; size =      3925; name = HelpFile\images\button_extras.gif; exactonly = true
+    file[]: crc = 5d2ff1ec; size =      4273; name = HelpFile\images\button_gameplay.gif; exactonly = true
+    file[]: crc = 6fa82aef; size =      4437; name = HelpFile\images\button_getstarted.gif; exactonly = true
+    file[]: crc = c9a5dd65; size =      3469; name = HelpFile\images\button_home.gif; exactonly = true
+    file[]: crc = cfce108d; size =      1504; name = HelpFile\images\button_practice.gif; exactonly = true
+    file[]: crc = b780a7be; size =      3701; name = HelpFile\images\button_rules.gif; exactonly = true
+    file[]: crc = 6f6f43af; size =      4623; name = HelpFile\images\button_season.gif; exactonly = true
+    file[]: crc = 1ee3b41c; size =      4407; name = HelpFile\images\button_singlegame.gif; exactonly = true
+    file[]: crc = 5350e426; size =      3993; name = HelpFile\images\button_system.gif; exactonly = true
+    file[]: crc = c52bc6de; size =   1139894; name = HelpFile\images\BYBPC3Dbox.bmp; exactonly = true
+    file[]: crc = 530da13d; size =      1999; name = HelpFile\images\corkscrew.jpg; exactonly = true
+    file[]: crc = 6e3ac3e6; size =     21711; name = HelpFile\images\court_crownhill.jpg; exactonly = true
+    file[]: crc = d834e390; size =     24342; name = HelpFile\images\court_dobbaguchi.jpg; exactonly = true
+    file[]: crc = 3ae0f5fa; size =     33597; name = HelpFile\images\court_humgarden.jpg; exactonly = true
+    file[]: crc = dbc451ae; size =     28041; name = HelpFile\images\court_jocinda.jpg; exactonly = true
+    file[]: crc = e8139392; size =     38228; name = HelpFile\images\court_mcmillan.jpg; exactonly = true
+    file[]: crc = 435ad7b3; size =     26755; name = HelpFile\images\court_overplay.jpg; exactonly = true
+    file[]: crc = f9e80b83; size =     28848; name = HelpFile\images\court_overstee.jpg; exactonly = true
+    file[]: crc = 97e2f624; size =     26334; name = HelpFile\images\court_overtin.jpg; exactonly = true
+    file[]: crc = c8defe84; size =     25692; name = HelpFile\images\court_park.jpg; exactonly = true
+    file[]: crc = e05538a4; size =     30718; name = HelpFile\images\court_polk.jpg; exactonly = true
+    file[]: crc = d5f777f1; size =     32288; name = HelpFile\images\court_queens.jpg; exactonly = true
+    file[]: crc = 21467865; size =     30714; name = HelpFile\images\court_sandyflats.jpg; exactonly = true
+    file[]: crc = 2fde228b; size =     27111; name = HelpFile\images\court_scheffler.jpg; exactonly = true
+    file[]: crc = 168285dd; size =     43303; name = HelpFile\images\court_techstate.jpg; exactonly = true
+    file[]: crc = b0d6036f; size =      2307; name = HelpFile\images\crazyball.jpg; exactonly = true
+    file[]: crc = 4623c6ca; size =      2054; name = HelpFile\images\crazyball2.jpg; exactonly = true
+    file[]: crc = a7c2cc71; size =      1902; name = HelpFile\images\elevator.jpg; exactonly = true
+    file[]: crc = 15c20a87; size =      1844; name = HelpFile\images\fireball.jpg; exactonly = true
+    file[]: crc = 9e378b59; size =      1759; name = HelpFile\images\floor_blue.gif; exactonly = true
+    file[]: crc = 18ce3fb2; size =      1571; name = HelpFile\images\floor_natural.gif; exactonly = true
+    file[]: crc = bffe319b; size =      1760; name = HelpFile\images\juice.jpg; exactonly = true
+    file[]: crc = d563cc2a; size =     23458; name = HelpFile\images\KG_cover.gif; exactonly = true
+    file[]: crc = 6c322760; size =      1392; name = HelpFile\images\mouse.jpg; exactonly = true
+    file[]: crc = 4807539c; size =      2263; name = HelpFile\images\screaming.jpg; exactonly = true
+    file[]: crc = 184fd6f8; size =      1837; name = HelpFile\images\slomo.jpg; exactonly = true
+    file[]: crc = 16d30f4e; size =      1822; name = HelpFile\images\spitball.jpg; exactonly = true
+    file[]: crc = 75bcf52d; size =      2205; name = HelpFile\images\undergr.jpg; exactonly = true
+    file[]: crc = 18e5fc89; size =     98784; name = HelpFile\images\XX_sunnybarry.jpg; exactonly = true
+    file[]: crc = ac01471d; size =      1930; name = HelpFile\images\zigzag.jpg; exactonly = true
+    file[]: crc = 0d1cf99f; size =      1756; name = HelpFile\navbar.tem\button_practice.gif; exactonly = true
+    file[]: crc = 5389fbed; size =      1990; name = HelpFile\navbar.tem\navbar.htm; exactonly = true
+    file[]: crc = eb078408; size =      1768; name = HelpFile\navtemp.tem\button_clubhouse.gif; exactonly = true
+    file[]: crc = 0e8b4299; size =      1770; name = HelpFile\navtemp.tem\button_home.gif; exactonly = true
+    file[]: crc = aa8dae29; size =      1794; name = HelpFile\navtemp.tem\button_singlegame.gif; exactonly = true
+    file[]: crc = 4d833e0e; size =      1868; name = HelpFile\navtemp.tem\button_starting.gif; exactonly = true
+    file[]: crc = 8d912bac; size =      1798; name = HelpFile\navtemp.tem\button_system.gif; exactonly = true
+    file[]: crc = 236aa09a; size =      1336; name = HelpFile\navtemp.tem\navtemp.htm; exactonly = true
 
 
 

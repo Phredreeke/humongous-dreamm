@@ -1,0 +1,269 @@
+desc[he-puttrace]:
+
+name = Putt-Putt Enters the Race
+icon = he-puttrace.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PUTTRACE.EXE"
+osenv = windows 98
+winres = 640x480x8
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1998 version
+//
+game[pc-en-981008]:
+    name = English 1998-10-08
+    anchorfile = PUTTRACE.EXE
+    file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = 319f31e6; size =     74219; name = Ja-ad.PCX; optional = true
+    file[]: crc = e3dab413; size =  74410999; name = puttrace.(a)
+    file[]: crc = 40aa0884; size =   3770940; name = puttrace.(b)
+    file[]: crc = b997580d; size =    423424; name = PUTTRACE.A32
+    file[]: crc = 94c373b1; size =     36352; name = PUTTRACE.D32
+    file[]: crc = a26710b2; size =      8896; name = PUTTRACE.DLL
+    file[]: crc = e785174d; size =     21696; name = PUTTRACE.EXE
+    file[]: crc = 7a2cd7ff; size =     32898; name = PUTTRACE.HE0
+    file[]: crc = fa5eeff3; size =  75168455; name = PUTTRACE.HE2
+    file[]: crc = 008fbdef; size =  37876634; name = PUTTRACE.HE4
+    file[]: crc = 90ef38fc; size =   1755796; name = PUTTRACE.HLP
+    file[]: crc = eef40fa6; size =       766; name = PuttRace.ico; optional = true
+    file[]: crc = ff8667a5; size =      3147; name = PUTTRACE.INF
+    file[]: crc = 9f8b206c; size =     55808; name = PUTTRACE.U32
+    file[]: crc = b999761e; size =    244224; name = PUTTRACE.W32
+    file[]: crc = 567220b6; size =     19287; name = readme.txt; optional = true
+
+
+
+end
+
+//
+// 2001 UK version
+//
+game[pc-en-010221-uk]:
+    name = English 2001-02-21 UK Dub
+    anchorfile = UKPuttRace.EXE
+    launch = "$(rootpath)\UKPuttRace.EXE"
+    file[]: crc = 27a84705; size =     71930; name = Ja-ad.PCX; optional = true
+    file[]: crc = 8468476b; size =  74457592; name = UKPuttRace.(a)
+    file[]: crc = f008f587; size =   3770938; name = UKPuttRace.(b)
+    file[]: crc = ff0be092; size =     45056; name = UKPuttRace.d32
+    file[]: crc = b2b6103f; size =    212992; name = UKPuttRace.EXE
+    file[]: crc = 157e9722; size =     32923; name = UKPuttRace.HE0
+    file[]: crc = 705dd60f; size =  83730630; name = UKPuttRace.HE2
+    file[]: crc = 26eb2d8d; size =  38110088; name = UKPuttRace.HE4
+    file[]: crc = 0118f681; size =   1767481; name = UKPuttRace.hlp
+    file[]: crc = 0d5abd92; size =      3418; name = UKPUTTRACE.INF
+    file[]: crc = 9f8b206c; size =     55808; name = UKPuttRace.U32
+    file[]: crc = e451d19b; size =    475136; name = UKPuttRace.w32
+
+
+
+end
+
+//
+// Dutch version
+//
+game[pc-nl-990807]:
+    name = Dutch 1999-08-07
+    anchorfile = PUTT500.EXE
+    launch = "$(rootpath)\PUTT500.EXE"
+    file[]: crc = a6ff4ad3; size =       578; name = COPYRIGHT.TXT; optional = true
+    file[]: crc = 8ee97973; size =     84797; name = JA-AD.PCX; optional = true
+    file[]: crc = e3214ea3; size =     10085; name = LEESMIJ.TXT; optional = true
+    file[]: crc = de1bcb02; size =  74933960; name = Putt500.(A)
+    file[]: crc = 40aa0884; size =   3770940; name = Putt500.(B)
+    file[]: crc = 00000000; size =         0; name = Putt500.(r)
+    file[]: crc = da68ff6b; size =     34304; name = PUTT500.D32
+    file[]: crc = 1ff84426; size =    200704; name = PUTT500.EXE
+    file[]: crc = 0e47f950; size =     32898; name = Putt500.HE0
+    file[]: crc = 1250de44; size =  80262291; name = Putt500.HE2
+    file[]: crc = ea964c99; size =  37984594; name = Putt500.HE4
+    file[]: crc = 4ad2fb2f; size =   2393352; name = PUTT500.HLP
+    file[]: crc = 27563610; size =      3488; name = PUTT500.INF
+    file[]: crc = 9f8b206c; size =     55808; name = PUTT500.U32
+    file[]: crc = 7cc9e6d8; size =    444928; name = PUTT500.W32
+
+
+
+end
+
+//
+// French version
+//
+game[pc-fr-990812]:
+    name = French 1999-08-12 
+    anchorfile = COURSE.EXE
+    launch = "$(rootpath)\COURSE.EXE"
+    file[]: crc = 607a48e9; size =       548; name = COPYRITE.TXT; optional = true
+    file[]: crc = 053d866d; size =  74935349; name = COURSE.(A)
+    file[]: crc = 40aa0884; size =   3770940; name = COURSE.(B)
+    file[]: crc = ec7c10f1; size =     35840; name = COURSE.D32
+    file[]: crc = cec4b259; size =    200704; name = COURSE.EXE
+    file[]: crc = f9cb0ec7; size =     32754; name = COURSE.HE0
+    file[]: crc = 4d9c4ddf; size =  78889057; name = COURSE.HE2
+    file[]: crc = 52e94fad; size =  37906833; name = COURSE.HE4
+    file[]: crc = a25eb852; size =   2478895; name = COURSE.HLP
+    file[]: crc = eef40fa6; size =       766; name = COURSE.ICO; optional = true
+    file[]: crc = 2cdb0734; size =      3570; name = COURSE.INF
+    file[]: crc = 9f8b206c; size =     55808; name = COURSE.U32
+    file[]: crc = 8e15e147; size =    444928; name = COURSE.W32
+    file[]: crc = e7bc8aa0; size =     82599; name = JA-AD.PCX; optional = true
+    file[]: crc = 10e0bbbd; size =     11468; name = LISEZMOI.TXT; optional = true
+
+
+
+end
+
+
+
+//
+// German version
+//
+game[pc-de-001004]:
+    name = German 2000-10-04 
+    anchorfile = ToffRennen.exe
+    launch = "$(rootpath)\ToffRennen.exe"
+    file[]: crc = bf60e3a2; size =     83747; name = Ja-ad.pcx; optional = true
+    file[]: crc = 30d0ed21; size =  75327182; name = ToffRennen.(a)
+    file[]: crc = 40aa0884; size =   3770940; name = ToffRennen.(b)
+    file[]: crc = 46e48f39; size =     49152; name = ToffRennen.d32
+    file[]: crc = 4964ac47; size =    212992; name = ToffRennen.exe
+    file[]: crc = 90f5cb41; size =     32923; name = ToffRennen.HE0
+    file[]: crc = f174f4c2; size =  75466490; name = ToffRennen.HE2
+    file[]: crc = 8ca0b6dd; size =  38018620; name = ToffRennen.HE4
+    file[]: crc = 10899b60; size =   1751499; name = TOFFRENNEN.HLP
+    file[]: crc = 481b37a9; size =      3455; name = ToffRennen.INF
+    file[]: crc = 9f8b206c; size =     55808; name = ToffRennen.U32
+    file[]: crc = e6cb378b; size =    442368; name = ToffRennen.w32
+
+
+
+end
+
+//
+// Demo version
+//
+demo[pc-en-990328-demo]:
+    name = English Demo 1999-03-28
+    anchorfile = racedemo.exe
+    launch = "$(rootpath)\racedemo.exe"
+    file[]: crc = eef40fa6; size =       766; name = PuttRace.ico; optional = true
+    file[]: crc = 6e892984; size =   6521828; name = RACEDEMO.(A)
+    file[]: crc = b997580d; size =    423424; name = RACEDEMO.A32
+    file[]: crc = 94c373b1; size =     36352; name = RACEDEMO.D32
+    file[]: crc = a26710b2; size =      8896; name = RACEDEMO.DLL
+    file[]: crc = fd497ac6; size =    425472; name = racedemo.exe
+    file[]: crc = 78cccf9f; size =     13110; name = RACEDEMO.HE0
+    file[]: crc = a5799d5f; size =   2848904; name = RACEDEMO.HE2
+    file[]: crc = 05f963a8; size =   3994692; name = RACEDEMO.HE4
+    file[]: crc = 6b9f5356; size =    297416; name = racedemo.hlp
+    file[]: crc = c1167063; size =      2268; name = RACEDEMO.INF
+    file[]: crc = 9f8b206c; size =     55808; name = RACEDEMO.U32
+
+
+
+end
+
+//
+// UK Demo version
+//
+demo[pc-en-010404-demo-uk]:
+    name = English Demo 2001-04-04 UK Dub
+    anchorfile = racedemo.exe
+    launch = "$(rootpath)\racedemo.exe"
+    file[]: crc = 3bde51d2; size =   6406987; name = RACEDEMO.(A)
+    file[]: crc = ff0be092; size =     45056; name = RACEDEMO.D32
+    file[]: crc = 4e0bccfa; size =    475182; name = racedemo.exe
+    file[]: crc = 018a3123; size =     13108; name = RACEDEMO.HE0
+    file[]: crc = c3eb644c; size =   3028389; name = RaceDemo.he2
+    file[]: crc = 88f0c482; size =   4092841; name = RACEDEMO.HE4
+    file[]: crc = 0118f681; size =   1767481; name = RACEDEMO.hlp
+    file[]: crc = b9b5318f; size =      2568; name = racedemo.inf
+    file[]: crc = eef40fa6; size =       766; name = RaceUK.ICO; optional = true
+
+
+
+end
+
+//
+// Dutch demo version
+//
+demo[pc-nl-010606-demo]:
+    name = Dutch Demo 2001-06-06
+    anchorfile = racedemo.exe
+    launch = "$(rootpath)\racedemo.exe"
+    file[]: crc = caf2bd3a; size =   6387690; name = racedemo.(a)
+    file[]: crc = b60e543d; size =     49152; name = RACEDEMO.D32
+    file[]: crc = 4e0bccfa; size =    475182; name = racedemo.exe
+    file[]: crc = c82cd5e7; size =     13108; name = racedemo.he0
+    file[]: crc = dc368aac; size =   2937176; name = racedemo.he2
+    file[]: crc = 3fc57907; size =   4013622; name = racedemo.he4
+    file[]: crc = d79a70d8; size =   2113379; name = Racedemo.hlp
+    file[]: crc = bb809924; size =      2234; name = Racedemo.INF
+
+
+
+end
+
+//
+// French demo version
+//
+demo[pc-fr-010129-demo]:
+    name = French Demo 2001-02-20
+    anchorfile = coursedemo.exe
+    launch = "$(rootpath)\coursedemo.exe"
+    file[]: crc = 53412417; size =   6664115; name = coursedemo.(a)
+    file[]: crc = ec7c10f1; size =     35840; name = coursedemo.D32
+    file[]: crc = e84dcb4b; size =    442368; name = coursedemo.exe
+    file[]: crc = 4539be2c; size =     13135; name = coursedemo.HE0
+    file[]: crc = f662310e; size =   2768116; name = coursedemo.he2
+    file[]: crc = 9eb14a8a; size =   4021872; name = coursedemo.he4
+    file[]: crc = b7f60770; size =   2301504; name = CourseDemo.HLP
+    file[]: crc = 6ba39eaf; size =      2294; name = coursedemo.INF
+    file[]: crc = 2a0a48f8; size =     71696; name = Ja-ad.PCX; optional = true
+
+
+
+end
+
+//
+// German demo version
+//
+demo[pc-de-010220-demo]:
+    name = German Demo 2001-02-20
+    anchorfile = Rennen.exe
+    launch = "$(rootpath)\Rennen.exe"
+    file[]: crc = 0e08d7f0; size =   6424962; name = Rennen.(a)
+    file[]: crc = ac099622; size =     49152; name = Rennen.D32
+    file[]: crc = e84dcb4b; size =    442368; name = Rennen.exe
+    file[]: crc = 043ae3d7; size =     13135; name = Rennen.HE0
+    file[]: crc = d9b8fee6; size =   2720961; name = Rennen.he2
+    file[]: crc = 29ddc68e; size =   4091332; name = Rennen.he4
+    file[]: crc = 10899b60; size =   1751499; name = Rennen.HLP
+    file[]: crc = eef40fa6; size =       766; name = Rennen.ico; optional = true
+    file[]: crc = bc782031; size =      2283; name = Rennen.INF
+    file[]: crc = 9f8b206c; size =     55808; name = Rennen.U32
+
+
+
+end
+
+end

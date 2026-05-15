@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\BALLOON.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 
@@ -42,7 +41,7 @@ game[pc-en-960822]:
     file[]: crc = ac1e84bc; size =    151200; name = BALLOON.HE8
     file[]: crc = 2ecfac07; size =    161280; name = BALLOON.HE9
     file[]: crc = d575e849; size =    114238; name = BALLOON.HLP; optional = true
-    file[]: crc = 49f5fd06; size =      2112; name = BALLOON.INF; optional = true
+    file[]: crc = 49f5fd06; size =      2112; name = BALLOON.INF
     file[]: crc = 9d069cce; size =    322560; name = BALLOON.W32
     file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
     file[]: crc = 5cab4539; size =     14912; name = HEINI.EXE; optional = true
@@ -70,13 +69,97 @@ game[pc-en-020529]:
     file[]: crc = ac1e84bc; size =    151200; name = balloon.he8
     file[]: crc = 2ecfac07; size =    161280; name = balloon.he9
     file[]: crc = 8ad21ca8; size =    161466; name = balloon.hlp; optional = true
-    file[]: crc = b923c2d3; size =      2059; name = balloon.inf; optional = true
+    file[]: crc = b923c2d3; size =      2059; name = balloon.inf
 
 
 
 end
 
 
+//
+// Dutch version
+//
+game[pc-nl-961126]:
+    name = Dutch 1996-11-26
+    anchorfile = BALLOON.EXE
+    launch = "$(rootpath)\BALLOON.EXE"
+    file[]: crc = 6751e5c5; size =    132404; name = BALLOON.BMP; optional = true
+    file[]: crc = fc1aba05; size =     32768; name = BALLOON.D32
+    file[]: crc = 8666e33f; size =      8896; name = BALLOON.DLL
+    file[]: crc = a9e8c53f; size =     21616; name = BALLOON.EXE
+    file[]: crc = 970e019c; size =     12800; name = BALLOON.HE0
+    file[]: crc = 0116384f; size =  13934247; name = BALLOON.HE1
+    file[]: crc = 14ac6107; size =   3472043; name = BALLOON.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = BALLOON.HE3
+    file[]: crc = 3389290e; size =  28074244; name = BALLOON.HE4
+    file[]: crc = ac1e84bc; size =    151200; name = BALLOON.HE8
+    file[]: crc = 2ecfac07; size =    161280; name = BALLOON.HE9
+    file[]: crc = 19e7e4d0; size =    129952; name = BALLOON.HLP; optional = true
+    file[]: crc = bdb5a4d3; size =      2062; name = BALLOON.INF
+    file[]: crc = 35cd34c0; size =    308736; name = BALLOON.W32
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 6bb8a176; size =     98354; name = JA-AD.BMP; optional = true
+
+
+
+end
+
+
+//
+// French version
+//
+game[pc-fr-991001]:
+    name = French 1999-10-01
+    anchorfile = ballon.exe
+    launch = "$(rootpath)\ballon.exe"
+    file[]: crc = 092b5ae5; size =  13845326; name = BALLON.(A)
+    file[]: crc = 81980e29; size =     35840; name = BALLON.D32
+    file[]: crc = 855b5079; size =      9200; name = BALLON.DLL
+    file[]: crc = 184a396a; size =     77824; name = ballon.exe
+    file[]: crc = 7ba47625; size =     12846; name = BALLON.HE0
+    file[]: crc = ac03e4d1; size =   3521567; name = BALLON.HE2
+    file[]: crc = 3389290e; size =  28074244; name = BALLON.HE4
+    file[]: crc = 392df205; size =    151200; name = BALLON.HE7
+    file[]: crc = 2ecfac07; size =    161280; name = BALLON.HE9
+    file[]: crc = 0cdc9480; size =    508909; name = BALLON.HLP; optional = true
+    file[]: crc = 4dfdb92d; size =      2618; name = BALLON.INF
+    file[]: crc = 4d5b99d6; size =    444928; name = BALLON.W32
+    file[]: crc = 636cec1b; size =     89612; name = Ja-ad.pcx; optional = true
+
+
+
+
+end
+
+
+//
+// German version
+//
+game[pc-de-970407]:
+    name = German 1997-04-07
+    anchorfile = BALLOON.EXE
+    launch = "$(rootpath)\BALLOON.EXE"
+    file[]: crc = 8c6b9545; size =    131830; name = BALLOON.BMP; optional = true
+    file[]: crc = 2ac96f64; size =     34816; name = BALLOON.D32
+    file[]: crc = 69a6466c; size =      9104; name = BALLOON.DLL
+    file[]: crc = a9e8c53f; size =     21616; name = BALLOON.EXE
+    file[]: crc = 378b871d; size =     12800; name = BALLOON.HE0
+    file[]: crc = a5221100; size =  13839494; name = BALLOON.HE1
+    file[]: crc = 95bff4ec; size =   4051839; name = BALLOON.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = BALLOON.HE3
+    file[]: crc = 3389290e; size =  28074244; name = BALLOON.HE4
+    file[]: crc = 392df205; size =    151200; name = BALLOON.HE7
+    file[]: crc = ac1e84bc; size =    151200; name = BALLOON.HE8
+    file[]: crc = 2ecfac07; size =    161280; name = BALLOON.HE9
+    file[]: crc = e770efd9; size =    208789; name = BALLOON.HLP; optional = true
+    file[]: crc = 2b3af854; size =      2168; name = BALLOON.INF
+    file[]: crc = 4172bcb3; size =    330240; name = BALLOON.W32
+    file[]: crc = e4800138; size =    308278; name = HE.BMP; optional = true
+    file[]: crc = efc29184; size =    139078; name = JA-AD.BMP; optional = true
+
+
+
+end
 
 
 end

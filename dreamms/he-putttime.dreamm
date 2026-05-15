@@ -6,7 +6,6 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\PUTTTIME.EXE"
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 
@@ -46,7 +45,7 @@ game[pc-en-970407]:
     file[]: crc = 3777c6c7; size = 100741922; name = PUTTTIME.HE2
     file[]: crc = d9bba029; size =  47958830; name = PUTTTIME.HE4
     file[]: crc = 1d2ea6a2; size =    293102; name = PUTTTIME.HLP; optional = true
-    file[]: crc = 26520fe7; size =      2230; name = PUTTTIME.INF; optional = true
+    file[]: crc = 26520fe7; size =      2230; name = PUTTTIME.INF
     file[]: crc = 793dfea4; size =    317440; name = PUTTTIME.W32
     file[]: crc = 602db545; size =     50631; name = README.TXT; optional = true
 
@@ -71,7 +70,7 @@ game[pc-en-010308-uk]:
     file[]: crc = d239f83d; size = 103585396; name = PuttPuttTTT.HE2
     file[]: crc = 1814089c; size =  48631847; name = PuttPuttTTT.HE4
     file[]: crc = 95447680; size =    289876; name = PuttPuttTTT.hlp; optional = true
-    file[]: crc = aae9ed6e; size =      2467; name = PuttPuttTTT.INF; optional = true
+    file[]: crc = aae9ed6e; size =      2467; name = PuttPuttTTT.INF
     file[]: crc = 294c46ba; size =    475182; name = puttputtTTT.w32
 
 
@@ -120,7 +119,7 @@ game[pc-nl-980421]:
     file[]: crc = c2184d73; size = 112464231; name = PUTTTIJD.HE2
     file[]: crc = 4712cc8e; size =  48597338; name = PUTTTIJD.HE4
     file[]: crc = 374b43ae; size =    668438; name = PUTTTIJD.HLP; optional = true
-    file[]: crc = bb45b1d7; size =      2289; name = PUTTTIJD.INF; optional = true
+    file[]: crc = bb45b1d7; size =      2289; name = PUTTTIJD.INF
     file[]: crc = f377bb6f; size =    330240; name = PUTTTIJD.W32
 
 
@@ -143,7 +142,7 @@ game[pc-fr-001113]:
     file[]: crc = ee37a931; size =  96034718; name = PouceVDT.HE2
     file[]: crc = 22bf86cd; size =  48619853; name = PouceVDT.HE4
     file[]: crc = ff467f24; size =    291747; name = POUCEVDT.HLP; optional = true
-    file[]: crc = 096cb1d7; size =      2442; name = PouceVDT.INF; optional = true
+    file[]: crc = 096cb1d7; size =      2442; name = PouceVDT.INF
     file[]: crc = a8e16fea; size =    442368; name = PouceVDT.w32
 
 
@@ -166,7 +165,7 @@ game[pc-de-001113]:
     file[]: crc = 963b8e55; size = 105048497; name = ToffZeit.HE2
     file[]: crc = 15397d2d; size =  48515788; name = ToffZeit.HE4
     file[]: crc = 778404e6; size =    326766; name = TOFFZEIT.HLP; optional = true
-    file[]: crc = bf0d7aa8; size =      2584; name = ToffZeit.INF; optional = true
+    file[]: crc = bf0d7aa8; size =      2584; name = ToffZeit.INF
     file[]: crc = 7079cbf1; size =    442368; name = ToffZeit.w32
 
 
@@ -188,8 +187,24 @@ demo[pc-en-970312-demo]:
     file[]: crc = 0a2ec5cb; size =   6434131; name = TIMEDEMO.HE2
     file[]: crc = b8c094b6; size =   9557765; name = TIMEDEMO.HE4
     file[]: crc = 125992a1; size =    337614; name = TIMEDEMO.HLP; optional = true
-    file[]: crc = 55a80eeb; size =      2237; name = TIMEDEMO.INF; optional = true
+    file[]: crc = 55a80eeb; size =      2237; name = TIMEDEMO.INF
     file[]: crc = e8890f73; size =    365568; name = TIMEDEMO.W32
+
+
+
+end
+
+//
+// 1998 Demo version
+//
+demo[pc-en-980120-demo]:
+    name = English Demo 1998-01-20
+    imports = pc-en-970312-demo
+    anchorfile = TIMEDEMO.EXE
+    launch = "$(rootpath)\TIMEDEMO.EXE"
+    file[]: crc = e8890f73; size =    365568; name = TIMEDEMO.EXE
+    file[]: crc = c05a70bd; size =    190655; name = TIMEDEMO.HLP
+    file[]: remove = TIMEDEMO.W32
 
 
 

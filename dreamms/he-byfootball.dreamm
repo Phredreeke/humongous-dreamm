@@ -4,15 +4,14 @@ name = Backyard Football
 icon = he-byfootball.png
 machine = pc
 rootpath = C:\
-launch = $(rootpath)\FOOTBALL.W32
+launch = $(rootpath)\FOOTBALL.EXE
 osenv = windows 98
-audiohw = gmidi
 winres = 640x480x8
 
 //
 // filesystem
 //
-mount[]: vpath = C:\        ; srcpath = $(ifsdeltapath)  ; writable = true;
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
 //
@@ -30,8 +29,8 @@ end
 //
 // English version (provided by ue neub)
 //
-game[pc-en]:
-    name = English
+game[pc-en-990904]:
+    name = English (1999-09-04)
     anchorfile = FOOTBALL.EXE
     file[]: crc = 13b5cc2c; size =     89717; name = AUTOFOOT.PCX
     file[]: crc = 920648b0; size =    308278; name = BFL.BMP
