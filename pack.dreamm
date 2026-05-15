@@ -1,7 +1,8 @@
 pack[]:
     name = Humongous pack
     author = Phredreeke
-    link = 
+    link = https://github.com/Phredreeke/humongous-dreamm
+    minversion = 4.0x15
 end
 
 fastanchors[]:
