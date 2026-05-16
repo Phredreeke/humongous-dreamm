@@ -464,6 +464,24 @@ demo[pc-fr-960708-demo]:
 
 end
 
+//
+// 1997 French Demo version
+//
+demo[pc-fr-970311-demo]:
+    name = French Demo 1997-03-11
+    anchorfile = MM-DEMO.EXE
+    launch = "$(rootpath)\MM-DEMO.EXE"
+    file[]: crc = 52358343; size =    308736; name = MM-DEMO.EXE
+    file[]: crc = 503ec041; size =      9800; name = MM-DEMO.HE0
+    file[]: crc = 4f10eb13; size =   5799998; name = MM-DEMO.HE1
+    file[]: crc = a070055c; size =   1484880; name = MM-DEMO.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = MM-DEMO.HE3
+    file[]: crc = 1e864f1d; size =   4802906; name = MM-DEMO.HE4
+    file[]: crc = b3321390; size =    163023; name = MM-DEMO.HLP
+    file[]: crc = 8b976bc3; size =      1285; name = SNDCARDS.INF
+
+
+end
 
 //
 // 1996 German Demo version

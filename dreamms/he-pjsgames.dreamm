@@ -1,0 +1,43 @@
+desc[he-pjsgames]:
+
+name = Pajama Sam: Games to Play on Any Day
+icon = he-pjsgames.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\PJGAMES.EXE"
+osenv = windows 98
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// 2001 version
+//
+game[pc-en-010518]:
+    name = English 2001-05-18
+    anchorfile = PJGAMES.EXE
+    file[]: crc = 3dde6a77; size =       971; name = Copyright.txt; optional = true
+    file[]: crc = 8d845bd1; size =      5752; name = license.txt; optional = true
+    file[]: crc = c5128684; size =    346624; name = mss32.dll
+    file[]: crc = 19e9ea70; size =  57737720; name = PJGAMES.(A)
+    file[]: crc = 8c2168aa; size =     53248; name = PJGames.d32
+    file[]: crc = 4122dd61; size =     98304; name = PJGAMES.EXE
+    file[]: crc = 1b266c4b; size =     29290; name = PJGAMES.HE0
+    file[]: crc = 4cf89eff; size =  82936440; name = PJGAMES.HE2
+    file[]: crc = a4325375; size =    104250; name = PJGames.he3
+    file[]: crc = 343ad475; size =  74249947; name = PJGAMES.HE4
+    file[]: crc = e58e25bb; size =       766; name = PJGames.ico; optional = true
+    file[]: crc = 7ac33f99; size =      1566; name = PJGames.inf
+    file[]: crc = b690429f; size =    696376; name = PJGAMES.W32
+    file[]: crc = f1f24dfa; size =     43989; name = PJGamesReg.pcx; optional = true
+
+
+end
+
+
+end
