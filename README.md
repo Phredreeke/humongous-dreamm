@@ -8,6 +8,7 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Game | Languages | Notes |
 | --- | --- | --- |
 | Backyard Baseball | 🇺🇸 | Original, 2001 and 2003 |
+| Backyard Basketball | 🇺🇸 | |
 | Backyard Football | 🇺🇸 | Original and 2002 |
 | Backyard Soccer | 🇺🇸 | Original and MLS Edition |
 | Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | DOS and Windows |
