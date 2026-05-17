@@ -80,7 +80,8 @@ game[pc_en_070906]:
     file[]: crc = a3f98c99; size =     43470; name = PuttZoo.he0
     file[]: crc = 6340207e; size =  54144725; name = PuttZoo.he2
     file[]: crc = 75d7453b; size =  71090461; name = PuttZoo.he4
-    file[]: crc = 21aac7a5; size =    457428; name = PUTTZOO.HLP
+    file[]: name = PUTTZOO.HLP
+    file[]: crc = 28749246; size =     72442; name = PuttZoo.ico; optional = true
     file[]: crc = a91f3758; size =      2119; name = PuttZoo.inf; optional = true
     file[]: crc = 4e5b2d54; size =    125114; name = PuttZoo_manual.pdf; optional = true
     file[]: crc = 5336f7d8; size =     10390; name = PuttZoo_readme.txt; optional = true
@@ -126,7 +127,7 @@ end
 game[pc-fr-961016]:
     name = French 1996-10-16
     anchorfile = PUTTZOO.EXE
-    file[]: crc = e0260a25; size =    132406; name = PUTTZOO.BMP
+    file[]: crc = e0260a25; size =    132406; name = PUTTZOO.BMP; optional = true
     file[]: crc = 293814d4; size =     34816; name = PUTTZOO.EXE
     file[]: crc = cea1f032; size =     42070; name = PUTTZOO.HE0
     file[]: crc = 2c3b60b0; size =  98120877; name = PUTTZOO.HE1
@@ -147,7 +148,7 @@ end
 game[pc-de-961024]:
     name = German 1996-10-24
     anchorfile = PUTTZOO.EXE
-    file[]: crc = dd5519f3; size =    102690; name = PUTTZOO.BMP
+    file[]: crc = dd5519f3; size =    102690; name = PUTTZOO.BMP; optional = true
     file[]: crc = 1a22aef6; size =     34816; name = PUTTZOO.EXE
     file[]: crc = 055c69c4; size =     42070; name = PUTTZOO.HE0
     file[]: crc = 8c43ea9a; size =  97926716; name = PUTTZOO.HE1
@@ -158,6 +159,28 @@ game[pc-de-961024]:
     file[]: crc = 838640e2; size =       464; name = PUTTZOO.INF
     file[]: crc = 4557d16f; size =    286208; name = PUTTZOO.W32
     file[]: crc = 72b8256f; size =      1280; name = SNDCARDS.INF
+
+
+end
+
+//
+// German version 2008
+//
+game[pc-de-080627]:
+    name = German 2008-06-27
+    anchorfile = TÖFFZOO.EXE
+    launch = "$(rootpath)\TÖFFZOO.EXE"
+    file[]: crc = 6a668572; size =       552; name = COPYRIGHT.TXT; optional = true
+    file[]: crc = b1a5ce9b; size =     84821; name = JA-AD.PCX; optional = true
+    file[]: crc = 18f83f10; size =  96458180; name = TÖFFZOO.(A)
+    file[]: crc = 46996e05; size =     34816; name = TÖFFZOO.D32
+    file[]: crc = e62b1d3f; size =     86016; name = TÖFFZOO.EXE
+    file[]: crc = 93a2061d; size =     43470; name = TÖFFZOO.HE0
+    file[]: crc = 46adff4c; size =  60645669; name = TÖFFZOO.HE2
+    file[]: crc = aea97991; size =  67095862; name = TÖFFZOO.HE4
+    file[]: crc = 0d945eda; size =   1354621; name = TÖFFZOO.HLP
+    file[]: crc = 8d30911d; size =      2276; name = TÖFFZOO.INF
+    file[]: crc = b84cd4a9; size =    425984; name = TÖFFZOO.W32
 
 
 end

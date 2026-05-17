@@ -138,6 +138,28 @@ game[pc-de-001009]:
 end
 
 //
+// 2000 Italian version
+//
+game[pc-it-010220]:
+    name = Italian 2001-02-20
+    anchorfile = SamLDM.EXE
+    launch = "$(rootpath)\SamLDM.EXE"
+    file[]: crc = fa138dd7; size =     26764; name = JA-AD.PCX; optional = true
+    file[]: crc = 81cf03f0; size =      2834; name = Pajama3.inf
+    file[]: crc = 078570aa; size =  90237231; name = SamLDM.(a)
+    file[]: crc = e4f06b02; size =     49152; name = SamLDM.d32
+    file[]: crc = c7e7e4b3; size =     86016; name = SamLDM.EXE
+    file[]: crc = 7023f90e; size =     79382; name = SamLDM.HE0
+    file[]: crc = 9e066a58; size = 104360326; name = SamLDM.he2
+    file[]: crc = 688f96f8; size =  55348287; name = SamLDM.he4
+    file[]: crc = 5600ad6d; size =   2011735; name = SamLDM.HLP; optional = true
+    file[]: crc = 7b5e546e; size =      2641; name = SamLDM.inf
+    file[]: crc = 87a06f41; size =    475182; name = SamLDM.w32
+
+
+end
+
+//
 // 1999 Demo version
 //
 demo[pc-en-991104-demo]:
@@ -283,5 +305,26 @@ demo[pc-de-010716-demo]:
     file[]: crc = b646479e; size =      2247; name = GPJ3demo.inf
 
 end
+
+
+//
+// 2001 Italian Demo version
+//
+demo[pc-it-010828-demo]:
+    name = Italian Demo 2001-08-28
+    anchorfile = PJ3DEMO.EXE
+    launch = "$(rootpath)\PJ3DEMO.EXE"
+    file[]: crc = 39ba9de5; size =   5500333; name = pj3demo.(a)
+    file[]: crc = e4f06b02; size =     49152; name = PJ3demo.d32
+    file[]: crc = d8b8bbbd; size =    475136; name = PJ3DEMO.EXE
+    file[]: crc = 3c7866ca; size =     13911; name = pj3demo.HE0
+    file[]: crc = a717d66f; size =   3459386; name = PJ3DEMO.HE2
+    file[]: crc = 354097ec; size =   2398626; name = PJ3DEMO.HE4
+    file[]: crc = 5600ad6d; size =   2011735; name = Pj3demo.HLP; optional = true
+    file[]: crc = de680b33; size =      2850; name = PJ3demo.inf
+
+end
+
+
 
 end

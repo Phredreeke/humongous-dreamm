@@ -130,6 +130,27 @@ game[pc-de-000919]:
 end
 
 //
+// 2000 Italian version
+//
+game[pc-it-010226]:
+    name = Italian 2001-02-26
+    anchorfile = SPYFoxMCR.EXE
+    launch = "$(rootpath)\SPYFoxMCR.EXE"
+    file[]: crc = 52b64e12; size =     39870; name = JA-AD.PCX; optional = true
+    file[]: crc = 7b611a67; size =  88331724; name = SPyFoxMCR.(a)
+    file[]: crc = e4f06b02; size =     49152; name = SpyFoxMCR.d32
+    file[]: crc = 6fcd6ea5; size =     86016; name = SPYFoxMCR.EXE
+    file[]: crc = 5cecae09; size =     51295; name = SPyFoxMCR.HE0
+    file[]: crc = 6f8f40d5; size = 153996990; name = SPYFoxMCR.he2
+    file[]: crc = 2467b152; size =  42631778; name = SPyFoxMCR.he4
+    file[]: crc = b0f5ec52; size =    320472; name = SpyfoxMCR.he9
+    file[]: crc = 0de211f1; size =    440777; name = SPYFoxMCR.hlp
+    file[]: crc = f0ee02b0; size =      3011; name = SPYFoxMCR.INF
+    file[]: crc = 9996ff23; size =    475182; name = SPYFoxMCR.w32
+
+end
+
+//
 // 2000 English demo version
 //
 demo[pc-en-000313-demo]:
@@ -222,6 +243,7 @@ demo[pc-de-001009-demo]:
 
 
 end
+
 //
 // 2001 German demo version
 //
@@ -238,6 +260,26 @@ demo[pc-de-010802-demo]:
     file[]: crc = 42d008de; size =   1883367; name = SF2demo.HE4
     file[]: crc = 265f47e1; size =    792560; name = SF2Demo.HLP; optional = true
     file[]: crc = d009ac08; size =      2213; name = SF2demo.INF
+
+
+end
+
+//
+// 2001 Italian demo version
+//
+
+demo[pc-it-010828-demo]:
+    name = Italian Demo 2001-08-28
+    anchorfile = SF2demo.exe
+    launch = "$(rootpath)\SF2demo.exe"
+    file[]: crc = c10f8d3c; size =   5958283; name = SF2demo.(a)
+    file[]: crc = e4f06b02; size =     49152; name = SF2demo.d32
+    file[]: crc = dd9ba519; size =    475136; name = SF2DEMO.EXE
+    file[]: crc = 202ae8bc; size =     14689; name = SF2demo.HE0
+    file[]: crc = 4407ad7d; size =   4729394; name = SF2demo.he2
+    file[]: crc = 42d008de; size =   1883367; name = SF2demo.he4
+    file[]: name = SF2demo.hlp
+    file[]: crc = 60af6784; size =      2939; name = SF2demo.INF
 
 
 end
