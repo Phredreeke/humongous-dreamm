@@ -315,8 +315,14 @@ game[pc-en-2002]:
 
 end
 
-
-
-
+//
+// 2002 version
+//
+game[pc-en-2002-alt]:
+    name = Backyard Football 2002 (Alt)
+    imports = pc-en-2002
+    file[]: crc = a471aee1; size = 346696978; name = Football2002.(a)  // replaces 6af761f2/346696978
+    file[]: crc = e0e2448e; size = 191140158; name = Football2002.HE2  // replaces 15d5074b/191140158
+end
 
 end
