@@ -4,8 +4,9 @@ name = A Gaspocket Adventure: Aliens Ate My Cookies
 icon = he-gaspocket.png
 machine = pc
 rootpath = C:\
-launch = "$(rootpath)\GASPOCKE.EXE"
+launch = "$(rootpath)\gaspocketdemo.exe"
 osenv = windows 98
+audiohw = gmidi
 winres = 640x480x16
 
 //
@@ -18,9 +19,34 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // 2001 Prototype
 //
+
 game[pc-en-010503]:
     name = Prototype
+    anchorfile = gaspocketdemo.exe
+    file[]: crc = 26411f38; size =    291328; name = binkw32.dll
+    file[]: crc = cf712219; size =       983; name = Copyright.txt
+    file[]: crc = 924eec7c; size =       766; name = Gaspocket.ico
+    file[]: crc = abd9584e; size =  41413470; name = gaspocketdemo.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = gaspocketdemo.d32
+    file[]: crc = ffaa8afe; size =     98304; name = gaspocketdemo.exe
+    file[]: crc = d9500459; size =      8628; name = gaspocketdemo.gid
+    file[]: crc = 2ffbce5b; size =     13819; name = gaspocketdemo.HE0
+    file[]: crc = 7186353e; size =  17944974; name = gaspocketdemo.he2
+    file[]: crc = 7e39501e; size =  25753678; name = gaspocketdemo.he4
+    file[]: crc = 3cf7d589; size =   1013584; name = gaspocketdemo.hlp
+    file[]: crc = ccaaccdc; size =      2759; name = gaspocketdemo.inf
+    file[]: crc = 8479df5b; size =    692280; name = gaspocketdemo.w32
+    file[]: crc = bc872609; size =   6914652; name = Intro.bik
+    file[]: crc = 8d845bd1; size =      5752; name = license.txt
+    file[]: crc = c5128684; size =    346624; name = mss32.dll
+
+end
+
+// Variant of above, probably at one point burned to a disc without long file name extension
+game[pc-en-010503-iso]:
+    name = Prototype
     anchorfile = GASPOCKE.EXE
+    launch = "$(rootpath)\GASPOCKE.EXE"
     file[]: crc = 26411f38; size =    291328; name = BINKW32.DLL
     file[]: crc = cf712219; size =       983; name = COPYRIGH.TXT
     file[]: crc = abd9584e; size =  41413470; name = GASPOCKE.(A)
@@ -39,8 +65,6 @@ game[pc-en-010503]:
     file[]: crc = c5128684; size =    346624; name = MSS32.DLL
 
 end
-
-
 
 
 end
