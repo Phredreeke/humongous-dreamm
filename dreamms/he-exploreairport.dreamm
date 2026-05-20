@@ -1,0 +1,112 @@
+desc[he-exploreairport]:
+
+name = Let's Explore the Airport
+icon = he-exploreairport.png
+machine = pc
+rootpath = C:\
+launch = $(rootpath)\AIRPORT.EXE
+osenv = windows 98
+winres = 640x480x8
+dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This version does not run correctly in tested DREAMM version (4.0x16)
+end
+
+//
+// English version 
+//
+game[pc-en-950705]:
+    name = English (1995-07-05)
+    anchorfile = AIRPORT.EXE
+    file[]: crc = 8fd1b648; size =    120022; name = AIRPORT.BMP; optional = true
+    file[]: crc = b8726c07; size =     30720; name = AIRPORT.EXE
+    file[]: crc = 18b3bdf9; size =     93231; name = AIRPORT.HE0
+    file[]: crc = 0698222a; size = 130591934; name = AIRPORT.HE1
+    file[]: crc = cd2eecc3; size =  19243871; name = AIRPORT.HE2
+    file[]: crc = c05daad7; size =     36864; name = AIRPORT.HE3
+    file[]: crc = 7603da8a; size =  47690651; name = AIRPORT.HE4
+    file[]: crc = 67a32468; size =     11485; name = AIRPORT.HE7
+    file[]: crc = 0dda5d99; size =     15461; name = AIRPORT.HE9
+    file[]: crc = 9309e84e; size =    318830; name = AIRPORT.HLP
+    file[]: crc = 0bfde211; size =    294912; name = AIRPORT.W32
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// English demo 
+//
+demo[pc-en-950705-demo]:
+    name = English demo (1995-07-05)
+    anchorfile = AIRDEMO.EXE
+    launch = "$(rootpath)\AIRDEMO.EXE"
+    file[]: crc = 1ef86d61; size =     30720; name = AIRDEMO.EXE
+    file[]: crc = 2be40601; size =     51152; name = AIRDEMO.HE0
+    file[]: crc = 54e7e72e; size =  28658716; name = AIRDEMO.HE1
+    file[]: crc = 45499b59; size =   2351409; name = AIRDEMO.HE2
+    file[]: crc = c05daad7; size =     36864; name = AIRDEMO.HE3
+    file[]: crc = 78c81886; size =    111925; name = AIRDEMO.HE4
+    file[]: crc = 0dda5d99; size =     15461; name = AIRDEMO.HE9
+    file[]: crc = 1bf72264; size =    296448; name = AIRDEMO.W32
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// English demo 
+//
+demo[pc-en-971214-demo]:
+    name = English demo (1997-12-14)
+    imports = pc-en-950705-demo
+    file[]: crc = 125992a1; size =    337614; name = AIRDEMO.HLP  // new file
+    file[]: crc = 2624bf66; size =    296448; name = AIRDEMO.W32  // replaces 1bf72264/296448
+
+end
+
+//
+// Dutch demo 
+//
+demo[pc-nl-950830-demo]:
+    name = Dutch demo (1995-08-30)
+    anchorfile = AIRDEMO.EXE
+    launch = "$(rootpath)\AIRDEMO.EXE"
+    file[]: crc = 222ef23d; size =     30720; name = AIRDEMO.EXE
+    file[]: crc = 2b0e184f; size =     51152; name = AIRDEMO.HE0
+    file[]: crc = 0691cb14; size =  30667210; name = AIRDEMO.HE1
+    file[]: crc = 21c8f471; size =   3785508; name = AIRDEMO.HE2
+    file[]: crc = c05daad7; size =     36864; name = AIRDEMO.HE3
+    file[]: crc = 78c81886; size =    111925; name = AIRDEMO.HE4
+    file[]: crc = 0dda5d99; size =     15461; name = AIRDEMO.HE9
+    file[]: crc = 0545aafb; size =     41489; name = AIRDEMO.HLP
+    file[]: crc = 535b69fb; size =    299520; name = AIRDEMO.W32
+    file[]: crc = b17b366e; size =      1298; name = SNDCARDS.INF; optional = true
+
+end
+
+
+end

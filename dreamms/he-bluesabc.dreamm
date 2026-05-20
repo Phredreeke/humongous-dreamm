@@ -1,0 +1,51 @@
+desc[he-bluesabc]:
+
+name = Blue's ABC Time Activities
+icon = he-bluesabc.png
+machine = pc
+rootpath = C:\
+launch = $(rootpath)\BluesABCTime.exe
+osenv = windows 98
+winres = 640x480x16
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// English version 
+//
+game[pc-en-980720]:
+    name = English (1998-07-20)
+    anchorfile = BluesABCTime.exe
+    file[]: crc = 11b08fcd; size =       766; name = abctime.ico; optional = true
+    file[]: crc = 54eb6891; size =  35597984; name = BluesABCTime.(a)
+    file[]: crc = a96ba2c2; size =   1359339; name = BluesABCTime.(b)
+    file[]: crc = 3007854b; size =    433152; name = BluesABCTime.a32
+    file[]: crc = 96e92c4b; size =     97290; name = BluesABCTime.bmp
+    file[]: crc = 94c373b1; size =     36352; name = BluesABCTime.d32
+    file[]: crc = a26710b2; size =      8896; name = BluesABCTime.dll
+    file[]: crc = 75fc5278; size =    241152; name = BluesABCTime.exe
+    file[]: crc = 986558ce; size =     26391; name = BluesABCTime.he0
+    file[]: crc = 6fa1b869; size =  32864415; name = BluesABCTime.he2
+    file[]: crc = fdf32703; size =   5111502; name = BluesABCTime.he4
+    file[]: crc = acb7040c; size =    846368; name = BluesABCTime.HLP
+    file[]: crc = c65735a7; size =      3110; name = BluesABCTime.inf
+    file[]: crc = 0366bff4; size =    215040; name = BluesABCTime.w32
+    file[]: crc = e5762a2b; size =     77404; name = BluesBirthdayDemo.bmp; optional = true
+    file[]: crc = 3fa08498; size =       811; name = COPYRITE.TXT; optional = true
+    file[]: crc = 29490f41; size =    139078; name = ja-ad.bmp; optional = true
+    file[]: crc = f521424f; size =     92318; name = ja-ad.pcx; optional = true
+    file[]: crc = 84490367; size =     25760; name = readme.txt
+    file[]: crc = f42f3845; size =     94720; name = SMACKW32.dll
+    file[]: crc = 9822237a; size =  13244604; name = Data\56-E-IN-01.dat
+    file[]: crc = 4321bb6a; size =   6301252; name = Data\56-E-OT-01.dat
+    file[]: crc = bc533f5d; size =  10962516; name = Data\56-E-OT-02.dat
+    file[]: crc = 6479e681; size =   8703936; name = Data\56-E-OT-03.dat
+    file[]: crc = 56d008a7; size =   3345824; name = Data\57-E-IN-01.dat
+
+end
+
+end

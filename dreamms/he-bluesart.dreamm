@@ -1,0 +1,90 @@
+desc[he-bluesart]:
+
+name = Blue's Art Time Activities
+icon = he-bluesart.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\ArtTime.exe"
+osenv = windows 98
+winres = 640x480x16
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// 1997 version
+//
+game[pc-en-000705]:
+    name = English 2000-07-05
+    anchordepth = 1
+    anchorfile = ArtTime.exe
+    file[]: crc = ef7f0c7a; size =  92921235; name = ArtTime.(a)
+    file[]: crc = 30a9b8cd; size =  38781819; name = ArtTime.(b)
+    file[]: crc = 8c2168aa; size =     53248; name = ArtTime.d32
+    file[]: crc = 43645455; size =    454656; name = ArtTime.exe
+    file[]: crc = bf1f89ee; size =     32461; name = ArtTime.HE0
+    file[]: crc = 06913168; size =  77448824; name = ArtTime.HE2
+    file[]: crc = bbd71b2f; size =   7527869; name = ARTTIME.HE4
+    file[]: crc = d7cbcb0e; size =   1007975; name = ARTTIME.HLP
+    file[]: crc = cdb2e26d; size =      2146; name = ArtTime.inf
+    file[]: crc = f42f3845; size =     94720; name = SMACKW32.dll
+    file[]: crc = 7ce179f1; size =   2941072; name = Data\cork_at_ch_01.dat; exactonly = true
+    file[]: crc = cb820091; size =   2405676; name = Data\cork_at_ch_02.dat; exactonly = true
+    file[]: crc = 187a9ffd; size =   2956796; name = Data\cork_at_ch_03.dat; exactonly = true
+    file[]: crc = 240125b0; size =   2293296; name = Data\cork_at_ch_20.dat; exactonly = true
+    file[]: crc = 009f4255; size =   1481448; name = Data\cork_at_ch_21.dat; exactonly = true
+    file[]: crc = bc978605; size =   1850792; name = Data\cork_at_ch_22.dat; exactonly = true
+    file[]: crc = 9992387b; size =   2068116; name = Data\cork_at_ch_23.dat; exactonly = true
+    file[]: crc = 9137c108; size =   7996556; name = Data\cork_at_cu_01.dat; exactonly = true
+    file[]: crc = ffd1cc4e; size =   3440916; name = Data\cork_at_cu_02.dat; exactonly = true
+    file[]: crc = aae8df1e; size =   7103780; name = Data\cork_at_cu_03.dat; exactonly = true
+    file[]: crc = 7397bece; size =   4893980; name = Data\ease_at_cu_01_a.dat; exactonly = true
+    file[]: crc = 463d2f81; size =   3207336; name = Data\ease_at_cu_01_b.dat; exactonly = true
+    file[]: crc = 617379f5; size =   2489896; name = Data\ease_at_cu_02_a.dat; exactonly = true
+    file[]: crc = e5310790; size =   2566820; name = Data\ease_at_cu_02_b.dat; exactonly = true
+    file[]: crc = 0db8ac66; size =   1151768; name = Data\ease_at_cu_03_a.dat; exactonly = true
+    file[]: crc = 48b42376; size =   1064908; name = Data\ease_at_cu_03_b.dat; exactonly = true
+    file[]: crc = 47c69c77; size =    352484; name = Data\ease_at_cu_03_c.dat; exactonly = true
+    file[]: crc = 8868d8f9; size =    458920; name = Data\ease_at_cu_03_x.dat; exactonly = true
+    file[]: crc = e268537a; size =   6208244; name = Data\ease_at_cu_04_a.dat; exactonly = true
+    file[]: crc = 6212fd48; size =   5454292; name = Data\ease_at_cu_04_b.dat; exactonly = true
+    file[]: crc = 832791bd; size =   5963392; name = Data\ease_at_cu_06_a.dat; exactonly = true
+    file[]: crc = 40f88192; size =   3520480; name = Data\ease_at_cu_06_b.dat; exactonly = true
+    file[]: crc = 963df9c5; size =   5304536; name = Data\ease_at_cu_07_a.dat; exactonly = true
+    file[]: crc = cf43ebff; size =   5925408; name = Data\ease_at_cu_07_b.dat; exactonly = true
+    file[]: crc = fddcb355; size =   3777956; name = Data\ease_at_cu_08_a.dat; exactonly = true
+    file[]: crc = f078164b; size =   3748432; name = Data\ease_at_cu_08_b.dat; exactonly = true
+    file[]: crc = 5e2f1dac; size =   4439072; name = Data\ease_at_cu_09_a.dat; exactonly = true
+    file[]: crc = 39d726b7; size =   1469408; name = Data\ease_at_cu_09_b.dat; exactonly = true
+    file[]: crc = 3236abf8; size =   5845860; name = Data\ease_at_cu_11_a.dat; exactonly = true
+    file[]: crc = d0e57c6f; size =   3740432; name = Data\ease_at_cu_11_b.dat; exactonly = true
+    file[]: crc = feb625e4; size =   3112432; name = Data\ease_at_cu_12_a.dat; exactonly = true
+    file[]: crc = e1fb28a8; size =   7722060; name = Data\ease_at_cu_12_b.dat; exactonly = true
+    file[]: crc = f6e2f85d; size =   2187892; name = Data\ease_at_cu_15_a.dat; exactonly = true
+    file[]: crc = e8cfb11a; size =   2450300; name = Data\ease_at_cu_15_b.dat; exactonly = true
+    file[]: crc = 930093ef; size =   2063332; name = Data\intr_at_in_01.dat; exactonly = true
+    file[]: crc = ec9fb76e; size =  11600832; name = Data\intr_at_in_02.dat; exactonly = true
+    file[]: crc = 01211a00; size =   1176380; name = Data\intr_at_in_03.dat; exactonly = true
+    file[]: crc = 9c8a865a; size =   1601072; name = Data\intr_at_in_04.dat; exactonly = true
+    file[]: crc = 8f7a763a; size =   8890220; name = Data\intr_at_in_10.dat; exactonly = true
+    file[]: crc = 06a4dadd; size =   9382004; name = Data\intr_at_in_11.dat; exactonly = true
+    file[]: crc = d2830592; size =   3858720; name = Data\intr_at_in_20_a.dat; exactonly = true
+    file[]: crc = dbd7d45b; size =   4015888; name = Data\intr_at_in_20_b.dat; exactonly = true
+    file[]: crc = dbb3bff7; size =   8607392; name = Data\intr_at_in_30.dat; exactonly = true
+    file[]: crc = ba00568d; size =   8049072; name = Data\intr_at_in_50.dat; exactonly = true
+    file[]: crc = 5681e51f; size =   2382452; name = Data\intr_at_in_51.dat; exactonly = true
+    file[]: crc = 9f29f182; size =   3538596; name = Data\intr_at_in_52.dat; exactonly = true
+    file[]: crc = dcc87118; size =  10691108; name = Data\outr_at_ou_01.dat; exactonly = true
+    file[]: crc = 2813ba32; size =  13039136; name = Data\outr_at_ou_02.dat; exactonly = true
+
+
+
+end
+
+
+end

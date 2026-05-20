@@ -1,0 +1,259 @@
+desc[he-bluestreasurehunt]:
+
+name = Blue's Treasure Hunt
+icon = he-bluestreasurehunt.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\Blue'sTreasureHunt-Disc1.w32"
+osenv = windows 98
+winres = 640x480x16
+test = 1
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Set up INI file
+//
+dynamicfile[]:
+    path = c:\windows\hegames.ini
+    contents = [[[$(CRLF)
+    [Blue'sTreasureHunt-Disc1]
+    Version=1.0
+    SaveGamePath=c:\hegames\Blues Treasure Hunt\
+    Disk2File=c:\hegames\Blues Treasure Hunt\Blue'sTreasureHunt.(b)
+    GameResourcePath=c:\hegames\Blues Treasure Hunt
+    SetupHasBeenRun=1
+    AutoplayDir=C:\
+
+    [Blue'sTreasureHunt]
+    IsInstallRunning=0
+
+    [Blue'sTreasureHunt-Disc2]
+    Disk2File=c:\hegames\Blues Treasure Hunt\Blue'sTreasureHunt.(b)
+    GameResourcePath=c:\hegames\Blues Treasure Hunt
+    SetupHasBeenRun=1
+    
+]]]
+end
+//
+
+//
+// Disc
+//
+BITNESS = true
+config[disc]:
+    title = Disc
+    option[cd1]:   name = CD 1; launch = "$(rootpath)\Blue'sTreasureHunt-Disc1.w32"; priority = 1
+    option[cd2]: name = CD 2; launch = "$(rootpath)\Blue'sTreasureHunt-Disc2.w32"
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = true
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This game is not running correctly currently
+end
+
+//
+// 1997 version
+//
+game[pc-en-990729]:
+    name = English 1999-07-29
+    anchordepth = 1
+    anchorfile = Blue'sTreasureHunt-Disc1.exe
+    file[]: crc = 8a469b09; size =     71911; name = Autorun.pcx
+    file[]: crc = c5ecef94; size =     50686; name = Blue's Treasure Hunt Readme.txt
+    file[]: crc = b22a1848; size =  80873647; name = Blue'sTreasureHunt-Disc1.(a)
+    file[]: crc = 94c373b1; size =     36352; name = Blue'sTreasureHunt-Disc1.d32
+    file[]: crc = a26710b2; size =      8896; name = Blue'sTreasureHunt-Disc1.dll
+    file[]: crc = 0aee0a43; size =     98304; name = Blue'sTreasureHunt-Disc1.exe
+    file[]: crc = 23790f5d; size =     47257; name = Blue'sTreasureHunt-Disc1.HE0
+    file[]: crc = 5c835427; size =  56218296; name = Blue'sTreasureHunt-Disc1.he2
+    file[]: crc = 17c9ab93; size =  21895806; name = Blue'sTreasureHunt-Disc1.he4
+    file[]: crc = 37b0c79a; size =   2237313; name = Blue'sTreasureHunt-Disc1.hlp
+    file[]: crc = 21e9c1ae; size =       766; name = Blue'sTreasureHunt-Disc1.ico
+    file[]: crc = 0f3ab53d; size =      3897; name = Blue'sTreasureHunt-Disc1.inf
+    file[]: crc = 66a1302d; size =    409600; name = Blue'sTreasureHunt-Disc1.w32
+    file[]: crc = 4412b331; size =  86266545; name = Blue'sTreasureHunt-Disc2.(a)
+    file[]: crc = 94c373b1; size =     36352; name = Blue'sTreasureHunt-Disc2.d32
+    file[]: crc = a26710b2; size =      8896; name = Blue'sTreasureHunt-Disc2.dll
+    file[]: crc = 48688275; size =     98304; name = Blue'sTreasureHunt-Disc2.exe
+    file[]: crc = 62d76ef1; size =     47257; name = Blue'sTreasureHunt-Disc2.HE0
+    file[]: crc = 59c8900a; size =  48427092; name = Blue'sTreasureHunt-Disc2.he2
+    file[]: crc = 17c9ab93; size =  21895806; name = Blue'sTreasureHunt-Disc2.he4
+    file[]: crc = bb472271; size =      7800; name = Blue'sTreasureHunt-Disc2.he9
+    file[]: crc = 37b0c79a; size =   2237313; name = Blue'sTreasureHunt-Disc2.hlp
+    file[]: crc = 03f1cc4a; size =       766; name = Blue'sTreasureHunt-Disc2.ico
+    file[]: crc = ea6deb1b; size =      3965; name = Blue'sTreasureHunt-Disc2.inf
+    file[]: crc = 78ca9457; size =    409600; name = Blue'sTreasureHunt-Disc2.w32
+    file[]: crc = cf0d991d; size =  24731447; name = hegames\Blues Treasure Hunt\Blue'sTreasureHunt.(b)
+    file[]: crc = cbaaa898; size =     94208; name = hegames\Blues Treasure Hunt\Blue'sTreasureHunt.a32
+    file[]: crc = 677d65c0; size =       509; name = hegames\Blues Treasure Hunt\Blue'sTreasureHunt.inf
+    file[]: crc = 4ad2b72f; size =    159744; name = hegames\Blues Treasure Hunt\Blue'sTreasureHunt.r32
+    file[]: crc = 7a4fdea6; size =       805; name = COPYRITE.TXT
+    file[]: crc = e7c7179b; size =    308276; name = install.bmp
+    file[]: crc = d9ab6da8; size =     73401; name = hegames\Blues Treasure Hunt\ja-ad.pcx
+    file[]: crc = b501ee55; size =      5747; name = license.txt
+    file[]: crc = f42f3845; size =     94720; name = SMACKW32.dll
+    file[]: crc = 9c9ff11e; size =    112698; name = hegames\Blues Treasure Hunt\switchdisc1.pcx
+    file[]: crc = e6e2005a; size =    110839; name = hegames\Blues Treasure Hunt\switchdisc2.pcx
+    file[]: crc = 9055c8ed; size =   1127652; name = data\ALL-G-CH1-01.DAT
+    file[]: crc = 00bb4051; size =   1329492; name = data\ALL-G-CH1-03.DAT
+    file[]: crc = 76d19593; size =   2920556; name = data\ALL-G-CH1-04.DAT
+    file[]: crc = 1560acba; size =   3858044; name = data\ALL-G-CH1-05.DAT
+    file[]: crc = 53d3029b; size =   2131032; name = data\ALL-G-CH1-06.DAT
+    file[]: crc = ba338150; size =   3345972; name = data\ALL-G-CH1-07.DAT
+    file[]: crc = 5afbb20e; size =   3019280; name = data\ALL-G-CH1-08.DAT
+    file[]: crc = 6c7e5b58; size =   3032060; name = data\ALL-G-CH1-10.DAT
+    file[]: crc = d1d3e17a; size =   1823992; name = data\ALL-G-CH1-12.DAT
+    file[]: crc = 31b18bf7; size =   1763144; name = data\ALL-G-CI-01.DAT
+    file[]: crc = 87ed0aae; size =   1854752; name = data\ALL-G-CI-02.DAT
+    file[]: crc = 27fb3ddb; size =    812572; name = data\ALL-G-CL-01.DAT
+    file[]: crc = 20621ff7; size =    946484; name = data\ALL-G-CL-02.DAT
+    file[]: crc = e9c5be1d; size =   1058684; name = data\ALL-G-CL-03.DAT
+    file[]: crc = a4f76f98; size =    302308; name = data\ALL-G-ENALL-08.DAT
+    file[]: crc = a8c67de0; size =    409096; name = data\ALL-G-ENALL-10.DAT
+    file[]: crc = 8942fcf3; size =    784004; name = data\ALL-G-ENLR-01.DAT
+    file[]: crc = fc5c0e8f; size =    664420; name = data\ALL-G-ENLR-02.DAT
+    file[]: crc = 292d2e5c; size =    702844; name = data\ALL-G-ENLR-03.DAT
+    file[]: crc = 49409b4a; size =    810796; name = data\ALL-G-ENRL-01.DAT
+    file[]: crc = ca6f44c6; size =    791124; name = data\ALL-G-ENRL-02.DAT
+    file[]: crc = d39c28ed; size =    972532; name = data\ALL-G-ENRL-03.DAT
+    file[]: crc = 16a29c5c; size =   1059296; name = data\ALL-G-EXALL-01.DAT
+    file[]: crc = b0385ffc; size =   7926760; name = data\ALL-G-EXALL-02.DAT
+    file[]: crc = 6413a2af; size =   5162724; name = data\ALL-THA-CH1-01.DAT
+    file[]: crc = 21d68650; size =   2998576; name = data\ALL-THA-CU-01.DAT
+    file[]: crc = 76c93400; size =   3481824; name = data\ALL-THA-CU-02.DAT
+    file[]: crc = 3a4ac22d; size =   3255008; name = data\ALL-THA-CU-03.DAT
+    file[]: crc = 712f404f; size =   3283912; name = data\ALL-THB-CH1-01.DAT
+    file[]: crc = 380ef8ff; size =   3643848; name = data\ALL-THB-CU-01.DAT
+    file[]: crc = 0305fb66; size =   2776552; name = data\ALL-THB-CU-02.DAT
+    file[]: crc = ec383e36; size =   3712908; name = data\ALL-THB-CU-03.DAT
+    file[]: crc = c46b00dc; size =   2575620; name = data\ART-G-CH1-01.DAT
+    file[]: crc = 86f958a0; size =   3905284; name = data\BAC-THA-CH1-02.DAT
+    file[]: crc = cc6e23b2; size =   1445424; name = data\BAC-THB-C-CH1-01.DAT
+    file[]: crc = 2e126627; size =   1140980; name = data\BAT-THA-C-CH1-02.DAT
+    file[]: crc = 05364d6c; size =   3122820; name = data\BAT-THB-CH1-01.DAT
+    file[]: crc = 7fcc1a33; size =   2695956; name = data\BED-G-CH1-01.DAT
+    file[]: crc = 9d65688f; size =   3524900; name = data\BOO-G-CH1-02.DAT
+    file[]: crc = 25375365; size =   4954492; name = data\BOO-THA-CU-09.DAT
+    file[]: crc = 332c74eb; size =   3742108; name = data\BOO-THA-ENPLA-01.DAT
+    file[]: crc = 32ab6dc0; size =   2101224; name = data\BOO-THB-CH1-01.DAT
+    file[]: crc = 748d9580; size =   3814912; name = data\BOO-THB-CU-09.DAT
+    file[]: crc = 82dceb39; size =   1168388; name = data\BOO-THB-ENFRO-01.DAT
+    file[]: crc = cd016934; size =   3991400; name = data\BUL-THA-CH1-03.DAT
+    file[]: crc = fadd6162; size =   3054488; name = data\BUL-THA-CL-04.DAT
+    file[]: crc = 70d074fe; size =   1508280; name = data\BUL-THB-C-CH1-01.DAT
+    file[]: crc = efc722a3; size =   4729504; name = data\CLO-THB-CH1-02.DAT
+    file[]: crc = be67e7f2; size =   2851356; name = data\CLO-THB-CH1-03.DAT
+    file[]: crc = c642ef6e; size =  10488164; name = data\CLO-THB-CH22-01.DAT
+    file[]: crc = 2e0165d9; size =   2915484; name = data\CLO-THB-CL-05.DAT
+    file[]: crc = 8ec57ea5; size =   3143176; name = data\ENT-G-CH1-02.DAT
+    file[]: crc = cb0ab40c; size =   3470304; name = data\ENT-THB-CL-04.DAT
+    file[]: crc = 96dc8ce0; size =   1679472; name = data\FRO-THA-C-CH1-01.DAT
+    file[]: crc = 5794f2d5; size =    152428; name = data\FRO-THA-IN-02.DAT
+    file[]: crc = 28531ec9; size =     73148; name = data\FRO-THA-IN-03.DAT
+    file[]: crc = 72d5deeb; size =     99328; name = data\FRO-THA-IN-04.DAT
+    file[]: crc = b6ca6961; size =   5648564; name = data\FRO-THB-CH03-01.DAT
+    file[]: crc = 80f76fd8; size =   1320996; name = data\FRO-THB-CH1-01.DAT
+    file[]: crc = 3618d0d6; size =   6806780; name = data\FRO-THB-CU-01.DAT
+    file[]: crc = c6a3a660; size =   1939080; name = data\FRO-THB-ENMUS-01.DAT
+    file[]: crc = b9878d9d; size =   4920544; name = data\FRO-THB-ENMUS-02.DAT
+    file[]: crc = 91f97490; size =     85732; name = data\FRO-THB-IN-01.DAT
+    file[]: crc = acdaf1c0; size =   2736644; name = data\GAL-THA-CH1-02.DAT
+    file[]: crc = 655d58bc; size =   2910760; name = data\GAL-THA-CL-05.DAT
+    file[]: crc = 77864fbc; size =   2179128; name = data\HUB-G-CH1-01.DAT
+    file[]: crc = 51a0f22b; size =   1513376; name = data\INTROMOVIE.DAT
+    file[]: crc = b28b37df; size =   1724840; name = data\KIT-THA-ENMUS-04.DAT
+    file[]: crc = 28597726; size =    140924; name = data\KIT-THA-ENSKI-01.DAT
+    file[]: crc = 797ae1f2; size =   2065356; name = data\KIT-THA-EXMUS-05.DAT
+    file[]: crc = dc05f282; size =    146588; name = data\KIT-THA-EXSKI-01.DAT
+    file[]: crc = f5835dc9; size =   2085452; name = data\KIT-THB-C-CH1-02.DAT
+    file[]: crc = e9664b46; size =   1719552; name = data\LIV-G-CH1-02.DAT
+    file[]: crc = d68c72f0; size =   1950396; name = data\LIV-G-CU-01.DAT
+    file[]: crc = 670be835; size =   4964048; name = data\LIV-G-IN-02.DAT
+    file[]: crc = d9581ed5; size =   5385440; name = data\LIV-G-IN-03.DAT
+    file[]: crc = 0af2ad16; size =   2737188; name = data\LIV-G-IN-04.DAT
+    file[]: crc = cb1c2a3f; size =   2875168; name = data\LIV-G-IN-05.DAT
+    file[]: crc = fb283b16; size =   7129832; name = data\LIV-THA-CU-01.DAT
+    file[]: crc = d61cb1e9; size =    962616; name = data\LIV-THA-CU-02.DAT
+    file[]: crc = fd9e250b; size =   1224872; name = data\LIV-THA-CU-03.DAT
+    file[]: crc = 986789db; size =   6453856; name = data\LIV-THA-IN-05.DAT
+    file[]: crc = 34a01314; size =   2515044; name = data\LIV-THA-IN-07.DAT
+    file[]: crc = f698d9cf; size =  14287708; name = data\LIV-THA-IN-08.DAT
+    file[]: crc = ac1fb2e4; size =   7589900; name = data\LIV-THA-IN-08B.DAT
+    file[]: crc = d6216dd9; size =   2841908; name = data\LIV-THA-IN-09.DAT
+    file[]: crc = 9688422d; size =   4344604; name = data\LIV-THA-IN-12.DAT
+    file[]: crc = 5997ff6d; size =   1784468; name = data\LIV-THA-IN-13.DAT
+    file[]: crc = 6467c660; size =   3788664; name = data\LIV-THA-IN-17.DAT
+    file[]: crc = a851ff2e; size =   8851668; name = data\LIV-THA-IN-21.DAT
+    file[]: crc = 6dbf45bc; size =   1211328; name = data\LIV-THA-IN-22.DAT
+    file[]: crc = 95a7c62c; size =   6396432; name = data\LIV-THB-CU-01.DAT
+    file[]: crc = 0fac7e1c; size =   1289036; name = data\LIV-THB-CU-02.DAT
+    file[]: crc = a3f7533f; size =   7367868; name = data\LIV-THB-CU-03.DAT
+    file[]: crc = b30b8b8e; size =   1203920; name = data\LIV-THB-CU-05.DAT
+    file[]: crc = cc0e6bfb; size =   9762864; name = data\LIV-THB-IN-04.DAT
+    file[]: crc = dd16638f; size =   9612764; name = data\LIV-THB-IN-08.DAT
+    file[]: crc = 487a971e; size =   7670196; name = data\LIV-THB-IN-10.DAT
+    file[]: crc = 7beba533; size =   1269256; name = data\MUS-THA-CH1-02.DAT
+    file[]: crc = f31fd300; size =   2538360; name = data\MUS-THA-ENKIT-02.DAT
+    file[]: crc = 755b4378; size =    139796; name = data\MUS-THA-ENSKI-01.DAT
+    file[]: crc = 0fca129c; size =   6128580; name = data\MUS-THA-PU-01.DAT
+    file[]: crc = e5f126f6; size =   2572056; name = data\MUS-THA-PU-02.DAT
+    file[]: crc = 6ef0d5e0; size =   2358172; name = data\NOO-G-CH1-01.DAT
+    file[]: crc = 75effcdd; size =   1870336; name = data\NOO-THA-CH1-01.DAT
+    file[]: crc = e992398e; size =   2452700; name = data\PAN-G-CH1-03.DAT
+    file[]: crc = b87010bb; size =   3379436; name = data\PAN-THA-CL-04.DAT
+    file[]: crc = 726d6958; size =   5917860; name = data\PAN-THA-CU-01.DAT
+    file[]: crc = bc6e6cd2; size =   1561144; name = data\PAN-THA-EXSTO-01.DAT
+    file[]: crc = f11ed565; size =   3413684; name = data\PAN-THA-EXSTO-02.DAT
+    file[]: crc = 9ecfd085; size =   4398544; name = data\PAR-G-CH1-02.DAT
+    file[]: crc = 19ce1385; size =   2819172; name = data\PAT-THA-C-CH1-01.DAT
+    file[]: crc = 19bdaf99; size =   1724848; name = data\PAT-THB-CH1-02.DAT
+    file[]: crc = 80a16318; size =   3565888; name = data\PAT-THB-CL-04.DAT
+    file[]: crc = b91dffce; size =   2234908; name = data\PLA-G-CH1-01.DAT
+    file[]: crc = 68dad110; size =   2022740; name = data\PLA-THA-CL-04.DAT
+    file[]: crc = 07e294c0; size =   2269136; name = data\PLA-THA-CL-05.DAT
+    file[]: crc = a9dcdc0c; size =   1469992; name = data\PLA-THB-CH1-01.DAT
+    file[]: crc = 9cc40de2; size =   1831752; name = data\PRE-G-CH1-01.DAT
+    file[]: crc = 9f1d85df; size =   4238648; name = data\REA-G-CH1-02.DAT
+    file[]: crc = b6265fb9; size =   1022052; name = data\REA-THB-ENRYM-02.DAT
+    file[]: crc = 40bceffd; size =    139940; name = data\REA-THB-ENSKI-01.DAT
+    file[]: crc = 3690cca0; size =   2278608; name = data\REA-THB-EXRYM-02.DAT
+    file[]: crc = 52c3fcbc; size =    146612; name = data\REA-THB-EXSKI-01.DAT
+    file[]: crc = e8f1786f; size =    150640; name = data\RHY-THB-ENSKI-01.DAT
+    file[]: crc = dd5244e6; size =   1551480; name = data\RYM-THB-CH1-02.DAT
+    file[]: crc = 3f8b0423; size =   1845292; name = data\RYM-THB-ENREA-02.DAT
+    file[]: crc = 82058bab; size =   1982052; name = data\SAN-G-CH1-01.DAT
+    file[]: crc = f487ac67; size =   2028592; name = data\SAN-THB-CH1-01.DAT
+    file[]: crc = f97c7913; size =   1686816; name = data\SAN-THB-CL-01.DAT
+    file[]: crc = 19c59547; size =   2010788; name = data\SAN-THB-CL-03.DAT
+    file[]: crc = a4d612a2; size =   2277252; name = data\SAN-THB-CL-04.DAT
+    file[]: crc = a6ad9893; size =    605328; name = data\SI1-G-CU-01.DAT
+    file[]: crc = d6bce5e4; size =    678576; name = data\SI1-G-CU-02.DAT
+    file[]: crc = 6062f5fb; size =    901164; name = data\SI2-G-CU-01.DAT
+    file[]: crc = 4abd504c; size =    975224; name = data\SI2-G-CU-02.DAT
+    file[]: crc = 6bb4da42; size =   1456384; name = data\SID-G-CH1-01.DAT
+    file[]: crc = c367faca; size =   2410596; name = data\SNA-THA-B-CH1-02.DAT
+    file[]: crc = 2c1b83b7; size =   2849624; name = data\TRE-G-CH1-02.DAT
+    file[]: crc = d1e9be5c; size =   1329500; name = data\WAL-G-CH1-02.DAT
+    file[]: crc = 3aff0c12; size =     21088; name = data\levels\BACK-1.WIZ
+    file[]: crc = 249d2821; size =      9598; name = data\levels\BACK-2.WIZ
+    file[]: crc = d7e511a9; size =       133; name = data\levels\BRE-1.BRE
+    file[]: crc = 8a6cc03d; size =       133; name = data\levels\BRE-2.BRE
+    file[]: crc = 77644d03; size =       133; name = data\levels\BRE-3.BRE
+    file[]: crc = 38028dff; size =       133; name = data\levels\BRE-4.BRE
+
+
+
+end
+
+
+end

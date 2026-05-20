@@ -100,5 +100,41 @@ game[pc-nl-950830]:
 
 end
 
+//
+// English demo 
+//
+demo[pc-en-950705-demo]:
+    name = English demo (1995-07-05)
+    anchorfile = FARMDEMO.EXE
+    launch = "$(rootpath)\FARMDEMO.EXE"
+    file[]: crc = a90d902b; size =     30720; name = FARMDEMO.EXE
+    file[]: crc = 90b997c2; size =     34333; name = FARMDEMO.HE0
+    file[]: crc = 2caebdca; size =  21717725; name = FARMDEMO.HE1
+    file[]: crc = 013719aa; size =   1099440; name = FARMDEMO.HE2
+    file[]: crc = c05daad7; size =     36864; name = FARMDEMO.HE3
+    file[]: crc = 0803e635; size =    111925; name = FARMDEMO.HE4
+    file[]: crc = a1ff602c; size =    296448; name = FARMDEMO.W32
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// Dutch demo 
+//
+demo[pc-nl-970129-demo]:
+    name = Dutch demo (1997-01-29)
+    anchorfile = FARMDEMO.EXE
+    launch = "$(rootpath)\FARMDEMO.EXE"
+    file[]: crc = 055db648; size =    286208; name = FARMDEMO.exe
+    file[]: crc = 49e8cc00; size =     34333; name = FARMDEMO.HE0
+    file[]: crc = fc2fc9bf; size =  23383197; name = FARMDEMO.HE1
+    file[]: crc = 724ebbe4; size =   1441206; name = FARMDEMO.HE2
+    file[]: crc = c05daad7; size =     36864; name = FARMDEMO.HE3
+    file[]: crc = 0803e635; size =    111925; name = FARMDEMO.HE4
+    file[]: crc = b17b366e; size =      1298; name = SNDCARDS.INF; optional = true
+    file[]: crc = cfa37c5c; size =      8628; name = TRANSPOS.GID; optional = true
+    file[]: crc = e97a8e1e; size =    325239; name = TRANSPOS.HLP; optional = true
+
+end
 
 end
