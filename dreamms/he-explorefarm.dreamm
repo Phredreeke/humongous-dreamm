@@ -1,0 +1,104 @@
+desc[he-explorefarm]:
+
+name = Let's Explore the Farm
+icon = he-explorefarm.png
+machine = pc
+rootpath = C:\
+launch = $(rootpath)\FARM.EXE
+osenv = windows 98
+winres = 640x480x8
+dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This version does not run correctly in tested DREAMM version (4.0x16)
+end
+
+//
+// English version 
+//
+game[pc-en-951107]:
+    name = English (1995-11-07)
+    anchorfile = FARM.EXE
+    file[]: crc = f4f7a204; size =    122000; name = FARM.BMP; optional = true
+    file[]: crc = 68d41c8b; size =     35328; name = FARM.EXE
+    file[]: crc = 23c691b2; size =     87061; name = FARM.HE0
+    file[]: crc = 12d61db1; size =  93379138; name = FARM.HE1
+    file[]: crc = 9e87bdd5; size =  12527825; name = FARM.HE2
+    file[]: crc = c05daad7; size =     36864; name = FARM.HE3
+    file[]: crc = 873a7622; size =   9540508; name = FARM.HE4
+    file[]: crc = b27adbe3; size =     27745; name = FARM.HE9
+    file[]: crc = 9b41c8c0; size =    316538; name = FARM.HLP
+    file[]: crc = 74bae988; size =      1693; name = FARM.INF
+    file[]: crc = 10951677; size =    304128; name = FARM.W32
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = b19461ce; size =     50634; name = JA-AD.BMP; optional = true
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// Early English version 
+//
+game[pc-en-941209]:
+    name = Junior Encyclopedia's Farm (1994-12-09)
+    anchorfile = FARM.EXE
+    INCOMPATIBLE = true
+    file[]: crc = e16ae986; size =     77388; name = FARM.BMP; optional = true
+    file[]: crc = 839ad43d; size =     33280; name = FARM.EXE
+    file[]: crc = 8fff1573; size =     34291; name = FARM.HE0
+    file[]: crc = 0178077c; size =  53043287; name = FARM.HE1
+    file[]: crc = 622d3d66; size =   6210268; name = FARM.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = FARM.HE3
+    file[]: crc = c60ce885; size =     75776; name = FARM.HLP
+    file[]: crc = 5a0da7fd; size =    251392; name = FARM.W32
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 40c59a19; size =    115292; name = JA-AD.BMP; optional = true
+    file[]: crc = e8554717; size =      1469; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// Dutch version 
+//
+game[pc-nl-950830]:
+    name = Dutch (1995-08-30)
+    anchorfile = FARM.EXE
+    file[]: crc = 5af87261; size =    112832; name = FARM.BMP; optional = true
+    file[]: crc = 623338fc; size =     30720; name = FARM.EXE
+    file[]: crc = cb5595ac; size =     87061; name = FARM.HE0
+    file[]: crc = d37f4e40; size = 106704304; name = FARM.HE1
+    file[]: crc = 23875314; size =  18376999; name = FARM.HE2
+    file[]: crc = c05daad7; size =     36864; name = FARM.HE3
+    file[]: crc = 873a7622; size =   9540508; name = FARM.HE4
+    file[]: crc = b27adbe3; size =     27745; name = FARM.HE9
+    file[]: crc = cdfa8e69; size =    244621; name = FARM.HLP
+    file[]: crc = 1e09dd26; size =    294912; name = FARM.W32
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = b17b366e; size =      1298; name = SNDCARDS.INF; optional = true
+
+end
+
+
+end
