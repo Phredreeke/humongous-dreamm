@@ -1,0 +1,56 @@
+desc[he-explorejungle]:
+
+name = Let's Explore the Jungle
+icon = he-explorejungle.png
+machine = pc
+rootpath = C:\
+launch = $(rootpath)\JUNGLE.EXE
+osenv = windows 98
+winres = 640x480x8
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+
+//
+// English version 
+//
+game[pc-en-951010]:
+    name = English (1995-10-10)
+    anchorfile = JUNGLE.EXE
+    file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
+    file[]: crc = 328f8a7f; size =    108378; name = J-TEAM.BMP; optional = true
+    file[]: crc = 3afe3e82; size =     97256; name = JA-AD.BMP; optional = true
+    file[]: crc = 8c07d5af; size =    126780; name = JUNGLE.BMP; optional = true
+    file[]: crc = 3c49ca03; size =     35328; name = JUNGLE.EXE
+    file[]: crc = dda7f381; size =    108594; name = JUNGLE.HE0
+    file[]: crc = 6f804ef6; size = 165158846; name = JUNGLE.HE1
+    file[]: crc = e8b0d618; size =  14443173; name = JUNGLE.HE2
+    file[]: crc = c05daad7; size =     36864; name = JUNGLE.HE3
+    file[]: crc = a1cbe698; size =  43209128; name = JUNGLE.HE4
+    file[]: crc = 08696113; size =     28924; name = JUNGLE.HE9
+    file[]: crc = ca36abc9; size =    443134; name = JUNGLE.HLP
+    file[]: crc = 38236294; size =        32; name = JUNGLE.INF
+    file[]: crc = 0c8d9856; size =    371712; name = JUNGLE.W32
+    file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
+    file[]: crc = 3afe3e82; size =     97256; name = STARTUP.BMP; optional = true
+
+end
+
+
+end
