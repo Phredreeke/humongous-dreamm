@@ -30,23 +30,12 @@ config[bitness]:
 end
 
 //
-// Color depth
-//
-COLORDEPTH = false
-config[colordepth]:
-    condition = $(COLORDEPTH)
-    title = Color depth
-    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
-    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
-end
-
-//
 // Set up INI file for DOS version
 //
 DOSAUDIO = false
 dynamicfile[]:
     condition = $(DOSAUDIO)
-    path = $(INIPATH)\FUNPACK.INI
+    path = $(INIPATH)
     contents = [[[$(CRLF)
     DigitalSoundDriver=sblaster.com
     MidiSoundDriver=sbfm.adv
@@ -58,9 +47,9 @@ end
 //
 
 //
-// 1993 DOS version 
+// 1993 Putt-Putt's Fun Pack DOS version 
 //
-game[pc-en-930301]:
+game[pc-en-930301-ppfp]:
     name = Putt-Putt's Fun Pack English DOS 1993-03-01
     anchorfile = FUNPACK.EXE
     osenv = dos
@@ -71,7 +60,7 @@ game[pc-en-930301]:
     videohw = svga
     DOSAUDIO = true
     BITNESS = false
-    INIPATH = C:\FUNPACK
+    INIPATH = C:\FUNPACK\FUNPACK.INI
     launch = "$(rootpath)\FUNPACK.EXE" 
     file[]: crc = d9c83981; size =      5217; name = CHECK.EXE
     file[]: crc = a9c9ca05; size =    111964; name = FUNPACK.DRV
@@ -83,6 +72,146 @@ game[pc-en-930301]:
     file[]: crc = b4e3ee66; size =       545; name = FUNPACK.PIF; optional = true
     file[]: crc = 2ae33e01; size =   1818654; name = FUNPACK.TLK
     file[]: crc = 34e73a06; size =    124508; name = SETUPCD.EXE; optional = true
+
+
+end
+
+//
+// 1993 Fatty Bear's Fun Pack DOS version 
+//
+game[pc-en-931111-fbfp]:
+    name = Fatty Bear's Fun Pack English DOS 1993-11-11
+    anchorfile = FBPACK.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    INIPATH = C:\FBPACK\FBPACK.INI
+    launch = "$(rootpath)\FBPACK.EXE" 
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = 93c4684c; size =      8380; name = FBPACK.C00
+    file[]: crc = e4d9dcdc; size =      9456; name = FBPACK.C01
+    file[]: crc = 28f3c1fe; size =      7552; name = FBPACK.C02
+    file[]: crc = 8f98f612; size =      6297; name = FBPACK.C03
+    file[]: crc = d8887be7; size =     10155; name = FBPACK.C04
+    file[]: crc = 818bef7a; size =      7581; name = FBPACK.C05
+    file[]: crc = b9df8a1c; size =      9028; name = FBPACK.C06
+    file[]: crc = 37ee45f9; size =      8056; name = FBPACK.C07
+    file[]: crc = 7732ee2b; size =      7826; name = FBPACK.C08
+    file[]: crc = 9ab83772; size =      6995; name = FBPACK.C09
+    file[]: crc = 91ec9b25; size =      8919; name = FBPACK.C10
+    file[]: crc = 924409dd; size =     12225; name = FBPACK.C11
+    file[]: crc = ec50395f; size =      8047; name = FBPACK.C12
+    file[]: crc = de0946bc; size =     11658; name = FBPACK.C13
+    file[]: crc = 645d32f9; size =      7998; name = FBPACK.C14
+    file[]: crc = 8fae47e9; size =     10791; name = FBPACK.C15
+    file[]: crc = 57c77476; size =     10629; name = FBPACK.C16
+    file[]: crc = bb2d2f90; size =      8698; name = FBPACK.C17
+    file[]: crc = d08a3ec3; size =     14064; name = FBPACK.C18
+    file[]: crc = 81f33ef1; size =      9498; name = FBPACK.C19
+    file[]: crc = 70a07322; size =      9345; name = FBPACK.C20
+    file[]: crc = 458240b0; size =      9562; name = FBPACK.C21
+    file[]: crc = 36d26e82; size =      7698; name = FBPACK.C22
+    file[]: crc = 6bd6a66b; size =      8829; name = FBPACK.C23
+    file[]: crc = cec68bae; size =     10538; name = FBPACK.C24
+    file[]: crc = 811271d7; size =     10306; name = FBPACK.C25
+    file[]: crc = d8adf004; size =     10308; name = FBPACK.C26
+    file[]: crc = 222ad791; size =     11313; name = FBPACK.C27
+    file[]: crc = 5f850e43; size =     12568; name = FBPACK.C28
+    file[]: crc = bd687332; size =     13569; name = FBPACK.C29
+    file[]: crc = d7094f30; size =     10329; name = FBPACK.C30
+    file[]: crc = b59b797d; size =      8602; name = FBPACK.C31
+    file[]: crc = b174f8fc; size =     12434; name = FBPACK.C32
+    file[]: crc = d582fc85; size =     14211; name = FBPACK.C33
+    file[]: crc = ff246c77; size =     10403; name = FBPACK.C34
+    file[]: crc = 70e93053; size =      8918; name = FBPACK.C35
+    file[]: crc = 3e59a339; size =    197900; name = FBPACK.DRV
+    file[]: crc = 14e04203; size =    142805; name = FBPACK.EXE
+    file[]: crc = b797ce2d; size =      5182; name = FBPACK.HE0
+    file[]: crc = fcd630a7; size =    547407; name = FBPACK.HE1
+    file[]: crc = d3ddf4ce; size =       766; name = FBPACK.ICO; optional = true
+    file[]: crc = 13a679bc; size =       135; name = FBPACK.INI; optional = true
+    file[]: crc = cbe3153d; size =     30000; name = FBPACK.PAL
+    file[]: crc = 425d2dec; size =       545; name = FBPACK.PIF; optional = true
+    file[]: crc = 259eb635; size =     94490; name = FBPACK.TAN
+    file[]: crc = f9026e40; size =    988050; name = FBPACK.TLK
+    file[]: crc = 8d9344ce; size =    130369; name = SETUPCD.EXE; optional = true
+
+
+end
+
+//
+// 1994 DOS version 
+//
+game[pc-en-940502]:
+    name = English DOS 1994-05-02
+    anchorfile = ACTIVITY.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    INIPATH = C:\ACTIVITY\ACTIVITY.INI
+    launch = "$(rootpath)\ACTIVITY.EXE" 
+    file[]: crc = 40dbd412; size =    159430; name = ACTIVITY.BRS
+    file[]: crc = 93c4684c; size =      8380; name = ACTIVITY.C00
+    file[]: crc = e4d9dcdc; size =      9456; name = ACTIVITY.C01
+    file[]: crc = 28f3c1fe; size =      7552; name = ACTIVITY.C02
+    file[]: crc = 8f98f612; size =      6297; name = ACTIVITY.C03
+    file[]: crc = d8887be7; size =     10155; name = ACTIVITY.C04
+    file[]: crc = 818bef7a; size =      7581; name = ACTIVITY.C05
+    file[]: crc = b9df8a1c; size =      9028; name = ACTIVITY.C06
+    file[]: crc = 37ee45f9; size =      8056; name = ACTIVITY.C07
+    file[]: crc = 7732ee2b; size =      7826; name = ACTIVITY.C08
+    file[]: crc = 9ab83772; size =      6995; name = ACTIVITY.C09
+    file[]: crc = 91ec9b25; size =      8919; name = ACTIVITY.C10
+    file[]: crc = 924409dd; size =     12225; name = ACTIVITY.C11
+    file[]: crc = ec50395f; size =      8047; name = ACTIVITY.C12
+    file[]: crc = de0946bc; size =     11658; name = ACTIVITY.C13
+    file[]: crc = 645d32f9; size =      7998; name = ACTIVITY.C14
+    file[]: crc = 8fae47e9; size =     10791; name = ACTIVITY.C15
+    file[]: crc = 57c77476; size =     10629; name = ACTIVITY.C16
+    file[]: crc = bb2d2f90; size =      8698; name = ACTIVITY.C17
+    file[]: crc = d08a3ec3; size =     14064; name = ACTIVITY.C18
+    file[]: crc = 81f33ef1; size =      9498; name = ACTIVITY.C19
+    file[]: crc = 70a07322; size =      9345; name = ACTIVITY.C20
+    file[]: crc = 458240b0; size =      9562; name = ACTIVITY.C21
+    file[]: crc = 36d26e82; size =      7698; name = ACTIVITY.C22
+    file[]: crc = 6bd6a66b; size =      8829; name = ACTIVITY.C23
+    file[]: crc = cec68bae; size =     10538; name = ACTIVITY.C24
+    file[]: crc = 811271d7; size =     10306; name = ACTIVITY.C25
+    file[]: crc = d8adf004; size =     10308; name = ACTIVITY.C26
+    file[]: crc = 222ad791; size =     11313; name = ACTIVITY.C27
+    file[]: crc = 5f850e43; size =     12568; name = ACTIVITY.C28
+    file[]: crc = bd687332; size =     13569; name = ACTIVITY.C29
+    file[]: crc = d7094f30; size =     10329; name = ACTIVITY.C30
+    file[]: crc = b59b797d; size =      8602; name = ACTIVITY.C31
+    file[]: crc = b174f8fc; size =     12434; name = ACTIVITY.C32
+    file[]: crc = d582fc85; size =     14211; name = ACTIVITY.C33
+    file[]: crc = ff246c77; size =     10403; name = ACTIVITY.C34
+    file[]: crc = 4a925420; size =      1252; name = ACTIVITY.CR0
+    file[]: crc = 3b6a0c54; size =      2002; name = ACTIVITY.CR1
+    file[]: crc = 8886c92e; size =      7002; name = ACTIVITY.CR2
+    file[]: crc = 896e76ed; size =     14252; name = ACTIVITY.CR3
+    file[]: crc = ac6bc0b4; size =    158442; name = ACTIVITY.DRV
+    file[]: crc = d810a77b; size =    142903; name = ACTIVITY.EXE
+    file[]: crc = d850529a; size =      6182; name = ACTIVITY.HE0
+    file[]: crc = b0cbade5; size =   2216633; name = ACTIVITY.HE1
+    file[]: crc = 1b0a15ff; size =       139; name = ACTIVITY.INI; optional = true
+    file[]: crc = cbe3153d; size =     30000; name = ACTIVITY.PAL
+    file[]: crc = 217c43bf; size =       545; name = ACTIVITY.PIF; optional = true
+    file[]: crc = 259eb635; size =     94490; name = ACTIVITY.TAN
+    file[]: crc = e6ab1de2; size =   5348583; name = ACTIVITY.TLK
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = 86f79897; size =    131963; name = SETUPCD.EXE; optional = true
+
 
 
 end
