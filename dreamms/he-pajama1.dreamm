@@ -196,7 +196,7 @@ game[pc-fr-980307]:
     file[]: crc = 00492eb9; size =  32411280; name = SAMPYJAM.HE4
     file[]: crc = 558514f2; size =    413586; name = SAMPYJAM.HE7
     file[]: crc = bc6fbcdb; size =    145538; name = SAMPYJAM.HLP; optional = true
-    file[]: crc = eed961fd; size =      2238; name = SAMPYJAM.INF
+    file[]: name = SAMPYJAM.INF
     file[]: crc = ab125a5c; size =    330240; name = SAMPYJAM.W32
     file[]: crc = 35d17e13; size =      1282; name = SNDCARDS.INF
 
@@ -308,5 +308,26 @@ demo[pc-nl-971118-demo]:
 
 end
 
+//
+// 1997 French demo version
+//
+demo[pc-fr-980326-demo]:
+    name = French Demo 1998-03-26
+    anchorfile = SAMDEMO.EXE
+    launch = "$(rootpath)\SAMDEMO.EXE"
+    file[]: crc = 984c483c; size =     10793; name = LISEZMOI.TXT; optional = true
+    file[]: crc = fd42dad4; size =     35840; name = SAMDEMO.D32
+    file[]: crc = 855b5079; size =      9200; name = SAMDEMO.DLL
+    file[]: crc = ab125a5c; size =    330240; name = SAMDEMO.EXE
+    file[]: crc = 17389123; size =     18354; name = SAMDEMO.HE0
+    file[]: crc = 910a0997; size =  13192961; name = SAMDEMO.HE1
+    file[]: crc = 739358d6; size =   6639194; name = SAMDEMO.HE2
+    file[]: crc = e164e1b8; size =  10836436; name = SAMDEMO.HE4
+    file[]: crc = b3321390; size =    163023; name = SAMDEMO.HLP; optional = true
+    file[]: crc = 5baba73c; size =      2272; name = SAMDEMO.INF
+
+
+
+end
 
 end
