@@ -32,7 +32,7 @@ end
 DOSAUDIO = false
 dynamicfile[]:
     condition = $(DOSAUDIO)
-    path = C:\PUTTPUTT\PUTTPUTT.INI
+    path = $(INIPATH)
     contents = [[[$(CRLF)
     DigitalSoundDriver=sblaster.com
     MidiSoundDriver=sbfm.adv
@@ -56,6 +56,7 @@ game[pc-en-940118]:
     audiohw = adlib+sb16
     videohw = svga
     DOSAUDIO = true
+    INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
     BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 3e59a339; size =    197900; name = PUTTPUTT.DRV
@@ -63,7 +64,7 @@ game[pc-en-940118]:
     file[]: crc = 5eba3918; size =      8117; name = PUTTPUTT.HE0
     file[]: crc = 8d0fddd1; size =   4808565; name = PUTTPUTT.HE1
     file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO; optional = true
-    file[]: crc = 4164eecb; size =       139; name = PUTTPUTT.INI
+    file[]: crc = 4164eecb; size =       139; name = PUTTPUTT.INI; optional = true
     file[]: crc = 1398c742; size =       545; name = PUTTPUTT.PIF; optional = true
     file[]: crc = 2ed0c10e; size =  26437948; name = PUTTPUTT.TLK
     file[]: crc = 3486d0cc; size =    131940; name = SETUPCD.EXE
@@ -76,7 +77,7 @@ end
 // 1995 Windows version
 //
 game[pc-en-950220-win]:
-    name = English 1995-02-20 Windows
+    name = English Windows 1995-02-20
     anchorfile = PUTTPUTT.W32
     winres = 640x480x8
     file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
@@ -90,7 +91,7 @@ game[pc-en-950220-win]:
     file[]: crc = 793b4fa9; size =  10671834; name = PUTTPUTT.HE4
     file[]: crc = a10d9a24; size =    100352; name = PUTTPUTT.HLP; optional = true
     file[]: crc = d5b2c3d5; size =    261120; name = PUTTPUTT.W32
-    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF; optional = true
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
 
 
 end
@@ -108,6 +109,7 @@ game[pc-he]:
     audiohw = adlib+sb16
     videohw = svga
     DOSAUDIO = true
+    INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
     BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 5f41f1d4; size =    162085; name = PUTTPUTT.DRV
@@ -121,5 +123,80 @@ game[pc-he]:
 
 
 end
+
+//
+// 1993 DOS Demo
+//
+demo[pc-en-930309-demo]:
+    name = English Demo 1993-03-09
+    anchorfile = PUTTDEMO.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    INIPATH = C:\PUTTDEMO\PUTTDEMO.INI
+    rootpath = C:\PUTTDEMO\
+    launch = "$(rootpath)\PUTTDEMO.EXE"
+    BITNESS = false
+    file[]: crc = d9c83981; size =      5217; name = CHECK.EXE
+    file[]: crc = a9c9ca05; size =    111964; name = PUTTDEMO.DRV
+    file[]: crc = ac5d728a; size =    172201; name = PUTTDEMO.EXE
+    file[]: crc = 52d7a1f8; size =      6150; name = PUTTDEMO.HE0
+    file[]: crc = d7bc2190; size =    884761; name = PUTTDEMO.HE1
+    file[]: crc = ae96e472; size =       766; name = PUTTDEMO.ICO; optional = true
+    file[]: crc = 5b2081b7; size =       545; name = PUTTDEMO.PIF; optional = true
+    file[]: crc = 35db4392; size =    740662; name = PUTTDEMO.TLK
+
+
+end
+
+//
+// 1993 DOS Demo installer
+//
+installer[pc-en-930309-demo-install]:
+    name = English Demo 1993-03-09
+    anchorfile = PUTTDEMO.EXE
+    osenv = dos
+    installid = pc-en-930309-demo
+    fixdivover = true
+    mips = $(MIPS_MAX)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    launch = "$(rootpath)\PUTTDEMO.EXE"
+    BITNESS = false
+    file[]: crc = 89e6e225; size =   1429108; name = PUTTDEMO.EXE; exactonly = true
+
+
+end
+
+//
+// 1995 Windows version
+//
+game[pc-en-950220-windemo]:
+    name = English Windows Demo 1995-02-20
+    anchorfile = PUTTDEMO.W32
+    launch = "$(rootpath)\PUTTDEMO.EXE"
+    winres = 640x480x8
+    file[]: crc = bf5f9e2e; size =     30720; name = PUTTDEMO.EXE
+    file[]: crc = 36e7ad27; size =      8269; name = PUTTDEMO.HE0
+    file[]: crc = 7b200963; size =    826701; name = PUTTDEMO.HE1
+    file[]: crc = 35db4392; size =    740662; name = PUTTDEMO.HE2
+    file[]: crc = 76b49d04; size =     36864; name = PUTTDEMO.HE3
+    file[]: crc = 22717f50; size =   6033263; name = PUTTDEMO.HE4
+    file[]: crc = 2df87a9d; size =     94208; name = PUTTDEMO.HLP
+    file[]: crc = d5b2c3d5; size =    261120; name = PUTTDEMO.W32
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
+
+
+end
+
+
+
+
+
 
 end

@@ -265,7 +265,33 @@ game[pc-fr-960708]:
     file[]: crc = 66f3ba2d; size =     36864; name = FREDDI.HE3
     file[]: crc = b6810744; size =  25623197; name = FREDDI.HE4
     file[]: crc = 52358343; size =    308736; name = FREDDI.W32
-    file[]: crc = 27b0910e; size =      1281; name = SNDCARDS.INF; optional = true
+    file[]: crc = 27b0910e; size =      1281; name = SNDCARDS.INF
+
+
+end
+
+//
+// French version 1996-07-08 (from Anuman CD)
+//
+game[pc-fr-960708-alt]:
+    name = French 1996-07-08 (alternative)
+    anchorfile = MALICE.EXE
+    launch = "$(rootpath)\MALICE.EXE"
+    file[]: crc = 9b22b041; size =       533; name = COPYRITE.TXT; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = a57c5d03; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 86ade559; size =    132406; name = MALICE.BMP; optional = true
+    file[]: crc = b27dbaa2; size =     34816; name = MALICE.EXE
+    file[]: crc = 68c665da; size =     16826; name = MALICE.GID; optional = true
+    file[]: crc = c3096025; size =     26654; name = MALICE.HE0
+    file[]: crc = 41747664; size =  56124213; name = MALICE.HE1
+    file[]: crc = 0f030bea; size =  25258505; name = MALICE.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = MALICE.HE3
+    file[]: crc = b6810744; size =  25623197; name = MALICE.HE4
+    file[]: crc = 31b9e09f; size =    187516; name = MALICE.HLP
+    file[]: crc = 8bc21544; size =         4; name = MALICE.INF
+    file[]: crc = 52358343; size =    308736; name = MALICE.W32
+    file[]: crc = 27b0910e; size =      1281; name = SNDCARDS.INF
 
 
 end

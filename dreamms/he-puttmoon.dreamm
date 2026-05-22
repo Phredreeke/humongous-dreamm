@@ -32,7 +32,7 @@ end
 DOSAUDIO = false
 dynamicfile[]:
     condition = $(DOSAUDIO)
-    path = C:\PUTTMOON\PUTTMOON.INI
+    path = $(INIPATH)
     contents = [[[$(CRLF)
     DigitalSoundDriver=sblaster.com
     MidiSoundDriver=sbfm.adv
@@ -57,6 +57,7 @@ game[pc-en-940118]:
     audiohw = adlib+sb16
     videohw = svga
     DOSAUDIO = true
+    INIPATH = C:\PUTTMOON\PUTTMOON.INI
     BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
@@ -65,7 +66,7 @@ game[pc-en-940118]:
     file[]: crc = e56edf6f; size =      7863; name = PUTTMOON.HE0
     file[]: crc = 09545ffe; size =   5361724; name = PUTTMOON.HE1
     file[]: crc = 97e896b5; size =       766; name = PUTTMOON.ICO; optional = true
-    file[]: crc = e29a6ec9; size =       160; name = PUTTMOON.INI
+    file[]: crc = e29a6ec9; size =       160; name = PUTTMOON.INI; optional = true
     file[]: crc = c1c1c5a1; size =       545; name = PUTTMOON.PIF; optional = true
     file[]: crc = 8d8727f9; size =  11293948; name = PUTTMOON.TLK
     file[]: crc = 1007333f; size =    132230; name = SETUPCD.EXE
@@ -78,7 +79,7 @@ end
 // 1995 Windows version
 //
 game[pc-en-950220-win]:
-    name = English 1995-02-20 Windows
+    name = English Windows 1995-02-20
     anchorfile = PUTTMOON.W32
     winres = 640x480x8
     file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
@@ -98,5 +99,107 @@ game[pc-en-950220-win]:
 
 
 end
+
+//
+// 1994 Hebrew DOS version
+//
+game[pc-he]:
+    name = Hebrew
+    anchorfile = PUTTMOON.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    INIPATH = C:\PUTTMOON.INI
+    BITNESS = false
+    file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
+    file[]: crc = 5f41f1d4; size =    162085; name = PUTTMOON.DRV
+    file[]: crc = fba38c66; size =    142807; name = PUTTMOON.EXE
+    file[]: crc = 358ec495; size =      7718; name = PUTTMOON.HE0
+    file[]: crc = 073d678b; size =   5127704; name = PUTTMOON.HE1
+    file[]: crc = ef8aac36; size =   7534108; name = PUTTMOON.TLK
+    file[]: crc = 97e896b5; size =       766; name = PUTTPUTT.ICO
+
+
+end
+
+
+//
+// 1993 DOS Demo
+//
+demo[pc-en-930309-demo]:
+    name = English Demo 1993-03-09
+    anchorfile = MOONDEMO.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    INIPATH = C:\MOONDEMO\MOONDEMO.INI
+    rootpath = C:\MOONDEMO\
+    launch = "$(rootpath)\MOONDEMO.EXE"
+    BITNESS = false
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = 07d35588; size =    162085; name = MOONDEMO.DRV
+    file[]: crc = 489781d5; size =    195529; name = MOONDEMO.EXE
+    file[]: crc = 3e0a2758; size =      6233; name = MOONDEMO.HE0
+    file[]: crc = cf5c5780; size =    919550; name = MOONDEMO.HE1
+    file[]: crc = 97e896b5; size =       766; name = MOONDEMO.ICO; optional = true
+    file[]: crc = 463f81d0; size =       545; name = MOONDEMO.PIF; optional = true
+    file[]: crc = 3b9bff19; size =    720805; name = MOONDEMO.TLK
+    file[]: crc = c008c7ef; size =      9038; name = README.TXT
+
+
+
+end
+
+//
+// 1993 DOS Demo installer
+//
+installer[pc-en-930309-demo-install]:
+    name = English Demo 1993-03-09
+    anchorfile = MOONDEMO.EXE
+    osenv = dos
+    installid = pc-en-930309-demo
+    fixdivover = true
+    mips = $(MIPS_MAX)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    launch = "$(rootpath)\MOONDEMO.EXE"
+    BITNESS = false
+    file[]: crc = 730c243c; size =   1454478; name = MOONDEMO.EXE; exactonly = true
+
+
+end
+
+//
+// 1995 Windows version
+//
+game[pc-en-950220-windemo]:
+    name = English Windows Demo 1995-02-20
+    anchorfile = MOONDEMO.W32
+    launch = "$(rootpath)\MOONDEMO.EXE"
+    winres = 640x480x8
+    file[]: crc = a0838f1d; size =     30720; name = MOONDEMO.EXE
+    file[]: crc = cdb8642b; size =      8856; name = MOONDEMO.HE0
+    file[]: crc = 3e032c1a; size =    933372; name = MOONDEMO.HE1
+    file[]: crc = 3b9bff19; size =    720805; name = MOONDEMO.HE2
+    file[]: crc = e7ea329e; size =     36864; name = MOONDEMO.HE3
+    file[]: crc = b17be92a; size =   6381595; name = MOONDEMO.HE4
+    file[]: crc = 2df87a9d; size =     94208; name = MOONDEMO.HLP
+    file[]: crc = c30ac98c; size =    261120; name = MOONDEMO.W32
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
+
+
+
+end
+
+
 
 end

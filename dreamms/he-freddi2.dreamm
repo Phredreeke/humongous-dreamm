@@ -195,6 +195,54 @@ game[pc-fr-961107]:
 
 end
 
+//
+// French version
+//
+game[pc-fr-961107]:
+    name = French 1996-11-07
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 9da61c21; size =    132118; name = FREDDI2.BMP; optional = true
+    file[]: crc = aee46264; size =     34816; name = FREDDI2.D32
+    file[]: crc = e67992eb; size =      9024; name = FREDDI2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = FREDDI2.EXE
+    file[]: crc = 7077a269; size =     65305; name = FREDDI2.HE0
+    file[]: crc = e9f2e67d; size = 115246919; name = FREDDI2.HE1
+    file[]: crc = 9d26e13b; size =  32483184; name = FREDDI2.HE2
+    file[]: crc = 71402b9a; size =  42685776; name = FREDDI2.HE4
+    file[]: crc = c6cca909; size =    250448; name = FREDDI2.HLP; optional = true
+    file[]: crc = d808e55a; size =      2105; name = FREDDI2.INF
+    file[]: crc = f68318bd; size =    330240; name = FREDDI2.W32
+    file[]: crc = 3b8ee175; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 7dd26489; size =     13702; name = README.TXT; optional = true
+
+
+end
+
+
+//
+// French version
+//
+game[pc-fr-961107-alt]:
+    name = French 1996-11-07 (Alternate)
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 27d7082b; size =       558; name = Copyright.txt; optional = true
+    file[]: crc = b538252a; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = da0e7096; size =     10693; name = LISEZMOI.TXT; optional = true
+    file[]: crc = f81793cf; size =    132118; name = MALICE2.BMP; optional = true
+    file[]: crc = e878a682; size =     35840; name = MALICE2.D32
+    file[]: crc = 855b5079; size =      9200; name = MALICE2.DLL
+    file[]: crc = 92f85f11; size =     21616; name = MALICE2.EXE
+    file[]: crc = 7077a269; size =     65305; name = MALICE2.HE0
+    file[]: crc = e9f2e67d; size = 115246919; name = MALICE2.HE1
+    file[]: crc = 9d26e13b; size =  32483184; name = MALICE2.HE2
+    file[]: crc = 71402b9a; size =  42685776; name = MALICE2.HE4
+    file[]: crc = bfe7f429; size =    163291; name = MALICE2.HLP
+    file[]: crc = 4bc04202; size =      2069; name = MALICE2.INF
+    file[]: crc = f68318bd; size =    330240; name = MALICE2.W32
+
+
+end
+
 
 //
 // German version
