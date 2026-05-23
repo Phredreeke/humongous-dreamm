@@ -103,10 +103,36 @@ game[pc-nl-990413]:
 end
 
 //
+// French version (taken from Anuman release)
+//
+game[pc-fr-990604]:
+    name = French 1999-06-04
+    anchorfile = PYJAM2.EXE
+    BITNESS = false
+    launch = "$(rootpath)\PYJAM2.EXE"
+    file[]: name = COPYRITE.TXT; optional = true
+    file[]: crc = 2c32aeae; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: name = LISEZMOI.TXT; optional = true
+    file[]: crc = 6d274252; size =  98209987; name = PYJAM2.(A)
+    file[]: crc = aa60b4af; size =    132406; name = PYJAM2.BMP; optional = true
+    file[]: crc = 81980e29; size =     35840; name = PYJAM2.D32
+    file[]: crc = 855b5079; size =      9200; name = PYJAM2.DLL
+    file[]: crc = f2d16c4f; size =     21616; name = PYJAM2.EXE
+    file[]: crc = 49971042; size =     60653; name = PYJAM2.HE0
+    file[]: crc = 08b78dc3; size =  77242441; name = PYJAM2.HE2
+    file[]: crc = 477991a4; size =  22611842; name = PYJAM2.HE4
+    file[]: name = PYJAM2.HLP
+    file[]: name = PYJAM2.INF
+    file[]: crc = c3133791; size =    444928; name = PYJAM2.W32
+    file[]: crc = eea4f0ee; size =       766; name = SAM2.ICO; optional = true
+
+end
+
+//
 // French version
 //
-game[pc-fr-2001]:
-    name = French (2001)
+game[pc-fr-010201]:
+    name = French 2001-02-01
     anchorfile = PyjamaHM.exe
     BITNESS = false
     launch = "$(rootpath)\PyjamaHM.exe"
@@ -117,8 +143,8 @@ game[pc-fr-2001]:
     file[]: crc = b87101ac; size =     60678; name = PyjamaHM.HE0
     file[]: crc = 73266e6b; size =  77265582; name = PyjamaHM.HE2
     file[]: crc = 477991a4; size =  22611842; name = Pyjamahm.HE4
-    file[]: crc = c0da6b86; size =   1183044; name = PYJAMAHM.HLP; optional = true
-    file[]: crc = 0e21a8ea; size =      2601; name = PyjamaHM.INF; optional = true
+    file[]: name = PYJAMAHM.HLP; optional = true
+    file[]: name = PyjamaHM.INF
     file[]: crc = 7f0050c1; size =    430080; name = PyjamaHM.w32
 
 end

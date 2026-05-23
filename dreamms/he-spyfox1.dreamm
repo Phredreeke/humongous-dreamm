@@ -46,7 +46,7 @@ game[pc-en-970723]:
     file[]: crc = 1755fb24; size =  30445290; name = SPYFOX.HE4
     file[]: crc = 31b81422; size =   1011429; name = SPYFOX.HLP; optional = true
     file[]: crc = 19d8853f; size =       766; name = SPYFOX.ICO; optional = true
-    file[]: crc = 5300bcda; size =      2176; name = SPYFOX.INF; optional = true
+    file[]: name = SPYFOX.INF
     file[]: crc = fabebd7c; size =    365056; name = SPYFOX.W32
 
 
@@ -70,7 +70,7 @@ game[pc-en-010221-uk]:
     file[]: crc = b472a628; size = 152271916; name = SPYFoxDC.he2
     file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxDC.he4
     file[]: crc = f7b9bd9c; size =   1019175; name = SPYFoxDC.hlp; optional = true
-    file[]: crc = e7ec6040; size =      2498; name = SPYFoxDC.inf; optional = true
+    file[]: name = SPYFoxDC.inf
     file[]: crc = 0972928b; size =    475136; name = spyfoxdc.w32
 
 
@@ -93,7 +93,7 @@ game[pc-en-020521]:
     file[]: crc = b05d782e; size = 139135797; name = SPYFOX.HE2
     file[]: crc = 5ecaea09; size =  30324471; name = SPYFOX.HE4
     file[]: crc = a3a345b5; size =   1163398; name = SPYFOX.HLP; optional = true
-    file[]: crc = e96188dc; size =      2151; name = SPYFOX.INF; optional = true
+    file[]: name = SPYFOX.INF; optional = true
 
 
 
@@ -118,7 +118,7 @@ game[pc-en-070901]:
     file[]: crc = 5ecaea09; size =  30324471; name = SpyFox.he4
     file[]: crc = 9cd9c279; size =   1133912; name = SPYFOX.hlp; optional = true
     file[]: crc = 3c5fd9e5; size =     59034; name = SpyFox.ico; optional = true
-    file[]: crc = 5a430384; size =      2158; name = SpyFox.inf; optional = true
+    file[]: name = SpyFox.inf
     file[]: crc = 63dec5fb; size =    128676; name = SpyFox_Manual.pdf; optional = true
     file[]: crc = 424af85d; size =     10387; name = SpyFox_readme.txt; optional = true
 
@@ -143,7 +143,7 @@ game[pc-nl-970405]:
     file[]: crc = e72fc3a9; size = 185288795; name = SPYFOX.HE2
     file[]: crc = 6487d551; size =  30321625; name = SPYFOX.HE4
     file[]: crc = 4a3e5b5c; size =   1243580; name = SPYFOX.HLP; optional = true
-    file[]: crc = 0ad97d61; size =      2220; name = SPYFOX.INF; optional = true
+    file[]: name = SPYFOX.INF
     file[]: crc = 2383adb9; size =    444928; name = SPYFOX.W32
 
 
@@ -166,7 +166,7 @@ game[pc-fr-001114]:
     file[]: crc = 46faf08f; size = 155023130; name = SPYFoxOM.HE2
     file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxOM.HE4
     file[]: crc = 8d51f23a; size =   1069026; name = SpyfoxOM.hlp; optional = true
-    file[]: crc = a0787290; size =      2700; name = SPYFoxOM.INF; optional = true
+    file[]: name = SPYFoxOM.INF
     file[]: crc = d3beccf8; size =    430080; name = SPYFoxOM.w32
 
 
@@ -189,7 +189,7 @@ game[pc-de-980825]:
     file[]: crc = 5ecaea09; size =  30324471; name = FUCHS.HE4
     file[]: crc = 6bfbcd68; size =   1135439; name = FUCHS.HLP
     file[]: crc = 19d8853f; size =       766; name = FUCHS.ICO; optional = true
-    file[]: crc = 7ea41c33; size =      2273; name = FUCHS.INF; optional = true
+    file[]: name = FUCHS.INF
     file[]: crc = fabebd7c; size =    365056; name = FUCHS.W32
     file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
@@ -215,7 +215,7 @@ game[pc-de-001114]:
     file[]: crc = 07f125f8; size = 145639456; name = SPYFoxDMK.HE2
     file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxDMK.HE4
     file[]: crc = 130a3a4d; size =   1109491; name = SpyfoxDMK.hlp; optional = true
-    file[]: crc = 19c15c45; size =      2672; name = SPYFoxDMK.INF; optional = true
+    file[]: name = SPYFoxDMK.INF
     file[]: crc = d3beccf8; size =    430080; name = SPYFoxDMK.w32
 
 

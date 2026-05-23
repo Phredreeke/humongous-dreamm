@@ -33,7 +33,7 @@ game[pc-en-000515]:
     file[]: crc = f4163b50; size =  27138683; name = puttcircus.HE4
     file[]: crc = 156424a8; size =   1879418; name = puttcircus.hlp; optional = true
     file[]: crc = 69d8214f; size =       766; name = PUTTCIRCUS.ICO; optional = true
-    file[]: crc = 942ce8ea; size =      2864; name = puttcircus.inf; optional = true
+    file[]: name = puttcircus.inf
     file[]: crc = 4aca680f; size =    425984; name = PUTTCIRCUS.w32
 
 
@@ -57,7 +57,7 @@ game[pc-en-010413-uk]:
     file[]: crc = 732fc6c6; size =  27118884; name = PuttPuttJTC.he4
     file[]: crc = 33778914; size =   1518524; name = PuttPuttJTC.hlp; optional = true
     file[]: crc = 69d8214f; size =       766; name = PUTTPUTTJTC.ICO; optional = true
-    file[]: crc = f3d5c2b4; size =      2483; name = PuttPuttJTC.inf; optional = true
+    file[]: name = PuttPuttJTC.inf
     file[]: crc = b893b321; size =    475182; name = puttputtjtc.w32
 
 
@@ -80,7 +80,7 @@ game[pc-nl-010827]:
     file[]: crc = 8574a1b9; size = 100789821; name = Puttihc.he2
     file[]: crc = 6b7429d4; size =  27169420; name = Puttihc.he4
     file[]: crc = 1006270a; size =   1573752; name = PuttIHC.hlp; optional = true
-    file[]: crc = 6d71beb9; size =      2543; name = PuttIHC.INF; optional = true
+    file[]: name = PuttIHC.INF
     file[]: crc = b893b321; size =    475182; name = PuttIHC.w32
 
 end
@@ -101,7 +101,7 @@ game[pc-fr-010514]:
     file[]: crc = 2bf3dc83; size =  82059607; name = PouceDLC.he2
     file[]: crc = c936c307; size =  27119867; name = PouceDLC.he4
     file[]: crc = b23a55b4; size =   1505091; name = PouceDLC.hlp; optional = true
-    file[]: crc = 80339884; size =      2571; name = PouceDLC.INF; optional = true
+    file[]: name = PouceDLC.INF
     file[]: crc = b893b321; size =    475182; name = PouceDLC.w32
 
 end
@@ -122,7 +122,7 @@ game[pc-de-010829]:
     file[]: crc = bcd935a2; size =  27101237; name = ToffToffGZZ.he4
     file[]: crc = 0286a760; size =   1564224; name = ToffToffGZZ.HLP; optional = true
     file[]: crc = 69d8214f; size =       766; name = ToffToffGZZ.ICO; optional = true
-    file[]: crc = 683f4bdf; size =      2549; name = ToffToffGZZ.inf
+    file[]: name = ToffToffGZZ.inf
     file[]: crc = b893b321; size =    475182; name = ToffToffGzz.w32
 
 end
@@ -142,7 +142,7 @@ game[pc-he-030309]:
     file[]: crc = 04175dcb; size =  27122609; name = PuttCircus.he4
     file[]: crc = 7d69bdf7; size =   2571550; name = puttcircus.hlp; optional = true
     file[]: crc = 1bcedf37; size =       766; name = puttcircus.ico; optional = true
-    file[]: crc = b87e66ef; size =      2083; name = PuttCircus.inf; optional = true
+    file[]: name = PuttCircus.inf
     file[]: crc = e9389a6a; size =    475182; name = PUTTCIRCUS.w32
 
 end
@@ -190,8 +190,6 @@ game[pc-fr-010716-demo]:
 
 
 end
-
-
 
 
 //
