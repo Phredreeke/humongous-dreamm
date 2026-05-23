@@ -89,6 +89,25 @@ demo[pc-en-971214-demo]:
 end
 
 //
+// English demo (from Big Thinkers 1st grade)
+//
+demo[pc-en-970709-demo]:
+    name = English demo (1997-07-09)
+    anchorfile = AIRDEMO.EXE
+    launch = "$(rootpath)\AIRDEMO.EXE"
+    file[]: crc = 1ef86d61; size =     30720; name = AIRDEMO.EXE
+    file[]: crc = c2dbb2f1; size =     51152; name = AIRDEMO.HE0
+    file[]: crc = 406f187a; size =  28653034; name = AIRDEMO.HE1
+    file[]: crc = 45499b59; size =   2351409; name = AIRDEMO.HE2
+    file[]: crc = c05daad7; size =     36864; name = AIRDEMO.HE3
+    file[]: crc = 78c81886; size =    111925; name = AIRDEMO.HE4
+    file[]: crc = 0dda5d99; size =     15461; name = AIRDEMO.HE9
+    file[]: crc = 2fa5b2ab; size =     37265; name = AIRDEMO.HLP
+    file[]: crc = 2624bf66; size =    296448; name = AIRDEMO.W32
+
+end
+
+//
 // Dutch demo 
 //
 demo[pc-nl-950830-demo]:

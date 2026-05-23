@@ -207,6 +207,26 @@ demo[pc-en-950705-demo]:
 end
 
 //
+// 1997 demo version (from Big Thinkers 1st grade)
+//
+demo[pc-en-970709-demo]:
+    name = English Demo 1997-07-09
+    anchorfile = ZOODEMO.EXE
+    launch = "$(rootpath)\ZOODEMO.EXE"
+    file[]: crc = f14d694c; size =     30720; name = ZOODEMO.EXE
+    file[]: crc = 73568f3f; size =     14337; name = ZOODEMO.HE0
+    file[]: crc = 5d8653fa; size =  13326164; name = ZOODEMO.HE1
+    file[]: crc = 74ff42d5; size =   7569249; name = ZOODEMO.HE2
+    file[]: crc = 6825ab53; size =     36864; name = ZOODEMO.HE3
+    file[]: crc = eba099b8; size =   9683210; name = ZOODEMO.HE4
+    file[]: crc = fd4ef88d; size =     35217; name = ZOODEMO.HLP
+    file[]: crc = ca0d4667; size =    293376; name = ZOODEMO.W32
+
+
+
+end
+
+//
 // 2007 Dutch demo version
 //
 demo[pc-nl-070525-demo]:
@@ -236,9 +256,9 @@ demo[pc-fr-970305-demo]:
     anchorfile = ZOODEMO.EXE
     launch = "$(rootpath)\ZOODEMO.EXE"
     file[]: crc = 8b976bc3; size =      1285; name = SNDCARDS.INF
-    file[]: crc = e0260a25; size =    132406; name = ZOODEMO.BMP
+    file[]: crc = e0260a25; size =    132406; name = ZOODEMO.BMP; optional = true
     file[]: crc = 91091655; size =     34816; name = ZOODEMO.EXE
-    file[]: crc = 8d85ef4e; size =      8628; name = ZOODEMO.GID
+    file[]: crc = 8d85ef4e; size =      8628; name = ZOODEMO.GID; optional = true
     file[]: crc = 78961237; size =     14337; name = ZOODEMO.HE0
     file[]: crc = eede2efd; size =  13349533; name = ZOODEMO.HE1
     file[]: crc = b8d1aaff; size =   6414697; name = ZOODEMO.HE2
@@ -252,6 +272,22 @@ demo[pc-fr-970305-demo]:
 
 end
 
+//
+// French demo version (found on Pajama Sam 2 Anuman release)
+//
+demo[pc-fr-981112-demo]:
+    name = French Demo 1998-11-12
+    imports = pc-fr-970305-demo
+    file[]: remove = ZOODEMO.BMP
+    file[]: crc = 2205f470; size =    286720; name = ZOODEMO.EXE
+    file[]: remove = ZOODEMO.GID; optional = true
+    file[]: crc = b3321390; size =    163023; name = ZOODEMO.HLP
+    file[]: crc = 3b68bc8e; size =       450; name = ZOODEMO.INF
+    file[]: remove = ZOODEMO.W32
+
+
+
+end
 
 //
 // 1997 German demo version
