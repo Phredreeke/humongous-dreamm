@@ -1,0 +1,84 @@
+desc[he-thinkers]:
+
+name = Big Thinkers! 
+icon = he-thinkers.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\THINKER1.EXE"
+osenv = windows 98
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
+// 1st Grade
+//
+game[pc-en-1stgrade-970818]:
+    name = 1st Grade English 1997-08-18
+    anchorfile = THINKER1.EXE
+    file[]: name = BT-AD.BMP; optional = true
+    file[]: name = COPYRITE.TXT; optional = true
+    file[]: name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: name = README.TXT; optional = true
+    file[]: crc = af18885f; size =    119780; name = THINKER1.BMP; optional = true
+    file[]: crc = a6712191; size =     36352; name = THINKER1.D32
+    file[]: crc = a26710b2; size =      8896; name = THINKER1.DLL
+    file[]: crc = d45b1db6; size =     21712; name = THINKER1.EXE
+    file[]: crc = 7fc5dda2; size =     33270; name = THINKER1.HE0
+    file[]: crc = 0dcd953a; size =  32352129; name = THINKER1.HE1
+    file[]: crc = cdea1705; size =  62964593; name = THINKER1.HE2
+    file[]: crc = 88c7d050; size =  21535817; name = THINKER1.HE4
+    file[]: crc = 1c4cf710; size =    671565; name = THINKER1.HLP
+    file[]: crc = 044dafc5; size =       766; name = THINKER1.ICO; optional = true
+    file[]: crc = 406c1541; size =      2258; name = THINKER1.INF
+    file[]: crc = 91283d2b; size =    365568; name = THINKER1.W32
+
+
+end
+
+//
+// Kindergarten
+//
+game[pc-en-kinder-970907]:
+    name = Kindergarten English 1997-09-07
+    anchorfile = THINKERK.EXE
+    launch = "$(rootpath)\THINKERK.EXE"
+    file[]: name = BT-AD.BMP; optional = true
+    file[]: name = COPYRITE.TXT; optional = true
+    file[]: name = HE.BMP; optional = true
+    file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
+    file[]: name = README.TXT; optional = true
+    file[]: crc = bd94c364; size =    106848; name = THINKERK.BMP; optional = true
+    file[]: crc = a6712191; size =     36352; name = THINKERK.D32
+    file[]: crc = a26710b2; size =      8896; name = THINKERK.DLL
+    file[]: crc = c37b5b12; size =     21696; name = THINKERK.EXE
+    file[]: crc = 801d5cb5; size =     30560; name = THINKERK.HE0
+    file[]: crc = c8bfabdf; size =  26632745; name = THINKERK.HE1
+    file[]: crc = 61ecd6a0; size =  62198302; name = THINKERK.HE2
+    file[]: crc = f822fe71; size =  72408877; name = THINKERK.HE4
+    file[]: crc = c7ea87f6; size =    647909; name = THINKERK.HLP
+    file[]: crc = 859b28f5; size =       766; name = THINKERK.ICO; optional = true
+    file[]: crc = eb346b83; size =      2248; name = THINKERK.INF
+    file[]: crc = 27af3fcf; size =    365568; name = THINKERK.W32
+
+
+end
+
+
+end
