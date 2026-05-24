@@ -32,6 +32,7 @@ end
 game[pc-en-990904]:
     name = English (1999-09-04)
     anchorfile = FOOTBALL.EXE
+    launch = "$(rootpath)\FOOTBALL.W32"
     file[]: crc = 13b5cc2c; size =     89717; name = AUTOFOOT.PCX
     file[]: crc = 920648b0; size =    308278; name = BFL.BMP
     file[]: crc = b59a6056; size =    741376; name = BYMAIA.DLL
