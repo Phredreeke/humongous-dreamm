@@ -174,8 +174,8 @@ demo[pc-en-990328-demo]:
     file[]: crc = 78cccf9f; size =     13110; name = RACEDEMO.HE0
     file[]: crc = a5799d5f; size =   2848904; name = RACEDEMO.HE2
     file[]: crc = 05f963a8; size =   3994692; name = RACEDEMO.HE4
-    file[]: crc = 6b9f5356; size =    297416; name = racedemo.hlp
-    file[]: crc = c1167063; size =      2268; name = RACEDEMO.INF
+    file[]: crc = 6b9f5356; size =    297416; name = racedemo.hlp; optional = true
+    file[]: name = RACEDEMO.INF
     file[]: crc = 9f8b206c; size =     55808; name = RACEDEMO.U32
 
 
