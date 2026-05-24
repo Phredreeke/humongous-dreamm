@@ -89,21 +89,42 @@ end
 //
 // French version
 //
-game[pc-fr]:
-    name = French version
+game[pc-fr-001024]:
+    name = French (2000-10-24)
     anchorfile = SPYFoxORE.EXE
     launch = "$(rootpath)\SPYFoxORE.EXE"
     file[]: crc = 559994ac; size =     35907; name = JA-AD.pcx; optional = true
     file[]: crc = 2bf514fa; size =  89647310; name = SPYFoxORE.(a)
     file[]: crc = c598f977; size =     49152; name = SPYFoxORE.D32
     file[]: crc = 5f15d470; size =     86016; name = SPYFoxORE.EXE
-    file[]: crc = d6425da3; size =      8628; name = SPYFoxORE.GID
+    file[]: crc = d6425da3; size =      8628; name = SPYFoxORE.GID; optional = true
     file[]: crc = 833b1b23; size =     51286; name = SPYFoxORE.HE0
     file[]: crc = d02093e9; size = 156183480; name = SPYFoxORE.HE2
     file[]: crc = dec6bf03; size =  42660124; name = SPYFoxORE.HE4
     file[]: crc = b0f5ec52; size =    320472; name = SPYFoxORE.HE9
     file[]: crc = f78b78fe; size =    699274; name = SPYFoxORE.HLP; optional = true
     file[]: crc = b530dd9f; size =      2499; name = SPYFoxORE.INF
+    file[]: crc = f39636a0; size =    442368; name = SPYFoxORE.w32
+
+end
+
+//
+// French version (Anuman)
+//
+game[pc-fr-001005]:
+    name = French (2000-10-05)
+    anchorfile = SPYFoxORE.EXE
+    launch = "$(rootpath)\SPYFoxORE.EXE"
+    file[]: crc = 559994ac; size =     35907; name = JA-AD.pcx; optional = true
+    file[]: crc = 38923248; size =  89652246; name = SPYFoxORE.(a)
+    file[]: crc = c598f977; size =     49152; name = SPYFoxORE.D32
+    file[]: crc = 5f15d470; size =     86016; name = SPYFoxORE.EXE
+    file[]: crc = 64f9db7d; size =     51286; name = SPYFoxORE.HE0
+    file[]: crc = b65f1bab; size = 156202680; name = SPYFoxORE.HE2
+    file[]: crc = dec6bf03; size =  42660124; name = SPYFoxORE.HE4
+    file[]: crc = b0f5ec52; size =    320472; name = SPYFoxORE.HE9
+    file[]: crc = ad3e0a66; size =    738185; name = SPYFOXORE.HLP
+    file[]: crc = f53e0a24; size =      2379; name = SPYFoxORE.INF
     file[]: crc = f39636a0; size =    442368; name = SPYFoxORE.w32
 
 end
