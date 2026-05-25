@@ -1,0 +1,81 @@
+desc[he-fbearstorm]:
+
+name = Bear Stormin'
+icon = he-fbearstorm.png
+machine = pc
+rootpath = C:\
+launch = "$(rootpath)\BRSTORM.EXE"
+osenv = dos
+
+//
+// sound drivers
+//
+WDRV = 0x53 0x42 0x31 0x36 0x2e 0x57 0x44 0x52 0x00 0x00 0x00 0x00 0x00 0x00
+WDINFO = 0x20 0x02 0xff 0xff 0xff 0xff 0xff 0xff
+WDRV32 = 0x53 0x42 0x31 0x36 0x2e 0x57 0x53 0x44 0x00 0x00 0x00 0x00 0x00 0x00
+WDINFO32 = 0x20 0x02 0x00 0x00 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Set up INI file for DOS version
+//
+DOSAUDIO = false
+dynamicfile[]:
+    condition = $(DOSAUDIO)
+    path = $(INIPATH)\BRSTORM.INI
+    contents = [[[$(CRLF)
+    DigitalSoundDriver=sblaster.com
+    MidiSoundDriver=sbfm.adv
+    IOAddress=220
+    IRQ=7
+    DigitalID=
+]]]
+end
+//
+
+//
+// Sourced from:
+// https://www.scummvm.org/demos/#he
+// https://archive.org/details/pegasus_5
+// https://dose.0wnz.at/Shareware/Pegasus-Games/DOS/GESCHICK/
+//
+game[pc-en-931209-demo]:
+    name = English Demo 1993-12-09
+    anchorfile = BRSTORM.EXE
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    INIPATH = C:\BRSTORM
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = 5f41f1d4; size =    162085; name = BRSTORM.DRV
+    file[]: crc = 14e04203; size =    142805; name = BRSTORM.EXE
+    file[]: crc = 77df87d4; size =      5433; name = BRSTORM.HE0
+    file[]: crc = 1d44612b; size =    237722; name = BRSTORM.HE1
+    file[]: crc = 557887e3; size =       114; name = BRSTORM.INI
+    file[]: crc = b1fce9f6; size =       545; name = BRSTORM.PIF; optional = true
+    file[]: crc = ab2774db; size =     45690; name = BRSTORM.BRS
+end
+
+
+//
+// installer for above
+//
+installer[pc-en-931209-demo-install]:
+    name = Bear Stormin' Installer
+    installid = pc-en-931209-demo
+    mips = $(MIPS_MAX)
+    anchorfile = BEARSTRM.EXE
+    launch = $(rootpath)\BEARSTRM.EXE
+    file[]: crc = 8968ef73; size =    476041; name = BEARSTRM.EXE; exactonly = true
+end
+
+end
