@@ -248,8 +248,23 @@ demo[pc-fr-980216-demo]:
     file[]: crc = b00a2ca9; size =   5896491; name = TEMPDEMO.HE2
     file[]: crc = 9d7d7e3d; size =   9533303; name = TEMPDEMO.HE4
     file[]: crc = 6ba0ccc6; size =    100363; name = TEMPDEMO.HLP; optional = true
-    file[]: crc = 98fe2bbc; size =      2325; name = TEMPDEMO.INF; optional = true
+    file[]: crc = 98fe2bbc; size =      2325; name = TEMPDEMO.INF
     file[]: crc = a873aa71; size =    368640; name = TEMPDEMO.W32
+
+
+end
+
+//
+// 1998 French Demo version (from Pajama Sam 2 Anuman release)
+//
+demo[pc-fr-981019-demo]:
+    name = French Demo 1998-10-19
+    imports = pc-fr-980216-demo
+    file[]: remove = JA-AD.BMP; optional = true
+    file[]: crc = 36297c54; size =    368640; name = TEMPDEMO.EXE
+    file[]: crc = b3321390; size =    163023; name = TEMPDEMO.HLP
+    file[]: crc = 8045b011; size =      2327; name = TEMPDEMO.INF
+    file[]: remove = TEMPDEMO.W32
 
 
 end
