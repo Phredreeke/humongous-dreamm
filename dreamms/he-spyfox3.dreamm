@@ -102,6 +102,45 @@ game[pc-de-010621]:
 
 end
 
+//
+// English demo version (from Freddi Fish 5)
+//
+demo[pc-en-010516-demo]:
+    name = English Demo 2001-05-16
+    anchorfile = SF3-DEMO.EXE
+    launch = "$(rootpath)\SF3-DEMO.EXE"
+    file[]: crc = 0394a58e; size =   7141191; name = SF3-DEMO.(A)
+    file[]: crc = 8c2168aa; size =     53248; name = SF3-DEMO.D32
+    file[]: crc = dbeac2fd; size =    499760; name = SF3-DEMO.EXE
+    file[]: crc = 59199cbc; size =     15317; name = SF3-DEMO.HE0
+    file[]: crc = 7da12de6; size =   5876993; name = SF3-DEMO.HE2
+    file[]: crc = e132472f; size =   8273788; name = SF3-DEMO.HE3
+    file[]: crc = 9263cd58; size =   2258048; name = SF3-DEMO.HE4
+    file[]: crc = b03f6bff; size =      2872; name = SF3-DEMO.INF
+    file[]: crc = 4ae4806c; size =       766; name = SPYOZON.ICO; optional = true
+
+end
+
+//
+// French demo version (from Freddi Fish 5)
+//
+demo[pc-fr-010716-demo]:
+    name = French Demo 2001-07-16
+    anchorfile = sf3demo.exe
+    launch = "$(rootpath)\sf3demo.exe"
+    file[]: crc = 4ae4806c; size =       766; name = autostart.ico; optional = true
+    file[]: crc = 5b77e7da; size =   7323207; name = SF3Demo.(a)
+    file[]: crc = 81980e29; size =     35840; name = SF3Demo.D32
+    file[]: crc = b53b8d65; size =    503867; name = sf3demo.exe
+    file[]: crc = 4be97c97; size =     15335; name = SF3Demo.HE0
+    file[]: crc = 004f1aaf; size =   7264669; name = sf3demo.he2
+    file[]: crc = 9263cd58; size =   2258048; name = sf3demo.he4
+    file[]: crc = ae80475e; size =   1640622; name = SF3Demo.HLP; optional = true
+    file[]: crc = 342ceea0; size =      2164; name = SF3Demo.INF
+
+end
+
+
 
 
 

@@ -77,7 +77,7 @@ end
 // French version
 //
 game[pc-fr-011203]:
-    name = English 2001-12-03
+    name = French 2001-12-03
     anchorfile = FreddiMML.EXE
     launch = "$(rootpath)\FreddiMML.EXE"
     file[]: crc = 2adfe452; size = 123485049; name = FreddiMML.(a)
