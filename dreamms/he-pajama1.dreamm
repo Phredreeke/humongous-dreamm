@@ -323,8 +323,8 @@ demo[pc-fr-980326-demo]:
     file[]: crc = 910a0997; size =  13192961; name = SAMDEMO.HE1
     file[]: crc = 739358d6; size =   6639194; name = SAMDEMO.HE2
     file[]: crc = e164e1b8; size =  10836436; name = SAMDEMO.HE4
-    file[]: crc = b3321390; size =    163023; name = SAMDEMO.HLP; optional = true
-    file[]: crc = 5baba73c; size =      2272; name = SAMDEMO.INF
+    file[]: name = SAMDEMO.HLP; optional = true
+    file[]: name = SAMDEMO.INF
 
 
 

@@ -131,10 +131,37 @@ game[pc-nl-981022]:
     file[]: crc = 4686461b; size =  77965598; name = FREDDI3.HE2
     file[]: crc = cc41ca11; size =  27719552; name = FREDDI3.HE4
     file[]: crc = 2869d14a; size =    850283; name = FREDDI3.HLP; optional = true
-    file[]: crc = aac084b9; size =      2189; name = FREDDI3.INF; optional = true
+    file[]: crc = aac084b9; size =      2189; name = FREDDI3.INF
     file[]: crc = 929c4f9d; size =    368640; name = FREDDI3.W32
     file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
     file[]: name = JA-AD.BMP; optional = true // this is different in some releases
+
+
+end
+
+//
+// 1997 French version
+//
+game[pc-fr-970925]:
+    name = French 1997-09-25
+    anchorfile = MALICE3.EXE
+    launch = "$(rootpath)\MALICE3.EXE"
+    file[]: crc = f769a993; size =       553; name = COPYRITE.TXT; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = a415984f; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = 1ba1c8b7; size =     28821; name = LISEZMOI.TXT; optional = true
+    file[]: crc = bccdd6a2; size =    130678; name = MALICE3.BMP; optional = true
+    file[]: crc = e878a682; size =     35840; name = MALICE3.D32
+    file[]: crc = 855b5079; size =      9200; name = MALICE3.DLL
+    file[]: crc = ee48f171; size =     21616; name = MALICE3.EXE
+    file[]: crc = 372aa68b; size =     55959; name = MALICE3.HE0
+    file[]: crc = e9d0ac60; size =  74623617; name = MALICE3.HE1
+    file[]: crc = 2c546a9f; size =  65721887; name = MALICE3.HE2
+    file[]: crc = 4bb7642c; size =  27727432; name = MALICE3.HE4
+    file[]: crc = 7f727db0; size =    661748; name = MALICE3.HLP; optional = true
+    file[]: crc = 3365b814; size =       766; name = MALICE3.ICO; optional = true
+    file[]: crc = 0d3e2b8f; size =      2197; name = MALICE3.INF
+    file[]: crc = 929c4f9d; size =    368640; name = MALICE3.W32
 
 
 end
@@ -155,7 +182,7 @@ game[pc-fr-001114]:
     file[]: crc = ec21e777; size =  65721887; name = MaliceMCV.HE2
     file[]: crc = 56796a70; size =  27732362; name = MaliceMCV.HE4
     file[]: crc = 69f5aa06; size =    655844; name = MALICEMCV.HLP; optional = true
-    file[]: crc = d0cc28ce; size =      2521; name = MaliceMCV.inf; optional = true
+    file[]: crc = d0cc28ce; size =      2521; name = MaliceMCV.inf
     file[]: crc = 704d8452; size =    442368; name = MaliceMCV.w32
 
 

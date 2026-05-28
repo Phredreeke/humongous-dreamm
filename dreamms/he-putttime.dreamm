@@ -127,6 +127,32 @@ game[pc-nl-980421]:
 end
 
 //
+// 1998 French version
+//
+game[pc-fr-980216]:
+    name = French 1998-02-16
+    anchorfile = POUCE.EXE
+    launch = "$(rootpath)\POUCE.EXE"
+    file[]: crc = 23f612f4; size =       549; name = COPYRITE.TXT; optional = true
+    file[]: crc = 09b2c55b; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = 66b54a67; size =     59036; name = LISEZMOI.TXT; optional = true
+    file[]: crc = 63d61042; size =    132118; name = POUCE.BMP
+    file[]: crc = 4dfeb4a8; size =     35840; name = POUCE.D32
+    file[]: crc = 855b5079; size =      9200; name = POUCE.DLL
+    file[]: crc = da9b7a6c; size =     21616; name = POUCE.EXE
+    file[]: crc = ac9e76e4; size =     62582; name = POUCE.HE0
+    file[]: crc = f47d5a16; size = 134500334; name = POUCE.HE1
+    file[]: crc = 6e268e41; size =  96036381; name = POUCE.HE2
+    file[]: crc = 22bf86cd; size =  48619853; name = POUCE.HE4
+    file[]: crc = f4eee01f; size =    300461; name = POUCE.HLP
+    file[]: crc = 8c7c923f; size =      2089; name = POUCE.INF
+    file[]: crc = da35d585; size =    330240; name = POUCE.W32
+
+
+
+end
+
+//
 // 2000 French version
 //
 game[pc-fr-001113]:
@@ -144,6 +170,32 @@ game[pc-fr-001113]:
     file[]: crc = ff467f24; size =    291747; name = POUCEVDT.HLP; optional = true
     file[]: crc = 096cb1d7; size =      2442; name = PouceVDT.INF
     file[]: crc = a8e16fea; size =    442368; name = PouceVDT.w32
+
+
+
+end
+
+//
+// 1998 German version
+//
+game[pc-de-980909]:
+    name = German 1998-09-09
+    anchorfile = TOFFZEIT.EXE
+    launch = "$(rootpath)\TOFFZEIT.EXE"
+    file[]: crc = 13e93479; size =       726; name = COPYRITE.TXT; optional = true
+    file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
+    file[]: crc = 60dd981b; size =    137878; name = JA-AD.BMP; optional = true
+    file[]: crc = 5ee34f6a; size =    132406; name = TOFFZEIT.BMP; optional = true
+    file[]: crc = 46996e05; size =     34816; name = TOFFZEIT.D32
+    file[]: crc = 46b8aa5a; size =      9088; name = TOFFZEIT.DLL
+    file[]: crc = 0d3da3c8; size =     21616; name = TOFFZEIT.EXE
+    file[]: crc = 056debf5; size =     62582; name = TOFFZEIT.HE0
+    file[]: crc = ec1e5775; size = 134088647; name = TOFFZEIT.HE1
+    file[]: crc = 44067849; size = 105037537; name = TOFFZEIT.HE2
+    file[]: crc = 37e53e71; size =  47890701; name = TOFFZEIT.HE4
+    file[]: crc = 83bde659; size =    331907; name = TOFFZEIT.HLP; optional = true
+    file[]: crc = a0170122; size =      2265; name = TOFFZEIT.INF
+    file[]: crc = 793dfea4; size =    317440; name = TOFFZEIT.W32
 
 
 

@@ -18,7 +18,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Windows version
 //
-BITNESS = true
+BITNESS = false
 config[bitness]:
     condition = $(BITNESS)
     title = Windows version
@@ -32,6 +32,7 @@ end
 game[pc-en-981008]:
     name = English 1998-10-08
     anchorfile = PUTTRACE.EXE
+    BITNESS = true
     file[]: crc = 7fab0f20; size =       672; name = COPYRITE.TXT; optional = true
     file[]: crc = 319f31e6; size =     74219; name = Ja-ad.PCX; optional = true
     file[]: crc = e3dab413; size =  74410999; name = puttrace.(a)
