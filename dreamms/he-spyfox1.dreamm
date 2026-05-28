@@ -26,6 +26,15 @@ config[bitness]:
 end
 
 //
+// warnings
+//
+CRACK = false
+warning[crack]:
+    condition = $(CRACK)
+    text = This version has been modified to remove Laserlock protection
+end
+
+//
 // 1997 version
 //
 game[pc-en-970723]:
@@ -149,6 +158,33 @@ game[pc-nl-970405]:
 
 end
 
+//
+// French 1997 version
+//
+game[pc-fr-981228-cr]:
+    name = French 1998-12-28 (modified)
+    anchorfile = RENARD.EXE
+    CRACK = true
+    launch = "$(rootpath)\RENARD.EXE"
+    file[]: crc = 8049ae5f; size =       553; name = Copyrite.txt; optional = true
+    file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
+    file[]: crc = 71b2dbd0; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = d95ec84f; size =     14437; name = Lisez-Moi.TXT; optional = true
+    file[]: crc = c6db3a6c; size =    130678; name = RENARD.BMP
+    file[]: crc = e878a682; size =     35840; name = RENARD.D32
+    file[]: crc = 855b5079; size =      9200; name = RENARD.DLL
+    file[]: crc = 15a41cb8; size =     21616; name = RENARD.EXE
+    file[]: crc = 9d2979c0; size =     49221; name = RENARD.HE0
+    file[]: crc = 7f039bfb; size =  69715674; name = RENARD.HE1
+    file[]: crc = 9efa3c46; size = 155059392; name = Renard.he2
+    file[]: crc = 5ecaea09; size =  30324471; name = RENARD.HE4
+    file[]: crc = 9feb49f6; size =   1074320; name = RENARD.HLP
+    file[]: crc = 19d8853f; size =       766; name = RENARD.ICO; optional = true
+    file[]: crc = 1498bf09; size =      2278; name = RENARD.INF
+    file[]: crc = fabebd7c; size =    365056; name = RENARD.W32 // originally Laserlock-protected, this file has been replaced with the unprotected counterpart from the English version
+
+
+end
 
 //
 // French 2000 version

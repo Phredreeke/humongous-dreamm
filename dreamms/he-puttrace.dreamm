@@ -133,6 +133,29 @@ game[pc-fr-990812]:
 
 end
 
+//
+// French 2000 version
+//
+game[pc-fr-000912]:
+    name = French 2000-09-12 
+    anchorfile = PouceCourse.EXE
+    launch = "$(rootpath)\PouceCourse.EXE"
+    file[]: crc = 2a0a48f8; size =     71696; name = Ja-ad.PCX; optional = true
+    file[]: crc = af33d4cb; size =  74874452; name = PouceCourse.(a)
+    file[]: crc = 40aa0884; size =   3770940; name = PouceCourse.(b)
+    file[]: crc = ec7c10f1; size =     35840; name = PouceCourse.D32
+    file[]: crc = 3582b481; size =    212992; name = PouceCourse.EXE
+    file[]: crc = c736c283; size =     32923; name = PouceCourse.HE0
+    file[]: crc = 4d9c4ddf; size =  78889057; name = PouceCourse.HE2
+    file[]: crc = 030b4af5; size =  37940185; name = PouceCourse.HE4
+    file[]: crc = a9fc05e7; size =   2302440; name = PouceCourse.HLP
+    file[]: crc = 5be8972d; size =      3623; name = PouceCourse.INF
+    file[]: crc = 9f8b206c; size =     55808; name = PouceCourse.U32
+    file[]: crc = e84dcb4b; size =    442368; name = PouceCourse.w32
+
+
+
+end
 
 
 //
