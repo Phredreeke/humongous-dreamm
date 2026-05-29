@@ -353,4 +353,30 @@ demo[pc-fr-970809-demo]:
 
 end
 
+
+//
+// German 1998 demo
+//
+demo[pc-de-980827-demo]:
+    name = German Demo 1998-08-27
+    anchorfile = FUCHSDEM.EXE
+    launch = "$(rootpath)\FUCHSDEM.EXE"
+    file[]: crc = 5e992b4d; size =    132406; name = FUCHSDEM.BMP; optional = true
+    file[]: crc = 46996e05; size =     34816; name = FUCHSDEM.D32
+    file[]: crc = 46b8aa5a; size =      9088; name = FUCHSDEM.DLL
+    file[]: crc = fabebd7c; size =    365056; name = FUCHSDEM.EXE
+    file[]: crc = d4aa45af; size =     20103; name = FUCHSDEM.HE0
+    file[]: crc = a60963cf; size =  14879814; name = FUCHSDEM.HE1
+    file[]: crc = 4d467fb5; size =  16922073; name = FUCHSDEM.HE2
+    file[]: crc = 5106d9b0; size =  12602664; name = FUCHSDEM.HE4
+    file[]: crc = 6bfb78b2; size =    139047; name = FUCHSDEM.HLP; optional = true
+    file[]: crc = 19d8853f; size =       766; name = FUCHSDEM.ICO; optional = true
+    file[]: crc = b156a51b; size =      2299; name = FUCHSDEM.INF
+    file[]: crc = 992f850a; size =     16898; name = README.TXT; optional = true
+
+
+end
+
+
+
 end
