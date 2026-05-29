@@ -227,6 +227,31 @@ demo[pc-en-010404-demo-uk]:
 
 end
 
+
+//
+// Dutch demo version
+//
+demo[pc-nl-990707-demo]:
+    name = Dutch Demo 1999-07-07
+    anchorfile = 500DEMO.EXE
+    launch = "$(rootpath)\500DEMO.EXE"
+    file[]: crc = f5c96ee4; size =   6460376; name = 500demo.(a)
+    file[]: crc = b997580d; size =    423424; name = 500demo.a32
+    file[]: crc = da68ff6b; size =     34304; name = 500DEMO.D32
+    file[]: crc = 7cc9e6d8; size =    444928; name = 500DEMO.EXE
+    file[]: crc = 3ed240ec; size =     13110; name = 500DEMO.HE0
+    file[]: crc = dc368aac; size =   2937176; name = 500DEMO.HE2
+    file[]: crc = 7e8316af; size =   4081770; name = 500DEMO.HE4
+    file[]: name = 500DEMO.HLP
+    file[]: crc = eef40fa6; size =       766; name = 500DEMO.ICO; optional = true
+    file[]: crc = ee7b398a; size =      3429; name = 500DEMO.INF
+    file[]: crc = 9f8b206c; size =     55808; name = 500DEMO.U32
+
+
+
+end
+
+
 //
 // Dutch demo version
 //
@@ -246,6 +271,7 @@ demo[pc-nl-010606-demo]:
 
 
 end
+
 
 //
 // French demo version
