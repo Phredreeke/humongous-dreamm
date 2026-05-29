@@ -201,7 +201,7 @@ end
 //
 game[pc-fr-961107-alt]:
     name = French 1996-11-07 (Alternate)
-    anchorfile = FREDDI2.EXE
+    anchorfile = MALICE2.EXE
     file[]: crc = 27d7082b; size =       558; name = Copyright.txt; optional = true
     file[]: crc = b538252a; size =    139078; name = JA-AD.BMP; optional = true
     file[]: crc = da0e7096; size =     10693; name = LISEZMOI.TXT; optional = true
@@ -214,7 +214,7 @@ game[pc-fr-961107-alt]:
     file[]: crc = 9d26e13b; size =  32483184; name = MALICE2.HE2
     file[]: crc = 71402b9a; size =  42685776; name = MALICE2.HE4
     file[]: crc = bfe7f429; size =    163291; name = MALICE2.HLP
-    file[]: crc = 4bc04202; size =      2069; name = MALICE2.INF
+    file[]: name = MALICE2.INF
     file[]: crc = f68318bd; size =    330240; name = MALICE2.W32
 
 
