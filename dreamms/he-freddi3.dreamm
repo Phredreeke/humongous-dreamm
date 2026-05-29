@@ -52,7 +52,7 @@ game[pc-en-971214]:
     file[]: crc = 1b893e4a; size =  27716525; name = FREDDI3.HE4
     file[]: crc = 600cbab1; size =    650773; name = FREDDI3.HLP; optional = true
     file[]: crc = 3365b814; size =       766; name = FREDDI3.ICO
-    file[]: crc = 62a4ee14; size =      2132; name = FREDDI3.INF; optional = true
+    file[]: crc = 62a4ee14; size =      2132; name = FREDDI3.INF
     file[]: crc = 929c4f9d; size =    368640; name = FREDDI3.W32
     file[]: crc = 0106d4d8; size =     97100; name = HE.BMP; optional = true
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
@@ -82,7 +82,7 @@ game[pc-en-010411-gm]:
     file[]: crc = 1b893e4a; size =  27716525; name = FREDDI3.HE4
     file[]: crc = 600cbab1; size =    650773; name = FREDDI3.HLP; optional = true
     file[]: crc = 3365b814; size =       766; name = FREDDI3.ICO; optional = true
-    file[]: crc = 2247bc9f; size =      2722; name = FREDDI3.INF; optional = true
+    file[]: crc = 2247bc9f; size =      2722; name = FREDDI3.INF
     file[]: crc = 929c4f9d; size =    368640; name = FREDDI3.W32
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 9eccb5fd; size =      9297; name = Hints.txt; optional = true
@@ -108,7 +108,7 @@ game[pc-en-010308-uk]:
     file[]: crc = 6a242b7c; size =  27721455; name = FreddiSCS.HE4
     file[]: crc = d1518202; size =    653011; name = FreddiSCS.hlp; optional = true
     file[]: crc = 3365b814; size =       766; name = FREDDISCS.ICO; optional = true
-    file[]: crc = 7030cf0f; size =      2372; name = FreddiSCS.inf; optional = true
+    file[]: crc = 7030cf0f; size =      2372; name = FreddiSCS.inf
     file[]: crc = a70e6247; size =    475182; name = freddiSCS.w32
     file[]: crc = d9db2667; size =     87083; name = Ja-ad.pcx; optional = true
     file[]: crc = bf9ea09b; size =    192575; name = seticon.exe; optional = true
@@ -205,7 +205,7 @@ game[pc-de-970925]:
     file[]: crc = 5287e3fa; size =  27757276; name = FRITZI3.HE4
     file[]: crc = d93cb23f; size =    668761; name = FRITZI3.HLP; optional = true
     file[]: crc = 3365b814; size =       766; name = FRITZI3.ICO; optional = true
-    file[]: crc = f4854f4d; size =      2176; name = FRITZI3.INF; optional = true
+    file[]: crc = f4854f4d; size =      2176; name = FRITZI3.INF
     file[]: crc = cfd14e61; size =    444928; name = FRITZI3.W32
     file[]: crc = 5209e370; size =    137878; name = JA-AD.BMP; optional = true
     file[]: crc = fc96a004; size =     27922; name = README.TXT; optional = true
@@ -229,7 +229,7 @@ game[pc-de-001114]:
     file[]: crc = bba8ad68; size =  70526411; name = FreddiFGT.HE2
     file[]: crc = ea57ed18; size =  27762206; name = FreddiFGT.HE4
     file[]: crc = 108f68b6; size =    663800; name = FreddiFGT.hlp; optional = true
-    file[]: crc = f5c15856; size =      2535; name = FreddiFGT.INF; optional = true
+    file[]: crc = f5c15856; size =      2535; name = FreddiFGT.INF
     file[]: crc = 704d8452; size =    442368; name = FreddiFGT.w32
     file[]: crc = ca08560d; size =     76886; name = Ja-ad.pcx; optional = true
 
@@ -329,6 +329,28 @@ demo[pc-fr-971213-demo]:
     file[]: crc = f905d48e; size =   2371550; name = MM3-DEMO.HE4
     file[]: crc = b3321390; size =    163023; name = MM3-DEMO.HLP; optional = true
     file[]: crc = 2b2bb78a; size =      2247; name = MM3-DEMO.INF; optional = true
+
+
+
+end
+
+//
+// 1999 German Demo version
+//
+demo[pc-de-990707-demo]:
+    name = French Demo 1999-07-07
+    anchorfile = Fritzi3demo.exe
+    BITNESS = false
+    launch = "$(rootpath)\Fritzi3demo.exe"
+    file[]: crc = 7263a326; size =   5502492; name = Fritzi3demo.(a)
+    file[]: crc = 46996e05; size =     34816; name = Fritzi3demo.d32
+    file[]: crc = 46b8aa5a; size =      9088; name = Fritzi3demo.dll
+    file[]: crc = cfd14e61; size =    444928; name = Fritzi3demo.exe
+    file[]: crc = bfa6cdac; size =     22754; name = Fritzi3demo.HE0
+    file[]: crc = 279fbe09; size =   4525245; name = Fritzi3demo.HE2
+    file[]: crc = c1cf20de; size =   2371550; name = Fritzi3demo.HE4
+    file[]: crc = 00bc79c3; size =    668760; name = Fritzi3demo.HLP; optional = true
+    file[]: crc = 9998b15c; size =      2196; name = Fritzi3demo.inf
 
 
 
