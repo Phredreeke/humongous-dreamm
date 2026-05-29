@@ -231,6 +231,29 @@ demo[pc-nl-990413-demo]:
 end
 
 //
+// 1999 German Demo
+//
+demo[pc-de-990323-demo]:
+    name = German Demo 1999-03-23
+    anchorfile = PJP2DEMO.EXE
+    BITNESS = false
+    launch = "$(rootpath)\PJP2DEMO.EXE"
+    file[]: crc = 99f04aba; size =       708; name = COPYRITE.TXT; optional = true
+    file[]: crc = 35f9ba39; size =   6104772; name = PJP2DEMO.(A)
+    file[]: crc = 46996e05; size =     34816; name = PJP2DEMO.D32
+    file[]: crc = 46b8aa5a; size =      9088; name = PJP2DEMO.DLL
+    file[]: crc = 849729f0; size =    444928; name = PJP2DEMO.EXE
+    file[]: crc = 873ae2c8; size =     58782; name = PJP2DEMO.HE0
+    file[]: crc = a2654df7; size =   2331742; name = PJP2DEMO.HE2
+    file[]: crc = d304f3a6; size =    848616; name = PJP2DEMO.HE4
+    file[]: crc = 3eda6ce8; size =   1315878; name = PJP2DEMO.HLP; optional = true
+    file[]: crc = 2157ac81; size =      2190; name = PJP2DEMO.INF
+    file[]: crc = 78020500; size =     26434; name = README.TXT; optional = true
+
+
+end
+
+//
 // 2001 Hebrew Demo
 //
 demo[pc-en-010328-demo]:
