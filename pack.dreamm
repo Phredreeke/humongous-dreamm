@@ -5,5 +5,4 @@ pack[]:
     minversion = 4.0x15
 end
 
-fastanchors[]:
-end
+
