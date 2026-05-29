@@ -90,7 +90,7 @@ end
 // French version
 //
 game[pc-fr-001024]:
-    name = French (2000-10-24)
+    name = French 2000-10-24
     anchorfile = SPYFoxORE.EXE
     launch = "$(rootpath)\SPYFoxORE.EXE"
     file[]: crc = 559994ac; size =     35907; name = JA-AD.pcx; optional = true
@@ -112,7 +112,7 @@ end
 // French version (Anuman)
 //
 game[pc-fr-001005]:
-    name = French (2000-10-05)
+    name = French 2000-10-05
     anchorfile = SPYFoxORE.EXE
     launch = "$(rootpath)\SPYFoxORE.EXE"
     file[]: crc = 559994ac; size =     35907; name = JA-AD.pcx; optional = true
