@@ -338,7 +338,7 @@ end
 // 1999 German Demo version
 //
 demo[pc-de-990707-demo]:
-    name = French Demo 1999-07-07
+    name = German Demo 1999-07-07
     anchorfile = Fritzi3demo.exe
     BITNESS = false
     launch = "$(rootpath)\Fritzi3demo.exe"
