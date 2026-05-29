@@ -321,6 +321,28 @@ demo[pc-fr-981019-demo]:
 
 end
 
+//
+// 1998 German Demo version
+//
+demo[pc-de-980825-demo]:
+    name = German Demo 1998-08-25
+    anchorfile = ZEITDEMO.EXE
+    launch = "$(rootpath)\ZEITDEMO.EXE"
+    file[]: crc = 6ed99eea; size =     16816; name = README.TXT; optional = true
+    file[]: crc = e8f99f6e; size =    132406; name = ZEITDEMO.BMP; optional = true
+    file[]: crc = 46996e05; size =     34816; name = ZEITDEMO.D32
+    file[]: crc = 46b8aa5a; size =      9088; name = ZEITDEMO.DLL
+    file[]: crc = e8890f73; size =    365568; name = ZEITDEMO.EXE
+    file[]: crc = 2b709008; size =     18403; name = ZEITDEMO.HE0
+    file[]: crc = 68a4612f; size =  12076087; name = ZEITDEMO.HE1
+    file[]: crc = 977f0f3f; size =   6992000; name = ZEITDEMO.HE2
+    file[]: crc = 3aa47c39; size =   9533894; name = ZEITDEMO.HE4
+    file[]: crc = 6bfb78b2; size =    139047; name = ZEITDEMO.HLP; optional = true
+    file[]: crc = d26ec988; size =      2342; name = ZEITDEMO.INF
+
+
+
+end
 
 
 
