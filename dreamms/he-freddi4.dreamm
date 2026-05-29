@@ -31,7 +31,7 @@ game[pc-en-990120]:
     file[]: crc = 7d99eb40; size =  40758122; name = FREDDI4.HE4
     file[]: crc = 30414fb0; size =    760891; name = Freddi4.hlp; optional = true
     file[]: crc = 1a9d8f94; size =       766; name = freddi4.ico; optional = true
-    file[]: crc = 65476cb0; size =      2162; name = FREDDI4.INF; optional = true
+    file[]: crc = 65476cb0; size =      2162; name = FREDDI4.INF
     file[]: crc = 79eb8326; size =       258; name = Freddi4.lnk; optional = true
     file[]: crc = 132873bb; size =    444928; name = FREDDI4.W32
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
@@ -56,7 +56,7 @@ game[pc-en-010221-uk]:
     file[]: crc = a04c1139; size = 108698840; name = FreddiHRBG.he2
     file[]: crc = 66d7b476; size =  40785517; name = FreddiHRBG.he4
     file[]: crc = 10312daa; size =    767167; name = FREDDIHRBG.hlp; optional = true
-    file[]: crc = a8bccf7c; size =      2418; name = FREDDIHRBG.inf; optional = true
+    file[]: crc = a8bccf7c; size =      2418; name = FREDDIHRBG.inf
     file[]: crc = f503e43d; size =    475136; name = FreddiHRBG.w32
     file[]: crc = a0153614; size =     57976; name = JA-AD.pcx; optional = true
 
@@ -78,9 +78,34 @@ game[pc-nl-990914]:
     file[]: crc = 970e7d85; size = 101504480; name = Freddi4.he2
     file[]: crc = 48b61d26; size =  40821925; name = Freddi4.he4
     file[]: crc = 3ad3ec46; size =   1274970; name = FREDDI4.HLP; optional = true
-    file[]: crc = 0fcd5244; size =      2688; name = Freddi4.inf; optional = true
+    file[]: crc = 0fcd5244; size =      2688; name = Freddi4.inf
     file[]: crc = 132873bb; size =    444928; name = FREDDI4.W32
     file[]: crc = 46a2d568; size =     56733; name = JA-AD.PCX; optional = true
+
+
+end
+
+//
+// 1999 French version
+//
+game[pc-fr-991011]:
+    name = French 1999-10-11
+    anchorfile = MALICE4.EXE
+    launch = "$(rootpath)\MALICE4.EXE"
+    file[]: crc = f3615431; size =       535; name = Copyrite.txt; optional = true
+    file[]: crc = d2984da6; size =     53427; name = JA-AD.PCX; optional = true
+    file[]: crc = c02c2b06; size =     20710; name = LISEZMOI.TXT; optional = true
+    file[]: crc = ee1ce54e; size = 117768775; name = MALICE4.(A)
+    file[]: crc = 81980e29; size =     35840; name = MALICE4.D32
+    file[]: crc = 855b5079; size =      9200; name = MALICE4.DLL
+    file[]: crc = 01445bbf; size =     77824; name = MALICE4.EXE
+    file[]: crc = 89d84d20; size =     44208; name = MALICE4.HE0
+    file[]: crc = e1df4ac1; size =  99313358; name = MALICE4.HE2
+    file[]: crc = fa6705b5; size =  40778131; name = MALICE4.HE4
+    file[]: crc = b68eb52f; size =    924892; name = MALICE4.HLP; optional = true
+    file[]: crc = 1a9d8f94; size =       766; name = MALICE4.ICO; optional = true
+    file[]: crc = 3f46c4b5; size =      2536; name = MALICE4.INF
+    file[]: crc = 132873bb; size =    444928; name = MALICE4.W32
 
 
 end
@@ -100,7 +125,7 @@ game[pc-fr-000926]:
     file[]: crc = e1df4ac1; size =  99313358; name = MaliceMRC.HE2
     file[]: crc = fa6705b5; size =  40778131; name = MaliceMRC.HE4
     file[]: crc = c8ac69a8; size =    927694; name = MALICEMRC.HLP; optional = true
-    file[]: crc = b33902e8; size =      2281; name = MaliceMRC.INF; optional = true
+    file[]: crc = b33902e8; size =      2281; name = MaliceMRC.INF
     file[]: crc = 5638339b; size =    442368; name = MaliceMRC.w32
 
 
@@ -120,7 +145,7 @@ game[pc-de-001004]:
     file[]: crc = 552904d0; size =  96792527; name = FreddiGS.HE2
     file[]: crc = 97d8787e; size =  40855724; name = FreddiGS.HE4
     file[]: crc = 08856d83; size =    743553; name = FreddiGS.HLP; optional = true
-    file[]: crc = b6bdcf5f; size =      2267; name = FreddiGS.INF; optional = true
+    file[]: crc = b6bdcf5f; size =      2267; name = FreddiGS.INF
     file[]: crc = 303bf074; size =    442368; name = FreddiGS.w32
     file[]: crc = 6c220c46; size =     67289; name = Ja-ad.pcx; optional = true
 
@@ -141,7 +166,7 @@ game[pc-it-010213]:
     file[]: crc = 5c42e124; size =  92895307; name = FreddiCMP.he2
     file[]: crc = 9acc7188; size =  40968221; name = FreddiCMP.he4
     file[]: crc = e414d380; size =    561372; name = FreddiCMP.hlp; optional = true
-    file[]: crc = 5c204575; size =      2600; name = FreddiCMP.INF; optional = true
+    file[]: crc = 5c204575; size =      2600; name = FreddiCMP.INF
     file[]: crc = cac10f7b; size =    475182; name = FreddiCMP.w32
     file[]: crc = c5d48ab9; size =     59097; name = JA-AD.PCX; optional = true
 
