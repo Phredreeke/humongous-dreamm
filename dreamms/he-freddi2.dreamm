@@ -202,6 +202,7 @@ end
 game[pc-fr-961107-alt]:
     name = French 1996-11-07 (Alternate)
     anchorfile = MALICE2.EXE
+    launch = "$(rootpath)\MALICE2.EXE" 
     file[]: crc = 27d7082b; size =       558; name = Copyright.txt; optional = true
     file[]: crc = b538252a; size =    139078; name = JA-AD.BMP; optional = true
     file[]: crc = da0e7096; size =     10693; name = LISEZMOI.TXT; optional = true
