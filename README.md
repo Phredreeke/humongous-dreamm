@@ -17,7 +17,7 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Big Thinkers! Kindergarten | 🇺🇸 | |
 | Big Thinkers! First Grade | 🇺🇸 | |
 | Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | DOS and Windows |
-| Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇱 | |
+| Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇱 🇷🇺 | |
 | Freddi Fish 2: The Case of the Haunted Schoolhouse | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 | |
 | Freddi Fish 3: The Case of the Stolen Conch Shell | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 | |
 | Freddi Fish 4: The Case of the Hogfish Rustlers of Briny Gulch | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇹 | |
