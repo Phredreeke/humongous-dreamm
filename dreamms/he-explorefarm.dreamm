@@ -32,7 +32,7 @@ end
 INCOMPATIBLE = false
 warning[incompatible]:
     condition = $(INCOMPATIBLE)
-    text = This version does not run correctly in tested DREAMM version (4.0x16)
+    text = This version does not run correctly in tested DREAMM version (4.0x21)
 end
 
 //
