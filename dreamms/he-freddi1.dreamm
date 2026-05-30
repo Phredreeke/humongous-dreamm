@@ -389,6 +389,29 @@ game[pc-ja-950831]:
 end
 
 //
+// Russian version
+//
+game[pc-ru-040929]:
+    name = Russian 2004-09-29
+    anchorfile = FREDDI.EXE
+    file[]: crc = 36c03376; size =     36352; name = FREDDI.D32
+    file[]: crc = a26710b2; size =      8896; name = FREDDI.DLL
+    file[]: crc = 8318d44b; size =     21696; name = FREDDI.EXE
+    file[]: crc = 1db65da0; size =      8628; name = FREDDI.GID; optional = true
+    file[]: crc = fd9139a4; size =     34674; name = Freddi.HE0
+    file[]: crc = f69dd6ab; size =  54197926; name = FREDDI.HE1
+    file[]: crc = 46e99f06; size =  33357804; name = FREDDI.HE2
+    file[]: crc = ddd13a47; size =  25623109; name = Freddi.he4
+    file[]: crc = fb960198; size =     48397; name = FREDDI.HLP
+    file[]: crc = 67a00dd2; size =       766; name = FREDDI.ICO; optional = true
+    file[]: crc = 5f7793ac; size =      2164; name = FREDDI.INF
+    file[]: crc = 8b5102cc; size =    368640; name = FREDDI.W32
+    file[]: crc = 2a975241; size =    367958; name = Freddi_Fish1_Manual.pdf; optional = true
+
+
+end
+
+//
 // 1994 Demo version
 //
 demo[pc-en-940504-demo]:
