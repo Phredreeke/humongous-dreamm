@@ -111,4 +111,22 @@ demo[pc-en-010711-demo]:
 
 end
 
+//
+// Dutch demo version
+//
+demo[pc-nl-020225-demo]:
+    name = Dutch Demo 2002-02-25
+    anchorfile = FF5Demo.EXE
+    launch = "$(rootpath)\FF5Demo.EXE"
+    file[]: crc = 91990750; size =  27815973; name = FF5Demo.(a)
+    file[]: crc = b60e543d; size =     49152; name = FF5Demo.d32
+    file[]: crc = 0cd3d4ec; size =    700470; name = FF5Demo.EXE
+    file[]: crc = 59901bf2; size =     18431; name = FF5Demo.HE0
+    file[]: crc = 2e997a4e; size =  15387690; name = FF5Demo.he2
+    file[]: crc = 750b660a; size =   5663629; name = FF5Demo.he4
+    file[]: crc = aaf7a92d; size =      2227; name = FF5DEMO.INF
+
+
+end
+
 end
