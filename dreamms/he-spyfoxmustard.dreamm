@@ -33,7 +33,7 @@ game[pc-en-990822]:
     file[]: crc = 3d42600f; size =    934452; name = mustard.he7
     file[]: crc = e28ba7b3; size =    427019; name = MUSTARD.HLP; optional = true
     file[]: crc = 4b0fc164; size =       766; name = Mustard.ico; optional = true
-    file[]: crc = 75f02408; size =      2793; name = mustard.inf
+    file[]: name = mustard.inf
     file[]: crc = 4e1a439f; size =     12096; name = images\air-01\tile-1.wiz
     file[]: crc = a9e56a25; size =     12394; name = images\air-01\tile-10.wiz
     file[]: crc = 0a4ee9ea; size =     11408; name = images\air-01\tile-11.wiz
