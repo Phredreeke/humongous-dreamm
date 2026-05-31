@@ -12,10 +12,10 @@ Many games are playable, but this is still very much a work in progress. EXE fil
 | Backyard Football | 🇺🇸 | Original and 2002 |
 | Backyard Soccer | 🇺🇸 | Original and MLS Edition |
 | Bear Stormin' | 🇺🇸 | DOS only |
-| Blue's ABC Time Activities | 🇺🇸 | |
-| Blue's Art Time Activities | 🇺🇸 | |
 | Big Thinkers! Kindergarten | 🇺🇸 | |
 | Big Thinkers! First Grade | 🇺🇸 | |
+| Blue's ABC Time Activities | 🇺🇸 | |
+| Blue's Art Time Activities | 🇺🇸 | |
 | Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | DOS and Windows |
 | Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇱 🇷🇺 | |
 | Freddi Fish 2: The Case of the Haunted Schoolhouse | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 | |
