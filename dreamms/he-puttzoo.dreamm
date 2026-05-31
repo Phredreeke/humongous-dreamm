@@ -38,7 +38,7 @@ game[pc_en_970108]:
     file[]: crc = fe0b9a98; size =     36864; name = PUTTZOO.HE3
     file[]: crc = 569f2363; size =  66540682; name = PUTTZOO.HE4
     file[]: crc = 525791a7; size =    347522; name = PUTTZOO.HLP
-    file[]: crc = 2f88ee76; size =      1743; name = PUTTZOO.INF
+    file[]: crc = 2f88ee76; size =      1743; name = PUTTZOO.INF; optional = true
     file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF
     file[]: crc = 996e2adf; size =     88816; name = JA-AD.BMP; optional = true
 end
