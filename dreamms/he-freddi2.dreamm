@@ -84,7 +84,7 @@ game[pc-en-991027]:
     file[]: crc = 5822202a; size =  34564440; name = Freddi2.he2
     file[]: crc = 2d288c66; size =  42596874; name = Freddi2.he4
     file[]: crc = 9fb9e2b0; size =    164579; name = FREDDI2.HLP; optional = true
-    file[]: crc = 4c0c11a0; size =      2586; name = freddi2.inf
+    file[]: name = freddi2.inf
     file[]: crc = 88ae2695; size =    425984; name = FREDDI2.w32
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
