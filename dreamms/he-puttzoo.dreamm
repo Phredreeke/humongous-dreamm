@@ -127,15 +127,15 @@ end
 game[pc-fr-961016]:
     name = French 1996-10-16
     anchorfile = PUTTZOO.EXE
-    file[]: crc = e0260a25; size =    132406; name = PUTTZOO.BMP; optional = true
+    file[]: name = PUTTZOO.BMP; optional = true
     file[]: crc = 293814d4; size =     34816; name = PUTTZOO.EXE
     file[]: crc = cea1f032; size =     42070; name = PUTTZOO.HE0
     file[]: crc = 2c3b60b0; size =  98120877; name = PUTTZOO.HE1
     file[]: crc = 5abc4511; size =  49893769; name = PUTTZOO.HE2
     file[]: crc = fe0b9a98; size =     36864; name = PUTTZOO.HE3
     file[]: crc = 0130f77a; size =  65940986; name = PUTTZOO.HE4
-    file[]: crc = 6289d053; size =    304160; name = PUTTZOO.HLP
-    file[]: crc = 187dfc63; size =       413; name = PUTTZOO.INF
+    file[]: name = PUTTZOO.HLP
+    file[]: name = PUTTZOO.INF
     file[]: crc = 9395c262; size =    286720; name = PUTTZOO.W32
     file[]: crc = 8b976bc3; size =      1285; name = SNDCARDS.INF
 
