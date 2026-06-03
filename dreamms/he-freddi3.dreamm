@@ -357,6 +357,27 @@ demo[pc-de-990707-demo]:
 end
 
 //
+// 1999 German Demo version (same as above with different file names)
+//
+demo[pc-de-990707-demo-alt]:
+    name = German Demo 1999-07-07 (Alternative)
+    anchorfile = FF3Demo.exe
+    BITNESS = false
+    launch = "$(rootpath)\FF3Demo.exe"
+    file[]: crc = 7263a326; size =   5502492; name = FF3Demo.(a)
+    file[]: crc = 46996e05; size =     34816; name = FF3Demo.d32
+    file[]: crc = cfd14e61; size =    444928; name = FF3Demo.exe
+    file[]: crc = bfa6cdac; size =     22754; name = FF3Demo.HE0
+    file[]: crc = 279fbe09; size =   4525245; name = FF3Demo.HE2
+    file[]: crc = c1cf20de; size =   2371550; name = FF3Demo.HE4
+    file[]: crc = 00bc79c3; size =    668760; name = FF3Demo.HLP
+    file[]: crc = 9998b15c; size =      2196; name = FF3Demo.inf
+
+
+
+end
+
+//
 // 2001 Hebrew Demo version
 //
 demo[pc-he-010328-demo]:
