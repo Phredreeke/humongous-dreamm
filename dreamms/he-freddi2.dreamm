@@ -25,6 +25,10 @@ config[bitness]:
     option[win98]: name = Windows 98; priority = 1
 end
 
+
+
+
+
 //
 // 1996 version (early)
 //
@@ -84,7 +88,7 @@ game[pc-en-991027]:
     file[]: crc = 5822202a; size =  34564440; name = Freddi2.he2
     file[]: crc = 2d288c66; size =  42596874; name = Freddi2.he4
     file[]: crc = 9fb9e2b0; size =    164579; name = FREDDI2.HLP; optional = true
-    file[]: name = freddi2.inf
+    file[]: crc = 4c0c11a0; size =      2586; name = freddi2.inf
     file[]: crc = 88ae2695; size =    425984; name = FREDDI2.w32
     file[]: crc = e2e2de14; size =     14912; name = HEINI.EXE; optional = true
     file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
@@ -273,6 +277,32 @@ game[pc-ja-961107]:
 
 
 end
+
+//
+// Russian version
+//
+game[pc-ru-041014]:
+    name = Russian 2004-10-14
+    anchorfile = FreddiCHSH.exe
+    BITNESS = false
+    launch = "$(rootpath)\FreddiCHSH.exe" 
+    file[]: crc = 20c2fb27; size =    236557; name = Freddi_Fish2_Manual.pdf; optional = true
+    file[]: crc = 492b32d0; size = 135380546; name = FreddiCHSH.(a)
+    file[]: crc = 8777d975; size =     53248; name = FreddiCHSH.d32
+    file[]: crc = 1800b98a; size =    512052; name = FreddiCHSH.exe
+    file[]: crc = 7d28b61d; size =      8628; name = FreddiCHSH.GID
+    file[]: crc = 9d3eddb7; size =     65489; name = FreddiCHSH.he0
+    file[]: crc = ae4355a8; size =  37813311; name = FreddiCHSH.he2
+    file[]: crc = 3f123d5a; size =  42712761; name = FreddiCHSH.he4
+    file[]: crc = 71a2c7d5; size =    183307; name = FreddiCHSH.hlp
+    file[]: crc = eeb2eeae; size =       766; name = FreddiCHSH.ICO; optional = true
+    file[]: crc = 5a3a731e; size =      2161; name = FreddiCHSH.inf
+    file[]: crc = 2df3e9d9; size =      3096; name = license.txt; optional = true
+    file[]: crc = b674f28b; size =      4275; name = readme.txt; optional = true
+
+
+end
+
 
 //
 // English demo
