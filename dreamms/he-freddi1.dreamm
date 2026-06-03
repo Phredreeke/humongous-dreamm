@@ -333,10 +333,10 @@ game[pc-de-991108]:
     file[]: crc = 82258a47; size =     34829; name = FRITZI.HE0
     file[]: crc = d654e664; size =  26926169; name = FRITZI.HE2
     file[]: crc = 91f77650; size =  25623109; name = FRITZI.HE4
-    file[]: crc = 8a39df04; size =    121671; name = FRITZI.HLP
-    file[]: crc = 7dbd7808; size =      2450; name = FRITZI.INF
+    file[]: name = FRITZI.HLP
+    file[]: name = FRITZI.INF
     file[]: crc = 256f111f; size =    425984; name = FRITZI.W32
-    file[]: crc = 90671e7d; size =     89049; name = JA-AD.pcx; optional = true // This file seems to be corrupted?
+    file[]: name = JA-AD.pcx; optional = true // This file seems to be corrupted?
 
 
 end
