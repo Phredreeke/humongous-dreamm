@@ -242,6 +242,32 @@ game[pc-de-080630]:
 
 end
 
+//
+// Russian version
+//
+game[pc-ru-050323]:
+    name = Russian 2005-03-23
+    anchorfile = PajamaNHD.exe
+    BITNESS = false
+    launch = "$(rootpath)\PajamaNHD.exe" 
+    file[]: crc = 2df3e9d9; size =      3096; name = license.txt
+    file[]: crc = f0eca758; size = 127337060; name = PajamaNHD.(a)
+    file[]: crc = e6031f0c; size =     49152; name = PajamaNHD.d32
+    file[]: crc = cceae706; size =    512052; name = PajamaNHD.exe
+    file[]: crc = f0a853a6; size =      8628; name = PAJAMANHD.GID
+    file[]: crc = b80ee3ae; size =     66599; name = PajamaNHD.he0
+    file[]: crc = 4f170bc2; size =  67034379; name = PajamaNHD.he2
+    file[]: crc = fe0b9a98; size =     36864; name = PajamaNHD.he3
+    file[]: crc = 8ebe0ace; size =  32410706; name = PajamaNHD.he4
+    file[]: crc = 558514f2; size =    413586; name = PajamaNHD.he7
+    file[]: crc = 8d854b41; size =    336860; name = PAJAMANHD.HLP
+    file[]: crc = 19b3058e; size =       766; name = PajamaNHD.ico; optional = true
+    file[]: crc = 65251a25; size =      2127; name = PajamaNHD.inf
+
+
+
+
+end
 
 //
 // 1997 demo version
