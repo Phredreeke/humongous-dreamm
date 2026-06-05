@@ -193,7 +193,7 @@ demo[pc-en-990328-demo]:
     file[]: crc = 6e892984; size =   6521828; name = RACEDEMO.(A)
     file[]: crc = b997580d; size =    423424; name = RACEDEMO.A32
     file[]: crc = 94c373b1; size =     36352; name = RACEDEMO.D32
-    file[]: crc = a26710b2; size =      8896; name = RACEDEMO.DLL
+    file[]: crc = a26710b2; size =      8896; name = RACEDEMO.DLL; optional = true
     file[]: crc = fd497ac6; size =    425472; name = racedemo.exe
     file[]: crc = 78cccf9f; size =     13110; name = RACEDEMO.HE0
     file[]: crc = a5799d5f; size =   2848904; name = RACEDEMO.HE2

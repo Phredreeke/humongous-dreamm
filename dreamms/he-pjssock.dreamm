@@ -55,6 +55,31 @@ game[pc-en-970514]:
 
 end
 
+
+//
+// 1999 version
+//
+game[pc-en-991103]:
+    name = English 1999-11-03
+    anchorfile = SOCKS.EXE
+    file[]: crc = 71be7ac9; size =     32039; name = JA-AD.PCX; optional = true
+    file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
+    file[]: crc = e291ee22; size =  13393968; name = Socks.(a)
+    file[]: crc = 94c373b1; size =     36352; name = Socks.d32
+    file[]: crc = 6e1c0447; size =     86016; name = Socks.exe
+    file[]: crc = 44690dd5; size =     13668; name = Socks.he0
+    file[]: crc = 98660848; size =   4610807; name = Socks.he2
+    file[]: crc = 2fbec258; size =   5179292; name = Socks.he4
+    file[]: crc = a54d1dce; size =     31877; name = Socks.he7
+    file[]: crc = 06bf793a; size =    144165; name = Socks.hlp
+    file[]: crc = c6ac7a60; size =      2524; name = Socks.inf
+    file[]: crc = c34e4310; size =    425984; name = Socks.w32
+
+
+
+end
+
+
 //
 // Dutch version
 //
