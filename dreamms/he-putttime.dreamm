@@ -263,6 +263,27 @@ demo[pc-en-980120-demo]:
 end
 
 //
+// English demo, found on 2003 disc in Quiznos meal promo
+//
+demo[pc-en-demo-03]:
+    name = English Demo 2003
+    anchorfile = TIMEDEMO.EXE
+    BITNESS = false
+    launch = "$(rootpath)\TIMEDEMO.EXE"
+    file[]: crc = be243d2a; size =  25358781; name = TimeDemo.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = TimeDemo.d32
+    file[]: crc = 587c2dd3; size =    512052; name = TimeDemo.exe
+    file[]: crc = e49e65c6; size =     18534; name = TimeDemo.HE0
+    file[]: crc = 84444680; size =   6483523; name = TimeDemo.he2
+    file[]: crc = b8c094b6; size =   9557765; name = TimeDemo.he4
+    file[]: crc = 470799b1; size =      2294; name = TimeDemo.inf
+
+
+
+
+end
+
+//
 // 1997 Dutch Demo version
 //
 demo[pc-nl-980817-demo]:
