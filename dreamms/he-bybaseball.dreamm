@@ -54,6 +54,30 @@ game[pc-en-970807]:
 end
 
 //
+// 1998 version (from Triple Treat 3)
+//
+game[pc-en-980731]:
+    name = English 1998-08-07
+    imports = pc-en-970807
+    anchorfile = BASEBALL.EXE
+    file[]: crc = 5ed3c87f; size =    365568; name = BASEBALL.A32  // new file
+    file[]: crc = e2c65afc; size =    244224; name = BASEBALL.EXE  // replaces 297d30f5/21616
+    file[]: crc = 2cc5a740; size =      2235; name = BASEBALL.INF  // replaces de79875d/2235
+    file[]: crc = 1a59263c; size =     38162; name = JS-AD.PCX  // new file
+    file[]: remove = BASEBALL.BMP
+    file[]: remove = BASEBALL.DLL
+    file[]: remove = BASEBALL.W32
+    file[]: remove = COPYRITE.TXT
+    file[]: remove = HE.BMP
+    file[]: remove = HEINI.EXE
+    file[]: remove = JS-AD.BMP
+    file[]: remove = README.TXT
+
+
+
+end
+
+//
 // 2000 version
 //
 game[pc-en-000501]:

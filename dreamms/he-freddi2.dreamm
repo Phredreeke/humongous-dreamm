@@ -25,10 +25,6 @@ config[bitness]:
     option[win98]: name = Windows 98; priority = 1
 end
 
-
-
-
-
 //
 // 1996 version (early)
 //
@@ -50,6 +46,7 @@ game[pc-en-960718]:
 
 
 end
+
 
 //
 // 1996 version
@@ -74,6 +71,29 @@ game[pc-en-961107]:
 
 
 end
+
+//
+// 1996 version (from Triple Treat 3)
+//
+game[pc-en-980731]:
+    name = English 1998-07-31
+    imports = pc-en-961107
+    anchorfile = FREDDI2.EXE
+    file[]: crc = 83a9046e; size =    323584; name = FREDDI2.A32  // new file
+    file[]: crc = 3c55e969; size =    244224; name = FREDDI2.EXE  // replaces 92f85f11/21616
+    file[]: crc = 85187303; size =      2122; name = FREDDI2.INF  // replaces 23cba256/2122
+    file[]: crc = 75452c91; size =     76766; name = JA-AD.PCX  // new file
+    file[]: remove = FREDDI2.BMP
+    file[]: remove = FREDDI2.DLL
+    file[]: remove = FREDDI2.W32
+    file[]: remove = HE.BMP
+    file[]: remove = HEINI.EXE
+    file[]: remove = JA-AD.BMP
+    file[]: remove = README.TXT
+
+
+end
+
 
 //
 // 1999 version
@@ -277,32 +297,6 @@ game[pc-ja-961107]:
 
 
 end
-
-//
-// Russian version
-//
-game[pc-ru-041014]:
-    name = Russian 2004-10-14
-    anchorfile = FreddiCHSH.exe
-    BITNESS = false
-    launch = "$(rootpath)\FreddiCHSH.exe" 
-    file[]: crc = 20c2fb27; size =    236557; name = Freddi_Fish2_Manual.pdf; optional = true
-    file[]: crc = 492b32d0; size = 135380546; name = FreddiCHSH.(a)
-    file[]: crc = 8777d975; size =     53248; name = FreddiCHSH.d32
-    file[]: crc = 1800b98a; size =    512052; name = FreddiCHSH.exe
-    file[]: crc = 7d28b61d; size =      8628; name = FreddiCHSH.GID
-    file[]: crc = 9d3eddb7; size =     65489; name = FreddiCHSH.he0
-    file[]: crc = ae4355a8; size =  37813311; name = FreddiCHSH.he2
-    file[]: crc = 3f123d5a; size =  42712761; name = FreddiCHSH.he4
-    file[]: crc = 71a2c7d5; size =    183307; name = FreddiCHSH.hlp
-    file[]: crc = eeb2eeae; size =       766; name = FreddiCHSH.ICO; optional = true
-    file[]: crc = 5a3a731e; size =      2161; name = FreddiCHSH.inf
-    file[]: crc = 2df3e9d9; size =      3096; name = license.txt; optional = true
-    file[]: crc = b674f28b; size =      4275; name = readme.txt; optional = true
-
-
-end
-
 
 //
 // English demo

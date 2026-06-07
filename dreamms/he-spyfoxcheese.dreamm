@@ -286,6 +286,27 @@ game[pc-en-980308]:
 end
 
 //
+// 1998 version (part of Triple Treat 3)
+//
+game[pc-en-980807]:
+    name = English 1998-08-07
+    imports = pc-en-980308
+    anchorfile = CHASE.EXE
+    file[]: crc = fec42f64; size =    422912; name = CHASE.A32  // new file
+    file[]: crc = 71521327; size =    244224; name = CHASE.EXE  // replaces 0c7a805e/21616
+    file[]: crc = 861d522b; size =      2107; name = CHASE.INF  // replaces ecea47bd/2107
+    file[]: crc = a58d9d46; size =     35410; name = REGSCR.PCX  // new file
+    file[]: remove = CHASE.BMP
+    file[]: remove = CHASE.DLL
+    file[]: remove = CHASE.W32
+    file[]: remove = COPYRITE.TXT
+    file[]: remove = HEINI.EXE
+    file[]: remove = README.TXT
+    file[]: remove = REGSCR.BMP
+end
+
+
+//
 // 2002 version
 //
 game[pc-en-020521]:
