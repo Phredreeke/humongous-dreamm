@@ -66,3 +66,4 @@ Thanks to Aaron Giles for his great emulator
 - Sierra: https://github.com/M-A-Boucher/sierra-dreamm
 - 3DRealms/Apogee: https://github.com/M-A-Boucher/3drealms-dreamm
 - id Software: https://github.com/M-A-Boucher/idsoftware-dreamm
+- Windows Entertainment Pack: https://github.com/Phredreeke/wep-dreamm
