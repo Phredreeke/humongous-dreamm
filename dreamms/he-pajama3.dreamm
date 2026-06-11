@@ -201,6 +201,20 @@ demo[pc-en-000104-demo]:
 end
 
 //
+// 2000 Demo version (found on 2000 Freddi Fish 3 disc)
+//
+demo[pc-en-000330-demo]:
+    name = English Demo 2000-03-30
+    imports = pc-en-991104-demo
+    anchorfile = pj3-demo.exe
+    file[]: crc = 125c64c3; size =      1434; name = DirectX ReadMe.txt  // new file
+    file[]: crc = ecef9c8a; size =   5513484; name = pj3-demo.(a)  // replaces 320c26fd/5513492
+    file[]: crc = d216112d; size =     13893; name = pj3-demo.HE0  // replaces c04e77ca/13893
+
+
+end
+
+//
 // 2001 UK Demo version
 //
 demo[pc-en-010306-demo-uk]:

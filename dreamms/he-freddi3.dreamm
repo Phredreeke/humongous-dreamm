@@ -63,6 +63,27 @@ game[pc-en-971214]:
 end
 
 //
+// 2000 version
+//
+game[pc-en-000317]:
+    name = English 2000-03-17
+    imports = pc-en-971214
+    anchorfile = FREDDI3.EXE
+    file[]: crc = bccf8d52; size =       678; name = COPYRITE.TXT  // new file
+    file[]: crc = 8b50bf67; size =     81920; name = FREDDI3.EXE  // replaces ee48f171/21616
+    file[]: crc = eae9a0d6; size =    652957; name = FREDDI3.HLP  // replaces 600cbab1/650773
+    file[]: crc = 452e84ef; size =      2608; name = freddi3.inf  // replaces 62a4ee14/2132
+    file[]: crc = 310dbac2; size =     70597; name = Ja-ad.pcx  // new file
+    file[]: remove = FREDDI3.BMP
+    file[]: remove = FREDDI3.DLL
+    file[]: remove = HE.BMP
+    file[]: remove = JA-AD.BMP
+    file[]: remove = README.TXT
+
+
+end
+
+//
 // 2001 version
 //
 game[pc-en-010411-gm]:
@@ -351,27 +372,6 @@ demo[pc-de-990707-demo]:
     file[]: crc = c1cf20de; size =   2371550; name = Fritzi3demo.HE4
     file[]: crc = 00bc79c3; size =    668760; name = Fritzi3demo.HLP; optional = true
     file[]: crc = 9998b15c; size =      2196; name = Fritzi3demo.inf
-
-
-
-end
-
-//
-// 1999 German Demo version (same as above with different file names)
-//
-demo[pc-de-990707-demo-alt]:
-    name = German Demo 1999-07-07 (Alternative)
-    anchorfile = FF3Demo.exe
-    BITNESS = false
-    launch = "$(rootpath)\FF3Demo.exe"
-    file[]: crc = 7263a326; size =   5502492; name = FF3Demo.(a)
-    file[]: crc = 46996e05; size =     34816; name = FF3Demo.d32
-    file[]: crc = cfd14e61; size =    444928; name = FF3Demo.exe
-    file[]: crc = bfa6cdac; size =     22754; name = FF3Demo.HE0
-    file[]: crc = 279fbe09; size =   4525245; name = FF3Demo.HE2
-    file[]: crc = c1cf20de; size =   2371550; name = FF3Demo.HE4
-    file[]: crc = 00bc79c3; size =    668760; name = FF3Demo.HLP
-    file[]: crc = 9998b15c; size =      2196; name = FF3Demo.inf
 
 
 
