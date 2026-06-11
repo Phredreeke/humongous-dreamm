@@ -333,10 +333,10 @@ game[pc-de-991108]:
     file[]: crc = 82258a47; size =     34829; name = FRITZI.HE0
     file[]: crc = d654e664; size =  26926169; name = FRITZI.HE2
     file[]: crc = 91f77650; size =  25623109; name = FRITZI.HE4
-    file[]: name = FRITZI.HLP
-    file[]: name = FRITZI.INF
+    file[]: crc = 8a39df04; size =    121671; name = FRITZI.HLP
+    file[]: crc = 7dbd7808; size =      2450; name = FRITZI.INF
     file[]: crc = 256f111f; size =    425984; name = FRITZI.W32
-    file[]: name = JA-AD.pcx; optional = true // This file seems to be corrupted?
+    file[]: crc = 90671e7d; size =     89049; name = JA-AD.pcx; optional = true // This file seems to be corrupted?
 
 
 end
@@ -552,7 +552,27 @@ demo[pc-de-960703-demo]:
 
 end
 
+//
+// 1995 Demo version
+//
+demo[pc-jp-950831-demo]:
+    name = Japanese Demo 1995-08-31
+    anchorfile = FREDDEMO.EXE
+    launch = "$(rootpath)\FREDDEMO.EXE"
+    file[]: crc = 1e312499; size =    132406; name = FREDDEMO.BMP; optional = true
+    file[]: crc = a5b64d08; size =     31232; name = FREDDEMO.EXE
+    file[]: crc = 0793e4e0; size =      8628; name = FREDDEMO.GID; optional = true
+    file[]: crc = e08c38e5; size =      9800; name = FREDDEMO.HE0
+    file[]: crc = 4fd5aa01; size =   6235995; name = FREDDEMO.HE1
+    file[]: crc = 228074ef; size =   1991273; name = FREDDEMO.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = FREDDEMO.HE3
+    file[]: crc = 1e864f1d; size =   4802906; name = FREDDEMO.HE4
+    file[]: crc = 8322fe40; size =     77824; name = FREDDEMO.HLP; optional = true
+    file[]: crc = 36e0f28c; size =    295936; name = FREDDEMO.W32
+    file[]: crc = 4a1b8706; size =      1251; name = SNDCARDS.INF; optional = true
 
+
+end
 
 
 
