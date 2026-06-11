@@ -553,12 +553,13 @@ demo[pc-de-960703-demo]:
 end
 
 //
-// 1995 Demo version
+// 1995 Japanese Demo version
 //
 demo[pc-jp-950831-demo]:
     name = Japanese Demo 1995-08-31
     anchorfile = FREDDEMO.EXE
     launch = "$(rootpath)\FREDDEMO.EXE"
+    locale = ja-JP
     file[]: crc = 1e312499; size =    132406; name = FREDDEMO.BMP; optional = true
     file[]: crc = a5b64d08; size =     31232; name = FREDDEMO.EXE
     file[]: crc = 0793e4e0; size =      8628; name = FREDDEMO.GID; optional = true
