@@ -45,7 +45,7 @@ game[pc-en-951010]:
     file[]: crc = a1cbe698; size =  43209128; name = JUNGLE.HE4
     file[]: crc = 08696113; size =     28924; name = JUNGLE.HE9
     file[]: crc = ca36abc9; size =    443134; name = JUNGLE.HLP
-    file[]: crc = 38236294; size =        32; name = JUNGLE.INF
+    file[]: crc = 38236294; size =        32; name = JUNGLE.INF; optional = true
     file[]: crc = 0c8d9856; size =    371712; name = JUNGLE.W32
     file[]: crc = 4e987a4c; size =      1240; name = SNDCARDS.INF; optional = true
     file[]: crc = 3afe3e82; size =     97256; name = STARTUP.BMP; optional = true

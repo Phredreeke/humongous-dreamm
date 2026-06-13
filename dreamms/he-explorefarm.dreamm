@@ -50,7 +50,7 @@ game[pc-en-951107]:
     file[]: crc = 873a7622; size =   9540508; name = FARM.HE4
     file[]: crc = b27adbe3; size =     27745; name = FARM.HE9
     file[]: crc = 9b41c8c0; size =    316538; name = FARM.HLP
-    file[]: crc = 74bae988; size =      1693; name = FARM.INF
+    file[]: crc = 74bae988; size =      1693; name = FARM.INF; optional = true
     file[]: crc = 10951677; size =    304128; name = FARM.W32
     file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
     file[]: crc = b19461ce; size =     50634; name = JA-AD.BMP; optional = true
