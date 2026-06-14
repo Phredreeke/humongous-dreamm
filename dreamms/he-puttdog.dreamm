@@ -74,6 +74,32 @@ game[pc-en-990723]:
 
 end
 
+//
+// 1996 version
+//
+game[pc-en-961111]:
+    name = English 1999-11-11
+    anchorfile = DOG.EXE
+    file[]: crc = c70063b2; size =  10120369; name = dog.(a)
+    file[]: crc = 94c373b1; size =     36352; name = dog.d32
+    file[]: crc = 90ce99d2; size =     86016; name = DOG.EXE
+    file[]: crc = 50d0729b; size =     19750; name = dog.HE0
+    file[]: crc = 6fa10c9b; size =   3911101; name = dog.he2
+    file[]: crc = ea3d84da; size =  38396593; name = dog.he4
+    file[]: crc = 424a11d6; size =      4752; name = dog.he7
+    file[]: crc = 23e03a73; size =     26400; name = dog.he8
+    file[]: name = DOG.HLP
+    file[]: name = dog.inf
+    file[]: crc = fa34dc0e; size =    425984; name = DOG.w32
+    file[]: name = JA-AD.PCX; optional = true
+    file[]: name = license.txt; optional = true
+
+
+
+
+end
+
+
 
 //
 // Dutch version
