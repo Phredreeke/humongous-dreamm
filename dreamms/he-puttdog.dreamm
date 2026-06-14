@@ -75,9 +75,9 @@ game[pc-en-990723]:
 end
 
 //
-// 1996 version
+// 1999 version
 //
-game[pc-en-961111]:
+game[pc-en-991115]:
     name = English 1999-11-11
     anchorfile = DOG.EXE
     file[]: crc = c70063b2; size =  10120369; name = dog.(a)
@@ -122,6 +122,24 @@ game[pc-nl-961126]:
     file[]: crc = 35cd34c0; size =    308736; name = DOG.W32
     file[]: crc = a99ece0e; size =     97070; name = HE.BMP; optional = true
     file[]: crc = 6bb8a176; size =     98354; name = JA-AD.BMP; optional = true
+
+
+end
+
+
+//
+// 1997 Dutch version
+//
+game[pc-nl-970123]:
+    name = Dutch 1997-01-23
+    imports = pc-nl-961126
+    anchorfile = DOG.EXE
+    file[]: crc = b414cf08; size =    132406; name = DOG.BMP  // replaces cc19e918/132404
+    file[]: crc = d67d9ee9; size =     32768; name = DOG.D32  // replaces 98d53daf/32768
+    file[]: crc = 7fa8c546; size =     19681; name = DOG.HE0  // replaces beaff9cc/19681
+    file[]: crc = 8c93db8b; size =  10251785; name = DOG.HE1  // replaces be4d4d19/10252637
+    file[]: crc = aa4d32ba; size =    130688; name = DOG.HLP  // replaces 97f9b022/130424
+
 
 
 end

@@ -104,6 +104,24 @@ game[pc-nl-961126]:
 
 end
 
+//
+// 1997 Dutch version
+//
+game[pc-nl-970210]:
+    name = Dutch 1997-02-10
+    imports = pc-nl-961126
+    anchorfile = BALLOON.EXE
+    file[]: crc = b9d18175; size =    132406; name = BALLOON.BMP  // replaces 6751e5c5/132404
+    file[]: crc = d67d9ee9; size =     32768; name = BALLOON.D32  // replaces fc1aba05/32768
+    file[]: crc = d0729f76; size =     12800; name = BALLOON.HE0  // replaces 970e019c/12800
+    file[]: crc = f74ad249; size =  13934203; name = BALLOON.HE1  // replaces 0116384f/13934247
+    file[]: crc = 392df205; size =    151200; name = BALLOON.HE7  // new file
+    file[]: crc = c6bf875b; size =    129952; name = BALLOON.HLP  // replaces 19e7e4d0/129952
+    file[]: crc = 34d410e6; size =      2063; name = BALLOON.INF  // replaces bdb5a4d3/2062
+
+end
+
+
 
 //
 // French version
