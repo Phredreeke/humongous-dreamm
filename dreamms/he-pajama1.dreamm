@@ -202,6 +202,28 @@ game[pc-fr-980307]:
 
 end
 
+
+//
+// 1998 French version
+//
+game[pc-fr-130417]:
+    name = French 2013-04-17
+    imports = pc-fr-980307
+    file[]: remove = JA-AD.BMP
+    file[]: remove = LISEZMOI.TXT
+    file[]: remove = SAMPYJAM.BMP
+    file[]: crc = 3ea031e6; size =     23866; name = JA-AD.PCX
+    file[]: crc = 892c5170; size =       766; name = sam.ico; optional = true
+    file[]: crc = b7790194; size =     35840; name = SAMPYJAM.D32
+    file[]: crc = b9fd2f53; size =     86016; name = SAMPYJAM.EXE
+    file[]: crc = d16090be; size =      2572; name = SAMPYJAM.INF
+    file[]: crc = 23947e41; size =     62140; name = SAMPYJAM.PCX
+    file[]: crc = da35d585; size =    330240; name = SAMPYJAM.W32
+
+end
+
+
+
 //
 // 1999 German version
 //
@@ -335,7 +357,7 @@ demo[pc-nl-971118-demo]:
 end
 
 //
-// 1997 French demo version
+// 1998 French demo version
 //
 demo[pc-fr-980326-demo]:
     name = French Demo 1998-03-26
@@ -352,8 +374,23 @@ demo[pc-fr-980326-demo]:
     file[]: name = SAMDEMO.HLP; optional = true
     file[]: name = SAMDEMO.INF
 
+end
 
+//
+// 1998 French demo version
+//
+demo[pc-fr-130417-demo]:
+    name = French Demo 2013-04-17
+    imports = pc-fr-980326-demo
+    file[]: remove = LISEZMOI.TXT
+    file[]: crc = b7790194; size =     35840; name = SAMDEMO.D32
+    file[]: crc = b3321390; size =    163023; name = SAMDEMO.HLP
+    file[]: crc = 5baba73c; size =      2272; name = SAMDEMO.INF
 
 end
+
+
+
+
 
 end

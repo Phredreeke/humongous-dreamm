@@ -208,6 +208,7 @@ game[pc-fr-001114]:
 
 end
 
+
 //
 // German 1998 version
 //
@@ -353,6 +354,16 @@ demo[pc-fr-970809-demo]:
 
 end
 
+// French 2013 demo
+//
+demo[pc-fr-130417-demo]:
+    name = French Demo 2013-04-17
+    imports = pc-fr-970809-demo
+    file[]: crc = b7790194; size =     35840; name = JAMESDEM.D32
+    file[]: crc = eb38d1bd; size =      2269; name = JAMESDEM.INF
+
+
+end
 
 //
 // German 1998 demo

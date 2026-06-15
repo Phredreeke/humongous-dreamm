@@ -210,6 +210,27 @@ game[pc-fr-001114]:
 end
 
 //
+// 2013 French version
+//
+game[pc-fr-130418]:
+    name = French 2013-04-18
+    anchorfile = MaliceMCV.exe
+    imports = pc-fr-001114
+    BITNESS = false
+    launch = "$(rootpath)\MaliceMCV.exe"
+    file[]: crc = 50383024; size =     73908; name = JA-AD.PCX
+    file[]: crc = b7790194; size =     35840; name = MALICEMCV.D32
+    file[]: crc = 855b5079; size =      9200; name = MALICEMCV.DLL
+    file[]: crc = 7830dc21; size =     86016; name = MALICEMCV.EXE
+    file[]: crc = 09850fc5; size =      8628; name = MALICEMCV.GID; optional = true
+    file[]: crc = 4b0fc71f; size =      2566; name = MALICEMCV.INF
+    file[]: crc = 17cf75d6; size =     65612; name = MALICEMCV.PCX
+    file[]: crc = 704d8452; size =    442368; name = MALICEMCV.W32
+
+
+end
+
+//
 // 1997 German version
 //
 game[pc-de-970925]:
@@ -350,6 +371,18 @@ demo[pc-fr-971213-demo]:
     file[]: crc = f905d48e; size =   2371550; name = MM3-DEMO.HE4
     file[]: crc = b3321390; size =    163023; name = MM3-DEMO.HLP; optional = true
     file[]: crc = 2b2bb78a; size =      2247; name = MM3-DEMO.INF; optional = true
+
+
+
+end
+
+//
+// 2013 French Demo version
+//
+demo[pc-fr-130418-demo]:
+    name = French Demo 2013-04-18
+    imports = pc-fr-971213-demo
+    file[]: crc = b7790194; size =     35840; name = MM3-DEMO.D32
 
 
 

@@ -176,6 +176,27 @@ game[pc-fr-001113]:
 end
 
 //
+// 2013 French version
+//
+game[pc-fr-130417]:
+    name = French 2013-04-17
+    imports = pc-fr-980216
+    BITNESS = false
+    file[]: remove = COPYRITE.TXT
+    file[]: remove = JA-AD.BMP
+    file[]: remove = LISEZMOI.TXT
+    file[]: remove = POUCE.BMP
+    file[]: crc = 05e7c04b; size =     75994; name = JA-AD.PCX
+    file[]: crc = b7790194; size =     35840; name = POUCE.D32
+    file[]: crc = fb01c672; size =     86016; name = POUCE.EXE
+    file[]: crc = 5241084f; size =      2425; name = POUCE.INF
+    file[]: crc = d2870a69; size =     59027; name = POUCE.PCX
+
+
+
+end
+
+//
 // 1998 German version
 //
 game[pc-de-980909]:
@@ -338,6 +359,23 @@ demo[pc-fr-981019-demo]:
     file[]: crc = b3321390; size =    163023; name = TEMPDEMO.HLP
     file[]: crc = 8045b011; size =      2327; name = TEMPDEMO.INF
     file[]: remove = TEMPDEMO.W32
+
+
+end
+
+//
+// 2013 French Demo version
+//
+demo[pc-fr-130417-demo]:
+    name = French Demo 2013-04-17
+    imports = pc-fr-980216-demo
+    file[]: remove = JA-AD.BMP
+    file[]: remove = LISEZMOI.TXT
+    file[]: remove = TEMPDEMO.W32
+    file[]: crc = b7790194; size =     35840; name = TEMPDEMO.D32
+    file[]: crc = 36297c54; size =    368640; name = TEMPDEMO.EXE
+    file[]: crc = b3321390; size =    163023; name = TEMPDEMO.HLP
+    file[]: crc = 8045b011; size =      2327; name = TEMPDEMO.INF
 
 
 end
