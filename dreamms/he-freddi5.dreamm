@@ -95,6 +95,31 @@ game[pc-fr-011203]:
 end
 
 //
+// Russian version
+//
+game[pc-ru-040729]:
+    name = Russian 2004-07-29
+    anchorfile = FreddiCCC.EXE
+    launch = "$(rootpath)\FreddiCCC.EXE"
+    file[]: crc = 6ff23377; size =    268674; name = CoveReg.pcx
+    file[]: crc = 33734af2; size =    149892; name = Freddi_Fish5_Manual.pdf
+    file[]: crc = 38711ae0; size = 124701077; name = FreddiCCC.(a)
+    file[]: crc = a7b5c0c4; size =     53248; name = FreddiCCC.d32
+    file[]: crc = 618c4bde; size =    696371; name = FreddiCCC.EXE
+    file[]: crc = e8986e88; size =      8628; name = FreddiCCC.GID
+    file[]: crc = ee5225c6; size =     41182; name = FreddiCCC.HE0
+    file[]: crc = 3ee6115f; size =  88459643; name = FreddiCCC.he2
+    file[]: crc = 1499f98f; size =    123431; name = FreddiCCC.he3
+    file[]: crc = 0c58f4d3; size =  39152181; name = FreddiCCC.he4
+    file[]: crc = 15ef62a3; size =   1510588; name = FREDDICCC.HLP
+    file[]: crc = be6b6cfe; size =      2531; name = FreddiCCC.inf
+    file[]: crc = 2df3e9d9; size =      3096; name = license.txt
+    file[]: crc = fc970bcc; size =      2238; name = manual.ico
+    file[]: crc = 736a9f15; size =      3688; name = readme.txt
+
+end
+
+//
 // Demo version
 //
 demo[pc-en-010711-demo]:
