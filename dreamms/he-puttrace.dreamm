@@ -183,6 +183,29 @@ game[pc-de-001004]:
 end
 
 //
+// Italian version
+//
+game[pc-it-010731]:
+    name = Italian 2001-07-31 
+    anchorfile = GasGasEG.EXE
+    launch = "$(rootpath)\GasGasEG.EXE"
+    file[]: crc = 15bb4e82; size =  74886383; name = GasGasEG.(a)
+    file[]: crc = f008f587; size =   3770938; name = GasGasEG.(b)
+    file[]: crc = e4f06b02; size =     49152; name = GasgasEG.d32
+    file[]: crc = e12408c5; size =    212992; name = GasGasEG.EXE
+    file[]: crc = 7e411f02; size =     32923; name = GasGasEG.HE0
+    file[]: crc = 74c928d2; size =  87526503; name = GasGasEG.he2
+    file[]: crc = 3ffbaa7f; size =  38018723; name = GasgasEG.he4
+    file[]: crc = eeb15bc9; size =   1154830; name = GasGasEG.hlp
+    file[]: crc = 88154b08; size =      3628; name = GasGasEG.INF
+    file[]: crc = 9f8b206c; size =     55808; name = GasGasEG.U32
+    file[]: crc = 4e0bccfa; size =    475182; name = GasGasEG.w32
+    file[]: crc = 085310f3; size =     72866; name = JA-AD.PCX; optional = true
+
+
+end
+
+//
 // Demo version
 //
 demo[pc-en-990328-demo]:
@@ -315,5 +338,27 @@ demo[pc-de-010220-demo]:
 
 
 end
+
+
+//
+// Italian demo version
+//
+demo[pc-it-010828-demo]:
+    name = Italian Demo 2001-08-28
+    anchorfile = RACEDEMO.EXE
+    launch = "$(rootpath)\RACEDEMO.EXE"
+    file[]: crc = 4f81a0ad; size =   6550420; name = Racedemo.(a)
+    file[]: crc = e4f06b02; size =     49152; name = Racedemo.d32
+    file[]: crc = 7f397e26; size =    475136; name = RACEDEMO.EXE
+    file[]: crc = ff6cebd4; size =     13108; name = Racedemo.HE0
+    file[]: crc = c9d5a13a; size =   3145243; name = Racedemo.he2
+    file[]: crc = 9c694e2f; size =   4081520; name = Racedemo.he4
+    file[]: crc = 3c7a33b7; size =   1130337; name = Racedemo.hlp
+    file[]: crc = e6747fa8; size =      3252; name = Racedemo.INF
+
+
+
+end
+
 
 end
