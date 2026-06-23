@@ -318,6 +318,27 @@ demo[pc-fr-010129-demo]:
 end
 
 //
+// French demo version (from 2007 Putt Putt goes to the Circus disc)
+//
+demo[pc-fr-010724-demo]:
+    name = French Demo 2001-07-24
+    anchorfile = coursedemo.exe
+    launch = "$(rootpath)\coursedemo.exe"
+    file[]: crc = 02a6bb40; size =   6641935; name = CourseDemo.(a)
+    file[]: crc = ec7c10f1; size =     35840; name = coursedemo.D32
+    file[]: crc = 16b7f2d3; size =    475136; name = CourseDemo.EXE
+    file[]: crc = ec23791d; size =     13108; name = CourseDemo.HE0
+    file[]: crc = f662310e; size =   2768116; name = CourseDemo.he2
+    file[]: crc = 9eb14a8a; size =   4021872; name = CourseDemo.he4
+    file[]: crc = a01a835d; size =   2303739; name = CourseDemo.HLP
+    file[]: crc = eef40fa6; size =       766; name = coursedemo.ico
+    file[]: crc = 6ba39eaf; size =      2294; name = coursedemo.INF
+
+
+
+end
+
+//
 // German demo version
 //
 demo[pc-de-010220-demo]:
@@ -353,7 +374,7 @@ demo[pc-it-010828-demo]:
     file[]: crc = ff6cebd4; size =     13108; name = Racedemo.HE0
     file[]: crc = c9d5a13a; size =   3145243; name = Racedemo.he2
     file[]: crc = 9c694e2f; size =   4081520; name = Racedemo.he4
-    file[]: crc = 3c7a33b7; size =   1130337; name = Racedemo.hlp
+    file[]: name = Racedemo.hlp
     file[]: crc = e6747fa8; size =      3252; name = Racedemo.INF
 
 
