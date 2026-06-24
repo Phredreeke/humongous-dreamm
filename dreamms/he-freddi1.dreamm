@@ -492,6 +492,26 @@ demo[pc-nl-950320-demo]:
 end
 
 //
+// 1995 Dutch Demo version
+//
+demo[pc-nl-950830-demo]:
+    name = Dutch Demo 1995-08-30
+    anchorfile = FREDDEMO.EXE
+    launch = "$(rootpath)\FREDDEMO.EXE"
+    file[]: crc = 2df72b9e; size =     30720; name = FREDDEMO.EXE
+    file[]: crc = 65223858; size =      9779; name = FREDDEMO.HE0
+    file[]: crc = a330d04b; size =   6192450; name = FREDDEMO.HE1
+    file[]: crc = 01585629; size =   1927084; name = FREDDEMO.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = FREDDEMO.HE3
+    file[]: crc = 1e864f1d; size =   4802906; name = FREDDEMO.HE4
+    file[]: crc = d22cdcfd; size =    110592; name = FREDDEMO.HLP
+    file[]: crc = c2b8945c; size =    264704; name = FREDDEMO.W32
+
+
+
+end
+
+//
 // 1996 French Demo version
 //
 demo[pc-fr-960708-demo]:

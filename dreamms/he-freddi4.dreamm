@@ -279,6 +279,26 @@ demo[pc-nl-990307-demo]:
 end
 
 //
+// 1999 Dutch Demo
+//
+demo[pc-nl-000314-demo]:
+    name = Dutch Demo 2000-03-14
+    anchorfile = F4-DEMO.EXE
+    launch = "$(rootpath)\F4-DEMO.EXE"
+    file[]: crc = b5c9dca5; size =       672; name = COPYRITE.TXT; optional = true
+    file[]: crc = b3fd139b; size =   6198643; name = F4-DEMO.(A)
+    file[]: crc = 54e5b871; size =     34304; name = F4-DEMO.D32
+    file[]: crc = ed7bb55d; size =    425984; name = F4-DEMO.EXE
+    file[]: crc = 0dce2726; size =     13609; name = F4-DEMO.HE0
+    file[]: crc = 994dc2a7; size =   3885233; name = F4-DEMO.HE2
+    file[]: crc = 78888f54; size =    623933; name = F4-DEMO.HE4
+    file[]: crc = 9e77971c; size =     87250; name = F4-DEMO.HLP
+    file[]: crc = fea21825; size =      2718; name = F4-DEMO.INF
+
+
+end
+
+//
 // 2000 French Demo
 //
 demo[pc-fr-001127-demo]:
@@ -310,6 +330,26 @@ demo[pc-fr-010716-demo]:
     file[]: remove = JA-AD.PCX
     file[]: crc = cac10f7b; size =    475182; name = mm4demo.exe
     file[]: crc = 95bc0391; size =    921665; name = MM4Demo.HLP
+
+
+end
+
+//
+// 2002 French Demo
+//
+demo[pc-fr-020114-demo]:
+    name = French Demo 2002-01-14
+    anchorfile = MM4DEMO.EXE
+    launch = "$(rootpath)\MM4DEMO.EXE"
+    file[]: crc = 1a9d8f94; size =       766; name = AutoStart.ico
+    file[]: crc = 5be64d83; size =   6542432; name = Mm4demo.(a)
+    file[]: crc = 81980e29; size =     35840; name = MM4demo.D32
+    file[]: crc = cac10f7b; size =    475182; name = mm4demo.exe
+    file[]: crc = 483d2437; size =     13609; name = Mm4demo.HE0
+    file[]: crc = 98f604b9; size =   3658982; name = Mm4demo.HE2
+    file[]: crc = 4cdff2be; size =    623886; name = Mm4demo.he4
+    file[]: crc = 95bc0391; size =    921665; name = MM4Demo.HLP
+    file[]: crc = 4dc72fb1; size =      2221; name = Mm4demo.INF
 
 
 end
