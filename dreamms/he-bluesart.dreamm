@@ -17,7 +17,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
 
 //
-// 1997 version
+// 2000 version
 //
 game[pc-en-000705]:
     name = English 2000-07-05
@@ -82,6 +82,32 @@ game[pc-en-000705]:
     file[]: crc = dcc87118; size =  10691108; name = Data\outr_at_ou_01.dat; exactonly = true
     file[]: crc = 2813ba32; size =  13039136; name = Data\outr_at_ou_02.dat; exactonly = true
 
+
+
+end
+
+
+//
+// Demo version
+//
+demo[pc-en-010516-demo]:
+    name = English Demo 2001-07-05
+    launch = "$(rootpath)\ARTDEMO.EXE"
+    anchorfile = ARTDEMO.EXE
+    file[]: crc = e3ec83b3; size =  34541983; name = artdemo.(a)
+    file[]: crc = 8c2168aa; size =     53248; name = artdemo.D32
+    file[]: crc = d30fd0d3; size =     98304; name = ARTDEMO.EXE
+    file[]: crc = 839bcdf3; size =     16675; name = artdemo.HE0
+    file[]: crc = a6c61592; size =   2620461; name = artdemo.he2
+    file[]: crc = a17ec50f; size =   2413128; name = artdemo.he4
+    file[]: crc = b7a37bdf; size =      3602; name = artdemo.inf
+    file[]: crc = af33fc6b; size =    454719; name = artdemo.w32
+    file[]: crc = f5105447; size =       729; name = Copyrite.txt; optional = true
+    file[]: crc = a4a2b1cc; size =      5019; name = EULA.txt; optional = true
+    file[]: crc = f42f3845; size =     94720; name = Smackw32.dll
+    file[]: crc = 930093ef; size =   2063332; name = Data\intr_at_in_01.dat
+    file[]: crc = ec9fb76e; size =  11600832; name = Data\intr_at_in_02.dat
+    file[]: crc = dbd7d45b; size =   4015888; name = Data\intr_at_in_20_b.dat
 
 
 end
