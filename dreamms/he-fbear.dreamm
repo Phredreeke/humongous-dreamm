@@ -150,5 +150,26 @@ game[pc-he]:
 end
 
 
+//
+// 1995 Windows Demo version
+//
+demo[pc-en-950220-windemo]:
+    name = English Windows Demo 1995-02-20
+    anchorfile = FBDEMO.W32
+    launch = "$(rootpath)\FBDEMO.EXE"
+    winres = 640x480x8
+    file[]: crc = f8a42bf2; size =     30720; name = FBDEMO.EXE
+    file[]: crc = a271aca3; size =      9593; name = FBDEMO.HE0
+    file[]: crc = 63648c9b; size =   1176219; name = FBDEMO.HE1
+    file[]: crc = ff856101; size =    612724; name = FBDEMO.HE2
+    file[]: crc = 76b49d04; size =     36864; name = FBDEMO.HE3
+    file[]: crc = 9b06b856; size =   7152951; name = FBDEMO.HE4
+    file[]: crc = 40557681; size =    178176; name = FBDEMO.HLP
+    file[]: crc = 0a63ba9c; size =    261120; name = FBDEMO.W32
+    file[]: crc = 803d075b; size =      1470; name = SNDCARDS.INF; optional = true
+
+
+end
+
 
 end
