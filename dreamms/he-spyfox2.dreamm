@@ -172,6 +172,30 @@ game[pc-it-010226]:
 end
 
 //
+// 2004 Russian version
+//
+game[pc-ru-041222]:
+    name = Russian 2004-12-22
+    anchorfile = spyfoxsr.EXE
+    launch = "$(rootpath)\spyfoxsr.EXE"
+    file[]: crc = f7653545; size =     53290; name = JA_AD.pcx; optional = true
+    file[]: crc = 2df3e9d9; size =      3096; name = license.txt; optional = true
+    file[]: crc = 5e281392; size =  88872097; name = spyfoxsr.(a)
+    file[]: crc = 90bf1724; size =     45056; name = spyfoxsr.d32
+    file[]: crc = 6873bc05; size =     86016; name = spyfoxsr.EXE
+    file[]: crc = 73580a6a; size =      8628; name = spyfoxsr.GID
+    file[]: crc = 1c955c89; size =     51295; name = spyfoxsr.he0
+    file[]: crc = 90056396; size = 135438928; name = spyfoxsr.he2
+    file[]: crc = 4263f4d8; size =  42662728; name = spyfoxsr.he4
+    file[]: crc = b0f5ec52; size =    320472; name = spyfoxsr.he9
+    file[]: crc = 94ce6638; size =   1199704; name = spyfoxsr.HLP
+    file[]: crc = 19d8853f; size =       766; name = spyfoxsr.ico; optional = true
+    file[]: crc = 9e0be1b4; size =      2398; name = spyfoxsr.INF
+    file[]: crc = b96c3e7f; size =    471040; name = SPYFOXSR.w32
+
+end
+
+//
 // 2000 English demo version
 //
 demo[pc-en-000313-demo]:
