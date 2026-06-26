@@ -39,7 +39,7 @@ end
 // English version 
 //
 game[pc-en-951107]:
-    name = English (1995-11-07)
+    name = English 1995-11-07
     anchorfile = FARM.EXE
     file[]: crc = f4f7a204; size =    122000; name = FARM.BMP; optional = true
     file[]: crc = 68d41c8b; size =     35328; name = FARM.EXE
@@ -62,7 +62,7 @@ end
 // Early English version 
 //
 game[pc-en-941209]:
-    name = Junior Encyclopedia's Farm (1994-12-09)
+    name = Junior Encyclopedia's Farm 1994-12-09
     anchorfile = FARM.EXE
     INCOMPATIBLE = true
     file[]: crc = e16ae986; size =     77388; name = FARM.BMP; optional = true
@@ -83,7 +83,7 @@ end
 // Dutch version 
 //
 game[pc-nl-950830]:
-    name = Dutch (1995-08-30)
+    name = Dutch 1995-08-30
     anchorfile = FARM.EXE
     file[]: crc = 5af87261; size =    112832; name = FARM.BMP; optional = true
     file[]: crc = 623338fc; size =     30720; name = FARM.EXE
@@ -104,7 +104,7 @@ end
 // English demo 
 //
 demo[pc-en-950705-demo]:
-    name = English demo (1995-07-05)
+    name = English demo 1995-07-05
     anchorfile = FARMDEMO.EXE
     launch = "$(rootpath)\FARMDEMO.EXE"
     file[]: crc = a90d902b; size =     30720; name = FARMDEMO.EXE
@@ -122,7 +122,7 @@ end
 // Dutch demo 
 //
 demo[pc-nl-970129-demo]:
-    name = Dutch demo (1997-01-29)
+    name = Dutch demo 1997-01-29
     anchorfile = FARMDEMO.EXE
     launch = "$(rootpath)\FARMDEMO.EXE"
     file[]: crc = 055db648; size =    286208; name = FARMDEMO.exe

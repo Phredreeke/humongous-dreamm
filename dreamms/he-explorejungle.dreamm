@@ -31,7 +31,7 @@ end
 // English version 
 //
 game[pc-en-951010]:
-    name = English (1995-10-10)
+    name = English 1995-10-10
     anchorfile = JUNGLE.EXE
     file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
     file[]: crc = 328f8a7f; size =    108378; name = J-TEAM.BMP; optional = true

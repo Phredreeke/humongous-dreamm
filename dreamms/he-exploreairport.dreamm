@@ -39,7 +39,7 @@ end
 // English version 
 //
 game[pc-en-950705]:
-    name = English (1995-07-05)
+    name = English 1995-07-05
     anchorfile = AIRPORT.EXE
     file[]: crc = 8fd1b648; size =    120022; name = AIRPORT.BMP; optional = true
     file[]: crc = b8726c07; size =     30720; name = AIRPORT.EXE
@@ -62,7 +62,7 @@ end
 // English demo 
 //
 demo[pc-en-950705-demo]:
-    name = English demo (1995-07-05)
+    name = English demo 1995-07-05
     anchorfile = AIRDEMO.EXE
     launch = "$(rootpath)\AIRDEMO.EXE"
     file[]: crc = 1ef86d61; size =     30720; name = AIRDEMO.EXE
@@ -81,7 +81,7 @@ end
 // English demo 
 //
 demo[pc-en-971214-demo]:
-    name = English demo (1997-12-14)
+    name = English demo 1997-12-14
     imports = pc-en-950705-demo
     file[]: crc = 125992a1; size =    337614; name = AIRDEMO.HLP  // new file
     file[]: crc = 2624bf66; size =    296448; name = AIRDEMO.W32  // replaces 1bf72264/296448
@@ -92,7 +92,7 @@ end
 // English demo (from Big Thinkers 1st grade)
 //
 demo[pc-en-970709-demo]:
-    name = English demo (1997-07-09)
+    name = English demo 1997-07-09
     anchorfile = AIRDEMO.EXE
     launch = "$(rootpath)\AIRDEMO.EXE"
     file[]: crc = 1ef86d61; size =     30720; name = AIRDEMO.EXE
@@ -111,7 +111,7 @@ end
 // Dutch demo 
 //
 demo[pc-nl-950830-demo]:
-    name = Dutch demo (1995-08-30)
+    name = Dutch demo 1995-08-30
     anchorfile = AIRDEMO.EXE
     launch = "$(rootpath)\AIRDEMO.EXE"
     file[]: crc = 222ef23d; size =     30720; name = AIRDEMO.EXE
