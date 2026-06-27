@@ -80,5 +80,40 @@ game[pc-en-kinder-970907]:
 
 end
 
+//
+// Kindergarten Demo
+//
+demo[pc-en-kinder-demo-971214]:
+    name = Kindergarten English Demo 1997-12-14
+    anchorfile = KINDDEMO.EXE
+    launch = "$(rootpath)\KINDDEMO.EXE"
+    file[]: crc = a6712191; size =     36352; name = KINDDEMO.D32
+    file[]: crc = a26710b2; size =      8896; name = KINDDEMO.DLL
+    file[]: crc = c37b5b12; size =     21696; name = KINDDEMO.EXE
+    file[]: crc = 708522a0; size =     29789; name = KINDDEMO.HE0
+    file[]: crc = 8b26373e; size =   7003070; name = KINDDEMO.HE1
+    file[]: crc = deebb9b5; size =  14774069; name = KINDDEMO.HE2
+    file[]: crc = 5117b70d; size =  14080291; name = KINDDEMO.HE4
+    file[]: crc = 125992a1; size =    337614; name = KINDDEMO.HLP
+    file[]: crc = 9fe06bc6; size =      2274; name = KINDDEMO.INF
+    file[]: crc = 27af3fcf; size =    365568; name = KINDDEMO.W32
+
+
+end
+
+//
+// Kindergarten Demo
+//
+demo[pc-en-kinder-demo-971027]:
+    name = Kindergarten English Demo 1997-10-27
+    imports = pc-en-kinder-demo-971214
+    file[]: crc = 27af3fcf; size =    365568; name = KINDDEMO.EXE  // replaces c37b5b12/21696
+    file[]: crc = c05a70bd; size =    190655; name = KINDDEMO.HLP  // replaces 125992a1/337614
+    file[]: crc = 044dafc5; size =       766; name = KINDDEMO.ICO  // new file
+    file[]: crc = 6c4879b1; size =      2274; name = KINDDEMO.INF  // replaces 9fe06bc6/2274
+    file[]: remove = KINDDEMO.W32
+
+
+end
 
 end
