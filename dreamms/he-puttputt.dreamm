@@ -43,6 +43,35 @@ dynamicfile[]:
 end
 //
 
+
+//
+// 1992 DOS version
+//
+game[pc-en-921119]:
+    name = English 1992-11-19
+    anchorfile = PUTTPUTT.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
+    BITNESS = false
+    file[]: crc = 244b8cc0; size =    111502; name = PUTTPUTT.DRV
+    file[]: crc = 38252638; size =    119209; name = PUTTPUTT.EXE
+    file[]: crc = cb488496; size =      8107; name = PUTTPUTT.HE0
+    file[]: crc = 4a849273; size =   4958821; name = PUTTPUTT.HE1
+    file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO; optional = true
+    file[]: crc = 297e358d; size =       182; name = PUTTPUTT.INI; optional = true
+    file[]: crc = 1398c742; size =       545; name = PUTTPUTT.PIF; optional = true
+    file[]: crc = d531fc9b; size =  26470756; name = PUTTPUTT.TLK
+    file[]: crc = 9025407b; size =    124394; name = SETUPCD.EXE; optional = true
+
+
+end
+
 //
 // 1994 DOS version
 //
@@ -118,7 +147,7 @@ game[pc-he]:
     file[]: crc = c68cb3af; size =   4495948; name = PUTTPUTT.HE1
     file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO
     file[]: crc = a5de7985; size =        75; name = PUTTPUTT.INI
-    file[]: crc = 14cf2f67; size =   6461116; name = PUTTPUTT.TLK
+    file[]: crc = 14cf2f67; size =   6461116; name = PUTTPUTT.TLK; exactonly = true
     file[]: crc = 00a6f17c; size =    131546; name = Setupcd.exe
 
 
