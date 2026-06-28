@@ -27,7 +27,7 @@ end
 
 
 
-game[pc_en_970108]:
+game[pc-en-970108]:
     name = English 1997-01-08 // SPUTM 7
     anchorfile = PUTTZOO.EXE
     file[]: crc = 110f13e3; size =     30720; name = PUTTZOO.EXE
@@ -44,7 +44,7 @@ game[pc_en_970108]:
 end
 
 
-game[pc_en_990311]:
+game[pc-en-990311]:
     // Putt-Putt Saves the Zoo (USA) (Rerelease) (1999-03-11)
     name = English 1999-03-11 // SPUTM-HE v98.5
     BITNESS = false
@@ -62,15 +62,15 @@ game[pc_en_990311]:
     file[]: crc = a91f3758; size =      2119; name = PUTTZOO.INF
 end
 
-game[pc_en_1999-03-11_alt]:
+game[pc-en-1999-03-11-alt]:
     // Probable bad dump of the above
     name = English 1999-03-11, Alt // SPUTM-HE v98.5
     anchorfile = PUTTZOO.(A)
-    imports = pc_en_990311
+    imports = pc-en-990311
     file[]: crc = 04cbd569; size =  95810519; name = PUTTZOO.(A)
 end
 
-game[pc_en_070906]:
+game[pc-en-070906]:
     name = English 2007-09-06 // SPUTM-HE v99
     BITNESS = false
     anchorfile = PuttZoo.(a)
@@ -92,7 +92,7 @@ end
 // Dutch version 1995-06-13
 //
 
-game[pc_nl_950613]:
+game[pc-nl-950613]:
     name = Dutch 1995-06-13
     anchorfile = PUTTZOO.W32
     file[]: crc = 4bc09a79; size =     35328; name = PUTTZOO.EXE
@@ -111,9 +111,9 @@ end
 // Dutch version 2000-08-12
 //
 
-game[pc_nl_000812]:
+game[pc-nl-000812]:
     name = Dutch 2000-08-12
-    imports = pc_nl_950613
+    imports = pc-nl-950613
     anchorfile = PUTTZOO.W32
     file[]: crc = b41ea1f0; size =    328479; name = PUTTZOO.HLP
     file[]: crc = e1ad623a; size =    299008; name = PUTTZOO.W32
