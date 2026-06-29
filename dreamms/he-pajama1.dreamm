@@ -202,27 +202,30 @@ game[pc-fr-980307]:
 
 end
 
-
 //
-// 1998 French version
+// 1998 German version
 //
-game[pc-fr-130417]:
-    name = French 2013-04-17
-    imports = pc-fr-980307
-    file[]: remove = JA-AD.BMP
-    file[]: remove = LISEZMOI.TXT
-    file[]: remove = SAMPYJAM.BMP
-    file[]: crc = 3ea031e6; size =     23866; name = JA-AD.PCX
-    file[]: crc = 892c5170; size =       766; name = sam.ico; optional = true
-    file[]: crc = b7790194; size =     35840; name = SAMPYJAM.D32
-    file[]: crc = b9fd2f53; size =     86016; name = SAMPYJAM.EXE
-    file[]: crc = d16090be; size =      2572; name = SAMPYJAM.INF
-    file[]: crc = 23947e41; size =     62140; name = SAMPYJAM.PCX
-    file[]: crc = da35d585; size =    330240; name = SAMPYJAM.W32
+game[pc-de-980717]:
+    name = German 1998-07-17
+    anchorfile = PYJAMA.EXE
+    launch = "$(rootpath)\PYJAMA.EXE"
+    file[]: crc = e7abebc0; size =     45368; name = HE.BMP; optional = true
+    file[]: crc = 1eeeef60; size =    139078; name = JA-AD.BMP; optional = true
+    file[]: crc = 9a83c692; size =    100898; name = PYJAMA.BMP; optional = true
+    file[]: crc = ae996d40; size =     34816; name = PYJAMA.D32
+    file[]: crc = 69a6466c; size =      9104; name = PYJAMA.DLL
+    file[]: crc = 13befd98; size =     21616; name = PYJAMA.EXE
+    file[]: crc = 8e13de86; size =     66377; name = PYJAMA.HE0
+    file[]: crc = 69b843d7; size = 124638702; name = PYJAMA.HE1
+    file[]: crc = 499f285a; size =  81152615; name = PYJAMA.HE2
+    file[]: crc = fe0b9a98; size =     36864; name = PYJAMA.HE3
+    file[]: crc = ffd8d67d; size =  32403932; name = PYJAMA.HE4
+    file[]: crc = 558514f2; size =    413586; name = PYJAMA.HE7
+    file[]: crc = 3408f7f0; size =    137600; name = PYJAMA.HLP
+    file[]: crc = a3f53445; size =      2141; name = PYJAMA.INF
+    file[]: crc = 94f75246; size =    330240; name = PYJAMA.W32
 
 end
-
-
 
 //
 // 1999 German version
@@ -357,7 +360,7 @@ demo[pc-nl-971118-demo]:
 end
 
 //
-// 1998 French demo version
+// 1997 French demo version
 //
 demo[pc-fr-980326-demo]:
     name = French Demo 1998-03-26
@@ -374,23 +377,8 @@ demo[pc-fr-980326-demo]:
     file[]: name = SAMDEMO.HLP; optional = true
     file[]: name = SAMDEMO.INF
 
-end
 
-//
-// 1998 French demo version
-//
-demo[pc-fr-130417-demo]:
-    name = French Demo 2013-04-17
-    imports = pc-fr-980326-demo
-    file[]: remove = LISEZMOI.TXT
-    file[]: crc = b7790194; size =     35840; name = SAMDEMO.D32
-    file[]: crc = b3321390; size =    163023; name = SAMDEMO.HLP
-    file[]: crc = 5baba73c; size =      2272; name = SAMDEMO.INF
 
 end
-
-
-
-
 
 end
