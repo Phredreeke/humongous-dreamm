@@ -59,6 +59,26 @@ game[pc-en-950705]:
 end
 
 //
+// English demo (from Putt Putt goes to the Moon CD)
+//
+demo[pc-en-950220-demo]:
+    name = English Demo 1995-02-20
+    anchorfile = AIRDEMO.EXE
+    launch = "$(rootpath)\AIRDEMO.EXE"
+    file[]: crc = 5a0324a5; size =     30720; name = AIRDEMO.EXE
+    file[]: crc = d3db6ca3; size =     51131; name = AIRDEMO.HE0
+    file[]: crc = c8632755; size =  28668826; name = AIRDEMO.HE1
+    file[]: crc = 45499b59; size =   2351409; name = AIRDEMO.HE2
+    file[]: crc = c05daad7; size =     36864; name = AIRDEMO.HE3
+    file[]: crc = 78c81886; size =    111925; name = AIRDEMO.HE4
+    file[]: crc = 0dda5d99; size =     15461; name = AIRDEMO.HE9
+    file[]: crc = 2df87a9d; size =     94208; name = AIRDEMO.HLP
+    file[]: crc = afdca80f; size =    260608; name = AIRDEMO.W32
+    file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF; optional = true
+
+end
+
+//
 // English demo 
 //
 demo[pc-en-950705-demo]:

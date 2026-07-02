@@ -164,7 +164,7 @@ demo[pc-en-950220-windemo]:
     file[]: crc = ff856101; size =    612724; name = FBDEMO.HE2
     file[]: crc = 76b49d04; size =     36864; name = FBDEMO.HE3
     file[]: crc = 9b06b856; size =   7152951; name = FBDEMO.HE4
-    file[]: crc = 40557681; size =    178176; name = FBDEMO.HLP
+    file[]: crc = 40557681; size =    178176; name = FBDEMO.HLP; optional = true
     file[]: crc = 0a63ba9c; size =    261120; name = FBDEMO.W32
     file[]: crc = 803d075b; size =      1470; name = SNDCARDS.INF; optional = true
 
