@@ -307,8 +307,8 @@ demo[pc-en-970814-demo]:
     file[]: crc = e0a92d4f; size =  13164357; name = PJS-DEMO.HE1
     file[]: crc = be70911c; size =   6514765; name = PJS-DEMO.HE2
     file[]: crc = e164e1b8; size =  10836436; name = PJS-DEMO.HE4
-    file[]: crc = 1371fb8c; size =     35217; name = PJS-DEMO.HLP; optional = true
-    file[]: crc = 3393ee49; size =      2201; name = PJS-DEMO.INF
+    file[]: name = PJS-DEMO.HLP; optional = true
+    file[]: name = PJS-DEMO.INF
     file[]: crc = cc302677; size =    323584; name = PJS-DEMO.W32
 
 
