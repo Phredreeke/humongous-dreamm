@@ -69,7 +69,7 @@ game[pc-en-940118]:
     file[]: crc = e29a6ec9; size =       160; name = PUTTMOON.INI; optional = true
     file[]: crc = c1c1c5a1; size =       545; name = PUTTMOON.PIF; optional = true
     file[]: crc = 8d8727f9; size =  11293948; name = PUTTMOON.TLK
-    file[]: crc = 1007333f; size =    132230; name = SETUPCD.EXE
+    file[]: name = SETUPCD.EXE; optional = true
 
 
 end
