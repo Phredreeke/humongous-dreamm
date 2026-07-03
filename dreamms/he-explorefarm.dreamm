@@ -32,7 +32,7 @@ end
 INCOMPATIBLE = false
 warning[incompatible]:
     condition = $(INCOMPATIBLE)
-    text = This version does not run correctly in tested DREAMM version (4.0x21)
+    text = This version does not run correctly in tested DREAMM version (4.0x35)
 end
 
 //
@@ -97,6 +97,24 @@ game[pc-nl-950830]:
     file[]: crc = 1e09dd26; size =    294912; name = FARM.W32
     file[]: crc = 2ab99367; size =     40258; name = HE.BMP; optional = true
     file[]: crc = b17b366e; size =      1298; name = SNDCARDS.INF; optional = true
+
+end
+
+//
+// English demo 
+//
+demo[pc-en-941024-demo]:
+    name = English Demo 1994-10-24
+    anchorfile = FARMDEMO.EXE
+    launch = "$(rootpath)\FARMDEMO.EXE"
+    file[]: crc = f32ef0c5; size =     31744; name = FARMDEMO.EXE
+    file[]: crc = f2468823; size =     18149; name = FARMDEMO.HE0
+    file[]: crc = fce765e9; size =   8141104; name = FARMDEMO.HE1
+    file[]: crc = 013719aa; size =   1099440; name = FARMDEMO.HE2
+    file[]: crc = ca02d78c; size =     36864; name = FARMDEMO.HE3
+    file[]: crc = de3589c8; size =     63488; name = FARMDEMO.HLP
+    file[]: crc = de263758; size =    248320; name = FARMDEMO.W32
+    file[]: crc = b9003500; size =      1143; name = SNDCARDS.INF; optional = true
 
 end
 
