@@ -288,7 +288,8 @@ demo[pc-nl-010606-demo]:
     file[]: crc = c82cd5e7; size =     13108; name = racedemo.he0
     file[]: crc = dc368aac; size =   2937176; name = racedemo.he2
     file[]: crc = 3fc57907; size =   4013622; name = racedemo.he4
-    file[]: crc = d79a70d8; size =   2113379; name = Racedemo.hlp
+    file[]: crc = eef40fa6; size =       766; name = RACEDEMO.ICO; optional = true
+    file[]: name = Racedemo.hlp
     file[]: crc = bb809924; size =      2234; name = Racedemo.INF
 
 
