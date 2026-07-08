@@ -44,6 +44,33 @@ end
 //
 
 //
+// 1993 DOS Floppy version
+//
+game[pc-en-930511-floppy]:
+    name = English 1993-05-11 Floppy
+    anchorfile = FBEAR.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    BITNESS = false
+    INIPATH = C:\
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = c62a911f; size =    163752; name = FBEAR.DRV
+    file[]: crc = 3e6758ca; size =    139601; name = FBEAR.EXE
+    file[]: crc = b94237df; size =      7717; name = FBEAR.HE0
+    file[]: crc = 9550b799; size =   6058825; name = FBEAR.HE1
+    file[]: crc = 6d77d5b1; size =       766; name = FBEAR.ICO; optional = true
+    file[]: crc = b3847dab; size =       545; name = FBEAR.PIF; optional = true
+    file[]: crc = 52513973; size =      1115; name = FBEAR.SNG
+    file[]: crc = 2195435c; size =   5646444; name = FBEAR.TLK
+
+end
+
+//
 // 1993 DOS version
 //
 game[pc-en-930623]:
@@ -171,5 +198,31 @@ demo[pc-en-950220-windemo]:
 
 end
 
+
+//
+// 1993 DOS Demo installer
+//
+installer[pc-en-930511-install]:
+    name = English 1993-05-11 Floppy
+    anchorfile = FATTY.001
+    osenv = dos
+    installid = pc-en-930511-floppy
+    fixdivover = true
+    mips = $(MIPS_MAX)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    launch = "$(rootpath)\INSTALL.EXE"
+    BITNESS = false
+    file[]: crc = 88d760bd; size =   1330176; name = FATTY.001
+    file[]: crc = 461808ce; size =   1457664; name = FATTY.002
+    file[]: crc = aaaf28f1; size =   1457664; name = FATTY.003
+    file[]: crc = 5e32e4ad; size =   1457664; name = FATTY.004
+    file[]: crc = 002333e1; size =   1457664; name = FATTY.005
+    file[]: crc = bccc434c; size =   1446170; name = FATTY.006
+    file[]: crc = f10f688f; size =    127273; name = INSTALL.EXE
+
+
+end
 
 end
