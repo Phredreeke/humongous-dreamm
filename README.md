@@ -1,7 +1,7 @@
 # Humongous Games pack for DREAMM
 This pack requires an experimental build of DREAMM available on the [DREAMM discord](https://discord.gg/MABzJBWj7W)
 
-Many games are playable, but this is still very much a work in progress. EXE files are required which means currently digitally available releases will unfortunately not work. You can however download some [demos from the ScummVM homepage](https://www.scummvm.org/demos/#he).
+Most games are playable, the games left to implement are listed [here](https://github.com/Phredreeke/humongous-dreamm/issues/2). EXE files are required which means currently digitally available releases will unfortunately not work. You can however download some [demos from the ScummVM homepage](https://www.scummvm.org/demos/#he).
 
 # Supported games
 
@@ -64,6 +64,7 @@ Thanks to Aaron Giles for his great emulator
 
 # Other .dreammpacks
 - Sierra: https://github.com/M-A-Boucher/sierra-dreamm
+- Coktel vision: https://github.com/einstein95/coktelvision-dreamm
 - 3DRealms/Apogee: https://github.com/M-A-Boucher/3drealms-dreamm
 - id Software: https://github.com/M-A-Boucher/idsoftware-dreamm
 - Windows Entertainment Pack: https://github.com/Phredreeke/wep-dreamm
