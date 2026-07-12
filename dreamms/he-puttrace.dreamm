@@ -8,6 +8,7 @@ launch = "$(rootpath)\PUTTRACE.EXE"
 osenv = windows 98
 winres = 640x480x8
 
+$(include cfg-puttrace.inc)
 
 //
 // filesystem
@@ -37,6 +38,7 @@ game[pc-en-981008]:
     file[]: crc = 319f31e6; size =     74219; name = Ja-ad.PCX; optional = true
     file[]: crc = e3dab413; size =  74410999; name = puttrace.(a)
     file[]: crc = 40aa0884; size =   3770940; name = puttrace.(b)
+    file[]: crc = 40aa0884; size =   3770940; name = hegames\puttrace.(b)
     file[]: crc = b997580d; size =    423424; name = PUTTRACE.A32
     file[]: crc = 94c373b1; size =     36352; name = PUTTRACE.D32
     file[]: crc = a26710b2; size =      8896; name = PUTTRACE.DLL
