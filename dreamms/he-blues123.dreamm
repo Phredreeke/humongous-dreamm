@@ -1,0 +1,61 @@
+desc[he-blues123]:
+
+name = Blue's 123 Time Activities
+icon = he-blues123.png
+machine = pc
+rootpath = D:\
+launch = $(rootpath)\Blues123Time.a32
+osenv = windows 98
+winres = 640x480x16
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+mount[]: vpath = C:\hegames; srcpath = $(ifsinstallpath)\hegames
+
+//
+// English version 
+//
+game[pc-en-980720]:
+    name = English 1999-04-22
+    anchorfile = Blues123Time.exe
+    file[]: crc = e1dd24cf; size =       766; name = 123Time.ico; optional = true
+    file[]: crc = ddfd069f; size =     25677; name = Blue's123Time ReadMe.txt; optional = true
+    file[]: crc = f43e4657; size =  27916510; name = Blues123time.(a)
+    file[]: crc = 2a76314b; size =   5784542; name = Blues123time.(b)
+    file[]: crc = aaaefacc; size =    444928; name = Blues123Time.a32
+    file[]: crc = 94c373b1; size =     36352; name = Blues123Time.d32
+    file[]: crc = a26710b2; size =      8896; name = Blues123Time.dll
+    file[]: crc = 2025e3dd; size =     77824; name = Blues123Time.exe
+    file[]: crc = f6e4775c; size =     19092; name = Blues123time.HE0
+    file[]: crc = 64ba6a94; size =  46708119; name = Blues123time.he2
+    file[]: crc = 8ac69b3f; size =   8787819; name = Blues123time.he4
+    file[]: crc = 705d5952; size =   2444530; name = Blues123Time.hlp
+    file[]: crc = b9e87c81; size =      3508; name = Blues123Time.inf
+    file[]: crc = b804d1ea; size =     73728; name = Blues123Time.r32
+    file[]: crc = 7b59e0ed; size =       811; name = COPYRITE.TXT; optional = true
+    file[]: crc = f60cc5ce; size =     84167; name = register.pcx; optional = true
+    file[]: crc = f42f3845; size =     94720; name = SMACKW32.dll
+    file[]: crc = 803b8d00; size =  27384504; name = DATA\shot1.dat
+    file[]: crc = 0e2424bc; size =  15714776; name = DATA\shot10.dat
+    file[]: crc = 882bc324; size =  15758440; name = DATA\shot11.dat
+    file[]: crc = cb5c72c2; size =  23496500; name = DATA\shot13.dat
+    file[]: crc = 42b12cd8; size =   8620336; name = DATA\shot14.dat
+    file[]: crc = 41739c6e; size =  11965716; name = DATA\shot3.dat
+    file[]: crc = 8e56c7a7; size =  12860260; name = DATA\shot4.dat
+    file[]: crc = 11c8e78a; size =  11085940; name = DATA\shot5.dat
+    file[]: crc = 500f7878; size =  16344376; name = DATA\shot7.dat
+    file[]: crc = c74c4903; size =  19281404; name = DATA\shot7a.dat
+    file[]: crc = 2c89bedf; size =  13962488; name = DATA\shot8.dat
+    file[]: crc = 822c5959; size =  15868808; name = DATA\shot9.dat
+    file[]: crc = dc17bf4e; size =    969784; name = DATA\tinkc1.dat
+    file[]: crc = 512ba2ba; size =   5873600; name = DATA\tinkc2.dat
+    file[]: crc = c7e68af6; size =   4863420; name = DATA\tinkc3.dat
+    file[]: crc = b85df0ad; size =   1081444; name = DATA\tinkc4.dat
+    file[]: crc = f17bc01b; size =   1065548; name = DATA\tinkc5.dat
+    file[]: crc = 2a76314b; size =   5784542; name = hegames\Blues123\Blues123Time.(b)
+end
+
+end

@@ -18,7 +18,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 // English version 
 //
 game[pc-en-980720]:
-    name = English (1998-07-20)
+    name = English 1998-07-20
     anchorfile = BluesABCTime.exe
     file[]: crc = 11b08fcd; size =       766; name = abctime.ico; optional = true
     file[]: crc = 54eb6891; size =  35597984; name = BluesABCTime.(a)
@@ -45,6 +45,7 @@ game[pc-en-980720]:
     file[]: crc = bc533f5d; size =  10962516; name = Data\56-E-OT-02.dat
     file[]: crc = 6479e681; size =   8703936; name = Data\56-E-OT-03.dat
     file[]: crc = 56d008a7; size =   3345824; name = Data\57-E-IN-01.dat
+    file[]: crc = a96ba2c2; size =   1359339; name = hegames\BluesABCTime.(b)
 
 end
 

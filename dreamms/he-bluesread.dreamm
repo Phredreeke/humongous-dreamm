@@ -1,0 +1,103 @@
+desc[he-bluesread]:
+
+name = Blue's Reading Time Activities
+icon = he-bluesread.png
+machine = pc
+rootpath = C:\
+launch = "C:\Blue's Reading Time.exe"
+osenv = windows 98
+winres = 640x480x16
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// English version 
+//
+game[pc-en-000712]:
+    name = English 2000-07-12
+    anchorfile = Blue's Reading Time.he2
+    file[]: crc = 9941116c; size =  96102205; name = Blue's Reading Time.(a)
+    file[]: crc = 74d895b7; size =  13893778; name = Blue's Reading Time.(b)
+    file[]: crc = 55e6eaba; size =     30045; name = Blue's Reading Time.HE0
+    file[]: crc = 131d769a; size = 112473469; name = Blue's Reading Time.he2
+    file[]: crc = 0e219b86; size =  11150449; name = Blue's Reading Time.he4
+    file[]: crc = e3fdfd56; size =     86016; name = CheckInstall.exe
+    file[]: crc = 7dc9c86f; size =       645; name = CheckInstall.inf
+    file[]: crc = fbc8b3a6; size =       118; name = DATA.TAG
+    file[]: crc = 96f7a59b; size =   1339849; name = data1.cab
+    file[]: crc = 58a5adf8; size =     10378; name = data1.hdr
+    file[]: crc = 68d98fb7; size =      4679; name = lang.dat
+    file[]: crc = 215b6e35; size =       949; name = layout.bin
+    file[]: crc = 71bcc3f5; size =      5733; name = License.txt
+    file[]: crc = 2d71e76e; size =       450; name = os.dat
+    file[]: crc = 1f653ecc; size =    103337; name = register.pcx
+    file[]: crc = 424e0623; size =     99878; name = setup.bmp
+    file[]: crc = d3b40b34; size =     71680; name = Setup.exe
+    file[]: crc = 2954cf69; size =       109; name = SETUP.INI
+    file[]: crc = dfd0f462; size =     64357; name = setup.ins
+    file[]: crc = 3637907d; size =        49; name = setup.lid
+    file[]: crc = 03dbe6b9; size =     36864; name = Uninst.dll
+    file[]: crc = 82c02410; size =       278; name = Uninst.inf
+    file[]: crc = b3cd8628; size =   9821664; name = Data\end_rt_out_00.dat
+    file[]: crc = 16b792e3; size =   9360576; name = Data\end_rt_out_01.dat
+    file[]: crc = 31b163e5; size =   3526396; name = Data\int_rt_in_01.dat
+    file[]: crc = 85f27bcf; size =    769228; name = Data\int_rt_in_02.dat
+    file[]: crc = e8d65994; size =   1139012; name = Data\int_rt_in_03.dat
+    file[]: crc = 909aa60a; size =   1320964; name = Data\int_rt_in_04.dat
+    file[]: crc = e0141962; size =   7923184; name = Data\int_rt_in_05.dat
+    file[]: crc = 0873eabc; size =  10091684; name = Data\int_rt_in_06.dat
+    file[]: crc = 25f9d37a; size =   3805904; name = Data\ste_rt_ch_01.dat
+    file[]: crc = 1f48096a; size =   3212708; name = Data\ste_rt_ch_02.dat
+    file[]: crc = d1ae51a3; size =   3776476; name = Data\ste_rt_ch_03.dat
+    file[]: crc = 57675e42; size =   2627748; name = Data\ste_rt_ch_04.dat
+    file[]: crc = d7d38e9e; size =   3793680; name = Data\ste_rt_ch_05.dat
+    file[]: crc = 43d5969d; size =   2619868; name = Data\ste_rt_ch_06.dat
+    file[]: crc = e9380ccd; size =   3181596; name = Data\ste_rt_ch_07.dat
+    file[]: crc = 01222434; size =   2610244; name = Data\ste_rt_ch_08.dat
+    file[]: crc = af6f75c9; size =   2314676; name = Data\ste_rt_ch_09.dat
+    file[]: crc = 08422d90; size =   1672400; name = Data\ste_rt_ch_0a.dat
+    file[]: crc = cdcd32b4; size =   1919804; name = Data\ste_rt_ch_0c.dat
+    file[]: crc = 31710f4b; size =   4912360; name = Data\ste_rt_ch_10.dat
+    file[]: crc = 368fea9e; size =   2332228; name = Data\ste_rt_ch_11.dat
+    file[]: crc = c8fefcd5; size =   2627424; name = Data\ste_rt_ch_12.dat
+    file[]: crc = ec8c2961; size =   2627260; name = Data\ste_rt_ch_13.dat
+    file[]: crc = 638a9e71; size =   2230044; name = Data\ste_rt_ch_14.dat
+    file[]: crc = cb80dd70; size =   2313840; name = Data\ste_rt_ch_15.dat
+    file[]: crc = 1244ad9d; size =   3556168; name = Data\ste_rt_cu_01.dat
+    file[]: crc = 7c573e57; size =   4140060; name = Data\ste_rt_cu_02.dat
+    file[]: crc = 362c7532; size =   4024236; name = Data\ste_rt_cu_03.dat
+    file[]: crc = a10e7631; size =   3215508; name = Data\ste_rt_cu_04.dat
+    file[]: crc = 1f0be978; size =   2887436; name = Data\ste_rt_cu_05.dat
+    file[]: crc = 0e993c5f; size =   2905532; name = Data\ste_rt_cu_06.dat
+    file[]: crc = c310a714; size =   3430316; name = Data\ste_rt_cu_07.dat
+    file[]: crc = d27ff2b9; size =   3117328; name = Data\ste_rt_cu_08.dat
+    file[]: crc = f9a25737; size =   2326464; name = Data\ste_rt_cu_09.dat
+    file[]: crc = 327a6e7a; size =   2652912; name = Data\ste_rt_cu_10.dat
+    file[]: crc = 84dcd815; size =   3096428; name = Data\ste_rt_cu_11.dat
+    file[]: crc = c05bb6ed; size =   3791564; name = Data\ste_rt_en_01.dat
+    file[]: crc = 0c8cdbf5; size =   2443032; name = Data\ste_rt_en_02.dat
+    file[]: crc = 11968394; size =   1603640; name = Data\ste_rt_en_03.dat
+    file[]: crc = d3d2c433; size =   4119584; name = Data\ste_rt_en_04.dat
+    file[]: crc = a018b8cd; size =   2125956; name = Data\ste_rt_en_05.dat
+    file[]: crc = 8d2e1feb; size =   1529696; name = Data\ste_rt_en_06.dat
+    file[]: crc = 96d810fd; size =   2866560; name = Data\ste_rt_en_07.dat
+    file[]: crc = 7e20a747; size =   3168784; name = Data\ste_rt_en_08.dat
+    file[]: crc = d6423e9a; size =   1635128; name = Data\ste_rt_en_09.dat
+    file[]: crc = f39a54fc; size =   2567908; name = Data\ste_rt_en_10.dat
+    file[]: crc = 01b7d55c; size =   3012884; name = Data\ste_rt_en_20.dat
+    file[]: crc = b5fd346e; size =   1251868; name = Data\ste_rt_en_21a.dat
+    file[]: crc = 05c2b7aa; size =   1174932; name = Data\ste_rt_en_21b.dat
+    file[]: crc = 1e2fe16e; size =   1059932; name = Data\ste_rt_en_21c.dat
+    file[]: crc = 7fca29b9; size =   1872740; name = Data\ste_rt_out_01.dat
+    file[]: crc = 168e2359; size =     53248; name = Blue's Reading Time.d32
+    file[]: crc = b3ea7e28; size =    450560; name = Blue's Reading Time.exe
+    file[]: crc = 87fdf92f; size =   1582368; name = Blue's Reading Time.hlp
+    file[]: crc = 0a810168; size =      3206; name = Blue's Reading Time.inf
+    file[]: crc = f42f3845; size =     94720; name = Smackw32.dll
+end
+
+end
