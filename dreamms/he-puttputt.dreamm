@@ -27,6 +27,17 @@ config[bitness]:
 end
 
 //
+// Block ALT key
+//
+script[remap]:
+    condition = $(DOSAUDIO)
+    code = [[[$(CRLF)
+       keyboard_install_hook(0x38, "remap");
+       func remap() {  }
+    ]]]
+end
+
+//
 // Set up INI file for DOS version
 //
 DOSAUDIO = false
@@ -96,7 +107,7 @@ game[pc-en-940118]:
     file[]: crc = 4164eecb; size =       139; name = PUTTPUTT.INI; optional = true
     file[]: crc = 1398c742; size =       545; name = PUTTPUTT.PIF; optional = true
     file[]: crc = 2ed0c10e; size =  26437948; name = PUTTPUTT.TLK
-    file[]: crc = 3486d0cc; size =    131940; name = SETUPCD.EXE
+    file[]: name = SETUPCD.EXE; optional = true
 
 
 end

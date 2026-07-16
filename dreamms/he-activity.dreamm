@@ -30,6 +30,17 @@ config[bitness]:
 end
 
 //
+// Block ALT key
+//
+script[remap]:
+    condition = $(DOSAUDIO)
+    code = [[[$(CRLF)
+       keyboard_install_hook(0x38, "remap");
+       func remap() {  }
+    ]]]
+end
+
+//
 // Set up INI file for DOS version
 //
 DOSAUDIO = false
