@@ -14,8 +14,10 @@ Most games are playable, the games left to implement are listed [here](https://g
 | Bear Stormin' | 🇺🇸 | DOS only |
 | Big Thinkers! Kindergarten | 🇺🇸 | |
 | Big Thinkers! First Grade | 🇺🇸 | |
+| Blue's 123 Time Activities | 🇺🇸 | |
 | Blue's ABC Time Activities | 🇺🇸 | |
 | Blue's Art Time Activities | 🇺🇸 | |
+| Blue's Reading Time Activities | 🇺🇸 | |
 | Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | DOS and Windows |
 | Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇱 🇷🇺 | |
 | Freddi Fish 2: The Case of the Haunted Schoolhouse | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇷🇺 | |
