@@ -67,4 +67,5 @@ Thanks to Aaron Giles for his great emulator
 - Coktel vision: https://github.com/einstein95/coktelvision-dreamm
 - 3DRealms/Apogee: https://github.com/M-A-Boucher/3drealms-dreamm
 - id Software: https://github.com/M-A-Boucher/idsoftware-dreamm
+- Hugo: https://github.com/Phredreeke/hugotroll-dreamm
 - Windows Entertainment Pack: https://github.com/Phredreeke/wep-dreamm
