@@ -7,7 +7,7 @@ rootpath = C:\
 launch = "$(rootpath)\ACTIVITY.EXE"
 osenv = windows 98
 winres = 640x480x8
-dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+INIPATH = C:\ACTIVITY\ACTIVITY.INI
 
 //
 // filesystem
@@ -15,19 +15,6 @@ dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-
-
-
-//
-// Windows version
-//
-BITNESS = true
-config[bitness]:
-    condition = $(BITNESS)
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
 
 //
 // Block ALT key
@@ -41,21 +28,42 @@ script[remap]:
 end
 
 //
+// Windows version
+//
+BITNESS = true
+config[bitness]:
+    condition = $(BITNESS)
+    title = Windows version
+    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
+    option[win98]: name = Windows 98; priority = 1
+end
+
+//
 // Set up INI file for DOS version
 //
 DOSAUDIO = false
-dynamicfile[]:
-    condition = $(DOSAUDIO)
-    path = $(INIPATH)
-    contents = [[[$(CRLF)
-    DigitalSoundDriver=sblaster.com
-    MidiSoundDriver=sbfm.adv
-    MidiType=0
-    IOAddress=220
-    IRQ=7
+
+INIDATA = [[[$(CRLF)
+DigitalSoundDriver=sblaster.com
+MidiSoundDriver=sbfm.adv
+MidiType=0
+IOAddress=220
+IRQ=7
 ]]]
+
+script[init]:
+    code = [[[$(CRLF)
+    if (is_windows())
+    {    
+    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
+    }
+    if (DOSAUDIO = true)
+    {    
+    file_save("$$(INIPATH)", "$$(INIDATA)");
+    }
+    ]]]
 end
-//
+
 
 //
 // 1993 Putt-Putt's Fun Pack DOS version 

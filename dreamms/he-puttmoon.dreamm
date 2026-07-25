@@ -6,7 +6,8 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\PUTTMOON.EXE"
 osenv = windows 98
-dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+DOSAUDIO = false
+INIPATH = C:\PUTTMOON\PUTTMOON.INI
 
 //
 // filesystem
@@ -40,20 +41,27 @@ end
 //
 // Set up INI file for DOS version
 //
-DOSAUDIO = false
-dynamicfile[]:
-    condition = $(DOSAUDIO)
-    path = $(INIPATH)
-    contents = [[[$(CRLF)
-    DigitalSoundDriver=sblaster.com
-    MidiSoundDriver=sbfm.adv
-    IOAddress=220
-    IRQ=7
-    DigitalID=
-    MidiInstFile=fat.ad
+INIDATA = [[[$(CRLF)
+DigitalSoundDriver=sblaster.com
+MidiSoundDriver=sbfm.adv
+IOAddress=220
+IRQ=7
+DigitalID=
+MidiInstFile=fat.ad
 ]]]
+
+script[init]:
+    code = [[[$(CRLF)
+    if (is_windows())
+    {    
+    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
+    }
+    if (DOSAUDIO = true)
+    {    
+    file_save("$$(INIPATH)", "$$(INIDATA)");
+    }
+    ]]]
 end
-//
 
 //
 // 1994 DOS version
@@ -68,7 +76,6 @@ game[pc-en-940118]:
     audiohw = adlib+sb16
     videohw = svga
     DOSAUDIO = true
-    INIPATH = C:\PUTTMOON\PUTTMOON.INI
     BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS

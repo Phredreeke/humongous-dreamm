@@ -6,7 +6,8 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\BRSTORM.EXE"
 osenv = dos
-
+INIPATH = C:\BRSTORM\BRSTORM.INI
+DOSAUDIO = true
 //
 // sound drivers
 //
@@ -25,18 +26,23 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Set up INI file for DOS version
 //
-DOSAUDIO = false
-dynamicfile[]:
-    condition = $(DOSAUDIO)
-    path = $(INIPATH)\BRSTORM.INI
-    contents = [[[$(CRLF)
-    DigitalSoundDriver=sblaster.com
-    MidiSoundDriver=sbfm.adv
-    IOAddress=220
-    IRQ=7
-    DigitalID=
+INIDATA = [[[$(CRLF)
+DigitalSoundDriver=sblaster.com
+MidiSoundDriver=sbfm.adv
+IOAddress=220
+IRQ=7
+DigitalID=
 ]]]
+
+script[init]:
+    code = [[[$(CRLF)
+    if (DOSAUDIO = true)
+    {    
+    file_save("$$(INIPATH)", "$$(INIDATA)");
+    }
+    ]]]
 end
+
 //
 
 //
@@ -53,8 +59,8 @@ game[pc-en-931209-demo]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
-    INIPATH = C:\BRSTORM
+
+    
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 5f41f1d4; size =    162085; name = BRSTORM.DRV
     file[]: crc = 14e04203; size =    142805; name = BRSTORM.EXE

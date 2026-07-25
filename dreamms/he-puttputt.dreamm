@@ -6,8 +6,8 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\PUTTPUTT.EXE"
 osenv = windows 98
-dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
-
+DOSAUDIO = false
+INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
 //
 // filesystem
 //
@@ -40,20 +40,26 @@ end
 //
 // Set up INI file for DOS version
 //
-DOSAUDIO = false
-dynamicfile[]:
-    condition = $(DOSAUDIO)
-    path = $(INIPATH)
-    contents = [[[$(CRLF)
-    DigitalSoundDriver=sblaster.com
-    MidiSoundDriver=sbfm.adv
-    IOAddress=220
-    IRQ=7
-    DigitalID=
+INIDATA = [[[$(CRLF)
+DigitalSoundDriver=sblaster.com
+MidiSoundDriver=sbfm.adv
+IOAddress=220
+IRQ=7
+DigitalID=
 ]]]
-end
-//
 
+script[init]:
+    code = [[[$(CRLF)
+    if (is_windows())
+    {    
+    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
+    }
+    if (DOSAUDIO = true)
+    {    
+    file_save("$$(INIPATH)", "$$(INIDATA)");
+    }
+    ]]]
+end
 
 //
 // 1992 DOS version
@@ -68,7 +74,6 @@ game[pc-en-921119]:
     audiohw = adlib+sb16
     videohw = svga
     DOSAUDIO = true
-    INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
     BITNESS = false
     file[]: crc = 244b8cc0; size =    111502; name = PUTTPUTT.DRV
     file[]: crc = 38252638; size =    119209; name = PUTTPUTT.EXE

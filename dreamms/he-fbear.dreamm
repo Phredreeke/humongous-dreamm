@@ -6,7 +6,8 @@ machine = pc
 rootpath = C:\
 launch = "$(rootpath)\FBEAR.EXE"
 osenv = windows 98
-dynamicfile[]: path = C:\WINDOWS\SYSTEM\WING32.DLL; contents = $(NULL)
+DOSAUDIO = false
+INIPATH = C:\FBEAR.INI
 
 //
 // filesystem
@@ -42,19 +43,26 @@ end
 //
 // Set up INI file for DOS version
 //
-DOSAUDIO = false
-dynamicfile[]:
-    condition = $(DOSAUDIO)
-    path = $(INIPATH)\FBEAR.INI
-    contents = [[[$(CRLF)
-    DigitalSoundDriver=sblaster.com
-    MidiSoundDriver=sbfm.adv
-    IOAddress=220
-    IRQ=7
-    DigitalID=
+INIDATA = [[[$(CRLF)
+DigitalSoundDriver=sblaster.com
+MidiSoundDriver=sbfm.adv
+IOAddress=220
+IRQ=7
+DigitalID=
 ]]]
+
+script[init]:
+    code = [[[$(CRLF)
+    if (is_windows())
+    {    
+    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
+    }
+    if (DOSAUDIO = true)
+    {    
+    file_save("$$(INIPATH)", "$$(INIDATA)");
+    }
+    ]]]
 end
-//
 
 //
 // 1993 DOS Floppy version
@@ -70,7 +78,6 @@ game[pc-en-930511-floppy]:
     videohw = svga
     DOSAUDIO = true
     BITNESS = false
-    INIPATH = C:\
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = c62a911f; size =    163752; name = FBEAR.DRV
     file[]: crc = 3e6758ca; size =    139601; name = FBEAR.EXE
@@ -97,7 +104,7 @@ game[pc-en-930623]:
     videohw = svga
     DOSAUDIO = true
     BITNESS = false
-    INIPATH = C:\FBEAR
+    INIPATH = C:\FBEAR\FBEAR.INI
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = c62a911f; size =    163752; name = FBEAR.DRV
     file[]: crc = c29d011c; size =    139745; name = FBEAR.EXE
@@ -175,7 +182,6 @@ game[pc-he]:
     videohw = svga
     DOSAUDIO = true
     BITNESS = false
-    INIPATH = C:\
     file[]: crc = 5f41f1d4; size =    162085; name = FBEAR.DRV
     file[]: crc = 27f5435a; size =    139745; name = Fbear.exe
     file[]: crc = 2c7a5ac9; size =      7722; name = FBEAR.HE0
