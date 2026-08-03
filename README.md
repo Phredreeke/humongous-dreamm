@@ -44,7 +44,7 @@ Most games are playable, the games left to implement are listed [here](https://g
 | Putt-Putt Joins the Circus |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 |  |
 | Putt-Putt and Pep's Balloon-O-Rama |  🇺🇸 🇳🇱 🇫🇷 🇩🇪 |  |
 | Putt-Putt and Pep's Dog on a Stick |  🇺🇸 🇳🇱 🇫🇷 🇩🇪 |  |
-| Putt-Putt & Fatty Bear's Activity Pack |  🇺🇸 |  |
+| Putt-Putt & Fatty Bear's Activity Pack |  🇺🇸 | DOS and Windows, also Fun Pack versions |
 | Spy Fox in "Dry Cereal" |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Spy Fox 2: "Some Assembly Required" |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇹 🇷🇺 |  |
 | Spy Fox: "Operation Ozone" |  🇺🇸 🇬🇧 🇫🇷 🇩🇪 |  |
