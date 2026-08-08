@@ -437,6 +437,26 @@ demo[pc-en-940504-demo]:
 end
 
 //
+// 1994 Demo version
+//
+demo[pc-en-941024-demo]:
+    name = English Demo 1994-10-24
+    anchorfile = FREDDEMO.EXE
+    launch = "$(rootpath)\FREDDEMO.EXE"
+    file[]: crc = ce80d4ac; size =     31744; name = FREDDEMO.EXE
+    file[]: crc = 8a41a6f6; size =      9779; name = FREDDEMO.HE0
+    file[]: crc = 745051ce; size =   6141457; name = FREDDEMO.HE1
+    file[]: crc = 03c0d621; size =   1546248; name = FREDDEMO.HE2
+    file[]: crc = 66f3ba2d; size =     36864; name = FREDDEMO.HE3
+    file[]: crc = 1e864f1d; size =   4802906; name = FREDDEMO.HE4
+    file[]: crc = 4f3c4ab7; size =     73728; name = FREDDEMO.HLP
+    file[]: crc = 8371b5d7; size =    246784; name = FREDDEMO.W32
+    file[]: crc = b9003500; size =      1143; name = SNDCARDS.INF
+
+
+end
+
+//
 // 1995 Demo version
 //
 demo[pc-en-950220-demo]:

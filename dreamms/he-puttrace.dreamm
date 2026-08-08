@@ -232,6 +232,20 @@ demo[pc-en-990328-demo]:
 end
 
 //
+// Demo version
+//
+demo[pc-en-990301-demo]:
+    name = English Demo 1999-03-01
+    anchorfile = racedemo.exe
+    imports = pc-en-990328-demo
+    file[]: crc = 693c7b02; size =    425472; name = RaceDemo.exe
+
+
+
+end
+
+
+//
 // UK Demo version
 //
 demo[pc-en-010404-demo-uk]:

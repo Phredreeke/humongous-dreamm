@@ -220,6 +220,25 @@ demo[pc-en-990208-demo]:
 end
 
 //
+// 1999 English Demo (from Pajama Sam 3 CD)
+//
+demo[pc-en-990208-demo-alt]:
+    name = English Demo 1999-02-08 (Alt)
+    anchorfile = F4-demo.exe
+    launch = "$(rootpath)\F4-demo.exe"
+    file[]: crc = 7dd71da1; size =   6245090; name = f4-demo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = F4-demo.d32
+    file[]: crc = 132873bb; size =    444928; name = F4-demo.exe
+    file[]: crc = beb8429f; size =     13584; name = f4-demo.HE0
+    file[]: crc = 8bb1bc07; size =   3990430; name = f4-demo.he2
+    file[]: crc = 6303cb3c; size =    623933; name = f4-demo.he4
+    file[]: crc = f309fa1d; size =    255590; name = f4-demo.hlp
+    file[]: crc = a4dc5042; size =      2200; name = F4-demo.inf
+
+
+end
+
+//
 // 1999 English Demo (found on Blue's 123 time)
 //
 demo[pc-en-990422-demo]:
