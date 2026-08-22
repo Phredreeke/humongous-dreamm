@@ -66,8 +66,35 @@ end
 //
 // 1994 DOS version
 //
+game[pc-en-931021]:
+    name = English DOS Floppy 1993-10-21
+    anchorfile = PUTTMOON.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    rootpath = C:\PUTTMOON\
+    DOSAUDIO = true
+    BITNESS = false
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
+    file[]: crc = 3e59a339; size =    197900; name = PUTTMOON.DRV
+    file[]: crc = db75e8f2; size =    142791; name = PUTTMOON.EXE
+    file[]: crc = e6724f96; size =      7828; name = PUTTMOON.HE0
+    file[]: crc = 7a59fff7; size =   5116894; name = PUTTMOON.HE1
+    file[]: crc = 97e896b5; size =       766; name = PUTTMOON.ICO; optional = true
+    file[]: crc = c1c1c5a1; size =       545; name = PUTTMOON.PIF; optional = true
+    file[]: crc = 0a1092fc; size =   6441638; name = PUTTMOON.TLK
+
+end
+
+//
+// 1994 DOS version
+//
 game[pc-en-940118]:
-    name = English 1993-11-04
+    name = English DOS 1993-11-04
     anchorfile = PUTTMOON.EXE
     osenv = dos
     fixdivover = true
@@ -149,7 +176,7 @@ end
 // 1993 DOS Demo
 //
 demo[pc-en-930309-demo]:
-    name = English Demo 1993-03-09
+    name = English DOS Demo 1993-03-09
     anchorfile = MOONDEMO.EXE
     osenv = dos
     fixdivover = true
@@ -180,7 +207,7 @@ end
 // 1993 DOS Demo installer
 //
 installer[pc-en-930309-demo-install]:
-    name = English Demo 1993-03-09
+    name = English DOS Demo 1993-03-09
     anchorfile = MOONDEMO.EXE
     osenv = dos
     installid = pc-en-930309-demo
@@ -192,6 +219,32 @@ installer[pc-en-930309-demo-install]:
     launch = "$(rootpath)\MOONDEMO.EXE"
     BITNESS = false
     file[]: crc = 730c243c; size =   1454478; name = MOONDEMO.EXE; exactonly = true
+
+
+end
+
+//
+// 1993 DOS installer
+//
+installer[pc-en-931021-install]:
+    name = English DOS Floppy 1993-10-21
+    anchorfile = PUTTMOON.001
+    osenv = dos
+    installid = pc-en-931021
+    fixdivover = true
+    mips = $(MIPS_MAX)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    launch = "$(rootpath)\INSTALL.EXE"
+    BITNESS = false
+    file[]: crc = 4918b18d; size =    128215; name = INSTALL.EXE
+    file[]: crc = 4b8bc23a; size =   1329152; name = PUTTMOON.001
+    file[]: crc = 34bcbea6; size =   1457664; name = PUTTMOON.002
+    file[]: crc = d358d654; size =   1457664; name = PUTTMOON.003
+    file[]: crc = d296d017; size =   1457664; name = PUTTMOON.004
+    file[]: crc = cc36583e; size =   1457664; name = PUTTMOON.005
+    file[]: crc = b3044a3c; size =   1336574; name = PUTTMOON.006
 
 
 end
