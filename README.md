@@ -17,8 +17,10 @@ Most games are playable, the games left to implement are listed [here](https://g
 | Blue's 123 Time Activities | 🇺🇸 | |
 | Blue's ABC Time Activities | 🇺🇸 | |
 | Blue's Art Time Activities | 🇺🇸 | |
+| Blue's Birthday Party | 🇺🇸 | |
 | Blue's Reading Time Activities | 🇺🇸 | |
-| Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | DOS and Windows |
+| Blue's Treasure Hunt | 🇺🇸 | |
+| Fatty Bear's Birthday Surprise | 🇺🇸 🇮🇱 | DOS (Floppy and CD) and Windows |
 | Freddi Fish and the Case of the Missing Kelp Seeds | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇸🇪 🇳🇴 🇮🇱 🇷🇺 | |
 | Freddi Fish 2: The Case of the Haunted Schoolhouse | 🇺🇸 🇳🇱 🇫🇷 🇩🇪 🇯🇵 🇷🇺 | |
 | Freddi Fish 3: The Case of the Stolen Conch Shell | 🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇱 | |
@@ -36,8 +38,8 @@ Most games are playable, the games left to implement are listed [here](https://g
 | Pajama Sam's Lost & Found |  🇺🇸 🇳🇱 |  |
 | Pajama Sam's Sock Works |  🇺🇸 🇳🇱 🇫🇷 |  |
 | Pajama Sam: Games to Play on Any Day |  🇺🇸 |  |
-| Putt-Putt Joins the Parade |  🇺🇸 🇮🇱 | DOS and Windows |
-| Putt-Putt Goes to the Moon |  🇺🇸 🇮🇱 | DOS and Windows |
+| Putt-Putt Joins the Parade |  🇺🇸 🇮🇱 | DOS (Floppy and CD) and Windows |
+| Putt-Putt Goes to the Moon |  🇺🇸 🇮🇱 | DOS (Floppy and CD) and Windows |
 | Putt-Putt Saves the Zoo |  🇺🇸 🇳🇱 🇫🇷 🇩🇪 |  |
 | Putt-Putt Travels Through Time |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 |  |
 | Putt-Putt Enters the Race |  🇺🇸 🇬🇧 🇳🇱 🇫🇷 🇩🇪 🇮🇹 |  |
