@@ -15,22 +15,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true;
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Windows version
-//
-BITNESS = true
-config[bitness]:
-    condition = $(BITNESS)
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
-
-script[init]:
-    code = [[[$(CRLF)   
-    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
-    ]]]
-end
 
 //
 // warnings
@@ -38,7 +22,7 @@ end
 INCOMPATIBLE = false
 warning[incompatible]:
     condition = $(INCOMPATIBLE)
-    text = This version does not run correctly in tested DREAMM version (4.0x35)
+    text = This version does not run correctly in tested DREAMM version (4.0x77)
 end
 
 //

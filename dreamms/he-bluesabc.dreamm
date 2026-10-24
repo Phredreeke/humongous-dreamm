@@ -6,7 +6,7 @@ machine = pc
 rootpath = C:\
 launch = $(rootpath)\BluesABCTime.exe
 osenv = windows 98
-winres = 640x480x16
+winres = 640x480x8
 
 //
 // filesystem
@@ -46,6 +46,25 @@ game[pc-en-980720]:
     file[]: crc = 6479e681; size =   8703936; name = Data\56-E-OT-03.dat
     file[]: crc = 56d008a7; size =   3345824; name = Data\57-E-IN-01.dat
     file[]: crc = a96ba2c2; size =   1359339; name = hegames\BluesABCTime.(b)
+
+end
+
+//
+// Demo version 
+//
+demo[pc-en-980726-demo]:
+    name = English Demo 1998-07-26
+    anchorfile = BluesABCTimeDemo.exe
+    launch = $(rootpath)\BluesABCTimeDemo.exe
+    file[]: crc = 9b14cd5a; size =   4147245; name = BluesABCTimeDemo.(a)
+    file[]: crc = 94c373b1; size =     36352; name = BluesABCTimeDemo.d32
+    file[]: crc = 22ed8810; size =    432128; name = BluesABCTimeDemo.exe
+    file[]: crc = 42391593; size =     12204; name = BluesABCTimeDemo.HE0
+    file[]: crc = 4ae49ca7; size =   4997128; name = BluesABCTimeDemo.he2
+    file[]: crc = 4f70d549; size =    574632; name = BluesABCTimeDemo.he4
+    file[]: crc = 14cd2830; size =    638716; name = BluesABCTimeDemo.hlp
+    file[]: crc = f99b6565; size =      2164; name = BluesABCTimeDemo.inf
+
 
 end
 

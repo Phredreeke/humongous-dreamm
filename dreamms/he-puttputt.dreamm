@@ -16,17 +16,6 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
 
 //
-// Windows version
-//
-BITNESS = true
-config[bitness]:
-    condition = $(BITNESS)
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
-
-//
 // Block ALT key
 //
 script[remap]:
@@ -50,10 +39,6 @@ DigitalID=
 
 script[init]:
     code = [[[$(CRLF)
-    if (is_windows())
-    {    
-    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
-    }
     if (DOSAUDIO = true)
     {    
     file_save("$$(INIPATH)", "$$(INIDATA)");
@@ -65,7 +50,7 @@ end
 // 1992 DOS version
 //
 game[pc-en-921119]:
-    name = English 1992-11-19
+    name = English 1992-11-19 CD-ROM
     anchorfile = PUTTPUTT.EXE
     osenv = dos
     fixdivover = true
@@ -74,7 +59,6 @@ game[pc-en-921119]:
     audiohw = adlib+sb16
     videohw = svga
     DOSAUDIO = true
-    BITNESS = false
     file[]: crc = 244b8cc0; size =    111502; name = PUTTPUTT.DRV
     file[]: crc = 38252638; size =    119209; name = PUTTPUTT.EXE
     file[]: crc = cb488496; size =      8107; name = PUTTPUTT.HE0
@@ -89,10 +73,60 @@ game[pc-en-921119]:
 end
 
 //
+// 1992 DOS version
+//
+game[pc-en-921106-floppy]:
+    name = English 1992-11-06 Floppy
+    anchorfile = PUTTPUTT.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    rootpath = C:\PUTTPUTT
+    file[]: crc = 244b8cc0; size =    111502; name = PUTTPUTT.DRV
+    file[]: crc = bf6936d6; size =    119209; name = PUTTPUTT.EXE
+    file[]: crc = 7f2e58bb; size =      8022; name = PUTTPUTT.HE0
+    file[]: crc = a1e4da2e; size =   4647079; name = PUTTPUTT.HE1
+    file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO; optional = true
+    file[]: crc = 1398c742; size =       545; name = PUTTPUTT.PIF; optional = true
+    file[]: crc = 9c4ecf7c; size =   5323664; name = PUTTPUTT.TLK
+
+
+end
+
+//
+// 1992 DOS installer
+//
+installer[pc-en-921106-install]:
+    name = English 1992-11-06 Installer
+    anchorfile = PUTTPUTT.001
+    osenv = dos
+    installid = pc-en-921106-floppy
+    fixdivover = true
+    mips = $(MIPS_MAX)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    launch = "$(rootpath)\INSTALL.EXE"
+    BITNESS = false
+    file[]: crc = 763fbd79; size =    123418; name = INSTALL.EXE
+    file[]: crc = be88b34b; size =   1333760; name = PUTTPUTT.001
+    file[]: crc = e96f12de; size =   1457664; name = PUTTPUTT.002
+    file[]: crc = 38b20ace; size =   1457664; name = PUTTPUTT.003
+    file[]: crc = 093efe89; size =   1457664; name = PUTTPUTT.004
+    file[]: crc = eb97b343; size =   1345038; name = PUTTPUTT.005
+
+
+end
+
+//
 // 1994 DOS version
 //
-game[pc-en-940118]:
-    name = English 1994-01-18
+game[pc-en-940329]:
+    name = English 1994-03-29 CD-ROM
     anchorfile = PUTTPUTT.EXE
     osenv = dos
     fixdivover = true
@@ -102,7 +136,6 @@ game[pc-en-940118]:
     videohw = svga
     DOSAUDIO = true
     INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
-    BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 3e59a339; size =    197900; name = PUTTPUTT.DRV
     file[]: crc = 125cef80; size =    142805; name = PUTTPUTT.EXE
@@ -117,6 +150,58 @@ game[pc-en-940118]:
 
 end
 
+//
+// 1994 DOS version
+//
+game[pc-en-940322-floppy]:
+    name = English Floppy 1994-03-22
+    anchorfile = PUTTPUTT.EXE
+    osenv = dos
+    fixdivover = true
+    mips = $(MIPS_386DX_33)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    DOSAUDIO = true
+    rootpath = C:\PUTTPUTT
+    file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
+    file[]: crc = bdc50041; size =    128163; name = INSTALL.EXE; optional = true
+    file[]: crc = 3e59a339; size =    197900; name = PUTTPUTT.DRV
+    file[]: crc = 125cef80; size =    142805; name = PUTTPUTT.EXE
+    file[]: crc = 8887e9a7; size =      8117; name = PUTTPUTT.HE0
+    file[]: crc = ab1f57cb; size =   4495947; name = PUTTPUTT.HE1
+    file[]: crc = 1793d065; size =       766; name = PUTTPUTT.ICO; optional = true
+    file[]: crc = 5e2d10e0; size =        79; name = PUTTPUTT.INI; optional = true
+    file[]: crc = 1398c742; size =       545; name = PUTTPUTT.PIF; optional = true
+    file[]: crc = 5641c1e6; size =   5323664; name = PUTTPUTT.TLK
+
+
+end
+
+//
+// 1994 DOS installer
+//
+installer[pc-en-940322-install]:
+    name = English 1994-03-22 Installer
+    anchorfile = PUTTPUTT.001
+    osenv = dos
+    installid = pc-en-940322-floppy
+    fixdivover = true
+    mips = $(MIPS_MAX)
+    ramkb = 16384
+    audiohw = adlib+sb16
+    videohw = svga
+    launch = "$(rootpath)\INSTALL.EXE"
+    BITNESS = false
+    file[]: crc = bdc50041; size =    128163; name = INSTALL.EXE
+    file[]: crc = c56c76ac; size =   1329152; name = PUTTPUTT.001
+    file[]: crc = 82d94e5d; size =   1457664; name = PUTTPUTT.002
+    file[]: crc = afd032c3; size =   1457664; name = PUTTPUTT.003
+    file[]: crc = 16a81c2d; size =   1457664; name = PUTTPUTT.004
+    file[]: crc = 0c7d0a11; size =   1445011; name = PUTTPUTT.005
+
+
+end
 
 //
 // 1995 Windows version
@@ -155,7 +240,6 @@ game[pc-he]:
     videohw = svga
     DOSAUDIO = true
     INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
-    BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 5f41f1d4; size =    162085; name = PUTTPUTT.DRV
     file[]: crc = 125cef80; size =    142805; name = Puttputt.exe
@@ -185,7 +269,6 @@ demo[pc-en-930309-demo]:
     INIPATH = C:\PUTTDEMO\PUTTDEMO.INI
     rootpath = C:\PUTTDEMO\
     launch = "$(rootpath)\PUTTDEMO.EXE"
-    BITNESS = false
     file[]: crc = d9c83981; size =      5217; name = CHECK.EXE
     file[]: crc = a9c9ca05; size =    111964; name = PUTTDEMO.DRV
     file[]: crc = ac5d728a; size =    172201; name = PUTTDEMO.EXE

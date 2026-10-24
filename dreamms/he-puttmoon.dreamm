@@ -17,17 +17,6 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
 
 //
-// Windows version
-//
-BITNESS = true
-config[bitness]:
-    condition = $(BITNESS)
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
-
-//
 // Block ALT key
 //
 script[remap]:
@@ -52,10 +41,6 @@ MidiInstFile=fat.ad
 
 script[init]:
     code = [[[$(CRLF)
-    if (is_windows())
-    {    
-    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
-    }
     if (DOSAUDIO = true)
     {    
     file_save("$$(INIPATH)", "$$(INIDATA)");

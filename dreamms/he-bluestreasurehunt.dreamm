@@ -37,7 +37,7 @@ end
 INCOMPATIBLE = true
 warning[incompatible]:
     condition = $(INCOMPATIBLE)
-    text = This game is currently not running correctly
+    text = In-game CD switching is not working. Exit game and switch CD in launcher instead
 end
 
 //

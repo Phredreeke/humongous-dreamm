@@ -1,0 +1,306 @@
+desc[he-bluesbirthday]:
+
+name = Blue's Birthday Party
+icon = he-bluesbirthday.png
+machine = pc
+rootpath = D:\
+launch = ""
+osenv = windows 98
+winres = 640x480x8
+// test = 1
+
+
+//
+// filesystem
+//
+mount[]: vpath = C:\hegames; srcpath = $(ifsinstallpath)\hegames
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// initialization script
+//
+script[cd-init]:
+	code = [[[$(CRLF)
+        if (!file_exists("C:\\WINDOWS\\hegames.ini")) { file_save("C:\\WINDOWS\\hegames.ini", "$$(INI_CONTENTS)"); }
+    ]]]
+end
+
+//
+// Disc
+//
+config[disc]:
+    condition = is_game()
+    title = Disc
+    option[cd1]:   name = CD 1 (Yellow); launch = "$(rootpath)\Blue'sBirthday-Yellow.exe"; priority = 1
+    option[cd2]: name = CD 2 (Red); launch = "$(rootpath)\Blue'sBirthday-Red.exe"
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = true
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = Preliminary support
+end
+
+//
+// 1998 version
+//
+game[pc-en-980805]:
+    name = English 1998-08-05
+    anchordepth = 1
+    anchorfile = Blue'sBirthday.(b)
+    file[]: crc = 1b3bbade; size =     43008; name = AutoBirthday-Red.exe
+    file[]: crc = 9377bdaa; size =       465; name = AutoBirthday-Red.inf
+    file[]: crc = 9fd2ff87; size =     73182; name = AutoBirthday-Yellow.bmp
+    file[]: crc = f83aa8f0; size =     43008; name = AutoBirthday-Yellow.exe
+    file[]: crc = afe43827; size =       215; name = AutoBirthday-Yellow.inf
+    file[]: crc = e43868a1; size =  73101517; name = Blue'sBirthday-Red.(a)
+    file[]: crc = fc130d38; size =    433152; name = Blue'sBirthday-Red.a32
+    file[]: crc = 03bf3047; size =     76844; name = Blue'sBirthday-Red.bmp
+    file[]: crc = 94c373b1; size =     36352; name = Blue'sBirthday-Red.d32
+    file[]: crc = a26710b2; size =      8896; name = Blue'sBirthday-Red.dll
+    file[]: crc = 85e3c0a4; size =    244224; name = Blue'sBirthday-Red.exe
+    file[]: crc = b83d38bc; size =     50724; name = Blue'sBirthday-Red.HE0
+    file[]: crc = bef5b8d7; size =  42768991; name = Blue'sBirthday-Red.he2
+    file[]: crc = 8e54c4d7; size =  10906578; name = Blue'sBirthday-Red.he4
+    file[]: crc = 83b2f5b6; size =   2275263; name = Blue'sBirthday-Red.hlp
+    file[]: crc = 2aab40e1; size =       766; name = Blue'sBirthday-Red.ico
+    file[]: crc = 9d3b7808; size =      3103; name = Blue'sBirthday-Red.inf
+    file[]: crc = b408a6a4; size =  72047281; name = Blue'sBirthday-Yellow.(a)
+    file[]: crc = b6c7849a; size =    433152; name = Blue'sBirthday-Yellow.a32
+    file[]: crc = 94c373b1; size =     36352; name = Blue'sBirthday-Yellow.d32
+    file[]: crc = a26710b2; size =      8896; name = Blue'sBirthday-Yellow.dll
+    file[]: crc = 43133346; size =    244224; name = Blue'sBirthday-Yellow.exe
+    file[]: crc = c7890472; size =     50724; name = Blue'sBirthday-Yellow.HE0
+    file[]: crc = 3bfb2dd9; size =  49091394; name = Blue'sBirthday-Yellow.he2
+    file[]: crc = 8e54c4d7; size =  10906578; name = Blue'sBirthday-Yellow.he4
+    file[]: crc = 83b2f5b6; size =   2275263; name = Blue'sBirthday-Yellow.hlp
+    file[]: crc = 2851d247; size =       766; name = Blue'sBirthday-Yellow.ico
+    file[]: crc = ef4b0b6f; size =      3102; name = Blue'sBirthday-Yellow.inf
+    file[]: crc = bb6b7fed; size =  12465440; name = Blue'sBirthday.(b)
+    file[]: crc = e6ecec07; size =       810; name = COPYRITE.TXT; optional = true
+    file[]: crc = f521424f; size =     92318; name = ja-ad.pcx; optional = true
+    file[]: crc = 57342252; size =     18123; name = readme.txt; optional = true
+    file[]: crc = f42f3845; size =     94720; name = SMACKW32.dll
+    file[]: crc = f4b11507; size =   2077796; name = Data\00-A-CH01-01.dat
+    file[]: crc = 7f465df8; size =   2411840; name = Data\00-A-CH01-10.dat
+    file[]: crc = 565ec039; size =   2334464; name = Data\00-B-CH01-01.dat
+    file[]: crc = c3cc56b9; size =   1509652; name = Data\00-B-CH01-02.dat
+    file[]: crc = f5eb75e9; size =   1639280; name = Data\00-B-CH01-03-4.dat
+    file[]: crc = 64d77e52; size =   1377100; name = Data\00-B-CH01-05.dat
+    file[]: crc = 07bbb93f; size =   2034144; name = Data\00-B-CH01-07.dat
+    file[]: crc = 467541a8; size =   2825016; name = Data\00-B-CH01-08.dat
+    file[]: crc = ecfac3f3; size =   1509796; name = Data\00-C-CH01-01.dat
+    file[]: crc = 8491cc4a; size =   1777904; name = Data\00-C-CH01-02.dat
+    file[]: crc = 0cb6e359; size =   2177420; name = Data\00-D-CH01-01.dat
+    file[]: crc = a23865e5; size =   1584180; name = Data\00-D-CH01-05.dat
+    file[]: crc = 0fac94a2; size =   2289516; name = Data\00-G-CH01-01.dat
+    file[]: crc = 82ef587f; size =   1957604; name = Data\00-G-CH01-01C.dat
+    file[]: crc = 76ae505e; size =   1598368; name = Data\00-G-CH01-01D.dat
+    file[]: crc = 85c201c7; size =   1225368; name = Data\00-G-CH01-02.dat
+    file[]: crc = 11754f25; size =   1376568; name = Data\00-G-CH01-03.dat
+    file[]: crc = 3a5f0c47; size =   1184636; name = Data\00-G-CH01-04.dat
+    file[]: crc = 4e94e22d; size =   2412204; name = Data\00-G-CH01-05.dat
+    file[]: crc = 3faf2a79; size =   2433704; name = Data\00-G-CH01-06.dat
+    file[]: crc = e4b9c4dd; size =   2013184; name = Data\00-G-CL-04.dat
+    file[]: crc = 3e40896a; size =   1173648; name = Data\00-G-CL01-01B.dat
+    file[]: crc = 26edfd7f; size =    464124; name = Data\00-G-EN01-01.dat
+    file[]: crc = 6e9487f9; size =    441384; name = Data\00-G-ENLR-01.dat
+    file[]: crc = 21a4c1a9; size =    310268; name = Data\00-G-ENRL-01.dat
+    file[]: crc = df9a8ccf; size =   1155956; name = Data\01-G-IC-01.dat
+    file[]: crc = 12c48af8; size =   1388444; name = Data\08-G-CH01-02.dat
+    file[]: crc = 5c15d14d; size =     42876; name = Data\09-A-EN32-01.dat
+    file[]: crc = 220a2761; size =   1019932; name = Data\09-a-en33-01.dat
+    file[]: crc = e35c34e6; size =    323928; name = Data\09-A-EX32-01.dat
+    file[]: crc = 6247417c; size =   1579712; name = Data\09-A-EX33-01B.dat
+    file[]: crc = 1628e4c0; size =    302456; name = Data\09-A-IN-01.dat
+    file[]: crc = 63289511; size =   5841584; name = Data\09-A-IN-02.dat
+    file[]: crc = 992cea9e; size =   1100104; name = Data\09-B-IN-01.dat
+    file[]: crc = 9640bc22; size =   4552536; name = Data\09-C-IN-01.dat
+    file[]: crc = a7fe0e0d; size =   3504488; name = Data\09-C-IN-02.dat
+    file[]: crc = 24827f63; size =   1697252; name = Data\09-D-IN-01.dat
+    file[]: crc = 7d367ac1; size =   2112524; name = Data\09-D-IN-02.dat
+    file[]: crc = 63e4d245; size =   9377788; name = Data\09-F-IN01-01.dat
+    file[]: crc = ce3c790d; size =   1071188; name = Data\09-G-IN-01.dat
+    file[]: crc = deeaef54; size =   4766124; name = Data\09-G-IN-02.dat
+    file[]: crc = b24fc168; size =   6967620; name = Data\09-G-IN-03.dat
+    file[]: crc = c31138be; size =   4967104; name = Data\09-G-IN-04.dat
+    file[]: crc = 57562dee; size =   6149840; name = Data\09-G-IN-05.dat
+    file[]: crc = 2890b4d6; size =   6954788; name = Data\09-G-IN-06.dat
+    file[]: crc = 8f7488b6; size =   5367524; name = Data\09-G-IN-07.dat
+    file[]: crc = ecc3e53d; size =   5854352; name = Data\09-G-IN-08.dat
+    file[]: crc = 990a4388; size =  12975936; name = Data\09-G-IN-08B.dat
+    file[]: crc = 849d36a8; size =   2953592; name = Data\09-G-PU-01.dat
+    file[]: crc = 14f58366; size =   1714384; name = Data\09-G-PU-02.dat
+    file[]: crc = 95129b70; size =   1398408; name = Data\09-G-PU-03.dat
+    file[]: crc = fa08bd87; size =     37692; name = Data\10-B-EN38-00.dat
+    file[]: crc = e9ce1af3; size =   1881856; name = Data\10-B-EN38-01.dat
+    file[]: crc = 3cf09a05; size =   1486168; name = Data\10-B-EX38-01.dat
+    file[]: crc = 59cb8ff0; size =    457964; name = Data\10-B-EX38-02.dat
+    file[]: crc = 53790d2b; size =   1260556; name = Data\10-G-CH01-01.dat
+    file[]: crc = 3b40e2cb; size =   1589792; name = Data\10-G-CH01-02.dat
+    file[]: crc = 47c0b3cc; size =   1887124; name = Data\11-G-CH01-01.DAT
+    file[]: crc = 3f652050; size =   4331180; name = Data\12-C-CL-01B.dat
+    file[]: crc = 99fbc20f; size =   1879936; name = Data\12-C-EN11-01B.dat
+    file[]: crc = 6d862952; size =   2321992; name = Data\12-C-EN11-01C.dat
+    file[]: crc = b68945bc; size =   1863044; name = Data\12-C-EN11-01D.dat
+    file[]: crc = bdc16535; size =   1651612; name = Data\12-C-EN11-01E.dat
+    file[]: crc = 45555ef7; size =   1089700; name = Data\12-G-CH01-01.dat
+    file[]: crc = 5ee99c37; size =    996580; name = Data\12-G-CH01-02.dat
+    file[]: crc = dd4dfee1; size =   1850112; name = Data\13-A-CH01-01.DAT
+    file[]: crc = 0f6709cf; size =   3318352; name = Data\13-A-CL-01B.dat
+    file[]: crc = b241ac21; size =     45460; name = Data\13-C-EN47-01.dat
+    file[]: crc = 4efa4f7b; size =   1143004; name = Data\13-C-EN47-02.dat
+    file[]: crc = e8071f32; size =    326200; name = Data\13-C-EX47-01.dat
+    file[]: crc = 2b23f54a; size =    993996; name = Data\13-C-EX47-02.dat
+    file[]: crc = 2a93b484; size =   2105000; name = Data\13-G-CH01-01.DAT
+    file[]: crc = cb9da18f; size =   4432124; name = Data\14-D-CL-01B.dat
+    file[]: crc = af5d991f; size =   1247828; name = Data\14-G-CH01-01.DAT
+    file[]: crc = a043a6a9; size =     45496; name = Data\15-D-EN48-01.dat
+    file[]: crc = 137c2dc9; size =    323412; name = Data\15-D-EX48-01.dat
+    file[]: crc = ff6ae34c; size =   1532120; name = Data\15-D-EX48-02.dat
+    file[]: crc = 8973da62; size =   2055524; name = Data\15-g-ch01-01.dat
+    file[]: crc = d322621e; size =   1369760; name = Data\16-G-CH01-01.DAT
+    file[]: crc = 7f37afb0; size =   1528852; name = Data\17-G-CH01-01.DAT
+    file[]: crc = d6608828; size =   4040912; name = Data\18-D-CL-01B.dat
+    file[]: crc = 84c7bc8a; size =   1917572; name = Data\18-G-CH01-01.dat
+    file[]: crc = bf4f01e5; size =   3960572; name = Data\19-A-CL-01B.dat
+    file[]: crc = 1ba84831; size =   3163460; name = Data\19-B-CL-01B.dat
+    file[]: crc = 4ac64404; size =   1489904; name = Data\19-G-CH01-02.dat
+    file[]: crc = 960cf02d; size =   3890364; name = Data\20-A-CL-01B.dat
+    file[]: crc = 336eb54a; size =   3686316; name = Data\20-B-CL-02.dat
+    file[]: crc = c353c7fa; size =   1316672; name = Data\20-G-CH01-01.DAT
+    file[]: crc = a250509e; size =   4210068; name = Data\21-B-IN-01.dat
+    file[]: crc = 95733062; size =   1496648; name = Data\21-G-CH01-01.dat
+    file[]: crc = 696c93d4; size =   1621424; name = Data\21-G-CH01-03.dat
+    file[]: crc = a34072e0; size =   4144324; name = Data\22-C-CL-01B.dat
+    file[]: crc = deedeb5f; size =   1413204; name = Data\22-G-CH01-01.dat
+    file[]: crc = 894e9e6e; size =   4792584; name = Data\23-A-PU-01.dat
+    file[]: crc = 8f43221d; size =   4264464; name = Data\23-A-PU-02.dat
+    file[]: crc = 4fc39c00; size =   2371876; name = Data\23-B-CH01-01.dat
+    file[]: crc = 7a8971ef; size =   2808816; name = Data\23-C-CH01-01.dat
+    file[]: crc = f7bd02d7; size =   2200656; name = Data\23-D-CH01-01.dat
+    file[]: crc = 111efcc4; size =   1668176; name = Data\23-G-CH01-02.dat
+    file[]: crc = dfd71ea3; size =   1424700; name = Data\23-G-CH01-03.dat
+    file[]: crc = 7a6361ba; size =   3092596; name = Data\23-G-CH01-04.dat
+    file[]: crc = aaf3e469; size =   2692580; name = Data\23-G-CH01-05.dat
+    file[]: crc = 2cfb93a6; size =   5945740; name = Data\23-G-IC-01.dat
+    file[]: crc = 3bb8493b; size =    756716; name = Data\23-G-IN-01.dat
+    file[]: crc = e29ea7e3; size =   3503352; name = Data\23-G-IN-01B.dat
+    file[]: crc = 2f90c40e; size =   1347680; name = Data\23-G-PU-02.dat
+    file[]: crc = a7fdd2b3; size =   4122772; name = Data\23-G-PU-03.dat
+    file[]: crc = 2e360262; size =   3619208; name = Data\30-A-CS-01.dat
+    file[]: crc = 2738c0f6; size =   2011964; name = Data\30-A-CS-03.dat
+    file[]: crc = c844af56; size =   4676108; name = Data\30-B-CS-01.dat
+    file[]: crc = 1b0fac5a; size =   1934744; name = Data\30-B-CS-03.dat
+    file[]: crc = 93917618; size =   4999012; name = Data\30-C-CS-01.dat
+    file[]: crc = 2dc99b73; size =   2611788; name = Data\30-C-CS-03.dat
+    file[]: crc = df65f97e; size =   5343104; name = Data\30-D-CS-01.dat
+    file[]: crc = 8561096d; size =   2073716; name = Data\30-D-CS-03.dat
+    file[]: crc = cd6fb0c4; size =   4061752; name = Data\30-G-CS-01.dat
+    file[]: crc = a93a5206; size =     42804; name = Data\32-A-EN09-01.dat
+    file[]: crc = aca17e75; size =   1809912; name = Data\32-A-EN09-02.dat
+    file[]: crc = 2508e7d7; size =   1443748; name = Data\32-A-EN33-01.dat
+    file[]: crc = f6192ebf; size =     41140; name = Data\38-B-EN10-00.dat
+    file[]: crc = ba9e3730; size =   2754472; name = Data\38-B-EN10-01.dat
+    file[]: crc = 79daec3a; size =    971904; name = Data\38-B-EN10-02.dat
+    file[]: crc = 9568ac92; size =   3109556; name = Data\39-B-CL-02.dat
+    file[]: crc = 0c8f87d6; size =   1994712; name = Data\39-B-EN39-02.dat
+    file[]: crc = 6636d514; size =   1323816; name = Data\39-B-EN43-01.dat
+    file[]: crc = 13a73cb6; size =   3230532; name = Data\40-B-EN38-01.dat
+    file[]: crc = 938d0365; size =   1825952; name = Data\40-B-EN38-02.dat
+    file[]: crc = 7931c0e0; size =   4008128; name = Data\47-C-CL-01B.dat
+    file[]: crc = 88049eef; size =     45484; name = Data\47-C-EN13-01.dat
+    file[]: crc = 71931b2d; size =   1063088; name = Data\47-C-EN13-02.dat
+    file[]: crc = ee4da9b8; size =   1492308; name = Data\48-D-EN01-01B.dat
+    file[]: crc = 0e79bff3; size =     45512; name = Data\48-D-EN15-01.dat
+    file[]: crc = c1ffd0f8; size =   1986884; name = Data\48-D-EN15-02.dat
+    file[]: crc = 959f2dad; size =   2920992; name = Data\49-D-CL-01B.dat
+    file[]: crc = b4da692b; size =    887904; name = Data\49-D-EN48-01.dat
+    file[]: crc = 4d4be306; size =    848556; name = Data\bookA&B.dat
+    file[]: crc = 282f7d04; size =    854176; name = Data\bookC&D.dat
+    file[]: crc = e9d1bd58; size =    471572; name = Data\gestatL1.dat
+    file[]: crc = b80eb54c; size =    472604; name = Data\GESTATL2.dat
+    file[]: crc = 9a7fadf5; size =    508784; name = Data\GESTATL3.dat
+    file[]: crc = ae0d23e0; size =    650656; name = Data\gestatr1.dat
+    file[]: crc = 54815829; size =    629528; name = Data\GESTATR2.dat
+    file[]: crc = 059e77ed; size =    614480; name = Data\GESTATR3.dat
+    file[]: crc = bb6b7fed; size =  12465440; name = hegames\Blue'sBirthday.(b)
+
+
+    INI_CONTENTS = [[[$(CRLF)
+[Blue'sBirthday-Yellow]
+DISK2FILE=c:\hegames\Blue'sBirthday.(b)
+]]]
+
+end
+
+
+//
+// Demo version 
+//
+demo[pc-en-000523-demo]:
+    name = English Demo 2000-05-23
+    anchorfile = BluesBirthdayDemo.exe
+    launch = $(rootpath)\BluesBirthdayDemo.exe
+    test = 1
+    file[]: crc = eb349de0; size =  14376827; name = BluesBirthdayDemo.(a)
+    file[]: crc = a3e12e35; size =   2679222; name = BluesBirthdayDemo.(b)
+    file[]: crc = c91c9bef; size =    432128; name = BluesBirthdayDemo.a32
+    file[]: crc = 94c373b1; size =     36352; name = BluesBirthdayDemo.d32
+    file[]: crc = 1457b3cd; size =    241152; name = BluesBirthdayDemo.exe
+    file[]: crc = f113c04f; size =     15834; name = BluesBirthdayDemo.HE0
+    file[]: crc = 5af9032d; size =   7683225; name = BluesBirthdayDemo.he2
+    file[]: crc = 14f13377; size =        48; name = BluesBirthdayDemo.he4
+    file[]: crc = 14cd2830; size =    638716; name = BluesBirthdayDemo.hlp
+    file[]: crc = 27154c0e; size =      3055; name = BluesBirthdayDemo.inf
+    file[]: crc = f42f3845; size =     94720; name = Smackw32.dll
+    file[]: crc = 565ec039; size =   2334464; name = Movies\00-B-CH01-01.SMK
+    file[]: crc = c3cc56b9; size =   1509652; name = Movies\00-B-CH01-02.SMK
+    file[]: crc = f5eb75e9; size =   1639280; name = Movies\00-B-CH01-03-4.SMK
+    file[]: crc = 64d77e52; size =   1377100; name = Movies\00-B-CH01-05.SMK
+    file[]: crc = 07bbb93f; size =   2034144; name = Movies\00-B-CH01-07.SMK
+    file[]: crc = 467541a8; size =   2825016; name = Movies\00-B-CH01-08.SMK
+    file[]: crc = 65ba2ec0; size =   9898652; name = Movies\00-F-CH01-01.SMK
+    file[]: crc = 0fac94a2; size =   2289516; name = Movies\00-G-CH01-01.SMK
+    file[]: crc = 82ef587f; size =   1957604; name = Movies\00-G-CH01-01C.SMK
+    file[]: crc = 85c201c7; size =   1225368; name = Movies\00-G-CH01-02.SMK
+    file[]: crc = 11754f25; size =   1376568; name = Movies\00-G-CH01-03.SMK
+    file[]: crc = 3a5f0c47; size =   1184636; name = Movies\00-G-CH01-04.SMK
+    file[]: crc = 4e94e22d; size =   2412204; name = Movies\00-G-CH01-05.SMK
+    file[]: crc = 3faf2a79; size =   2433704; name = Movies\00-G-CH01-06.SMK
+    file[]: crc = 3e40896a; size =   1173648; name = Movies\00-G-CL01-01B.SMK
+    file[]: crc = 63e4d245; size =   9377788; name = Movies\09-F-IN01-01.SMK
+    file[]: crc = ea8c9897; size =     52896; name = Movies\10-B-EN38-00.SMK
+    file[]: crc = e9ce1af3; size =   1881856; name = Movies\10-b-en38-01.smk
+    file[]: crc = 3cf09a05; size =   1486168; name = Movies\10-B-EX38-01.SMK
+    file[]: crc = 59cb8ff0; size =    457964; name = Movies\10-B-EX38-02.SMK
+    file[]: crc = bc56233f; size =   2664988; name = Movies\10-F-CH01-01.SMK
+    file[]: crc = 53790d2b; size =   1260556; name = Movies\10-G-CH01-01.SMK
+    file[]: crc = 3b40e2cb; size =   1589792; name = Movies\10-G-CH01-02.SMK
+    file[]: crc = ce2ca9b8; size =     57052; name = Movies\38-B-EN10-00.SMK
+    file[]: crc = ba9e3730; size =   2754472; name = Movies\38-B-EN10-01.SMK
+    file[]: crc = 79daec3a; size =    971904; name = Movies\38-B-EN10-02.SMK
+    file[]: crc = 9568ac92; size =   3109556; name = Movies\39-B-CL-02.SMK
+    file[]: crc = 0c8f87d6; size =   1994712; name = Movies\39-B-EN39-02.SMK
+    file[]: crc = 6636d514; size =   1323816; name = Movies\39-B-EN43-01.SMK
+    file[]: crc = d26a1bcc; size =   5400720; name = Movies\39-F-CH01-01.SMK
+    file[]: crc = 13a73cb6; size =   3230532; name = Movies\40-B-EN38-01.SMK
+    file[]: crc = 938d0365; size =   1825952; name = Movies\40-B-EN38-02.SMK
+    file[]: crc = 29dfa398; size =    424716; name = Movies\GESTATL1.SMK
+    file[]: crc = 4feb6d8a; size =    593704; name = Movies\GESTATR1.SMK
+    file[]: crc = a3e12e35; size =   2679222; name = hegames\BluesBirthdayDemo\BluesBirthdayDemo.(b)
+
+    INI_CONTENTS = [[[$(CRLF)
+[BluesBirthdayDemo]
+DISK2FILE=C:\HEGames\BluesBirthdayDemo\BluesBirthdayDemo.(b)
+]]]
+
+end
+
+
+end

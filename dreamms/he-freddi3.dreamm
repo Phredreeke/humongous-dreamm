@@ -14,27 +14,6 @@ winres = 640x480x8
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-//
-// Windows version
-//
-BITNESS = true
-config[bitness]:
-    condition = $(BITNESS)
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
-
-//
-// Color depth
-//
-COLORDEPTH = false
-config[colordepth]:
-    condition = $(COLORDEPTH)
-    title = Color depth
-    option[8bitcolor]:   name = 8-bit; winres = 640x480x8
-    option[16bitcolor]: name = 16-bit; winres = 640x480x16; priority = 1
-end
 
 //
 // 1997 version

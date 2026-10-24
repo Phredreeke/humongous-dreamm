@@ -27,16 +27,6 @@ script[remap]:
     ]]]
 end
 
-//
-// Windows version
-//
-BITNESS = true
-config[bitness]:
-    condition = $(BITNESS)
-    title = Windows version
-    option[win311]:   name = Windows 3.11; osenv= windows 3.11.002
-    option[win98]: name = Windows 98; priority = 1
-end
 
 //
 // Set up INI file for DOS version
