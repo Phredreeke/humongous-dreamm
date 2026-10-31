@@ -3,7 +3,7 @@ desc[he-spyfox2]:
 name = SPY Fox 2: Some Assembly Required
 icon = he-spyfox2.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\Spyfox2.exe"
 osenv = windows 98
 winres = 640x480x8

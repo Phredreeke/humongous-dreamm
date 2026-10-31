@@ -3,7 +3,7 @@ desc[he-pajama3]:
 name = Pajama Sam 3: You Are What You Eat From Your Head to Your Feet
 icon = he-pajama3.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\Pajama3.exe"
 osenv = windows 98
 winres = 640x480x8

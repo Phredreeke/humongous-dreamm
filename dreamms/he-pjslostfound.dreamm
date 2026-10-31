@@ -3,7 +3,7 @@ desc[he-pjslostfound]:
 name = Pajama Sam's Lost & Found
 icon = he-pjslostfound.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\lost.exe"
 osenv = windows 98
 winres = 640x480x8

@@ -3,7 +3,7 @@ desc[he-puttdog]:
 name = Putt-Putt and Pep's Dog on a Stick
 icon = he-puttdog.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\DOG.EXE"
 osenv = windows 98
 winres = 640x480x8

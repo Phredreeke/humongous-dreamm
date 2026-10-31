@@ -3,7 +3,7 @@ desc[he-fbearstorm]:
 name = Bear Stormin'
 icon = he-fbearstorm.png
 machine = pc
-rootpath = C:\
+rootpath = C:\BRSTORM
 launch = "$(rootpath)\BRSTORM.EXE"
 osenv = dos
 INIPATH = C:\BRSTORM\BRSTORM.INI

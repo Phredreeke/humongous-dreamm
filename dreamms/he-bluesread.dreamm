@@ -3,7 +3,7 @@ desc[he-bluesread]:
 name = Blue's Reading Time Activities
 icon = he-bluesread.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "C:\Blue's Reading Time.exe"
 osenv = windows 98
 winres = 640x480x16

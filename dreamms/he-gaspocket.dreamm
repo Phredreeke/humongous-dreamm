@@ -3,7 +3,7 @@ desc[he-gaspocket]:
 name = A Gaspocket Adventure: Aliens Ate My Cookies
 icon = he-gaspocket.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\gaspocketdemo.exe"
 osenv = windows 98
 audiohw = gmidi

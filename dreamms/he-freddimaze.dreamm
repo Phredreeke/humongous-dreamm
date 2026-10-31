@@ -3,7 +3,7 @@ desc[he-freddimaze]:
 name = Freddi Fish and Luther's Maze Madness
 icon = he-freddimaze.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\MAZE.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -84,7 +84,6 @@ end
 //
 game[pc-en-020627]:
     name = English 2002-06-27
-    BITNESS = false
     anchorfile = Maze.EXE
     file[]: crc = 13f36f76; size =  29610570; name = Maze.(a)
     file[]: crc = 8c2168aa; size =     53248; name = Maze.d32
@@ -132,7 +131,6 @@ end
 game[pc-fr-991001]:
     name = French 1999-10-01
     anchorfile = gloutons.exe
-    BITNESS = false
     launch = "$(rootpath)\gloutons.exe"
     file[]: crc = fef23de2; size =  11858984; name = GLOUTONS.(A)
     file[]: crc = 81980e29; size =     35840; name = GLOUTONS.D32

@@ -3,7 +3,7 @@ desc[he-bluesart]:
 name = Blue's Art Time Activities
 icon = he-bluesart.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\ArtTime.exe"
 osenv = windows 98
 winres = 640x480x16

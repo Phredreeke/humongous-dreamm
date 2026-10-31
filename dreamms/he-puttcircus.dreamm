@@ -3,7 +3,7 @@ desc[he-puttcircus]:
 name = Putt-Putt Joins the Circus
 icon = he-puttcircus.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\puttcircus.exe"
 osenv = windows 98
 winres = 640x480x8

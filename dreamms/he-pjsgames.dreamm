@@ -3,7 +3,7 @@ desc[he-pjsgames]:
 name = Pajama Sam: Games to Play on Any Day
 icon = he-pjsgames.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\PJGAMES.EXE"
 osenv = windows 98
 winres = 640x480x8

@@ -3,7 +3,7 @@ desc[he-spyfox3]:
 name = SPY Fox 3: Operation Ozone
 icon = he-spyfox3.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\spyozon.exe"
 osenv = windows 98
 winres = 640x480x16

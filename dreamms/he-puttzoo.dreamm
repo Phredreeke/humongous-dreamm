@@ -3,7 +3,7 @@ desc[he-puttzoo]:
 name = Putt-Putt Saves the Zoo
 icon = he-puttzoo.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\PUTTZOO.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -35,7 +35,6 @@ end
 game[pc-en-990311]:
     // Putt-Putt Saves the Zoo (USA) (Rerelease) (1999-03-11)
     name = English 1999-03-11 // SPUTM-HE v98.5
-    BITNESS = false
     anchorfile = PUTTZOO.(A)
     file[]: crc = 48031138; size =  95810519; name = PUTTZOO.(A)
     file[]: crc = 8c77a4bc; size =     21616; name = PUTTZOO.EXE
@@ -60,7 +59,6 @@ end
 
 game[pc-en-070906]:
     name = English 2007-09-06 // SPUTM-HE v99
-    BITNESS = false
     anchorfile = PuttZoo.(a)
     file[]: crc = fbda6ce1; size =    434232; name = PuttZoo.exe
     file[]: crc = 8c2168aa; size =     53248; name = PuttZoo.d32

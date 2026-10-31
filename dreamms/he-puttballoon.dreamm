@@ -3,7 +3,7 @@ desc[he-puttballoon]:
 name = Putt-Putt and Pep's Balloon-O-Rama
 icon = he-puttballoon.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\BALLOON.EXE"
 osenv = windows 98
 winres = 640x480x8

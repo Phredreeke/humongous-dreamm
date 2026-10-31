@@ -3,7 +3,7 @@ desc[he-freddiwater]:
 name = Freddi Fish and Luther's Water Worries
 icon = he-freddiwater.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\WATER.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -46,7 +46,6 @@ end
 game[pc-en-991103]:
     name = English 1999-11-03
     anchorfile = WATER.EXE
-    BITNESS = false
     file[]: crc = 503cfedb; size =     70347; name = JA-AD.PCX; optional = true
     file[]: crc = 5564d202; size =      5724; name = license.txt; optional = true
     file[]: crc = e26bbea8; size =  11812882; name = Water.(a)
@@ -68,7 +67,6 @@ end
 game[pc-nl-990825]:
     name = Dutch 1999-08-25
     anchorfile = WATER.EXE
-    BITNESS = false
     file[]: crc = 59ea8ef4; size =       578; name = COPYRITE.TXT; optional = true
     file[]: crc = 7db99848; size =    139078; name = JA-AD.BMP; optional = true
     file[]: crc = aa2ac93c; size =  11709214; name = WATER.(A)
@@ -93,7 +91,6 @@ end
 game[pc-fr-991001]:
     name = French 1999-10-01
     anchorfile = bulle.exe
-    BITNESS = false
     launch = "$(rootpath)\bulle.exe"
     file[]: crc = 665eb78a; size =  11355438; name = BULLE.(A)
     file[]: crc = ec7c10f1; size =     35840; name = BULLE.D32

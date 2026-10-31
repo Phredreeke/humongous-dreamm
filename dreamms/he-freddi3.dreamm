@@ -3,7 +3,7 @@ desc[he-freddi3]:
 name = Freddi Fish 3: The Case of the Stolen Conch Shell
 icon = he-freddi3.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\FREDDI3.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -98,7 +98,6 @@ end
 game[pc-en-010308-uk]:
     name = English 2001-03-08 UK Dub
     anchorfile = FreddiSCS.EXE
-    BITNESS = false
     launch = "$(rootpath)\FreddiSCS.EXE"
     file[]: crc = ae103768; size =  75069855; name = FreddiSCS.(a)
     file[]: crc = ff0be092; size =     45056; name = FreddiSCS.d32
@@ -172,7 +171,6 @@ end
 game[pc-fr-001114]:
     name = French 2000-11-14
     anchorfile = MaliceMCV.exe
-    BITNESS = false
     launch = "$(rootpath)\MaliceMCV.exe"
     file[]: crc = a15680f7; size =     70450; name = JA-AD.pcx; optional = true
     file[]: crc = 3eb6afcc; size =  74650500; name = MaliceMCV.(a)
@@ -195,7 +193,6 @@ game[pc-fr-130418]:
     name = French 2013-04-18
     anchorfile = MaliceMCV.exe
     imports = pc-fr-001114
-    BITNESS = false
     launch = "$(rootpath)\MaliceMCV.exe"
     file[]: crc = 50383024; size =     73908; name = JA-AD.PCX
     file[]: crc = b7790194; size =     35840; name = MALICEMCV.D32
@@ -241,7 +238,6 @@ end
 game[pc-de-001114]:
     name = German 2000-11-14
     anchorfile =  FreddiFGT.exe
-    BITNESS = false
     launch = "$(rootpath)\FreddiFGT.exe"
     file[]: crc = cb9f5a73; size =  74617807; name = FreddiFGT.(a)
     file[]: crc = 46996e05; size =     34816; name = FreddiFGT.D32
@@ -264,7 +260,6 @@ end
 game[pc-he-030309]:
     name = Hebrew 2003-03-09
     anchorfile = FREDDI3.EXE
-    BITNESS = false
     file[]: crc = 33654cc3; size =  75053085; name = FREDDI3.(A)
     file[]: crc = dab62617; size =    132406; name = FREDDI3.BMP; optional = true
     file[]: crc = 4865cbb6; size =     53248; name = FREDDI3.D32
@@ -373,7 +368,6 @@ end
 demo[pc-de-990707-demo]:
     name = German Demo 1999-07-07
     anchorfile = Fritzi3demo.exe
-    BITNESS = false
     launch = "$(rootpath)\Fritzi3demo.exe"
     file[]: crc = 7263a326; size =   5502492; name = Fritzi3demo.(a)
     file[]: crc = 46996e05; size =     34816; name = Fritzi3demo.d32
@@ -396,7 +390,6 @@ demo[pc-he-010328-demo]:
     name = Hebrew Demo 2001-03-28
     anchorfile = FF3DEMO.EXE
     launch = "$(rootpath)\FF3DEMO.EXE"
-    BITNESS = false
     winres = 640x480x16
     file[]: crc = 7ea20a98; size =   5557057; name = FF3DEMO.(A)
     file[]: crc = 4865cbb6; size =     53248; name = FF3DEMO.D32

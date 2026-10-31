@@ -3,7 +3,7 @@ desc[he-pajama2]:
 name = Pajama Sam 2: Thunder and Lightning Aren't so Frightening
 icon = he-pajama2.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\PAJAMA2.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -51,7 +51,6 @@ end
 game[pc-en-010308-uk]:
     name = English 2001-03-08 UK Dub
     anchorfile = PajamaTAL.EXE
-    BITNESS = false
     launch = "$(rootpath)\PajamaTAL.EXE"
     file[]: crc = b954b49c; size =     31802; name = Ja-ad.pcx; optional = true
     file[]: crc = 23b7d616; size =  97758924; name = PajamaTAL.(a)
@@ -98,7 +97,6 @@ end
 game[pc-fr-990604]:
     name = French 1999-06-04
     anchorfile = PYJAM2.EXE
-    BITNESS = false
     launch = "$(rootpath)\PYJAM2.EXE"
     file[]: name = COPYRITE.TXT; optional = true
     file[]: crc = 2c32aeae; size =    139078; name = JA-AD.BMP; optional = true
@@ -124,7 +122,6 @@ end
 game[pc-fr-010201]:
     name = French 2001-02-01
     anchorfile = PyjamaHM.exe
-    BITNESS = false
     launch = "$(rootpath)\PyjamaHM.exe"
     file[]: crc = 36de5648; size =     22848; name = JA-AD.pcx; optional = true
     file[]: crc = b7957493; size =  98061916; name = PyjamaHM.(a)
@@ -145,7 +142,6 @@ end
 game[pc-de-010129]:
     name = German 2001-01-29
     anchorfile = PyjamaDBMN.EXE
-    BITNESS = false
     launch = "$(rootpath)\PyjamaDBMN.EXE"
     file[]: crc = 62a03bb9; size =     26377; name = JA-AD.PCX; optional = true
     file[]: crc = 66c5e785; size =  97912612; name = PyjamaDBMN.(a)
@@ -165,7 +161,6 @@ end
 //
 game[pc-he-030309]:
     name = Hebrew 2003-03-09
-    BITNESS = false
     anchorfile = PAJAMA2.EXE
     file[]: crc = d2f04c3a; size =  98234917; name = Pajama2.(a)
     file[]: crc = fc336e3f; size =    132406; name = PAJAMA2.BMP; optional = true
@@ -206,7 +201,6 @@ end
 demo[pc-nl-990413-demo]:
     name = Dutch Demo 1999-04-13
     anchorfile = PJS2DEMO.EXE
-    BITNESS = false
     launch = "$(rootpath)\PJS2DEMO.EXE"
     file[]: crc = 50b34291; size =   6120392; name = PJS2DEMO.(A)
     file[]: crc = 07fbad26; size =    128086; name = PJS2DEMO.BMP; optional = true
@@ -226,7 +220,6 @@ end
 demo[pc-de-990323-demo]:
     name = German Demo 1999-03-23
     anchorfile = PJP2DEMO.EXE
-    BITNESS = false
     launch = "$(rootpath)\PJP2DEMO.EXE"
     file[]: crc = 99f04aba; size =       708; name = COPYRITE.TXT; optional = true
     file[]: crc = 35f9ba39; size =   6104772; name = PJP2DEMO.(A)
@@ -250,7 +243,6 @@ demo[pc-en-010328-demo]:
     name = Hebrew Demo 2001-03-28
     anchorfile = PS2DEMO.EXE
     launch = "$(rootpath)\PS2DEMO.EXE"
-    BITNESS = false
     winres = 640x480x16
     file[]: crc = e15a7563; size =   6141228; name = PS2DEMO.(A)
     file[]: crc = 4865cbb6; size =     53248; name = PS2DEMO.D32

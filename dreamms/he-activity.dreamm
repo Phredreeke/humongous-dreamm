@@ -3,7 +3,7 @@ desc[he-activity]:
 name = Putt-Putt & Fatty Bear's Activity Pack
 icon = he-activity.png
 machine = pc
-rootpath = C:\
+rootpath = C:\ACTIVITY
 launch = "$(rootpath)\ACTIVITY.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -43,10 +43,6 @@ IRQ=7
 
 script[init]:
     code = [[[$(CRLF)
-    if (is_windows())
-    {    
-    file_create("C:\\WINDOWS\\SYSTEM\\WING32.DLL");
-    }
     if (DOSAUDIO = true)
     {    
     file_save("$$(INIPATH)", "$$(INIDATA)");

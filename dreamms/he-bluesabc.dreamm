@@ -3,7 +3,7 @@ desc[he-bluesabc]:
 name = Blue's ABC Time Activities
 icon = he-bluesabc.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = $(rootpath)\BluesABCTime.exe
 osenv = windows 98
 winres = 640x480x8

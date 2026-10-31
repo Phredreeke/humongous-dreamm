@@ -3,7 +3,7 @@ desc[he-spyfoxmustard]:
 name = Spy Fox in Hold The Mustard
 icon = he-spyfoxmustard.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\mustard.exe"
 osenv = windows 98
 winres = 640x480x8

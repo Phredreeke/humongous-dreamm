@@ -3,7 +3,7 @@ desc[he-freddi2]:
 name = Freddi Fish 2: The Case of the Haunted Schoolhouse
 icon = he-freddi2.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\FREDDI2.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -113,7 +113,6 @@ end
 game[pc-en-020605]:
     name = English 2002-06-05
     anchorfile = FreddiCHSH.exe
-    BITNESS = false
     launch = "$(rootpath)\FreddiCHSH.exe" 
     anchordepth = 1
     file[]: crc = 1acc9994; size = 135158283; name = FreddiCHSH.(a); exactonly = true
@@ -294,7 +293,6 @@ end
 game[pc-ru-041014]:
     name = Russian 2004-10-14
     anchorfile = FreddiCHSH.exe
-    BITNESS = false
     launch = "$(rootpath)\FreddiCHSH.exe" 
     file[]: crc = 20c2fb27; size =    236557; name = Freddi_Fish2_Manual.pdf; optional = true
     file[]: crc = 492b32d0; size = 135380546; name = FreddiCHSH.(a)
@@ -340,7 +338,6 @@ end
 demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = FFHSDemo.exe
-    BITNESS = false
     launch = "$(rootpath)\FFHSDemo.exe"
     file[]: crc = 3dba6d98; size =  30532295; name = FFHSDemo.(a)
     file[]: crc = 8c2168aa; size =     53248; name = FFHSDemo.d32

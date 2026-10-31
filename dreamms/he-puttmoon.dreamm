@@ -3,11 +3,15 @@ desc[he-puttmoon]:
 name = Putt-Putt Goes to the Moon
 icon = he-puttmoon.png
 machine = pc
-rootpath = C:\
+rootpath = C:\PUTTMOON
 launch = "$(rootpath)\PUTTMOON.EXE"
 osenv = windows 98
-DOSAUDIO = false
 INIPATH = C:\PUTTMOON\PUTTMOON.INI
+DIGI_DRIVER = $(NULL)
+MIDI_DRIVER = $(NULL)
+IO = $(NULL)
+IRQ = $(NULL)
+DIGI_ID = $(NULL)
 
 //
 // filesystem
@@ -15,45 +19,59 @@ INIPATH = C:\PUTTMOON\PUTTMOON.INI
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-
-//
-// Block ALT key
-//
-script[remap]:
-    condition = $(DOSAUDIO)
-    code = [[[$(CRLF)
-       keyboard_install_hook(0x38, "remap");
-       func remap() {  }
-    ]]]
+config[sound]:
+    condition = is_dos()
+    title = Sound Configuration
+    option[speaker-music]: name = $(SPEAKER_NAME) (Music); MIDI_DRIVER = pcspkr.adv
+    option[speaker-voice]: name = $(SPEAKER_NAME) (Speech); DIGI_DRIVER = ibmbak.com; DIGI_ID = 1
+    option[adlib-music]:   name = $(ADLIB_NAME) (Music); MIDI_DRIVER = adlib.adv
+    option[adlib-voice]:   name = $(ADLIB_NAME) (Speech); DIGI_DRIVER = adlib.com; DIGI_ID = 1
+    option[sb16]:          name = $(SB16_NAME); DIGI_DRIVER = sblaster.com; MIDI_DRIVER = sbfm.adv; IO=220; IRQ=7; priority = 1
 end
 
 //
 // Set up INI file for DOS version
 //
 INIDATA = [[[$(CRLF)
-DigitalSoundDriver=sblaster.com
-MidiSoundDriver=sbfm.adv
-IOAddress=220
-IRQ=7
-DigitalID=
-MidiInstFile=fat.ad
+    DigitalSoundDriver=$(DIGI_DRIVER)
+    MidiSoundDriver=$(MIDI_DRIVER)
+    IOAddress=$(IO)
+    IRQ=$(IRQ)
+    DigitalID=$(DIGI_ID)
+    MidiInstFile=fat.ad
 ]]]
 
 script[init]:
+    condition = is_dos() && !is_installer()
     code = [[[$(CRLF)
-    if (DOSAUDIO = true)
-    {    
-    file_save("$$(INIPATH)", "$$(INIDATA)");
-    }
+        // Block ALT key
+       keyboard_install_hook(0x38, "remap");
+       func remap(){}
+
+       // Save config INI
+       file_save("$$(INIPATH)", "$$(INIDATA)");
     ]]]
 end
 
-//
-// 1994 DOS version
-//
-game[pc-en-931021]:
-    name = English DOS Floppy 1993-10-21
-    anchorfile = PUTTMOON.EXE
+script[autoinstall]:
+    condition = is_installer() && is_dos()
+    code = [[[$(CRLF)
+        if (!prop("noautoinstall")) {
+            input_lockout(true);
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+        }
+    ]]]
+end
+
+fragment[dos-stub]:
     osenv = dos
     fixdivover = true
     mips = $(MIPS_386DX_33)
@@ -61,16 +79,21 @@ game[pc-en-931021]:
     audiohw = adlib+sb16
     videohw = svga
     rootpath = C:\PUTTMOON\
-    DOSAUDIO = true
-    BITNESS = false
+end
+
+//
+// 1994 DOS version
+//
+game[pc-en-931021]:
+    name = English DOS Floppy 1993-10-21
+    imports = dos-stub
+    anchorfile = PUTTMOON.EXE
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
     file[]: crc = 3e59a339; size =    197900; name = PUTTMOON.DRV
     file[]: crc = db75e8f2; size =    142791; name = PUTTMOON.EXE
     file[]: crc = e6724f96; size =      7828; name = PUTTMOON.HE0
     file[]: crc = 7a59fff7; size =   5116894; name = PUTTMOON.HE1
-    file[]: crc = 97e896b5; size =       766; name = PUTTMOON.ICO; optional = true
-    file[]: crc = c1c1c5a1; size =       545; name = PUTTMOON.PIF; optional = true
     file[]: crc = 0a1092fc; size =   6441638; name = PUTTMOON.TLK
 
 end
@@ -80,28 +103,15 @@ end
 //
 game[pc-en-940118]:
     name = English DOS 1993-11-04
+    imports = dos-stub
     anchorfile = PUTTMOON.EXE
-    osenv = dos
-    fixdivover = true
-    mips = $(MIPS_386DX_33)
-    ramkb = 16384
-    audiohw = adlib+sb16
-    videohw = svga
-    DOSAUDIO = true
-    BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
     file[]: crc = 3e59a339; size =    197900; name = PUTTMOON.DRV
     file[]: crc = fba38c66; size =    142807; name = PUTTMOON.EXE
     file[]: crc = e56edf6f; size =      7863; name = PUTTMOON.HE0
     file[]: crc = 09545ffe; size =   5361724; name = PUTTMOON.HE1
-    file[]: crc = 97e896b5; size =       766; name = PUTTMOON.ICO; optional = true
-    file[]: crc = e29a6ec9; size =       160; name = PUTTMOON.INI; optional = true
-    file[]: crc = c1c1c5a1; size =       545; name = PUTTMOON.PIF; optional = true
     file[]: crc = 8d8727f9; size =  11293948; name = PUTTMOON.TLK
-    file[]: name = SETUPCD.EXE; optional = true
-
-
 end
 
 
@@ -125,9 +135,6 @@ game[pc-en-950220-win]:
     file[]: crc = cd0daebe; size =    102400; name = PUTTMOON.HLP
     file[]: crc = c30ac98c; size =    261120; name = PUTTMOON.W32
     file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
-
-
-
 end
 
 //
@@ -135,16 +142,9 @@ end
 //
 game[pc-he]:
     name = Hebrew
+    imports = dos-stub
     anchorfile = PUTTMOON.EXE
-    osenv = dos
-    fixdivover = true
-    mips = $(MIPS_386DX_33)
-    ramkb = 16384
-    audiohw = adlib+sb16
-    videohw = svga
-    DOSAUDIO = true
     INIPATH = C:\PUTTMOON.INI
-    BITNESS = false
     file[]: crc = d402deda; size =     45564; name = PUTTMOON.BRS
     file[]: crc = 5f41f1d4; size =    162085; name = PUTTMOON.DRV
     file[]: crc = fba38c66; size =    142807; name = PUTTMOON.EXE
@@ -152,8 +152,6 @@ game[pc-he]:
     file[]: crc = 073d678b; size =   5127704; name = PUTTMOON.HE1
     file[]: crc = ef8aac36; size =   7534108; name = PUTTMOON.TLK
     file[]: crc = 97e896b5; size =       766; name = PUTTPUTT.ICO
-
-
 end
 
 
@@ -162,30 +160,18 @@ end
 //
 demo[pc-en-930309-demo]:
     name = English DOS Demo 1993-03-09
+    imports = dos-stub
     anchorfile = MOONDEMO.EXE
-    osenv = dos
-    fixdivover = true
-    mips = $(MIPS_386DX_33)
-    ramkb = 16384
-    audiohw = adlib+sb16
-    videohw = svga
-    DOSAUDIO = true
     INIPATH = C:\MOONDEMO\MOONDEMO.INI
     rootpath = C:\MOONDEMO\
     launch = "$(rootpath)\MOONDEMO.EXE"
-    BITNESS = false
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 07d35588; size =    162085; name = MOONDEMO.DRV
     file[]: crc = 489781d5; size =    195529; name = MOONDEMO.EXE
     file[]: crc = 3e0a2758; size =      6233; name = MOONDEMO.HE0
     file[]: crc = cf5c5780; size =    919550; name = MOONDEMO.HE1
-    file[]: crc = 97e896b5; size =       766; name = MOONDEMO.ICO; optional = true
-    file[]: crc = 463f81d0; size =       545; name = MOONDEMO.PIF; optional = true
     file[]: crc = 3b9bff19; size =    720805; name = MOONDEMO.TLK
     file[]: crc = c008c7ef; size =      9038; name = README.TXT
-
-
-
 end
 
 //
@@ -194,18 +180,12 @@ end
 installer[pc-en-930309-demo-install]:
     name = English DOS Demo 1993-03-09
     anchorfile = MOONDEMO.EXE
-    osenv = dos
+    imports = dos-stub
     installid = pc-en-930309-demo
-    fixdivover = true
     mips = $(MIPS_MAX)
-    ramkb = 16384
-    audiohw = adlib+sb16
-    videohw = svga
+    rootpath = C:\INSTALL
     launch = "$(rootpath)\MOONDEMO.EXE"
-    BITNESS = false
     file[]: crc = 730c243c; size =   1454478; name = MOONDEMO.EXE; exactonly = true
-
-
 end
 
 //
@@ -214,15 +194,11 @@ end
 installer[pc-en-931021-install]:
     name = English DOS Floppy 1993-10-21
     anchorfile = PUTTMOON.001
-    osenv = dos
     installid = pc-en-931021
-    fixdivover = true
+    imports = dos-stub
     mips = $(MIPS_MAX)
-    ramkb = 16384
-    audiohw = adlib+sb16
-    videohw = svga
+    rootpath = C:\INSTALL
     launch = "$(rootpath)\INSTALL.EXE"
-    BITNESS = false
     file[]: crc = 4918b18d; size =    128215; name = INSTALL.EXE
     file[]: crc = 4b8bc23a; size =   1329152; name = PUTTMOON.001
     file[]: crc = 34bcbea6; size =   1457664; name = PUTTMOON.002
@@ -230,8 +206,6 @@ installer[pc-en-931021-install]:
     file[]: crc = d296d017; size =   1457664; name = PUTTMOON.004
     file[]: crc = cc36583e; size =   1457664; name = PUTTMOON.005
     file[]: crc = b3044a3c; size =   1336574; name = PUTTMOON.006
-
-
 end
 
 //
@@ -251,9 +225,6 @@ game[pc-en-950220-windemo]:
     file[]: crc = 2df87a9d; size =     94208; name = MOONDEMO.HLP
     file[]: crc = c30ac98c; size =    261120; name = MOONDEMO.W32
     file[]: crc = ac402ea5; size =      1470; name = SNDCARDS.INF
-
-
-
 end
 
 

@@ -3,7 +3,7 @@ desc[he-pajama1]:
 name = Pajama Sam 1: No Need to Hide When It's Dark Outside
 icon = he-pajama1.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\PAJAMA.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -73,7 +73,6 @@ end
 game[pc-en-020520]:
     name = English 2002-05-20
     anchorfile = PajamaNHD.exe
-    BITNESS = false
     anchordepth = 1
     launch = "$(rootpath)\PajamaNHD.exe" 
     file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE
@@ -99,7 +98,6 @@ game[pc-en-070901]:
     name = English 2007-09-01
     anchorfile = pjSam.exe
     launch = "$(rootpath)\pjSam.exe"
-    BITNESS = false
     winres = 640x480x16
     file[]: crc = 5107b8ef; size =       659; name = layout.bin
     file[]: crc = 8112767f; size =     18708; name = License.rtf; optional = true
@@ -224,7 +222,6 @@ game[pc-de-991018]:
     name = German 1999-10-18
     anchorfile = PYJAMA.EXE
     launch = "$(rootpath)\PYJAMA.EXE"
-    BITNESS = false
     file[]: crc = 1d5c638c; size =       713; name = COPYRIGHT.TXT; optional = true 
     file[]: crc = a640f91a; size =     27355; name = JA-AD.pcx; optional = true // seems to be corrupted
     file[]: crc = 60ef8fdf; size = 124585072; name = PYJAMA.(A)
@@ -263,7 +260,6 @@ end
 game[pc-ru-050323]:
     name = Russian 2005-03-23
     anchorfile = PajamaNHD.exe
-    BITNESS = false
     launch = "$(rootpath)\PajamaNHD.exe" 
     file[]: crc = 2df3e9d9; size =      3096; name = license.txt
     file[]: crc = f0eca758; size = 127337060; name = PajamaNHD.(a)
@@ -311,7 +307,6 @@ end
 demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = PjSamDemo.exe
-    BITNESS = false
     launch = "$(rootpath)\PjSamDemo.exe"
     file[]: crc = 5c81d837; size =  26591303; name = PjSamDemo.(a)
     file[]: crc = 8c2168aa; size =     53248; name = PjSamDemo.d32

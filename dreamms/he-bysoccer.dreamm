@@ -3,7 +3,7 @@ desc[he-bysoccer]:
 name = Backyard Soccer
 icon = he-bysoccer.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\SOCCER.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -54,7 +54,6 @@ game[pc-en-000803]:
     name = Backyard Soccer MLS Edition 2000-08-03
     anchorfile = SoccerMLS.exe
     anchordepth = 1
-    BITNESS = false
     winres = 640x480x16
     launch = "$(rootpath)\SoccerMLS.exe"
     file[]: crc = 626bd348; size = 203771068; name = SoccerMLS.(a)
@@ -79,7 +78,6 @@ game[pc-en-000919]:
     name = Backyard Soccer MLS Edition 2000-09-19
     anchorfile = SoccerMLS.exe
     anchordepth = 1
-    BITNESS = false
     winres = 640x480x16
     launch = "$(rootpath)\SoccerMLS.exe"
     file[]: crc = d4381b5a; size = 203782020; name = SoccerMLS.(a)

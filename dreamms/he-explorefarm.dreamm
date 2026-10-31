@@ -3,7 +3,7 @@ desc[he-explorefarm]:
 name = Let's Explore the Farm
 icon = he-explorefarm.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = $(rootpath)\FARM.EXE
 osenv = windows 98
 winres = 640x480x8

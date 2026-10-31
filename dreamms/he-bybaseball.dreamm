@@ -3,7 +3,7 @@ desc[he-bybaseball]:
 name = Backyard Baseball
 icon = he-bybaseball.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\BASEBALL.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -76,7 +76,6 @@ game[pc-en-000501]:
     name = Backyard Baseball 2001 (2000-05-01)
     anchorfile = baseball 2001.exe
     anchordepth = 1
-    BITNESS = false
     winres = 640x480x16
     launch = "$(rootpath)\baseball 2001.exe"
     file[]: crc = 95a359c3; size = 141563292; name = baseball 2001.(a)
@@ -112,7 +111,6 @@ game[pc-en-020222]:
     name = Backyard Baseball 2003 (2002-02-22)
     anchorfile = Baseball2003.exe
     anchordepth = 1
-    BITNESS = false
     winres = 640x480x16
     launch = "$(rootpath)\Baseball2003.exe"
     file[]: crc = 3e5987f6; size = 196067172; name = baseball2003.(a)

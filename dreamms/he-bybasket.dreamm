@@ -3,7 +3,7 @@ desc[he-bybasket]:
 name = Backyard Basketball
 icon = he-bybasket.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\Basketball.exe"
 osenv = windows 98
 winres = 640x480x16

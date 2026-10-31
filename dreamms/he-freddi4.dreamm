@@ -3,7 +3,7 @@ desc[he-freddi4]:
 name = Freddi Fish 4: The Case of the Hogfish Rustlers of Briny Gulch
 icon = he-freddi4.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\FREDDI4.EXE"
 osenv = windows 98
 winres = 640x480x8

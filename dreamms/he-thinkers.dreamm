@@ -3,7 +3,7 @@ desc[he-thinkers]:
 name = Big Thinkers! 
 icon = he-thinkers.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\THINKER1.EXE"
 osenv = windows 98
 winres = 640x480x8

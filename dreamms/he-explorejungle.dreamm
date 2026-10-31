@@ -3,7 +3,7 @@ desc[he-explorejungle]:
 name = Let's Explore the Jungle
 icon = he-explorejungle.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = $(rootpath)\JUNGLE.EXE
 osenv = windows 98
 winres = 640x480x8

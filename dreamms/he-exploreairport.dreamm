@@ -3,7 +3,7 @@ desc[he-exploreairport]:
 name = Let's Explore the Airport
 icon = he-exploreairport.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = $(rootpath)\AIRPORT.EXE
 osenv = windows 98
 winres = 640x480x8

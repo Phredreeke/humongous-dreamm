@@ -3,7 +3,7 @@ desc[he-freddi5]:
 name = Freddi Fish 5: The Case of the Creature of Coral Cave
 icon = he-freddi5.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\freddicove.EXE"
 osenv = windows 98
 winres = 640x480x16

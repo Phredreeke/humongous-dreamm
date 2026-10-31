@@ -3,7 +3,7 @@ desc[he-putttime]:
 name = Putt-Putt Travels Through Time
 icon = he-putttime.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\PUTTTIME.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -50,7 +50,6 @@ end
 game[pc-en-010308-uk]:
     name = English 2001-03-08 UK Dub
     anchorfile = PUTTPUTTTTT.EXE
-    BITNESS = false
     launch = "$(rootpath)\PUTTPUTTTTT.EXE"
     file[]: crc = 18221edb; size =     70499; name = Ja-ad.pcx; optional = true
     file[]: crc = c03491d9; size = 135479067; name = puttputtTTT.(a)
@@ -73,7 +72,6 @@ end
 game[pc-en-020521]:
     name = English 2002-05-21
     anchorfile = PuttTTT.exe
-    BITNESS = false
     launch = "$(rootpath)\PuttTTT.exe"
     anchordepth = 1
     file[]: crc = e59ed20b; size =   3719168; name = INF1.EXE; optional = true
@@ -148,7 +146,6 @@ end
 game[pc-fr-001113]:
     name = French 2000-11-13
     anchorfile = POUCEVDT.EXE
-    BITNESS = false
     launch = "$(rootpath)\POUCEVDT.EXE"
     file[]: crc = 219fade0; size =     77001; name = JA-AD.pcx; optional = true
     file[]: crc = 57330d2d; size = 134308519; name = PouceVDT.(a)
@@ -197,7 +194,6 @@ end
 game[pc-de-001113]:
     name = German 2000-11-13
     anchorfile = ToffZeit.EXE
-    BITNESS = false
     launch = "$(rootpath)\ToffZeit.EXE"
     file[]: crc = 4d459ad3; size =     70694; name = Ja-ad.pcx; optional = true
     file[]: crc = a12b3ad6; size = 133927366; name = ToffZeit.(a)
@@ -271,7 +267,6 @@ end
 demo[pc-en-demo-03]:
     name = English Demo 2003
     anchorfile = TIMEDEMO.EXE
-    BITNESS = false
     launch = "$(rootpath)\TIMEDEMO.EXE"
     file[]: crc = be243d2a; size =  25358781; name = TimeDemo.(a)
     file[]: crc = 8c2168aa; size =     53248; name = TimeDemo.d32

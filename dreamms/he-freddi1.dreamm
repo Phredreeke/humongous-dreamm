@@ -3,7 +3,7 @@ desc[he-freddi1]:
 name = Freddi Fish and the Case of the Missing Kelp Seeds
 icon = he-freddi1.png
 machine = pc
-rootpath = C:\
+rootpath = D:\
 launch = "$(rootpath)\FREDDI.EXE"
 osenv = windows 98
 winres = 640x480x8
@@ -132,7 +132,6 @@ end
 game[pc-en-070831]:
     name = English 2007-08-31
     anchorfile = Freddi1.exe
-    BITNESS = false
     launch = "$(rootpath)\Freddi1.exe"
     file[]: crc = fdb48e21; size =      8628; name = Freddi.GID; optional = true
     file[]: crc = 5c0c33f3; size =    120843; name = FREDDI.hlp; optional = true
@@ -181,7 +180,6 @@ end
 //
 game[pc-no-000407]:
     name = Norwegian 2000-04-07
-    BITNESS = false
     anchorfile = FREDDI.EXE
     file[]: crc = 49e25ed6; size =       651; name = Copyright.txt; optional = true
     file[]: crc = c9ee4614; size =  53873063; name = Freddi.(a)
@@ -314,7 +312,6 @@ end
 game[pc-de-991108]:
     name = German 1999-11-08
     anchorfile = FRITZI.EXE
-    BITNESS = false
     launch = "$(rootpath)\FRITZI.EXE"
     file[]: crc = 6a668572; size =       552; name = COPYRIGHT.TXT; optional = true
     file[]: crc = 20110dc6; size =  53923482; name = FRITZI.(A)

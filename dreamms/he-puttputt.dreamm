@@ -3,11 +3,15 @@ desc[he-puttputt]:
 name = Putt-Putt Joins the Parade
 icon = he-puttputt.png
 machine = pc
-rootpath = C:\
+rootpath = C:\PUTTPUTT
 launch = "$(rootpath)\PUTTPUTT.EXE"
 osenv = windows 98
-DOSAUDIO = false
 INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
+DIGI_DRIVER = $(NULL)
+MIDI_DRIVER = $(NULL)
+IO = $(NULL)
+IRQ = $(NULL)
+DIGI_ID = $(NULL)
 //
 // filesystem
 //
@@ -18,33 +22,56 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 //
 // Block ALT key
 //
-script[remap]:
-    condition = $(DOSAUDIO)
+script[init]:
+    condition = is_dos() && !is_installer()
     code = [[[$(CRLF)
+        // Block ALT key
        keyboard_install_hook(0x38, "remap");
-       func remap() {  }
+       func remap(){}
+
+       // Save config INI
+       file_save("$$(INIPATH)", "$$(INIDATA)");
     ]]]
+end
+
+script[autoinstall]:
+    condition = is_installer() && is_dos()
+    code = [[[$(CRLF)
+        if (!prop("noautoinstall")) {
+            input_lockout(true);
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+            wait("int21", 0x07); keyboard_type("\r");
+        }
+    ]]]
+end
+
+config[sound]:
+    condition = is_dos()
+    title = Sound Configuration
+    option[speaker-music]: name = $(SPEAKER_NAME) (Music); MIDI_DRIVER = pcspkr.adv
+    option[speaker-voice]: name = $(SPEAKER_NAME) (Speech); DIGI_DRIVER = ibmbak.com; DIGI_ID = 1
+    option[adlib-music]:   name = $(ADLIB_NAME) (Music); MIDI_DRIVER = adlib.adv
+    option[adlib-voice]:   name = $(ADLIB_NAME) (Speech); DIGI_DRIVER = adlib.com; DIGI_ID = 1
+    option[sb16]:          name = $(SB16_NAME); DIGI_DRIVER = sblaster.com; MIDI_DRIVER = sbfm.adv; IO=220; IRQ=7; priority = 1
 end
 
 //
 // Set up INI file for DOS version
 //
 INIDATA = [[[$(CRLF)
-DigitalSoundDriver=sblaster.com
-MidiSoundDriver=sbfm.adv
-IOAddress=220
-IRQ=7
-DigitalID=
+    DigitalSoundDriver=$(DIGI_DRIVER)
+    MidiSoundDriver=$(MIDI_DRIVER)
+    IOAddress=$(IO)
+    IRQ=$(IRQ)
+    DigitalID=$(DIGI_ID)
 ]]]
-
-script[init]:
-    code = [[[$(CRLF)
-    if (DOSAUDIO = true)
-    {    
-    file_save("$$(INIPATH)", "$$(INIDATA)");
-    }
-    ]]]
-end
 
 //
 // 1992 DOS version
@@ -58,7 +85,6 @@ game[pc-en-921119]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
     file[]: crc = 244b8cc0; size =    111502; name = PUTTPUTT.DRV
     file[]: crc = 38252638; size =    119209; name = PUTTPUTT.EXE
     file[]: crc = cb488496; size =      8107; name = PUTTPUTT.HE0
@@ -84,8 +110,6 @@ game[pc-en-921106-floppy]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
-    rootpath = C:\PUTTPUTT
     file[]: crc = 244b8cc0; size =    111502; name = PUTTPUTT.DRV
     file[]: crc = bf6936d6; size =    119209; name = PUTTPUTT.EXE
     file[]: crc = 7f2e58bb; size =      8022; name = PUTTPUTT.HE0
@@ -110,6 +134,7 @@ installer[pc-en-921106-install]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
+    rootpath = C:\INSTALL
     launch = "$(rootpath)\INSTALL.EXE"
     BITNESS = false
     file[]: crc = 763fbd79; size =    123418; name = INSTALL.EXE
@@ -134,7 +159,6 @@ game[pc-en-940329]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
     INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 3e59a339; size =    197900; name = PUTTPUTT.DRV
@@ -162,8 +186,6 @@ game[pc-en-940322-floppy]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
-    rootpath = C:\PUTTPUTT
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = bdc50041; size =    128163; name = INSTALL.EXE; optional = true
     file[]: crc = 3e59a339; size =    197900; name = PUTTPUTT.DRV
@@ -191,6 +213,7 @@ installer[pc-en-940322-install]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
+    rootpath = C:\INSTALL
     launch = "$(rootpath)\INSTALL.EXE"
     BITNESS = false
     file[]: crc = bdc50041; size =    128163; name = INSTALL.EXE
@@ -238,7 +261,6 @@ game[pc-he]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
     INIPATH = C:\PUTTPUTT\PUTTPUTT.INI
     file[]: crc = 56d59cb8; size =      7737; name = CHECK.EXE
     file[]: crc = 5f41f1d4; size =    162085; name = PUTTPUTT.DRV
@@ -265,7 +287,6 @@ demo[pc-en-930309-demo]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
-    DOSAUDIO = true
     INIPATH = C:\PUTTDEMO\PUTTDEMO.INI
     rootpath = C:\PUTTDEMO\
     launch = "$(rootpath)\PUTTDEMO.EXE"
@@ -294,6 +315,7 @@ installer[pc-en-930309-demo-install]:
     ramkb = 16384
     audiohw = adlib+sb16
     videohw = svga
+    rootpath = C:\INSTALL
     launch = "$(rootpath)\PUTTDEMO.EXE"
     BITNESS = false
     file[]: crc = 89e6e225; size =   1429108; name = PUTTDEMO.EXE; exactonly = true
