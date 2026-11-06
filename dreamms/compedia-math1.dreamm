@@ -1,0 +1,198 @@
+desc[compedia-math1]:
+
+name = Gordi and the Math Invaders
+icon = compedia-math1.png
+machine = pc
+rootpath = D:\
+launch = "$(HDDPATH)\Math.exe" /CFG:$(HDDPATH)\Math.ini
+osenv = windows 98
+winres = 640x480x8
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = D:\; srcpath = $(ifsinstallpath)\CD
+mount[]: vpath = $(HDDPATH); srcpath = $(ifsinstallpath)
+
+
+script[cd-init]:
+    code = [[[$(CRLF)
+        drive_set_label("D", "$$(CDLABEL)")
+        if (!!file_exists("$$(HDDPATH)\\Math.ini")) { file_save("$$(HDDPATH)\\Math.ini", "$$(INI_CONTENTS)") }
+    ]]]
+end
+
+//
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This versiom is not currently playable (4.0x81)
+end
+
+
+game[pc-en-022201]:
+    name = English 2002-01-08
+    anchorfile = Math.bmp
+    HDDPATH = C:\GSP\math1
+    launch = "C:\GSP\math1\Math.exe" /CFG:C:\GSP\math1\Math.ini /lng:eng
+    file[]: crc = 0b950dcc; size =    395264; name = Math.exe
+    file[]: crc = 017b2224; size =        49; name = cd\AUTORUN.INF
+    file[]: crc = f55c96f7; size =    458091; name = cd\data1.cab
+    file[]: crc = c9827cf6; size =     34638; name = cd\data1.hdr
+    file[]: crc = 8dd3272d; size =    220311; name = cd\data2.cab
+    file[]: crc = a392469d; size =      3304; name = cd\DELETE.INI
+    file[]: crc = 0f916957; size =  26347414; name = cd\FINALE.AVI
+    file[]: crc = 5166b5d6; size =   2681493; name = cd\gsp_run.dat
+    file[]: crc = a856b840; size =    506368; name = cd\gsp_run.exe
+    file[]: crc = 1e8d8155; size =     32308; name = cd\gsp_run.gsp
+    file[]: crc = f1d5ec52; size =    344923; name = cd\ikernel.ex_
+    file[]: crc = b9a2c61e; size =     59804; name = cd\LAUNCH1.BMP
+    file[]: crc = 7cb1d0f8; size =    229632; name = cd\LAUNCHER.EXE
+    file[]: crc = cca9c320; size =       435; name = cd\layout.bin
+    file[]: crc = a352cc9d; size =      4602; name = cd\logo.jpg
+    file[]: crc = 124353bf; size =   8849745; name = cd\Manual.DOC
+    file[]: crc = 9fe549be; size =       630; name = cd\MATH.BMP
+    file[]: crc = a9ba5976; size =       766; name = cd\MATH.ICO
+    file[]: crc = d2e9a374; size =  34699515; name = cd\MATH1E.A
+    file[]: crc = 7a8585cc; size =  13525491; name = cd\MATH1E.B
+    file[]: crc = 7240d04d; size = 281172320; name = cd\MATH1E.C
+    file[]: crc = 76ef65f4; size =    121582; name = cd\MATH1E.DAT
+    file[]: crc = 85452b80; size =      5892; name = cd\MAZE.INI
+    file[]: crc = 7975ac08; size =      7488; name = cd\registration.htm
+    file[]: crc = 428700a2; size =       630; name = cd\RUNFILE.BMP
+    file[]: crc = 4a3c4018; size =     30720; name = cd\RUNFILE.EXE
+    file[]: crc = 246f329a; size =     54272; name = cd\Setup.exe
+    file[]: crc = 7ef30b15; size =       119; name = cd\Setup.ini
+    file[]: crc = 5b63125a; size =    140615; name = cd\setup.inx
+    file[]: crc = b37d17a0; size =      1694; name = cd\SHAPES.INI
+    file[]: crc = cb296081; size =      3787; name = cd\sound.ini
+    file[]: crc = 335d92c6; size =    359942; name = cd\TechHelp.exe
+    file[]: crc = 22b29bbb; size =      4129; name = cd\TETRIS.INI
+
+
+
+    CDLABEL = GSPCD0911A
+    INI_CONTENTS = [[[$(CRLF)
+[GLOBALS]
+Languages=ENG
+SaveDir=C:\GSP\math1
+WinClass=Math1
+Forcemaximized=yes
+StartDir=D:
+
+[ENG]
+TRIANGLE=0
+SQUARE=0
+CIRCLE=0
+RECTANGLE=0
+SEMICIRCLE=0
+Strvoice=PCSDRE
+16ColorMessage=16color.eng
+DatFile=math1e.dat
+DataFiles=math1e.a math1e.b math1e.c
+WindowTitle=Gordi and the Math Invaders
+DiskError=Please insert the correct CD into the CD-ROM drive.
+DiskErrorTitle=Gordi and the Math Invaders
+Define=noprelogo
+FINALAVI=finale.avi
+[END]
+
+[PATH]
+HDPath=C:\GSP\math1
+CDPath=D:
+
+
+
+
+
+]]]
+
+
+end
+
+
+game[pc-sv-971020]:
+    name = Swedish 1997-10-20
+    INCOMPATIBLE = true
+    anchorfile = Math.bmp
+    rootpath = D:\Swedish
+    HDDPATH = C:\Progra~1\bonnier\math1
+//    file[]: crc = a9e74f8e; size =      2513; name = DEISL1.ISU
+    file[]: crc = 1f690215; size =    517376; name = MATH.EXE
+//    file[]: crc = 5246ffca; size =       554; name = MATH.INI
+    file[]: crc = d06ff7e9; size =  10145359; name = MATHS.B
+//    file[]: crc = 851a5030; size =    282655; name = cd\_INST16.EX_
+//    file[]: crc = db6ff40d; size =      8192; name = cd\_ISDEL.EXE
+//    file[]: crc = 4ebd3610; size =     11264; name = cd\_SETUP.DLL
+//    file[]: crc = 99ac3808; size =    142100; name = cd\_SETUP.LIB
+    file[]: crc = e0c7c560; size =        46; name = cd\AUTORUN.INF
+    file[]: crc = f0145bb1; size =         3; name = cd\DISK1.ID
+//    file[]: crc = 89dc2eda; size =     59802; name = cd\LAUNCH1.BMP
+//    file[]: crc = 0d1c83f0; size =    230912; name = cd\LAUNCHER.EXE
+    file[]: crc = 9fe549be; size =       630; name = cd\MATH.BMP
+    file[]: crc = a9ba5976; size =       766; name = cd\MATH1.ICO
+//    file[]: crc = 432f6eb9; size =     44928; name = cd\SETUP.EXE
+//    file[]: crc = f6033cd5; size =       153; name = cd\SETUP.INI
+//    file[]: crc = 9069d46b; size =     57309; name = cd\SETUP.INS
+    file[]: crc = 70344c5e; size =   8057006; name = cd\SWEDISH\DATA.Z
+    file[]: crc = 0f035d0c; size =      2071; name = cd\SWEDISH\DELETE.INI
+    file[]: crc = 28199836; size =  18786080; name = cd\SWEDISH\FINALS.AVI
+    file[]: crc = 622db4d6; size = 580781626; name = cd\SWEDISH\MATHS.A
+    file[]: crc = 989f8650; size =    127480; name = cd\SWEDISH\MATHS.DAT
+    file[]: crc = 3a79df26; size =      4851; name = cd\SWEDISH\MAZE.INI
+    file[]: crc = 71754e8d; size =      1100; name = cd\SWEDISH\SHAPES.INI
+    file[]: crc = 26a30c28; size =      2704; name = cd\SWEDISH\SOUND.INI
+    file[]: crc = a3f939b2; size =      2551; name = cd\SWEDISH\TETRIS.INI
+    file[]: crc = 1fbeeed3; size =    128996; name = cd\SWEDISH\WING.Z
+
+
+
+
+    CDLABEL =JAKTEN_PA_MATTEVIRUSET
+    INI_CONTENTS = [[[$(CRLF)
+[GLOBALS]
+Languages=SWD
+WinClass=Math1
+ForceMaximized=yes
+SaveDir=C:\Progra~1\bonnier\math1
+StartLanguage=SWEDISH
+StartDir=D:\Swedish
+
+[SWD]
+TRIANGLE=0
+SQUARE=0
+CIRCLE=0
+RECTANGLE=0
+SEMICIRCLE=0
+Strvoice=PCSDRE
+16ColorMessage=16color.eng
+DatFile=MathS.dat
+DataFiles=maths.a maths.b
+WindowTitle=Jakten på matteviruset
+DiskError=Please insert the correct CD into the CD-ROM drive.
+DiskErrorTitle=Jakten på matteviruset
+FINALAVI=finals.avi
+WaitMessage=Laddar...
+[END]
+
+[PATH]
+HDPATH=C:\Progra~1\bonnier\math1
+
+CDPath=D:\Swedish
+
+
+
+
+
+
+]]]
+
+
+end
+
+
+
+end
