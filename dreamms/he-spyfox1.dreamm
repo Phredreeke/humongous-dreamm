@@ -244,6 +244,28 @@ game[pc-de-001114]:
 end
 
 //
+// Russian version
+//
+game[pc-ru-041216]:
+    name = Russian 2004-12-16
+    anchorfile = SPYFOXDC.EXE
+    launch = "$(rootpath)\SPYFOXDC.EXE"
+    file[]: crc = 666e30a0; size =  69373367; name = SPYFoxDC.(a)
+    file[]: crc = 201a14a3; size =     45056; name = SPYFoxDC.D32
+    file[]: crc = 6873bc05; size =     86016; name = SPYFOXDC.EXE
+    file[]: crc = 1f20b9c1; size =      8628; name = SPYFOXDC.GID
+    file[]: crc = f6f6c962; size =     49675; name = SPYFoxDC.he0
+    file[]: crc = c7629520; size = 160650258; name = SPYFoxDC.he2
+    file[]: crc = 5ecaea09; size =  30324471; name = SPYFoxDC.he4
+    file[]: crc = b24f4b6a; size =   2027562; name = SPYFoxDC.hlp
+    file[]: crc = 19d8853f; size =       766; name = SPYFoxDC.ico
+    file[]: crc = b4e8331f; size =      2397; name = SPYFoxDC.inf
+    file[]: crc = 9f79081a; size =    475136; name = spyfoxdc.w32
+
+
+end
+
+//
 // English 1997 demo
 //
 demo[pc-en-971214-demo]:

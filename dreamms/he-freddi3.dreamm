@@ -275,6 +275,29 @@ game[pc-he-030309]:
 end
 
 //
+// Russian version
+//
+game[pc-ru-040706]:
+    name = Russian 2004-07-06
+    anchorfile = FreddiSCS.EXE
+    launch = "$(rootpath)\FreddiSCS.EXE" 
+    file[]: crc = 11f4784d; size =    195456; name = Freddi_Fish_Manual.pdf; optional = true
+    file[]: crc = e3f4cdcc; size =  74908581; name = FreddiSCS.(a)
+    file[]: crc = 173c90c4; size =     45056; name = FreddiSCS.d32
+    file[]: crc = c30a9821; size =     86016; name = FreddiSCS.EXE
+    file[]: crc = 1b32bc8b; size =      8628; name = FreddiSCS.GID
+    file[]: crc = 4b4f2a8c; size =     56068; name = FreddiSCS.he0
+    file[]: crc = 60a916b0; size =  71724133; name = FreddiSCS.he2
+    file[]: crc = 75a4b1bc; size =  28095089; name = FreddiSCS.HE4
+    file[]: crc = 9c470dae; size =   1003590; name = FreddiSCS.hlp
+    file[]: crc = 3365b814; size =       766; name = FREDDISCS.ICO
+    file[]: crc = b5b47a28; size =      2399; name = FreddiSCS.inf
+    file[]: crc = 2838bc9b; size =    475182; name = freddiSCS.w32
+
+
+end
+
+//
 // 1997 Demo version
 //
 demo[pc-en-970925-demo]:
